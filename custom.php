@@ -17,9 +17,35 @@ function show_untitled_items($title)
     return $title;
 }
 
-add_plugin_hook('public_theme_header', 'theme_javascript_foo');
-
-function theme_javascript_foo()
+/**
+ * This function checks the Logo theme option, then returns either an
+ * image tag with the logo as the src, or returns null.
+ *
+ **/
+function seasons_display_logo()
 {
-    return '<meta name="foobar" />';
+    $logo = get_theme_option('Logo');
+	
+	$siteTitle = $logo ? '<img src="'.WEB_ROOT.'/archive/theme_uploads/'.$logo.'" title="'.settings('site_title').'" />' : null;
+	
+	return $siteTitle;
+}
+
+/**
+ * This function returns the style sheet for the theme. It will use the argument
+ * passed to the function first, then the theme_option for Style Sheet, then
+ * a default style sheet.
+ *
+ * @param $styleSheet The name of the style sheet to use. (null by default)
+ *
+ **/
+function seasons_get_stylesheet($styleSheet = null)
+{    
+    if (!$styleSheet) {
+        
+        $styleSheet = get_theme_option('Style Sheet') ? get_theme_option('Style Sheet') : 'spring';
+    }
+    
+    return $styleSheet; 
+    
 }
