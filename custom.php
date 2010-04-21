@@ -24,11 +24,18 @@ function show_untitled_items($title)
  **/
 function seasons_display_logo()
 {
-    $logo = get_theme_option('Logo');
+    if(function_exists('get_theme_option')) {
+        
+        $logo = get_theme_option('Logo');
+        
+        $logoPath = WEB_THEME_UPLOADS.DIRECTORY_SEPARATOR.$logo;
+        
+	    $siteTitle = $logo ? '<img src="'.$logoPath.'" title="'.settings('site_title').'" />' : null;
 	
-	$siteTitle = $logo ? '<img src="'.WEB_ROOT.'/archive/theme_uploads/'.$logo.'" title="'.settings('site_title').'" />' : null;
-	
-	return $siteTitle;
+	    return $siteTitle;
+    }
+    
+    return null;
 }
 
 /**
