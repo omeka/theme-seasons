@@ -5,6 +5,12 @@
 <div id="footer">
 
 	<div id="footer-content" class="center-div">
+	    <div id="custom-footer-text">
+	        <p><?php echo get_theme_option('Footer Text'); ?></p>
+            <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = settings('copyright')): ?>
+                <p><?php echo $copyright; ?></p>
+            <?php endif; ?>
+	    </div>
 		<ul class="navigation">
 			<?php echo public_nav_main(array('Home' => uri(''), 'Browse Items' => uri('items'), 'Browse Collections'=>uri('collections')));
         	?>

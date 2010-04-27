@@ -208,14 +208,23 @@ ul.exhibit-page-nav {line-height:1em; padding:0.5em 0; }
 #collections.show .element-text {padding:0 10px;}
 
 /* == Footer == */
-#footer {clear:both; padding-top:12px; border-top: 6px solid #fff;background-color:#450007;height:100px;}
+#footer {clear:both; padding-top:12px; border-top: 6px solid #fff;background-color:#450007;padding-bottom:2em; overflow:hidden; zoom:1;}
 #footer-content ul {list-style:none; padding:0; margin:0; overflow:hidden;}
 #footer-content li {display:block;float:right;padding:0 5px 0 5px;font-size:1.1em;letter-spacing:.05em;line-height:1.5em;}
 #footer a {color:#C77E1F;}
 #footer a:hover {text-decoration:underline;}
 #footer p {float:right;margin-right:5px;color:#fff;}
 
+#footer #custom-footer-text {
+    float:left;
+    text-align:left;
+    width: 48%;
+}
 
+#footer #custom-footer-text p {
+    text-align:left;
+    float:none;
+}
 
 
 

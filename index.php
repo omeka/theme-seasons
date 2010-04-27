@@ -1,17 +1,11 @@
 <?php head(array('bodyid'=>'home')); ?>	
 
 <div id="primary">
+    <p><?php echo strip_formatting(get_theme_option('Homepage Text')); ?></p>
     
-	<!-- Featured Item -->
-	<div id="featured-item">
-	    <?php echo display_random_featured_item(); ?>
-	</div><!--end featured-item-->	
-	
-	<!-- Featured Collection -->
-	<div id="featured-collection">
-	    <?php echo display_random_featured_collection(); ?>
-	</div><!-- end featured collection -->
-		
+	<?php echo seasons_display_random_featured_item(); ?>
+	<?php echo seasons_display_random_featured_collection(); ?>	
+	<?php echo seasons_display_random_featured_exhibit(); ?>
 </div><!-- end primary -->
 	
 <div id="secondary">
@@ -19,7 +13,11 @@
 	<div id="recent-items">
 		<h2>Recently Added Items</h2>
 		
-		<?php set_items_for_loop(recent_items(3)); ?>
+		<?php
+		$homepageRecentItems = (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : '3';
+		set_items_for_loop(recent_items($homepageRecentItems));
+		
+		?>
 		<?php if (has_items_for_loop()): ?>
 		    
 		<div class="items-list">

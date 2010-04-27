@@ -56,3 +56,100 @@ function seasons_get_stylesheet($styleSheet = null)
     return $styleSheet; 
     
 }
+
+function seasons_show_item_metadata(array $options = array(), $item = null)
+{
+    if (!$item) {
+        $item = get_current_item();
+    }
+	if ($dcFieldsList = get_theme_option('display_dublin_core_fields')) {
+	    $html = '';
+	    $dcFields = explode(',', $dcFieldsList);
+	    foreach ($dcFields as $field) {
+	        $field = trim($field);
+	        if ($fieldValue = item('Dublin Core', $field)) {
+	            $html .= '<div class="element">';
+	            $html .= '<h3>'.$field.'</h3>';
+	            $html .= $fieldValue;
+	            $html .= '</div>';
+	        }
+	    }
+	    $html .= show_item_metadata(array('show_element_sets' => array('Item Type Metadata')));
+	    return $html;
+	} else {
+	    return show_item_metadata($options, $item); 
+    }
+}
+
+function seasons_public_nav_header()
+{
+    if ($customHeaderNavigation = get_theme_option('custom_header_navigation')) {
+        $navArray = array();
+        $customLinkPairs = explode("\n", $customHeaderNavigation);
+        foreach ($customLinkPairs as $pair) {
+            $pair = trim($pair);
+            if ($pair != '') {
+                $pairArray = explode('|', $pair, 2);
+                if (count($pairArray) == 2) {
+                    $link = trim($pairArray[0]);
+                    $url = trim($pairArray[1]); 
+                    if (!string_begins_with($url, 'http://') && !string_begins_with($url, 'https://')){
+                        $url = uri($url);
+                    }
+                }
+                $navArray[$link] = $url;
+            }
+        }
+    } else {
+        $filterName = 'public_navigation_main';
+        $navArray = array('Browse Items' => uri('items'), 'Browse Collections'=>uri('collections'));
+        $navArray = apply_filters($filterName, $navArray);
+    }
+    return nav($navArray);
+}
+
+function seasons_display_random_featured_item($withImage=false)
+{
+    $displayFeatured = get_theme_option('Display Featured Item');
+    $html = '';
+    
+    if ($displayFeatured == 1) {
+        $html .= '<div id="featured-item">'."\n";
+        $html .= display_random_featured_item($withImage)."\n";
+        $html .= '</div>'."\n";
+    }
+
+    return $html;
+}
+
+function seasons_display_random_featured_collection()
+{
+    $displayFeatured = get_theme_option('Display Featured Collection');
+    $html = '';
+    
+    if ($displayFeatured == 1) {
+        $html .= '<div id="featured-collection">'."\n";
+        $html .= display_random_featured_collection()."\n";
+        $html .= '</div>'."\n";
+    }
+
+    return $html;
+}
+
+function seasons_display_random_featured_exhibit()
+{
+    $displayFeatured = get_theme_option('Display Featured Exhibit');
+    $html = '';
+    
+    if ($displayFeatured == 1 && function_exists('exhibit_builder_display_random_featured_exhibit')) {
+        $html .= exhibit_builder_display_random_featured_exhibit()."\n";
+    }
+
+    return $html;
+}
+
+// General helpers
+function string_begins_with($string, $search)
+{
+    return (strncmp($string, $search, strlen($search)) == 0);
+}
