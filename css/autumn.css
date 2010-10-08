@@ -1,233 +1,52 @@
-/* == Reset == */
-@import url("reset.css");
-
-/* == Generic == */
-body {font:62.5% Verdana, Arial, sans-serif; background-color:#450007;border-top:3px solid #871000;}
-	
-	/* -- Headings -- */
-	h1 {color:#521500;font-size:2.5em;}
-	h2 {font-size:2em;}
-	    .element-set h2 {display:none;}
-	h3 {font-size:1.5em;}
-	
-	/* -- Misc. Block Elements -- */
-	p {font-size:1.1em;letter-spacing:.05em;line-height:1.5em;color:#1B0600;}
-	
-	#content ul, ol {font-size:1.1em;letter-spacing:.05em;line-height:1.5em;}
-	#content ol {list-style:decimal inside;}
-	
-	/* -- Misc Inline elements -- */
-	em {font-style:italic;}
-	strong {font-weight:bold;}
-	
-	/* -- Links -- */
-	a {text-decoration:none;color:#871000;}
-	
-	/* -- Misc Classes -- */
-	.item-description a.show {padding-left:5px;}
-	.item-img {margin-top:3px;float:left;margin-right:5px;}
-	.center-div {width:786px; margin:0 auto;}
-
-		/* Navigation Classes*/
-		.navigation {list-style:none;margin-top:1em;}
-		.navigation li {display:inline;}
-		
-		/* Pagination Classes */
-		.item-pagination {float:right;margin:10px 0 10px 0;}
-		.item-pagination li.next {margin-left:20px;}
-		
-		.pagination ul {text-align:right; line-height:1em; padding:0.5em; }
-		.pagination li {display:inline; margin-left:1em; margin-bottom:0;}
-		.pagination a {padding:0.5em 1em 0.5em;}
-		
-
-		.pagination .next {padding-left:1em;}
-		.pagination .previous {padding-right:1em;}
-		.pagination .current {color:#871000;background-color:#450007;padding:0.25em .75em 0.25em;}
-		
-		/* Item Classes */
-		
-		/* Tag Clouds */
-		.hTagcloud {margin-top:2em;clear:both;}
-		.hTagcloud ul {list-style:none; margin-left:0; padding-left:0; line-height:1.8em;}
-			.hTagcloud li {display:inline;margin-right:8px;}
-
-			.popular {font-size:100%;}
-			.v-popular {font-size:140%;}
-			.vv-popular {font-size:180%;}
-			.vvv-popular {font-size:220%;}
-			.vvvv-popular {font-size:260%;}
-			.vvvvv-popular {font-size:300%;}
-			.vvvvvv-popular {font-size:320%;}
-			.vvvvvvv-popular {font-size:340%;}
-			.vvvvvvvv-popular {font-size:360%;}
-
-			.popular a, .popular a:visited {color: #871000;}
-			.v-popular a, .v-popular a:visited {color: #871000;}
-			.vv-popular a, .vv-popular a:visited {color: #871000;}
-			.vvv-popular a, .vvv-popular a:visited {color: #871000;}
-			.vvvv-popular a, .vvvv-popular a:visited {color: #871000;}
-			.vvvvv-popular a, .vvvvv-popular a:visited {color: #871000;}
-			.vvvvvv-popular a, .vvvvvv-popular a:visited {color: #871000;}
-			.vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: #871000;}
-			.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #871000;}
-
-
-/* == Header == */
-#header {background-color:#fff;}
-
-#site-title {font-size:4em;line-height:2em;}
+body {background-color:#450007;border-top:3px solid #871000;}
+h1 {color:#521500;}
+p {color:#1B0600;}
+a {color:#871000;}
 #site-title a {color:#521500;}
+.pagination .current {color:#871000;background-color:#450007;}
+#content {background-color:#B34700;}
+#primary-nav { background:#C77E1F;border-bottom: 6px solid #fff}
+#primary-nav a {background:#C77E1F;}
 
-div#search-wrap, #search a{float:right;margin-top:5px;text-align:right;}
+/* Background-color: #fff */
+#header,
+#primary-nav ul,
+#content-container,
+.field .textinput, 
+.field select {background:#fff;}
 
-/* == Content == */
+/* Color: #fff */
+#primary-nav a,
+#footer p {color:#fff;}
 
-	/* -- Structure -- */
-	#content {clear:both; overflow:visible;background-color:#B34700;}
-	#content-container{width:762px;min-height:200px; background-color:#fff;overflow:hidden;padding:0 12px 10px 12px;}
-		#primary {}
-		#secondary {}
-	
-	/* -- General -- */
-	#home #primary h3 {margin:2px 0 2px 0;}
-	#featured-item {overflow:hidden;}
-	#featured-collection {margin-top:15px;clear:both;}
-	#featured-exhibit {margin-top:15px;}
+/* Background: #EAA300 */
+#primary-nav a:hover,
+#items #primary-nav .nav-items a,
+#exhibits #primary-nav .nav-exhibits a,
+#collections #primary-nav .nav-collections a,
+#about #primary-nav .nav-about a,
+#secondary-nav .current a,
+#secondary-nav a.current,
+.exhibit-section-nav .current a,
+.exhibit-page-nav .current {background:#EAA300;}
 
-	#recent-items .item {border-bottom:2px #871000 solid;margin-bottom:10px;padding-bottom:10px;overflow:hidden;}
-	
-	/* -- Navigation -- */
-	#primary-nav { background-color:#C77E1F;border-bottom: 6px solid #fff}
-	#primary-nav ul {list-style:none; padding:0; width: 786px; margin:0 auto; overflow:hidden;background-color:#fff;}
-	/* The widths of #primary-nav li's need to be adjusted if more nav items are added (e.g. via the ExhibitBuilder or StaticPage plugins).
-	The easiest method is to divide 756 by the number of nav items and set the li width at that. Then divide 30 by the number of nav items+1 and set that as the margin-left.
-	So the formula is (li width)=756/(# of nav items) and margin-left=30/(#nav items + 1)
-	For example, a 4 item nav would have the li width set at 189px with a 6px margin-left. */
-	#primary-nav li {display:block; float:left; width: 378px; margin-left:10px;}
-	#primary-nav a {display:block; float:left; text-decoration:none; width:100%; padding: 10px 0; text-align:center;color: #fff; background:#C77E1F;}
-	#primary-nav a:hover {background:#EAA300;}
-	
-	#items #primary-nav .nav-items a {background:#EAA300;}
-	#exhibits #primary-nav .nav-exhibits a {background:#EAA300;}
-	#collections #primary-nav .nav-collections a {background:#EAA300;}
-	#about #primary-nav .nav-about a {background:#EAA300;}
-	
-	#secondary-nav {margin-bottom:1em; font-size:1.5em;float:right;}
-	#secondary-nav li {padding:0.5em 0;}
-	#secondary-nav a {padding:0.5em 1em 0.5em;}
-	#secondary-nav a:hover {}
-	#secondary-nav .current a{background:#EAA300;font-weight:bold;}
-	#secondary-nav a.current {background:#EAA300;font-weight:bold;}
-	
-	/* -- Pagination -- */
-	#pagination-top {clear:both;}
-	#pagination-bottom {margin-top:10px;}
+/* Color: #1B0600 */
+.item-description,
+.element-text,
+.element-text-empty,
+.title-list li,
+#primary #search {color:#1B0600;}
 
-/* == Home Page == */
-#home #primary {width:294px;float:left;}
-#home #secondary {width:400px;float:right;padding:0 30px 10px 30px;}
+/* Border-bottom: 2px solid #871000 */
+#items.browse .item,
+#recent-items .item,
+#items.show .element,
+#exhibits .exhibit,
+.collection
+.title-list {border-bottom:2px solid #871000;}
 
-.item-description {font-size:1.1em;letter-spacing:.05em;line-height:1.5em;color:#1B0600;}
-.item-description p {font-size:1em;}
+/* Border-bottom: 1px solid #871000 */
+.field {border-bottom:1px solid #871000;}
 
-/* == Items Pages == */
-#primary #search {float:left;text-align:left;font-size:1.1em;letter-spacing:.05em;line-height:1.5em;color:#1B0600;;}
-#primary #search div, legend {padding-top:4px;}
-#primary #search input {margin-top:4px;}
-
-#items.browse .item {padding:10px 20px 10px 20px;overflow:hidden;border-bottom:2px #871000 solid;}
-#items.browse .item-description {margin-top:3px;}
-#items.browse .tags {margin-top:3px;}
-
-#items.show .element {padding:10px 0 10px 20px;overflow:hidden;border-bottom:2px #871000 solid;}
-#items.show h3 {font-size:1.5em;}
-
-.title-list {border-bottom:2px solid #871000;overflow:hidden;padding:10px 0 10px 20px;}
-.title-list li {font-size:1.1em;letter-spacing:.05em;line-height:1.5em;color:#1B0600;}
-
-.element-text {font-size:1.1em;letter-spacing:.05em;line-height:1.5em;color:#1B0600;}
-.element-text p {font-size:1em;}
-.element-text-empty {font-size:1.1em;letter-spacing:.05em;line-height:1.5em;color:#1B0600;}
-
-    /* Advanced Search */
-    textarea {width:378px; height:312px;float:right;}
-    legend {display:none;}
-    fieldset {display:block; clear:both;}
-    label {font-size:1.1em;}
-    .label {font-size:1.1em;}
-    .inputs {overflow:hidden;zoom:1;}
-    .field {border-bottom:1px solid #871000; padding:0.75em 0; overflow:hidden; width:512px;}
-    .field label {float:left; width: 114px;font-weight:normal;clear:left; }
-    .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
-    .field .textinput, .field select {float:right; width: 378px;background:#fff;}
-    .field select {width: 382px;}
-    .field input {margin:0;margin-left:16px;}
-    input.submitinput {margin-top:1em;}
-    .radioinputs {display:block; margin-bottom:0.5em; overflow:hidden;}
-    .radioinputs label {display:block; float:left; width: 48%; clear:none;}
-    input#description {width: 378px; height: 312px;}
-    .search-entry select {margin-bottom:.5em;}
-    #submit_search_advanced {margin:.5em 0 1em 455px;}
-	
-	.no-results {margin:10px;}
-	#advanced_search_header {font-size:1.4em;}
-	#primary #basic_search_header {font-size:1.4em;}
-
-/* == Exhibit Pages == */
-#exhibits p {padding:5px 20px 0}
-
-#exhibits .exhibit {clear:both;border-bottom:2px #871000 solid;padding:10px 20px 10px 20px;}
-
-#exhibit-summary {clear:both;padding:10px 20px}
-#exhibit-summary h3 {font-size:1.5em;padding:3px 0;}
-#exhibit-summary p {padding-bottom:5px;}
-
-#exhibit-show {clear:both;padding:10px 20px 10px 20px;}
-#exhibit-show p {padding-bottom:5px;}
-
-.exhibit-section-nav {list-style:none;margin-top:1em;}
-.exhibit-section-nav li {display:inline;}
-.exhibit-section-nav {margin-bottom:1em; font-size:1.5em;}
-.exhibit-section-nav li {padding:0.5em 0;}
-.exhibit-section-nav a {padding:0.5em 1em 0.5em;}
-.exhibit-section-nav a:hover {}
-.exhibit-section-nav .current a {background:#EAA300;font-weight:bold;}
-.exhibit-section-nav a.current {background:#EAA300;font-weight:bold;}
-
-.exhibit-page-nav {margin:10px 0 10px 0;clear:both;}
-ul.exhibit-page-nav {line-height:1em; padding:0.5em 0; }
-.exhibit-page-nav li {display:inline; margin-bottom:0;padding:0.5em 0;}
-.exhibit-page-nav a {padding:0.5em 1em 0.5em;}
-.exhibit-page-nav .current {background-color:#EAA300;}
-
-/* == Collections Pages == */
-.collection {padding:10px 20px;border-bottom:2px #871000 solid;overflow:hidden;}
-#collections.show h3 {font-size:1.5em;}
-#collections.show .element {padding-top:10px;}
-#collections.show .element-text {padding:0 10px;}
-
-/* == Footer == */
-#footer {clear:both; padding-top:12px; border-top: 6px solid #fff;background-color:#450007;padding-bottom:2em; overflow:hidden; zoom:1;}
-#footer-content ul {list-style:none; padding:0; margin:0; overflow:hidden;}
-#footer-content li {display:block;float:right;padding:0 5px 0 5px;font-size:1.1em;letter-spacing:.05em;line-height:1.5em;}
+#footer {border-top: 6px solid #fff;background-color:#450007;}
 #footer a {color:#C77E1F;}
-#footer a:hover {text-decoration:underline;}
-#footer p {float:right;margin-right:5px;color:#fff;}
-
-#footer #custom-footer-text {
-    float:left;
-    text-align:left;
-    width: 48%;
-}
-
-#footer #custom-footer-text p {
-    text-align:left;
-    float:none;
-}
-
-
-
-
-
-
