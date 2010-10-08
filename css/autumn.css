@@ -50,3 +50,19 @@ a {color:#871000;}
 
 #footer {border-top: 6px solid #fff;background-color:#450007;}
 #footer a {color:#C77E1F;}
+
+.simple-pages-navigation a:link,
+.simple-pages-navigation a:visited {
+    color: #871000;
+}
+
+.simple-pages-navigation a:hover,
+.simple-pages-navigation a:active {
+    background: rgba(0,0,0,0.025);
+    color: #521500;
+}
+
+.simple-pages-navigation li.current a {
+    background: rgba(0,0,0,0.05);
+    color: #521500; 
+}

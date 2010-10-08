@@ -39,3 +39,19 @@ a {color:#489C4A;}
 .collection {border-bottom:2px #8C5F4A solid;}
 #footer {color:#333;border-top: 6px solid #FFFEEA;}
 #footer a {color:#fff;}
+
+.simple-pages-navigation a:link,
+.simple-pages-navigation a:visited {
+    color: #489C4A;
+}
+
+.simple-pages-navigation a:hover,
+.simple-pages-navigation a:active {
+    background: rgba(0,0,0,0.05);
+    color: #8C5F4A;
+}
+
+.simple-pages-navigation li.current a {
+    background: rgba(0,0,0,0.1);
+    color: #8C5F4A; 
+}
