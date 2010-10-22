@@ -134,12 +134,8 @@ div#search-wrap, #search a{float:right;margin-top:5px;text-align:right;}
 	#recent-items .item {margin-bottom:10px;padding-bottom:10px;overflow:hidden;}
 	
 	/* -- Navigation -- */
-	#primary-nav ul {list-style:none; padding:0; width: 786px; margin:0 auto; overflow:hidden;}
-	/* The widths of #primary-nav li's need to be adjusted if more nav items are added (e.g. via the ExhibitBuilder or StaticPage plugins).
-	The easiest method is to divide 756 by the number of nav items and set the li width at that. Then divide 30 by the number of nav items+1 and set that as the margin-left.
-	So the formula is (li width)=756/(# of nav items) and margin-left=30/(#nav items + 1)
-	For example, a 4 item nav would have the li width set at 189px with a 6px margin-left. */
-	#primary-nav li {display:block; float:left; width: 378px; margin-left:10px;}
+	#primary-nav ul {list-style:none; padding:0; width: 774px; margin:0 auto; overflow:hidden;}
+	#primary-nav li {display:block; float:left; margin-left:10px;}
 	#primary-nav a {display:block; float:left; text-decoration:none; width:100%; padding: 10px 0; text-align:center;}
 	
 	#secondary-nav {margin-bottom:1em; font-size:1.5em;float:right;}
@@ -179,21 +175,19 @@ div#search-wrap, #search a{float:right;margin-top:5px;text-align:right;}
 .element-text-empty {font-size:1.1em;letter-spacing:.05em;line-height:1.5em;}
 
     /* Advanced Search */
-    textarea {width:378px; height:312px;float:right;}
-    legend {display:none;}
+    legend {font-size:2em;}
     fieldset {display:block; clear:both;}
     label {font-size:1.1em;}
     .label {font-size:1.1em;}
     .inputs {overflow:hidden;zoom:1;}
-    .field {padding:0.75em 0; overflow:hidden; width:512px;}
+    .field {padding:0.75em 0; overflow:hidden; width:532px;}
     .field label {float:left; width: 114px;font-weight:normal;clear:left; }
     .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
     .field .textinput, .field select {float:right; width: 378px;}
     .field select {width: 382px;}
-    .field input {margin:0;margin-left:16px;}
+	#advanced-search-page .field input {float:right;}
+	#advanced-search-page .field button {float:right;}
     input.submitinput {margin-top:1em;}
-    .radioinputs {display:block; margin-bottom:0.5em; overflow:hidden;}
-    .radioinputs label {display:block; float:left; width: 48%; clear:none;}
     input#description {width: 378px; height: 312px;}
     .search-entry select {margin-bottom:.5em;}
     #submit_search_advanced {margin:.5em 0 1em 455px;}

@@ -16,10 +16,11 @@ a {color:#489C4A;}
 #content {background-color:#91CF97;}
 #content-container{background-color:#FFFEEA;}
 #recent-items .item {border-bottom:2px #8C5F4A solid;}
-#primary-nav { background-color:#D48971;border-bottom: 6px solid #FFFEEA;}
-#primary-nav ul { background-color:#FFFEEA;}
-#primary-nav a {color: #000; background:#D48971;}
-#primary-nav a:hover {background:#489C4A;color:#fff;}
+#primary-nav {background-color:#D48971;border-bottom: 6px solid #FFFEEA;}
+#primary-nav ul {border-left:6px solid #FFFEEA;border-right:6px solid #FFFEEA;padding-top:6px;}
+#primary-nav a {color: #000; background:#D48971;border-bottom:6px solid #D48971;}
+#primary-nav li.current a {border-bottom:6px solid #FFFEEA;;color:#fff;}
+#primary-nav a:hover {border-bottom:6px solid #FFFEEA;;color:#fff;}
 #items #primary-nav .nav-items a {background:#489C4A;color:#fff;}
 #exhibits #primary-nav .nav-exhibits a {background:#489C4A;color:#fff;}
 #collections #primary-nav .nav-collections a {background:#489C4A;color:#fff;}
@@ -30,7 +31,6 @@ a {color:#489C4A;}
 #items.browse .item,
 #items.show .element,
 .title-list {border-bottom:2px #8C5F4A solid;}
-.field {border-bottom:1px solid #8C5F4A;}
 .field .textinput, .field select {background:#fff;}
 #exhibits .exhibit {border-bottom:2px #8C5F4A solid;}
 .exhibit-section-nav .current a{background:#308014;}
