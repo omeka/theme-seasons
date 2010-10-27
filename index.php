@@ -1,7 +1,7 @@
 <?php head(array('bodyid'=>'home')); ?>	
 
 <div id="primary">
-    <p><?php echo strip_formatting(get_theme_option('Homepage Text')); ?></p>
+    <p><?php echo get_theme_option('Homepage Text'); ?></p>
     
 	<?php echo seasons_display_random_featured_item(); ?>
 	<?php echo seasons_display_random_featured_collection(); ?>	
