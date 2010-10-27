@@ -87,7 +87,7 @@ body {font:62.5% Verdana, Arial, sans-serif;}
 		.navigation li {display:inline;}
 		
 		/* Pagination Classes */
-		.item-pagination {float:right;margin:10px 0 10px 0;}
+		.item-pagination {float:right;margin:10px 0 10px 0;clear:both;}
 		.item-pagination li.next {margin-left:20px;}
 		
 		.pagination ul {text-align:right; line-height:1em; padding:0.5em; }
@@ -223,6 +223,9 @@ div#search-wrap, #search a{float:right;margin-top:5px;text-align:right;}
 ul.exhibit-page-nav {line-height:1em; padding:0.5em 0; }
 .exhibit-page-nav li {display:inline; margin-bottom:0;padding:0.5em 0;}
 .exhibit-page-nav a {padding:0.5em 1em 0.5em;}
+
+#exhibit-page-navigation {clear:both;float:right;}
+#exhibit-page-navigation .next-page {margin-left:2em;}
 
 /* == Collections Pages == */
 .collection {padding:10px 20px;overflow:hidden;}
