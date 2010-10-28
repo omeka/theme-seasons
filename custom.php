@@ -67,12 +67,14 @@ function seasons_show_item_metadata(array $options = array(), $item = null)
 	    $dcFields = explode(',', $dcFieldsList);
 	    foreach ($dcFields as $field) {
 	        $field = trim($field);
-	        if ($fieldValue = item('Dublin Core', $field)) {
-	            $html .= '<div class="element">';
-	            $html .= '<h3>'.$field.'</h3>';
-	            $html .= $fieldValue;
-	            $html .= '</div>';
-	        }
+	        if (element_exists('Dublin Core', $field)) {
+    	        if ($fieldValue = item('Dublin Core', $field)) {
+    	            $html .= '<div class="element">';
+    	            $html .= '<h3>'.$field.'</h3>';
+    	            $html .= $fieldValue;
+    	            $html .= '</div>';
+    	        }
+    	    }
 	    }
 	    $html .= show_item_metadata(array('show_element_sets' => array('Item Type Metadata')));
 	    return $html;
