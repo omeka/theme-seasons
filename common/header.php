@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html class="<?php echo get_theme_option('Style Sheet'); ?>" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title><?php echo settings('site_title'); echo $title ? ' | ' . $title : ''; ?></title>
 
@@ -11,15 +11,7 @@
 <?php echo auto_discovery_link_tag(); ?>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" media="screen" href="<?php echo html_escape(css('screen')); ?>" />
-
-<link rel="stylesheet" media="screen" href="<?php echo html_escape(css(seasons_get_stylesheet())); ?>" />
-<link rel="stylesheet" media="print" href="<?php echo html_escape(css('print')); ?>" />
-
-<!-- Only IE6 and below see the following link -->
-<!--[if IE ]>
-    <link rel="stylesheet" media="screen" href="<?php echo html_escape(css('ie')); ?>" />
-<![endif]-->
+<link rel="stylesheet" media="all" href="<?php echo html_escape(css('style')); ?>" />
 
 <!-- JavaScripts -->
 <?php echo js('default'); ?>
@@ -32,19 +24,19 @@
 	<div id="wrap">
 		<div id="header">
 			<div class="center-div">
-    			<div id="search-wrap">
+    			<div id="search-container">
     				<?php echo simple_search(); ?>
     				<?php echo link_to_advanced_search(); ?>
     			</div>
     			<div id="site-title">
-    			    <?php echo link_to_home_page(seasons_display_logo()); ?>
+    			    <?php echo link_to_home_page(custom_display_logo()); ?>
     			</div>
 			</div><!--center-div-->
 		</div>
 
 		<div id="primary-nav">
 			<ul class="navigation">
-			<?php echo seasons_public_nav_header(); ?>
+			<?php echo custom_public_nav_header(); ?>
 			</ul>
 		</div>
 			
