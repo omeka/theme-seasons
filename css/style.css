@@ -83,6 +83,10 @@ body {
 		letter-spacing:.05em;
 		line-height:1.5em;
 	}
+    #content ul ul,
+    #content ol ol {
+        font-size:1em;
+    }
 	#content ol {
 		list-style:decimal inside;
 	}
@@ -561,6 +565,7 @@ ul.exhibit-page-nav {
 .simple-pages-navigation .current ul {
 	display:block;
 }
+
 .simple-pages-navigation a {
 	text-decoration:none;
 	border-bottom:1px solid #ddd;
