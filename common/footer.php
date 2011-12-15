@@ -12,11 +12,11 @@
             <?php endif; ?>
 	    </div>
 		<ul class="navigation">
-			<?php echo public_nav_main(array('Home' => uri(''), 'Browse Items' => uri('items'), 'Browse Collections'=>uri('collections')));
+			<?php echo public_nav_main(array(__('Home') => uri(''), __('Browse Items') => uri('items'), __('Browse Collections') => uri('collections')));
         	?>
 		</ul>
 
-		<p>Proudly powered by <a href="http://omeka.org">Omeka</a></p>
+        <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
 		
 	</div><!-- end footer-content -->
 	
