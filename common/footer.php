@@ -7,7 +7,7 @@
 	<div id="footer-content" class="center-div">
 	    <div id="custom-footer-text">
 	        <p><?php echo get_theme_option('Footer Text'); ?></p>
-            <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = settings('copyright')): ?>
+            <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>
                 <p><?php echo $copyright; ?></p>
             <?php endif; ?>
 	    </div>
