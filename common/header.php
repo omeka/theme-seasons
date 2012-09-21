@@ -29,7 +29,7 @@
             <div class="center-div">
                 <?php plugin_page_header(); ?>
                 <div id="search-container">
-                    <?php echo simple_search(); ?>
+                    <?php echo simple_search_form(); ?>
                     <?php echo link_to_advanced_search(); ?>
                 </div>
                 <div id="site-title">
