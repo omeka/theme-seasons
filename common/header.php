@@ -30,7 +30,7 @@
                 <?php plugin_page_header(); ?>
                 <div id="search-container">
                     <?php echo simple_search_form(); ?>
-                    <?php echo link_to_advanced_search(); ?>
+                    <?php echo link_to_item_search(); ?>
                 </div>
                 <div id="site-title">
                     <?php echo link_to_home_page(custom_display_logo()); ?>
