@@ -12,8 +12,13 @@
             <?php endif; ?>
 	    </div>
 		<ul class="navigation">
-			<?php echo public_nav_main(array(__('Home') => url(''), __('Browse Items') => url('items'), __('Browse Collections') => url('collections')));
-        	?>
+			<?php echo public_nav_main(array(
+                    array('label' => __('Home'), 
+                          'uri'=> url('')), 
+                    array('label' => __('Browse Items'), 
+                          'uri' => url('items')), 
+                    array('label' => __('Browse Collections'), 
+                          'uri' => url('collections')))); ?>
 		</ul>
 
         <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
