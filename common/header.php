@@ -11,39 +11,38 @@
     <?php echo auto_discovery_link_tags(); ?>
 
     <!-- Plugin Stuff -->
-    <?php plugin_header(); ?>
+    <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
 
     <!-- Stylesheets -->
-    <?php 
+    <?php
     queue_css_file('style');
-    echo head_css(); 
+    echo head_css();
     ?>
 
     <!-- JavaScripts -->
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
-    <?php plugin_body(); ?>
+    <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <div id="wrap">
         <div id="header">
             <div class="center-div">
-                <?php plugin_page_header(); ?>
+                <?php fire_plugin_hook('public_header'); ?>
                 <div id="search-container">
-                    <?php echo simple_search_form(); ?>
-                    <?php echo link_to_item_search(); ?>
+                    <?php echo search_form(array('show_advanced' => true)); ?>
                 </div>
                 <div id="site-title">
-                    <?php echo link_to_home_page(custom_display_logo()); ?>
+                    <?php echo link_to_home_page(theme_logo()); ?>
                 </div>
             </div><!--center-div-->
         </div>
 
         <div id="primary-nav">
             <ul class="navigation">
-            <?php echo custom_public_nav_header(); ?>
+            <?php echo public_nav_main(); ?>
             </ul>
         </div>
 
-		<div id="content">
+        <div id="content">
         <div id="content-container" class="center-div">
-            <?php plugin_page_content(); ?>
+            <?php fire_plugin_hook('public_content_top'); ?>
