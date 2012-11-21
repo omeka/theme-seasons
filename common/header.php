@@ -15,34 +15,31 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_file('style');
+    queue_css_file('screen');
+    queue_css_url('http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
     echo head_css();
     ?>
 
     <!-- JavaScripts -->
+    <?php queue_js_file('globals'); ?>
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <div id="wrap">
-        <div id="header">
-            <div class="center-div">
-                <?php fire_plugin_hook('public_header'); ?>
-                <div id="search-container">
-                    <?php echo search_form(array('show_advanced' => true)); ?>
-                </div>
-                <div id="site-title">
-                    <?php echo link_to_home_page(theme_logo()); ?>
-                </div>
-            </div><!--center-div-->
-        </div>
+        <header>
+            <?php fire_plugin_hook('public_header'); ?>
+            <div id="site-title">
+                <?php echo link_to_home_page(theme_logo()); ?>
+            </div>
+            <div id="search-container">
+                <?php echo search_form(array('show_advanced' => true)); ?>
+            </div>
+        </header>
 
-        <div id="primary-nav">
-            <ul class="navigation">
+        <nav class="top">
             <?php echo public_nav_main(); ?>
-            </ul>
-        </div>
+        </nav>
 
         <div id="content">
-        <div id="content-container" class="center-div">
             <?php fire_plugin_hook('public_content_top'); ?>
