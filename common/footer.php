@@ -25,7 +25,8 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function () {
-    Omeka.showAdvancedForm();
+    Seasons.showAdvancedForm();
+    Seasons.mobileSelectNav();
 });
 </script>
 
