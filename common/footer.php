@@ -10,10 +10,6 @@
                 <p><?php echo $copyright; ?></p>
             <?php endif; ?>
         </div>
-        <nav>
-            <?php echo public_nav_main(array(__('Home') => url(''), __('Browse Items') => url('items'), __('Browse Collections') => url('collections')));
-            ?>
-        </nav>
 
         <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
         
