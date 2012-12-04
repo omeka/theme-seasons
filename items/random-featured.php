@@ -1,5 +1,4 @@
 <?php if ($items): ?>
-    <h2><?php echo __('Featured Item'); ?></h2>
     <?php foreach ($items as $item): ?>
         <?php
         $title = metadata($item, array('Dublin Core', 'Title'));
