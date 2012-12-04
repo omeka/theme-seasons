@@ -15,12 +15,15 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_file('screen');
+    queue_css_file('style');
     queue_css_url('http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
     echo head_css();
     ?>
 
     <!-- JavaScripts -->
+    <?php queue_js_file('modernizr'); ?>
+    <?php queue_js_file('selectivizr-min'); ?>
+    <?php queue_js_file('respond.min'); ?>
     <?php queue_js_file('globals'); ?>
     <?php echo head_js(); ?>
 </head>
