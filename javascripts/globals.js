@@ -2,6 +2,11 @@ if (!Seasons) {
     var Seasons = {};
 }
 
+
+Modernizr.addTest("boxsizing", function() {
+    return Modernizr.testAllProps("boxSizing") && (document.documentMode === undefined || document.documentMode > 7);
+});
+
 (function ($) {
     Seasons.showAdvancedForm = function () {
         var advancedForm = $('#advanced-form');
@@ -59,10 +64,21 @@ if (!Seasons) {
                     "text": el.text()
                 }).appendTo("nav.top select");
             }
-        $("nav.top select").change(function() {
-          window.location = $(this).find("option:selected").val();
+            $("nav.top select").change(function() {
+              window.location = $(this).find("option:selected").val();
+            });
         });
-    });
     }
-    
+
+    if( !($('html').hasClass('boxsizing')) ){
+        $('.boxSized, .boxSized *').each(function(){
+            var fullW = $(this).outerWidth(),
+                actualW = $(this).width(),
+                wDiff = fullW - actualW,
+                newW = actualW - wDiff;
+ 
+            $(this).css('width',newW);
+        });
+    }
+
 })(jQuery);
