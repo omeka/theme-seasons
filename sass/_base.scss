@@ -2,13 +2,85 @@
 // Imports
 
 @import "susy";
+@import "compass/utilities/general/hacks";
+@import "mixins";
+@import "compass/reset";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
 
 // ---------------------------------------------------------------------------
 // Basic Grid
 
-$total-columns  : 12;
+$base-font-size: 16px;
+$base-line-height: 24px;
+$relative-font-sizing: false;
+
+$total-columns  : 7;
 $column-width   : 4em;
 $gutter-width   : 1em;
 $grid-padding   : $gutter-width;
+$break          : 50em 16;
 
-$show-grid-backgrounds  : true;
+    /* ---------------------------------------------------------------------*/
+    /* Winter colors */
+    
+    $winter-light-gray: #dfe2e2;
+    $winter-dark-gray: #5a5a5a;
+    $winter-title-blue: #859ca2;
+    $winter-slate: #4b6569;
+    $winter-blue-on-pale-blue: #def9ff;
+    $winter-bright-blue: #56ACBA;
+    $winter-hover-blue: #3acacc;
+    $winter-pale-blue: #98c4c9;
+    $winter-footer-blue: #2f3e4a;
+    $winter-off-white: #f8f8f8;
+
+    /* ---------------------------------------------------------------------*/
+    /* Spring colors */
+    
+    $spring-light-green: #F1FFBA;
+    $spring-hover-green: #ACBB00;
+    $spring-green: #92BA56;
+    $spring-dark-green: #4A6F14;
+    $spring-white: #F9FFEC;
+    $spring-yellow: #FFFFAD;
+    $spring-red: #BA5656;
+    $spring-link: #FF8F00;
+    $spring-visited: #D89966;
+    $spring-active: #FF5C00;
+    $spring-brown: #5A4E36;
+
+    /* ---------------------------------------------------------------------*/
+    /* Summer colors */
+    
+    $summer-gray: #6A7E88;
+    $summer-yellow: #FFED15;
+    $summer-light-yellow: #FDFFE2;
+    $summer-blue: #8ECAC8;
+    $summer-link-blue: #D3FFF6;
+    $summer-light-blue: #D0EEEE;
+    $summer-dark-blue: #3C8F8C;
+    $summer-title-blue: #13BBBB;
+    $summer-light-red: #ffe0e0;
+    $summer-link-red: #EB4C0F;
+    $summer-active-red: #FF0000;
+    $summer-visited-red: #F09999;
+    
+
+    /* ---------------------------------------------------------------------*/
+    /* Autumn colors */
+    
+    $autumn-gray: #ECEBE6;
+    $autumn-beige: #F8F1E5;
+    $autumn-dark-beige: #CABFA6;
+    $autumn-title-beige: #F7EEDE;
+    $autumn-red: #CE6C3E;
+    $autumn-dark-red: #86443C;
+    $autumn-nav-link: #BE5E5E;
+    $autumn-brown: #815442;
+    $autumn-light-brown: #966640;
+    $autumn-link: #FFA300;
+    $autumn-visited: #E2B76B;
+    $autumn-active: #F16100;
+
