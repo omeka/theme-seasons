@@ -1,4 +1,4 @@
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -74,7 +74,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 @media screen {
   /* -------------------------------------------------------------------------*/
   /* Layout */
-  /* line 4, ../sass/media/screen.scss */
+  /* line 4, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .container {
     *zoom: 1;
     max-width: 34em;
@@ -84,7 +84,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-left: 1em;
     padding-right: 1em;
   }
-  /* line 38, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .container:after {
     content: "";
     display: table;
@@ -93,66 +93,67 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* -------------------------------------------------------------------------*/
   /* == Generic == */
-  /* line 11, ../sass/media/screen.scss */
+  /* line 11, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
     word-wrap: break-word;
+    height: 100%;
   }
 
-  /* line 19, ../sass/media/screen.scss */
+  /* line 20, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   a {
     text-decoration: none;
   }
 
   /* -- Headings -- */
-  /* line 23, ../sass/media/screen.scss */
+  /* line 24, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5em;
   }
 
-  /* line 25, ../sass/media/screen.scss */
+  /* line 26, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   h1 {
     font-size: 32px;
     line-height: 48px;
   }
 
-  /* line 30, ../sass/media/screen.scss */
+  /* line 31, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   h2 {
     font-size: 24px;
     line-height: 36px;
   }
 
-  /* line 35, ../sass/media/screen.scss */
+  /* line 36, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   h3 {
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
   }
 
-  /* line 41, ../sass/media/screen.scss */
+  /* line 42, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   h4 {
     font-size: 18px;
     line-height: 27px;
   }
 
-  /* line 46, ../sass/media/screen.scss */
+  /* line 47, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   h5, h6 {
     font-size: 16px;
     line-height: 24px;
   }
 
   /* -- Form Elements -- */
-  /* line 53, ../sass/media/screen.scss */
+  /* line 54, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   label {
     padding-top: 0.75em;
     padding-bottom: 0.75em;
     display: inline-block;
   }
 
-  /* line 60, ../sass/media/screen.scss */
+  /* line 61, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   input[type=text], input[type=password], textarea,
   input[type=submit], button, .button {
     height: 35px;
@@ -170,12 +171,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     *behavior: url("../javascripts/boxsizing.htc");
   }
 
-  /* line 72, ../sass/media/screen.scss */
+  /* line 73, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   input[type=text], input[type=password], textarea {
     width: 100%;
   }
 
-  /* line 76, ../sass/media/screen.scss */
+  /* line 77, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   select {
     width: 100%;
     margin-top: 0;
@@ -184,27 +185,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 1.5em;
   }
 
-  /* line 84, ../sass/media/screen.scss */
+  /* line 85, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   input[type=submit], button, .button {
     color: #fff;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   /* -- Misc Classes -- */
-  /* line 91, ../sass/media/screen.scss */
+  /* line 93, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .center-div {
     margin: 0 auto;
     overflow: auto;
   }
 
   /* Pagination Classes */
-  /* line 98, ../sass/media/screen.scss */
+  /* line 100, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .item-pagination {
     overflow: auto;
     clear: both;
     padding-bottom: 0.75em;
   }
-  /* line 103, ../sass/media/screen.scss */
+  /* line 105, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .item-pagination li {
     display: inline-block;
     background-color: #fff;
@@ -214,27 +216,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-  /* line 110, ../sass/media/screen.scss */
+  /* line 112, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .item-pagination li:empty {
     display: none;
   }
-  /* line 113, ../sass/media/screen.scss */
+  /* line 115, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .item-pagination .next {
     float: right;
   }
-  /* line 114, ../sass/media/screen.scss */
+  /* line 116, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .item-pagination .previous {
     float: left;
   }
 
   /* Item Classes */
   /* == Header == */
-  /* line 122, ../sass/media/screen.scss */
+  /* line 124, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   header {
     padding: 0 16px;
   }
 
-  /* line 127, ../sass/media/screen.scss */
+  /* line 129, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #site-title {
     font-size: 32px;
     line-height: 48px;
@@ -245,11 +247,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-bottom: 0.75em;
   }
 
-  /* line 137, ../sass/media/screen.scss */
+  /* line 139, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search-container {
     padding-bottom: 1.5em;
   }
-  /* line 140, ../sass/media/screen.scss */
+  /* line 142, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search-container:after {
     content: "";
     display: block;
@@ -258,46 +260,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: both;
   }
 
-  /* line 149, ../sass/media/screen.scss */
+  /* line 151, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search-form {
     text-align: center;
     position: relative;
   }
-  /* line 153, ../sass/media/screen.scss */
+  /* line 155, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search-form input[type=text] {
     width: 60%;
     font-size: 0.875em;
     line-height: 1.5em;
     float: left;
   }
-  /* line 159, ../sass/media/screen.scss */
+  /* line 161, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search-form input[type=submit] {
     width: 30%;
-    float: left;
     padding: 0;
+    position: absolute;
+    top: 0;
+    left: 60%;
   }
 
-  /* line 166, ../sass/media/screen.scss */
+  /* line 170, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #advanced-search {
     width: 10%;
+    height: 35px;
     text-indent: -9999px;
-    display: inline-block;
-    float: left;
+    display: block;
     position: absolute;
-    padding: 0.75em 0;
+    padding: 0;
     top: 0;
     left: 90%;
     font-weight: bold;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    line-height: 27px;
+    *zoom: 1;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
     *behavior: url("../javascripts/boxsizing.htc");
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '+');
+    *text-indent: 0;
   }
-  /* line 179, ../sass/media/screen.scss */
+  /* line 187, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #advanced-search:link, #advanced-search:hover, #advanced-search:active, #advanced-search:visited {
     color: #fff;
   }
-  /* line 181, ../sass/media/screen.scss */
+  /* line 189, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #advanced-search:after {
     content: "+";
     display: block;
@@ -306,7 +314,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-top: -1.75em;
   }
 
-  /* line 190, ../sass/media/screen.scss */
+  /* line 198, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #advanced-form {
     display: none;
     background-color: #fff;
@@ -328,39 +336,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
   }
-  /* line 206, ../sass/media/screen.scss */
+  /* line 214, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #advanced-form #query-types *:first-child {
     margin-top: 0;
   }
-  /* line 210, ../sass/media/screen.scss */
+  /* line 218, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #advanced-form label {
     margin: 0;
     padding: 0;
   }
-  /* line 215, ../sass/media/screen.scss */
+  /* line 223, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #advanced-form p {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
   }
 
   /* == Footer == */
-  /* line 222, ../sass/media/screen.scss */
+  /* line 230, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   footer {
     margin-top: 1.5em;
     padding: 0 16px;
   }
-  /* line 227, ../sass/media/screen.scss */
+  /* line 235, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   footer p {
     padding-bottom: 1.5em;
   }
-  /* line 231, ../sass/media/screen.scss */
+  /* line 239, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   footer:empty {
     display: none;
   }
 
   /* == Content == */
   /* -- Structure -- */
-  /* line 237, ../sass/media/screen.scss */
+  /* line 245, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #content {
     clear: both;
     overflow: visible;
@@ -368,7 +376,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
   /* -- General -- */
-  /* line 246, ../sass/media/screen.scss */
+  /* line 254, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div {
     background-color: #fff;
     padding-bottom: 0.75em;
@@ -382,7 +390,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-  /* line 254, ../sass/media/screen.scss */
+  /* line 262, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div div {
     background: transparent;
     -webkit-box-shadow: transparent 0 0 0;
@@ -391,130 +399,130 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-bottom: 0;
     border: 0;
   }
-  /* line 261, ../sass/media/screen.scss */
+  /* line 269, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div .item {
     border-top: 1px solid #dfe2e2;
     overflow: auto;
   }
-  /* line 265, ../sass/media/screen.scss */
+  /* line 273, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div .item h3 {
     margin-top: 0.75em;
   }
-  /* line 268, ../sass/media/screen.scss */
+  /* line 276, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div .items-list {
     margin-bottom: 0;
   }
-  /* line 270, ../sass/media/screen.scss */
+  /* line 278, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div .items-list .item-description {
     margin: 0.75em 16px 0;
   }
-  /* line 276, ../sass/media/screen.scss */
+  /* line 284, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div h1, #home #content div h2, #home #content div h3, #home #content div h4, #home #content div h5, #home #content div h6,
   #home #content div p, #home #content div input, #home #content div textarea {
     margin: 0.75em 16px;
   }
-  /* line 280, ../sass/media/screen.scss */
+  /* line 288, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div h2 {
     margin-bottom: 0;
     font-weight: 700;
   }
-  /* line 285, ../sass/media/screen.scss */
+  /* line 293, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div h3 {
     margin-top: 0;
     font-weight: 300;
     text-transform: uppercase;
   }
-  /* line 291, ../sass/media/screen.scss */
+  /* line 299, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div img {
     margin: 0 16px 0.75em;
     border: 1px solid #dfe2e2;
     display: block;
   }
-  /* line 297, ../sass/media/screen.scss */
+  /* line 305, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div .show {
     display: block;
     text-transform: capitalize;
   }
-  /* line 300, ../sass/media/screen.scss */
+  /* line 308, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div .show:before {
     content: "(";
   }
-  /* line 301, ../sass/media/screen.scss */
+  /* line 309, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div .show:after {
     content: "...)";
   }
-  /* line 304, ../sass/media/screen.scss */
+  /* line 312, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #content div .view-items-link {
     margin: 0;
     padding: 0.75em 16px 0;
     border-top: 1px solid #dfe2e2;
   }
-  /* line 312, ../sass/media/screen.scss */
+  /* line 320, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #intro {
     margin-bottom: 1.5em;
   }
-  /* line 316, ../sass/media/screen.scss */
+  /* line 324, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #featured-item p {
     clear: both;
   }
-  /* line 318, ../sass/media/screen.scss */
+  /* line 326, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #home #recent-items h2 {
     padding-bottom: 0.75em;
   }
 
   /* -- Navigation -- */
-  /* line 324, ../sass/media/screen.scss */
+  /* line 332, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   nav ul {
     list-style: none;
     margin: 0 auto;
   }
-  /* line 329, ../sass/media/screen.scss */
+  /* line 337, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   nav li {
     display: block;
     width: 100%;
   }
-  /* line 333, ../sass/media/screen.scss */
+  /* line 341, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   nav li ul li {
     padding-left: 16px;
   }
-  /* line 338, ../sass/media/screen.scss */
+  /* line 346, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   nav a {
     display: inline-block;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
   }
 
-  /* line 345, ../sass/media/screen.scss */
+  /* line 353, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .top {
     padding: 0 16px;
   }
-  /* line 347, ../sass/media/screen.scss */
+  /* line 355, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .top ul {
     display: none;
     padding: 0;
   }
-  /* line 352, ../sass/media/screen.scss */
+  /* line 360, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .top .mobile {
     margin: 1.5em auto;
     width: 100%;
   }
 
   /* == Items Pages == */
-  /* line 360, ../sass/media/screen.scss */
+  /* line 368, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary {
     *zoom: 1;
   }
-  /* line 38, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   #primary:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 364, ../sass/media/screen.scss */
+  /* line 372, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary h1, #primary h2, #primary h3, #primary h4, #primary h5, #primary h6, #primary p, #primary label {
     padding: 0.75em 16px;
   }
-  /* line 368, ../sass/media/screen.scss */
+  /* line 376, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary h1 {
     font-size: 24px;
     line-height: 36px;
@@ -523,17 +531,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding: 0 0 0.75em 0;
     margin-bottom: 0.375em;
   }
-  /* line 377, ../sass/media/screen.scss */
+  /* line 385, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary h2 {
     margin-bottom: 0;
     font-weight: 500;
     border-bottom: 5px solid;
   }
-  /* line 383, ../sass/media/screen.scss */
+  /* line 391, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary h3 {
     margin-bottom: 0.75em;
   }
-  /* line 387, ../sass/media/screen.scss */
+  /* line 395, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #collection, #primary #item-tags, #primary #item-citation {
     background-color: #fff;
     border-top: 10px solid;
@@ -548,19 +556,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     margin-bottom: 1.125em;
   }
-  /* line 397, ../sass/media/screen.scss */
+  /* line 405, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #collection h3, #primary #item-tags h3, #primary #item-citation h3 {
     padding: 0 16px;
   }
-  /* line 399, ../sass/media/screen.scss */
+  /* line 407, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #collection div, #primary #item-tags div, #primary #item-citation div {
     padding: 0 16px 0.375em;
   }
-  /* line 401, ../sass/media/screen.scss */
+  /* line 409, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #collection div:first-of-type, #primary #item-tags div:first-of-type, #primary #item-citation div:first-of-type {
     border-top: 0;
   }
-  /* line 405, ../sass/media/screen.scss */
+  /* line 413, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary div, #primary section {
     background-color: #fff;
     border-top: 10px solid;
@@ -575,11 +583,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 1.125em;
     *zoom: 1;
   }
-  /* line 413, ../sass/media/screen.scss */
+  /* line 421, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary div .view-items-link, #primary section .view-items-link {
     padding: 0.375em 16px 1.125em;
   }
-  /* line 415, ../sass/media/screen.scss */
+  /* line 423, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary div div, #primary section div {
     padding: 0.75em 16px 0;
     -webkit-box-shadow: transparent 0 0 0;
@@ -587,62 +595,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     box-shadow: transparent 0 0 0;
     border-top: 0;
   }
-  /* line 420, ../sass/media/screen.scss */
+  /* line 428, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary div div div, #primary div div h1, #primary div div h2, #primary div div h3, #primary div div h4, #primary div div h5, #primary div div h6, #primary div div p, #primary section div div, #primary section div h1, #primary section div h2, #primary section div h3, #primary section div h4, #primary section div h5, #primary section div h6, #primary section div p {
     padding: 0;
   }
-  /* line 423, ../sass/media/screen.scss */
+  /* line 431, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary div div div:first-of-type, #primary div div h1:first-of-type, #primary div div h2:first-of-type, #primary div div h3:first-of-type, #primary div div h4:first-of-type, #primary div div h5:first-of-type, #primary div div h6:first-of-type, #primary div div p:first-of-type, #primary section div div:first-of-type, #primary section div h1:first-of-type, #primary section div h2:first-of-type, #primary section div h3:first-of-type, #primary section div h4:first-of-type, #primary section div h5:first-of-type, #primary section div h6:first-of-type, #primary section div p:first-of-type {
     border-top: 0;
   }
-  /* line 38, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   #primary div:after, #primary section:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 432, ../sass/media/screen.scss */
+  /* line 440, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .field div:only-of-type {
     margin-bottom: 0;
   }
-  /* line 435, ../sass/media/screen.scss */
+  /* line 443, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .inputs {
     padding: 0.75em 16px 1.5em;
     clear: both;
   }
-  /* line 439, ../sass/media/screen.scss */
+  /* line 447, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .inputs div:last-of-type, #primary .inputs div:only-of-type, #primary .inputs *:only-child, #primary .inputs *:last-child {
     margin-bottom: 0;
   }
-  /* line 444, ../sass/media/screen.scss */
+  /* line 452, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary > .element {
     border-bottom: 0;
   }
-  /* line 446, ../sass/media/screen.scss */
+  /* line 454, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary > * > .element {
     margin-bottom: 0.75em;
     border-bottom: 1px solid #dfe2e2;
   }
-  /* line 450, ../sass/media/screen.scss */
+  /* line 458, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary > * > .element div {
     padding-bottom: 0.75em;
   }
-  /* line 453, ../sass/media/screen.scss */
+  /* line 461, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary > * > .element div:only-of-type, #primary > * > .element div:last-of-type {
     border-bottom: 0;
     padding-bottom: 0;
   }
-  /* line 462, ../sass/media/screen.scss */
+  /* line 470, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .element-set div {
     padding-bottom: 0.75em;
     margin-bottom: 0;
   }
-  /* line 466, ../sass/media/screen.scss */
+  /* line 474, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .element-set div:only-of-type, #primary .element-set div:last-of-type {
     border-bottom: 0;
     padding-bottom: 0.375em;
   }
-  /* line 473, ../sass/media/screen.scss */
+  /* line 481, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .item-img {
     display: inline-block;
     border: 1px solid #dfe2e2;
@@ -655,14 +663,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: border-box;
     box-shadow: border-box;
   }
-  /* line 483, ../sass/media/screen.scss */
+  /* line 491, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .item-img img {
     width: 100%;
     height: auto;
     margin: 0;
     vertical-align: bottom;
   }
-  /* line 492, ../sass/media/screen.scss */
+  /* line 500, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list {
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
@@ -672,46 +680,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding: 0.375em 0;
     text-align: center;
   }
-  /* line 499, ../sass/media/screen.scss */
+  /* line 507, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list li {
     display: inline-block;
     color: #fff;
     margin: 0 4px;
   }
-  /* line 505, ../sass/media/screen.scss */
+  /* line 513, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list .pagination_current {
     font-weight: 500;
   }
-  /* line 509, ../sass/media/screen.scss */
+  /* line 517, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list .pagination_first a, #primary .pagination_list .pagination_last a,
   #primary .pagination_list .pagination_previous a, #primary .pagination_list .pagination_next a {
     display: inline-block;
     text-indent: -9999px;
   }
-  /* line 512, ../sass/media/screen.scss */
+  /* line 520, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list .pagination_first a:after, #primary .pagination_list .pagination_last a:after,
   #primary .pagination_list .pagination_previous a:after, #primary .pagination_list .pagination_next a:after {
     text-indent: 0;
     display: block;
     margin-top: -2em;
   }
-  /* line 520, ../sass/media/screen.scss */
+  /* line 528, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list .pagination_first a:after {
     content: "<<";
   }
-  /* line 521, ../sass/media/screen.scss */
+  /* line 529, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list .pagination_last a:after {
     content: ">>";
   }
-  /* line 522, ../sass/media/screen.scss */
+  /* line 530, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list .pagination_previous a:after {
     content: "<";
   }
-  /* line 523, ../sass/media/screen.scss */
+  /* line 531, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary .pagination_list .pagination_next a:after {
     content: ">";
   }
-  /* line 527, ../sass/media/screen.scss */
+  /* line 535, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #search-filters {
     border-top: 0;
     background-color: transparent;
@@ -720,7 +728,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     box-shadow: transparent 0 0 0;
     margin-bottom: 1.5em;
   }
-  /* line 533, ../sass/media/screen.scss */
+  /* line 541, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #search-filters li {
     overflow: auto;
     padding: 0.375em 8px;
@@ -728,7 +736,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-  /* line 538, ../sass/media/screen.scss */
+  /* line 546, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #search-filters li li {
     display: inline;
     padding: 0.375em 0;
@@ -737,15 +745,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-  /* line 543, ../sass/media/screen.scss */
+  /* line 551, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #search-filters li li:last-of-type:after {
     content: "";
   }
-  /* line 546, ../sass/media/screen.scss */
+  /* line 554, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary #search-filters li li:after {
     content: ", ";
   }
-  /* line 553, ../sass/media/screen.scss */
+  /* line 561, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary div.hTagcloud {
     border-top: 0;
     background-color: transparent;
@@ -753,13 +761,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-  /* line 557, ../sass/media/screen.scss */
+  /* line 565, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary div.hTagcloud ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 561, ../sass/media/screen.scss */
+  /* line 569, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #primary div.hTagcloud ul li {
     display: inline-block;
     background-color: #fff;
@@ -770,77 +778,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
 
-  /* line 574, ../sass/media/screen.scss */
+  /* line 582, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items h1 {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  /* line 579, ../sass/media/screen.scss */
+  /* line 587, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items .items-nav {
     margin-bottom: 0.375em;
     *zoom: 1;
   }
-  /* line 580, ../sass/media/screen.scss */
+  /* line 588, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items .items-nav .active {
     font-weight: 500;
   }
-  /* line 38, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   #items .items-nav:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 584, ../sass/media/screen.scss */
+  /* line 592, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items .items-nav li {
     display: inline-block;
     float: left;
     width: auto;
     margin-right: 16px;
   }
-  /* line 592, ../sass/media/screen.scss */
+  /* line 600, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items #sort-links {
     border-top: 0;
     padding: 0.375em 12px;
     margin-bottom: 1.5em;
   }
-  /* line 596, ../sass/media/screen.scss */
+  /* line 604, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items #sort-links span, #items #sort-links ul, #items #sort-links li {
     display: inline-block;
     margin: 0 4px;
   }
-  /* line 603, ../sass/media/screen.scss */
+  /* line 611, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items.advanced-search .remove_search {
     margin-top: 1.5em;
     margin-left: 0;
   }
-  /* line 608, ../sass/media/screen.scss */
+  /* line 616, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items.advanced-search select {
     float: left;
   }
-  /* line 610, ../sass/media/screen.scss */
+  /* line 618, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items.advanced-search button {
     display: inline-block;
     margin: 0 16px 1.5em;
   }
-  /* line 615, ../sass/media/screen.scss */
+  /* line 623, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #items.advanced-search #advanced-search-form > div:last-of-type {
     border-top: 0;
     background-color: transparent;
     float: left;
     *zoom: 1;
   }
-  /* line 38, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   #items.advanced-search #advanced-search-form > div:last-of-type:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  /* line 626, ../sass/media/screen.scss */
+  /* line 634, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #item #itemfiles h3 {
     margin-bottom: 0;
   }
-  /* line 629, ../sass/media/screen.scss */
+  /* line 637, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #item #itemfiles .item-file {
     border: 1px solid #dfe2e2;
     display: inline-block;
@@ -853,41 +861,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
   }
-  /* line 637, ../sass/media/screen.scss */
+  /* line 645, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #item #itemfiles .item-file img {
     width: 100%;
     height: auto;
     vertical-align: bottom;
   }
-  /* line 643, ../sass/media/screen.scss */
+  /* line 651, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #item #itemfiles .element-text {
     padding: 0 16px;
   }
-  /* line 644, ../sass/media/screen.scss */
+  /* line 652, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #item #itemfiles .element-text div:first-of-type {
     border-top: 1px solid #dfe2e2;
   }
 
-  /* line 653, ../sass/media/screen.scss */
+  /* line 661, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #collections:only-of-type, #collections:last-of-type {
     border-bottom: 0;
     margin-bottom: 0;
   }
 
-  /* line 662, ../sass/media/screen.scss */
+  /* line 670, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #collection #collection-items div {
     border-top: 1px solid #dfe2e2;
   }
-  /* line 665, ../sass/media/screen.scss */
+  /* line 673, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #collection #collection-items div:first-of-type {
     border-top: 0;
   }
-  /* line 669, ../sass/media/screen.scss */
+  /* line 677, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #collection #collection-items div div:only-of-type {
     margin-bottom: 0;
   }
 
-  /* line 677, ../sass/media/screen.scss */
+  /* line 685, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search #search-results {
     background-color: #fff;
     margin-bottom: 1.5em;
@@ -895,27 +903,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-  /* line 682, ../sass/media/screen.scss */
+  /* line 690, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search #search-results th {
     color: #fff;
   }
-  /* line 686, ../sass/media/screen.scss */
+  /* line 694, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search #search-results th, #search #search-results td {
     padding: 0.75em 8px;
   }
-  /* line 688, ../sass/media/screen.scss */
+  /* line 696, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #search #search-results th:last-of-type, #search #search-results td:last-of-type {
     border-right: 0;
   }
 
   /* Advanced Search */
   /* == Exhibit Pages == */
-  /* line 696, ../sass/media/screen.scss */
+  /* line 704, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #exhibits p {
     padding: 5px 20px 0;
   }
 
-  /* line 702, ../sass/media/screen.scss */
+  /* line 710, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #exhibits .exhibit,
   #exhibit-summary,
   #exhibit-show {
@@ -923,86 +931,86 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding: 10px 20px;
   }
 
-  /* line 707, ../sass/media/screen.scss */
+  /* line 715, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #exhibit-summary h3 {
     padding: 3px 0;
   }
 
-  /* line 711, ../sass/media/screen.scss */
+  /* line 719, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #exhibit-summary p,
   #exhibit-show p {
     padding-bottom: 5px;
   }
 
-  /* line 714, ../sass/media/screen.scss */
+  /* line 722, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-section-nav {
     list-style: none;
     margin-top: 1em;
   }
 
-  /* line 718, ../sass/media/screen.scss */
+  /* line 726, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-section-nav li {
     display: inline;
   }
 
-  /* line 721, ../sass/media/screen.scss */
+  /* line 729, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-section-nav {
     margin-bottom: 1em;
   }
 
-  /* line 724, ../sass/media/screen.scss */
+  /* line 732, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-section-nav li {
     padding: 0.5em 0;
   }
 
-  /* line 727, ../sass/media/screen.scss */
+  /* line 735, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-section-nav a {
     padding: 0.5em 1em 0.5em;
   }
 
-  /* line 731, ../sass/media/screen.scss */
+  /* line 739, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-section-nav .current a,
   .exhibit-page-nav .current a {
     font-weight: bold;
   }
 
-  /* line 734, ../sass/media/screen.scss */
+  /* line 742, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-page-nav {
     margin: 10px 0;
     clear: both;
   }
 
-  /* line 738, ../sass/media/screen.scss */
+  /* line 746, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   ul.exhibit-page-nav {
     line-height: 1em;
     padding: 0.5em 0;
   }
 
-  /* line 742, ../sass/media/screen.scss */
+  /* line 750, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-page-nav li {
     display: inline;
     margin-bottom: 0;
     padding: 0.5em 0;
   }
 
-  /* line 747, ../sass/media/screen.scss */
+  /* line 755, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .exhibit-page-nav a {
     padding: 0.5em 1em 0.5em;
   }
 
-  /* line 751, ../sass/media/screen.scss */
+  /* line 759, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #exhibit-page-navigation {
     clear: both;
     float: right;
   }
 
-  /* line 755, ../sass/media/screen.scss */
+  /* line 763, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #exhibit-page-navigation .next-page {
     margin-left: 2em;
   }
 
   /* == Simple Pages styles == */
-  /* line 761, ../sass/media/screen.scss */
+  /* line 769, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .page #primary {
     background-color: #fff;
     border-top: 10px solid;
@@ -1017,35 +1025,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     *behavior: url("../javascripts/boxsizing.htc");
     margin-bottom: 1.125em;
   }
-  /* line 770, ../sass/media/screen.scss */
+  /* line 778, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .page #primary div {
     border-top: 0;
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-  /* line 775, ../sass/media/screen.scss */
+  /* line 783, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .page #primary > * {
     padding: 0.75em 0;
     margin: 0;
   }
 
-  /* line 782, ../sass/media/screen.scss */
+  /* line 790, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .simple-pages-navigation {
     list-style: none;
   }
 
-  /* line 785, ../sass/media/screen.scss */
+  /* line 793, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .simple-pages-navigation ul {
     display: none;
   }
 
-  /* line 788, ../sass/media/screen.scss */
+  /* line 796, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .simple-pages-navigation .current ul {
     display: block;
   }
 
-  /* line 792, ../sass/media/screen.scss */
+  /* line 800, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .simple-pages-navigation a {
     text-decoration: none;
     border-bottom: 1px solid #ddd;
@@ -1054,75 +1062,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding: 4px;
   }
 
-  /* line 800, ../sass/media/screen.scss */
+  /* line 808, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   #simple-pages-breadcrumbs {
     margin-bottom: 0.5em;
     font-weight: bold;
   }
 
   /* Winter Styles */
-  /* line 808, ../sass/media/screen.scss */
+  /* line 816, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter body {
     background-color: #2f3e4a;
     color: #5a5a5a;
   }
-  /* line 813, ../sass/media/screen.scss */
+  /* line 821, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter h1, .winter #site-title a {
     color: #859ca2;
   }
-  /* line 815, ../sass/media/screen.scss */
-  .winter input[type=submit], .winter button, .winter .button {
+  /* line 823, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
+  .winter input[type=submit], .winter button {
     background-color: #4b6569;
   }
-  /* line 817, ../sass/media/screen.scss */
+  /* line 825, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter input[type=text], .winter input[type=password], .winter textarea {
     background-color: #dfe2e2;
   }
-  /* line 820, ../sass/media/screen.scss */
+  /* line 828, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter a:link {
     color: #56acba;
   }
-  /* line 821, ../sass/media/screen.scss */
+  /* line 829, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter a:visited {
     color: #98c4c9;
   }
-  /* line 822, ../sass/media/screen.scss */
+  /* line 830, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter a:hover, .winter a:active {
     color: #3acacc;
   }
-  /* line 825, ../sass/media/screen.scss */
+  /* line 833, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter header {
     background-color: #fff;
   }
-  /* line 827, ../sass/media/screen.scss */
+  /* line 835, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter nav.top {
     background-color: #56acba;
   }
-  /* line 830, ../sass/media/screen.scss */
+  /* line 838, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter nav.top li:hover a {
     color: #fff;
   }
-  /* line 832, ../sass/media/screen.scss */
+  /* line 840, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter nav.top a:link, .winter nav.top a:visited {
     color: #def9ff;
   }
-  /* line 833, ../sass/media/screen.scss */
+  /* line 841, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter nav.top a:active, .winter nav.top a:hover {
     color: #fff;
   }
-  /* line 835, ../sass/media/screen.scss */
+  /* line 843, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter nav.top ul li ul {
     background-color: #56acba;
   }
-  /* line 838, ../sass/media/screen.scss */
+  /* line 846, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter nav.top ul li ul li > a:link, .winter nav.top ul li ul li > a:visited, .winter nav.top ul li ul li > a:active, .winter nav.top ul li ul li > a:hover {
     color: #fff;
   }
-  /* line 843, ../sass/media/screen.scss */
+  /* line 851, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #intro {
     color: #fff;
   }
-  /* line 849, ../sass/media/screen.scss */
+  /* line 857, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #content,
   .winter #secondary-nav .current a,
   .winter #secondary-nav a.current,
@@ -1130,139 +1138,139 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .winter .exhibit-page-nav .current a {
     background-color: #98c4c9;
   }
-  /* line 853, ../sass/media/screen.scss */
+  /* line 861, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #home #content > div {
     border-color: #4b6569;
   }
-  /* line 856, ../sass/media/screen.scss */
+  /* line 864, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary h1 {
     color: #fff;
   }
-  /* line 858, ../sass/media/screen.scss */
+  /* line 866, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary h2 {
     border-color: #dfe2e2;
   }
-  /* line 860, ../sass/media/screen.scss */
+  /* line 868, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary div {
     border-color: #859ca2;
   }
-  /* line 862, ../sass/media/screen.scss */
+  /* line 870, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary > div, .winter #primary #collection, .winter #primary #item-tags, .winter #primary #item-citation, .winter #primary #advanced-search-form > div {
     border-color: #4b6569;
   }
-  /* line 866, ../sass/media/screen.scss */
+  /* line 874, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary .pagination_list {
     background-color: #56acba;
   }
-  /* line 869, ../sass/media/screen.scss */
+  /* line 877, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary .pagination_list a:link, .winter #primary .pagination_list a:visited {
     color: #def9ff;
   }
-  /* line 870, ../sass/media/screen.scss */
+  /* line 878, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary .pagination_list a:hover, .winter #primary .pagination_list a:active {
     color: #fff;
   }
-  /* line 874, ../sass/media/screen.scss */
+  /* line 882, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary .items-nav a:link, .winter #primary .items-nav a:visited {
     color: #def9ff;
   }
-  /* line 875, ../sass/media/screen.scss */
+  /* line 883, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary .items-nav a:hover, .winter #primary .items-nav a:active {
     color: #fff;
   }
-  /* line 878, ../sass/media/screen.scss */
+  /* line 886, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #primary .item-img {
     border-color: #dfe2e2;
   }
-  /* line 881, ../sass/media/screen.scss */
+  /* line 889, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #search-results th {
     background-color: #4b6569;
   }
-  /* line 884, ../sass/media/screen.scss */
+  /* line 892, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter #search-filters li {
     background-color: #def9ff;
   }
-  /* line 887, ../sass/media/screen.scss */
+  /* line 895, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter .page #primary {
     border-color: #4b6569;
   }
-  /* line 889, ../sass/media/screen.scss */
+  /* line 897, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter footer {
     background-color: #2f3e4a;
   }
-  /* line 893, ../sass/media/screen.scss */
+  /* line 901, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .winter footer p {
     color: #fff;
   }
 
   /*Summer Styles*/
-  /* line 902, ../sass/media/screen.scss */
+  /* line 910, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring body {
     background-color: #4a6f14;
     color: #5a4e36;
   }
-  /* line 907, ../sass/media/screen.scss */
+  /* line 915, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring h1, .spring #site-title a {
     color: #4a6f14;
   }
-  /* line 909, ../sass/media/screen.scss */
+  /* line 917, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring input[type=submit], .spring button, .spring .button {
     background-color: #ba5656;
   }
-  /* line 911, ../sass/media/screen.scss */
+  /* line 919, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring input[type=text], .spring input[type=password], .spring textarea {
     background-color: #fff;
     border: 1px solid #e8e8e8;
   }
-  /* line 917, ../sass/media/screen.scss */
+  /* line 925, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring a:link {
     color: #ff8f00;
   }
-  /* line 918, ../sass/media/screen.scss */
+  /* line 926, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring a:visited {
     color: #d89966;
   }
-  /* line 919, ../sass/media/screen.scss */
+  /* line 927, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring a:hover, .spring a:active {
     color: #ff5c00;
   }
-  /* line 922, ../sass/media/screen.scss */
+  /* line 930, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring header {
     background-color: #f1ffba;
   }
-  /* line 924, ../sass/media/screen.scss */
+  /* line 932, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring nav.top {
     background-color: #92ba56;
   }
-  /* line 927, ../sass/media/screen.scss */
+  /* line 935, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring nav.top li:hover a {
     color: #fff;
   }
-  /* line 929, ../sass/media/screen.scss */
+  /* line 937, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring nav.top a:link, .spring nav.top a:visited {
     color: #f1ffba;
   }
-  /* line 930, ../sass/media/screen.scss */
+  /* line 938, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring nav.top a:active, .spring nav.top a:hover {
     color: #f9ffec;
   }
-  /* line 932, ../sass/media/screen.scss */
+  /* line 940, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring nav.top ul li ul {
     background-color: #92ba56;
   }
-  /* line 935, ../sass/media/screen.scss */
+  /* line 943, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring nav.top ul li ul li > a:link, .spring nav.top ul li ul li > a:visited {
     color: #f1ffba;
   }
-  /* line 936, ../sass/media/screen.scss */
+  /* line 944, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring nav.top ul li ul li > a:active, .spring nav.top ul li ul li > a:hover, .spring nav.top ul li ul li:hover > a {
     color: #fff;
   }
-  /* line 941, ../sass/media/screen.scss */
+  /* line 949, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #intro {
     color: #ff8f00;
   }
-  /* line 947, ../sass/media/screen.scss */
+  /* line 955, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #content,
   .spring #secondary-nav .current a,
   .spring #secondary-nav a.current,
@@ -1270,134 +1278,134 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .spring .exhibit-page-nav .current a {
     background-color: #f9ffec;
   }
-  /* line 951, ../sass/media/screen.scss */
+  /* line 959, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #home #content > div {
     border-color: #ba5656;
   }
-  /* line 954, ../sass/media/screen.scss */
+  /* line 962, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary h1 {
     color: #ff8f00;
   }
-  /* line 956, ../sass/media/screen.scss */
+  /* line 964, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary h2 {
     border-color: #e8e8e8;
   }
-  /* line 958, ../sass/media/screen.scss */
+  /* line 966, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary > div, .spring #primary #collection, .spring #primary #item-tags, .spring #primary #item-citation, .spring #primary #advanced-search-form > div {
     border-color: #ba5656;
   }
-  /* line 962, ../sass/media/screen.scss */
+  /* line 970, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary .pagination_list {
     background-color: #ba5656;
   }
-  /* line 965, ../sass/media/screen.scss */
+  /* line 973, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary .pagination_list a:link, .spring #primary .pagination_list a:visited {
     color: #ffffad;
   }
-  /* line 966, ../sass/media/screen.scss */
+  /* line 974, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary .pagination_list a:hover, .spring #primary .pagination_list a:active {
     color: #fff;
   }
-  /* line 970, ../sass/media/screen.scss */
+  /* line 978, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary .items-nav a:link, .spring #primary .items-nav a:visited {
     color: #92ba56;
   }
-  /* line 971, ../sass/media/screen.scss */
+  /* line 979, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary .items-nav a:active, .spring #primary .items-nav a:hover {
     color: #acbb00;
   }
-  /* line 974, ../sass/media/screen.scss */
+  /* line 982, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #primary .item-img {
     border-color: #e8e8e8;
   }
-  /* line 977, ../sass/media/screen.scss */
+  /* line 985, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #search-results th {
     background-color: #ba5656;
   }
-  /* line 980, ../sass/media/screen.scss */
+  /* line 988, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring #search-filters li {
     background-color: #ffffad;
   }
-  /* line 983, ../sass/media/screen.scss */
+  /* line 991, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring .page #primary {
     border-color: #ba5656;
   }
-  /* line 985, ../sass/media/screen.scss */
+  /* line 993, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring footer {
     background-color: #4a6f14;
   }
-  /* line 989, ../sass/media/screen.scss */
+  /* line 997, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .spring footer p {
-    color: #fff;
+    color: #000;
   }
 
   /*Summer Styles*/
-  /* line 998, ../sass/media/screen.scss */
+  /* line 1006, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer body {
     background-color: #3c8f8c;
     color: #6a7e88;
   }
-  /* line 1003, ../sass/media/screen.scss */
+  /* line 1011, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer h1, .summer #site-title a {
     color: #13bbbb;
   }
-  /* line 1005, ../sass/media/screen.scss */
+  /* line 1013, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer input[type=submit], .summer button, .summer .button {
     background-color: #8ecac8;
   }
-  /* line 1007, ../sass/media/screen.scss */
+  /* line 1015, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer input[type=text], .summer input[type=password], .summer textarea {
     background-color: #d0eeee;
   }
-  /* line 1010, ../sass/media/screen.scss */
+  /* line 1018, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer a:link {
     color: #eb4c0f;
   }
-  /* line 1011, ../sass/media/screen.scss */
+  /* line 1019, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer a:visited {
     color: #f09999;
   }
-  /* line 1012, ../sass/media/screen.scss */
+  /* line 1020, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer a:hover, .summer a:active {
     color: red;
   }
-  /* line 1015, ../sass/media/screen.scss */
+  /* line 1023, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer header {
     background-color: #fff;
   }
-  /* line 1017, ../sass/media/screen.scss */
+  /* line 1025, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer nav.top {
     background-color: #ffed15;
   }
-  /* line 1020, ../sass/media/screen.scss */
+  /* line 1028, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer nav.top li:hover a {
-    color: #fff;
+    color: #3c8f8c;
   }
-  /* line 1022, ../sass/media/screen.scss */
+  /* line 1030, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer nav.top a:link, .summer nav.top a:visited {
     color: #13bbbb;
   }
-  /* line 1023, ../sass/media/screen.scss */
+  /* line 1031, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer nav.top a:active, .summer nav.top a:hover {
-    color: #fff;
+    color: #3c8f8c;
   }
-  /* line 1025, ../sass/media/screen.scss */
+  /* line 1033, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer nav.top ul li ul {
     background-color: #ffed15;
   }
-  /* line 1028, ../sass/media/screen.scss */
+  /* line 1036, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer nav.top ul li ul li > a:link, .summer nav.top ul li ul li > a:visited {
     color: #13bbbb;
   }
-  /* line 1029, ../sass/media/screen.scss */
+  /* line 1037, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer nav.top ul li ul li > a:active, .summer nav.top ul li ul li > a:hover, .summer nav.top ul li ul li:hover > a {
-    color: #fff;
+    color: #3c8f8c;
   }
-  /* line 1034, ../sass/media/screen.scss */
+  /* line 1042, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #intro {
     color: #eb4c0f;
   }
-  /* line 1040, ../sass/media/screen.scss */
+  /* line 1048, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #content,
   .summer #secondary-nav .current a,
   .summer #secondary-nav a.current,
@@ -1405,134 +1413,134 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .summer .exhibit-page-nav .current a {
     background-color: #fdffe2;
   }
-  /* line 1044, ../sass/media/screen.scss */
+  /* line 1052, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #home #content > div {
     border-color: #8ecac8;
   }
-  /* line 1047, ../sass/media/screen.scss */
+  /* line 1055, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary h1 {
     color: #eb4c0f;
   }
-  /* line 1049, ../sass/media/screen.scss */
+  /* line 1057, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary h2 {
     border-color: #ffe0e0;
   }
-  /* line 1051, ../sass/media/screen.scss */
+  /* line 1059, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary > div, .summer #primary #collection, .summer #primary #item-tags, .summer #primary #item-citation, .summer #primary #advanced-search-form > div {
     border-color: #8ecac8;
   }
-  /* line 1055, ../sass/media/screen.scss */
+  /* line 1063, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary .pagination_list {
     background-color: #8ecac8;
   }
-  /* line 1058, ../sass/media/screen.scss */
+  /* line 1066, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary .pagination_list a:link, .summer #primary .pagination_list a:visited {
     color: #d0eeee;
   }
-  /* line 1059, ../sass/media/screen.scss */
+  /* line 1067, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary .pagination_list a:hover, .summer #primary .pagination_list a:active {
     color: #fff;
   }
-  /* line 1063, ../sass/media/screen.scss */
+  /* line 1071, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary .items-nav a:link, .summer #primary .items-nav a:visited {
     color: #eb4c0f;
   }
-  /* line 1064, ../sass/media/screen.scss */
+  /* line 1072, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary .items-nav a:active, .summer #primary .items-nav a:hover {
     color: red;
   }
-  /* line 1067, ../sass/media/screen.scss */
+  /* line 1075, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #primary .item-img {
     border-color: #d0eeee;
   }
-  /* line 1070, ../sass/media/screen.scss */
+  /* line 1078, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #search-results th {
     background-color: #8ecac8;
   }
-  /* line 1073, ../sass/media/screen.scss */
+  /* line 1081, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer #search-filters li {
     background-color: #fff;
   }
-  /* line 1076, ../sass/media/screen.scss */
+  /* line 1084, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer .page #primary {
     border-color: #8ecac8;
   }
-  /* line 1078, ../sass/media/screen.scss */
+  /* line 1086, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer footer {
     background-color: #3c8f8c;
   }
-  /* line 1082, ../sass/media/screen.scss */
+  /* line 1090, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .summer footer p {
     color: #fff;
   }
 
   /*Autumn Styles*/
-  /* line 1091, ../sass/media/screen.scss */
+  /* line 1099, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn body {
     background-color: #86443c;
     color: #86443c;
   }
-  /* line 1096, ../sass/media/screen.scss */
+  /* line 1104, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn h1, .autumn #site-title a {
     color: #f8f1e5;
   }
-  /* line 1098, ../sass/media/screen.scss */
+  /* line 1106, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn input[type=submit], .autumn button, .autumn .button {
     background-color: #86443c;
   }
-  /* line 1100, ../sass/media/screen.scss */
+  /* line 1108, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn input[type=text], .autumn input[type=password], .autumn textarea {
     background-color: #f8f1e5;
   }
-  /* line 1103, ../sass/media/screen.scss */
+  /* line 1111, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn a:link {
     color: #ffa300;
   }
-  /* line 1104, ../sass/media/screen.scss */
+  /* line 1112, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn a:visited {
     color: #e2b76b;
   }
-  /* line 1105, ../sass/media/screen.scss */
+  /* line 1113, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn a:hover, .autumn a:active {
     color: #f16100;
   }
-  /* line 1108, ../sass/media/screen.scss */
+  /* line 1116, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn header {
     background-color: #ce6c3e;
   }
-  /* line 1110, ../sass/media/screen.scss */
+  /* line 1118, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn nav.top {
     background-color: #cabfa6;
   }
-  /* line 1113, ../sass/media/screen.scss */
+  /* line 1121, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn nav.top li:hover a {
     color: #fff;
   }
-  /* line 1115, ../sass/media/screen.scss */
+  /* line 1123, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn nav.top a:link, .autumn nav.top a:visited {
     color: #be5e5e;
   }
-  /* line 1116, ../sass/media/screen.scss */
+  /* line 1124, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn nav.top a:active, .autumn nav.top a:hover {
     color: #fff;
   }
-  /* line 1118, ../sass/media/screen.scss */
+  /* line 1126, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn nav.top ul li ul {
     background-color: #cabfa6;
   }
-  /* line 1121, ../sass/media/screen.scss */
+  /* line 1129, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn nav.top ul li ul li > a:link, .autumn nav.top ul li ul li > a:visited {
     color: #be5e5e;
   }
-  /* line 1122, ../sass/media/screen.scss */
+  /* line 1130, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn nav.top ul li ul li > a:active, .autumn nav.top ul li ul li > a:hover, .autumn nav.top ul li ul li:hover > a {
     color: #fff;
   }
-  /* line 1127, ../sass/media/screen.scss */
+  /* line 1135, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #intro {
     color: #815442;
   }
-  /* line 1133, ../sass/media/screen.scss */
+  /* line 1141, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #content,
   .autumn #secondary-nav .current a,
   .autumn #secondary-nav a.current,
@@ -1540,75 +1548,72 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .autumn .exhibit-page-nav .current a {
     background-color: #f8f1e5;
   }
-  /* line 1137, ../sass/media/screen.scss */
+  /* line 1145, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #home #content > div {
     border-color: #cabfa6;
   }
-  /* line 1140, ../sass/media/screen.scss */
+  /* line 1148, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #primary h1 {
     color: #815442;
   }
-  /* line 1142, ../sass/media/screen.scss */
+  /* line 1150, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #primary h2 {
     border-color: #ecebe6;
   }
-  /* line 1144, ../sass/media/screen.scss */
+  /* line 1152, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #primary > div, .autumn #primary #collection, .autumn #primary #item-tags, .autumn #primary #item-citation, .autumn #primary #advanced-search-form > div {
     border-color: #cabfa6;
   }
-  /* line 1148, ../sass/media/screen.scss */
+  /* line 1156, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #primary .pagination_list {
     background-color: #86443c;
   }
-  /* line 1151, ../sass/media/screen.scss */
+  /* line 1159, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #primary .pagination_list a:link, .autumn #primary .pagination_list a:visited {
     color: #cabfa6;
   }
-  /* line 1152, ../sass/media/screen.scss */
+  /* line 1160, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #primary .pagination_list a:hover, .autumn #primary .pagination_list a:active {
     color: #fff;
   }
-  /* line 1155, ../sass/media/screen.scss */
+  /* line 1163, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #primary .item-img {
     border-color: #ecebe6;
   }
-  /* line 1158, ../sass/media/screen.scss */
+  /* line 1166, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #search-results th {
     background-color: #cabfa6;
   }
-  /* line 1161, ../sass/media/screen.scss */
+  /* line 1169, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn #search-filters li {
     background-color: #fff;
   }
-  /* line 1164, ../sass/media/screen.scss */
+  /* line 1172, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn .page #primary {
     border-color: #cabfa6;
   }
-  /* line 1166, ../sass/media/screen.scss */
+  /* line 1174, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn footer {
     background-color: #86443c;
   }
-  /* line 1170, ../sass/media/screen.scss */
+  /* line 1178, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen.scss */
   .autumn footer p {
     color: #fff;
   }
 }
-/* @media screen and (min-width: 480px) {
-  @import "media/screen_480";
-} */
 @media screen and (min-width: 768px) {
-  /* line 1, ../sass/media/screen_768.scss */
+  /* line 1, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   header {
     *zoom: 1;
   }
-  /* line 38, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   header:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  /* line 5, ../sass/media/screen_768.scss */
+  /* line 5, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #site-title {
     width: 66.10169%;
     float: left;
@@ -1617,7 +1622,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: left;
     float: left;
   }
-  /* line 10, ../sass/media/screen_768.scss */
+  /* line 10, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #site-title:after {
     content: "";
     display: block;
@@ -1625,7 +1630,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: both;
   }
 
-  /* line 18, ../sass/media/screen_768.scss */
+  /* line 18, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #search-container {
     width: 32.20339%;
     float: right;
@@ -1634,36 +1639,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
     margin-top: 1.875em;
   }
-  /* line 21, ../sass/media/screen_768.scss */
+  /* line 21, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #search-container input {
     padding: 0.46875em 8px;
   }
 
-  /* line 25, ../sass/media/screen_768.scss */
+  /* line 25, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top ul {
     display: block;
     position: relative;
     z-index: 1000;
   }
-  /* line 29, ../sass/media/screen_768.scss */
+  /* line 29, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top ul li {
     float: left;
     width: auto;
     position: relative;
   }
-  /* line 34, ../sass/media/screen_768.scss */
+  /* line 34, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top ul li a {
     padding: 0.75em 16px;
   }
-  /* line 36, ../sass/media/screen_768.scss */
+  /* line 36, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top ul li:hover {
     background-color: rgba(0, 0, 0, 0.05);
   }
-  /* line 38, ../sass/media/screen_768.scss */
+  /* line 38, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top ul li:hover > ul {
     display: block;
   }
-  /* line 41, ../sass/media/screen_768.scss */
+  /* line 41, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top ul li ul {
     min-width: 200px;
     display: none;
@@ -1672,7 +1677,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     top: 3em;
     left: 0px;
   }
-  /* line 49, ../sass/media/screen_768.scss */
+  /* line 49, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top ul li ul li {
     width: 100%;
     clear: both;
@@ -1681,43 +1686,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 55, ../sass/media/screen_768.scss */
+  /* line 55, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top ul li ul li ul {
     position: absolute;
     left: 100%;
     top: 0;
   }
-  /* line 64, ../sass/media/screen_768.scss */
+  /* line 64, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   nav.top .mobile {
     display: none;
   }
 
-  /* line 67, ../sass/media/screen_768.scss */
+  /* line 67, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   header, nav.top, #content, footer {
     *zoom: 1;
     padding-left: 14.70588%;
     padding-right: 14.70588%;
   }
-  /* line 38, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, /Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   header:after, nav.top:after, #content:after, footer:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  /* line 74, ../sass/media/screen_768.scss */
+  /* line 74, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   .page #primary > * {
     padding-left: 5.88235%;
     padding-right: 5.88235%;
   }
 
-  /* line 80, ../sass/media/screen_768.scss */
+  /* line 80, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #primary .pagination_list {
     float: left;
     padding: 0.375em 16px;
   }
 
-  /* line 87, ../sass/media/screen_768.scss */
+  /* line 87, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #home #content #intro {
     border-top: 0;
     background-color: transparent;
@@ -1730,11 +1735,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     box-shadow: transparent 0 0 0;
     margin-bottom: 1.125em;
   }
-  /* line 97, ../sass/media/screen_768.scss */
+  /* line 97, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #home #content #intro p {
     margin: 0;
   }
-  /* line 100, ../sass/media/screen_768.scss */
+  /* line 100, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #home #content #featured-item {
     float: left;
     clear: left;
@@ -1743,12 +1748,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     float: left;
     margin-right: 1.69492%;
     display: inline;
+    *margin-left: 0;
   }
-  /* line 106, ../sass/media/screen_768.scss */
+  /* line 107, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #home #content #featured-item img {
     width: auto;
   }
-  /* line 111, ../sass/media/screen_768.scss */
+  /* line 112, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #home #content > div {
     width: 66.10169%;
     float: right;
@@ -1756,31 +1762,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     #margin-left: -1em;
     display: inline;
   }
-  /* line 114, ../sass/media/screen_768.scss */
+  /* line 115, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #home #content > div img {
     width: 20%;
     float: left;
   }
 
-  /* line 125, ../sass/media/screen_768.scss */
+  /* line 126, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #items #primary div#sort-links {
     float: right;
     text-align: center;
   }
-  /* line 130, ../sass/media/screen_768.scss */
+  /* line 131, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #items .item {
     clear: both;
   }
-  /* line 133, ../sass/media/screen_768.scss */
+  /* line 134, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #items .item div {
     display: inline-block;
   }
-  /* line 138, ../sass/media/screen_768.scss */
+  /* line 139, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #items .item-img {
     width: 10%;
     float: left;
   }
-  /* line 145, ../sass/media/screen_768.scss */
+  /* line 146, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #items #advanced-search-form > div {
     width: 61.53846%;
     float: left;
@@ -1788,19 +1794,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
     clear: both;
   }
-  /* line 150, ../sass/media/screen_768.scss */
+  /* line 151, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #items #advanced-search-form > div:last-of-type {
     width: auto;
   }
 
-  /* line 157, ../sass/media/screen_768.scss */
+  /* line 158, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #item #primary .element-set {
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
   }
-  /* line 161, ../sass/media/screen_768.scss */
+  /* line 162, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #item #primary > div {
     width: 35.89744%;
     float: right;
@@ -1810,14 +1816,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: right;
   }
 
-  /* line 168, ../sass/media/screen_768.scss */
+  /* line 169, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #collections.show #primary .element-set {
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
   }
-  /* line 172, ../sass/media/screen_768.scss */
+  /* line 173, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #collections.show #primary > div {
     width: 35.89744%;
     float: right;
@@ -1827,87 +1833,83 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: right;
   }
 
-  /* line 180, ../sass/media/screen_768.scss */
+  /* line 181, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #search #search-filters li {
     float: left;
     vertical-align: top;
   }
-  /* line 183, ../sass/media/screen_768.scss */
+  /* line 184, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #search #search-filters li ul {
     display: inline;
     margin: 0;
     padding: 0;
   }
-  /* line 187, ../sass/media/screen_768.scss */
+  /* line 188, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #search #search-filters li ul li {
     display: inline;
     padding: 0;
     margin: 0;
     float: none;
   }
-  /* line 197, ../sass/media/screen_768.scss */
+  /* line 198, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss */
   #search #search-results {
     width: 100%;
   }
 }
-/* // 992px ---------------------------------------------------------------------
-@media screen and (min-width: 992px) {
-  @import "media/screen_992";
-} */
 @media print {
   /* Print Styles */
   /*end @media print*/
 }
 @media print {
-  /* line 3, ../sass/media/print.scss */
+  /* line 3, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   body {
     font: 12px Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif;
   }
 
-  /* line 6, ../sass/media/print.scss */
+  /* line 6, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   #content {
     width: 100%;
     margin: 0;
     float: none;
   }
 
-  /* line 12, ../sass/media/print.scss */
+  /* line 12, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   h1,
   #site-title {
     font-size: 16pt;
     font-weight: bold;
   }
 
-  /* line 16, ../sass/media/print.scss */
+  /* line 16, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   h2 {
     font-size: 14pt;
     font-style: italic;
   }
 
-  /* line 20, ../sass/media/print.scss */
+  /* line 20, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   h3 {
     font-size: 14pt;
   }
 
-  /* line 23, ../sass/media/print.scss */
+  /* line 23, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   h4 {
     font-weight: bold;
   }
 
-  /* line 26, ../sass/media/print.scss */
+  /* line 26, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   h5 {
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
   }
 
-  /* line 31, ../sass/media/print.scss */
+  /* line 31, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   a:link:after {
     content: " (" attr(href) ") ";
     font-size: 80%;
   }
 
-  /* line 42, ../sass/media/print.scss */
+  /* line 42, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   #search-container,
   #primary-nav,
   #header-image,
@@ -1919,7 +1921,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: none;
   }
 
-  /* line 45, ../sass/media/print.scss */
+  /* line 45, /Users/knguyen/Sites/omeka/themes/seasons/sass/media/print.scss */
   blockquote {
     margin: 10pt 0 0 0;
     font-style: italic;

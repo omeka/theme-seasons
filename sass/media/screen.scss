@@ -14,6 +14,7 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     word-wrap: break-word;
+    height: 100%;
 }
 
 a { text-decoration: none; }
@@ -84,6 +85,7 @@ select {
 input[type=submit], button, .button {
     color: #fff;
     text-transform: uppercase;
+    cursor: pointer;
 }
     
     
@@ -158,22 +160,28 @@ header {
     
     input[type=submit] {
       width: 30%;
-      float: left;
       padding: 0;
+      position: absolute;
+      top: 0;
+      left: 60%;
     }
 }
 
 #advanced-search {
     width: 10%;
+    height: 35px;
     text-indent: -9999px;
-    display: inline-block;
-    float: left;
+    display: block;
     position: absolute;
-    padding: rhythm(.5) 0;
+    padding: 0;
     top: 0;
     left: 90%;
     font-weight: bold;
-    @include boxsizing(border-box);
+    line-height: 27px;
+    @include has-layout-zoom();
+    @include boxsizing(content-box);
+    *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '+');
+    *text-indent: 0;
 
     
     &:link, &:hover, &:active, &:visited { color: #fff; }
@@ -812,7 +820,7 @@ ul.exhibit-page-nav {
     
     h1, #site-title a { color:#859ca2; }
 
-    input[type=submit], button, .button { background-color: $winter-slate; }
+    input[type=submit], button { background-color: $winter-slate; }
 
     input[type=text], input[type=password], textarea { background-color: $winter-light-gray; }
 
@@ -987,7 +995,7 @@ ul.exhibit-page-nav {
     }
 
     footer p {
-        color:#fff;
+        color:#000;
     }
 
 } 
@@ -1017,16 +1025,16 @@ ul.exhibit-page-nav {
     nav.top { 
         background-color: $summer-yellow; 
 
-        li:hover a { color: #fff; }
+        li:hover a { color: $summer-dark-blue; }
         
         a:link, a:visited  { color: $summer-title-blue; }
-        a:active, a:hover  { color: #fff; }
+        a:active, a:hover  { color: $summer-dark-blue; }
         
         ul li ul {
             background-color: $summer-yellow;
             li {
                 & > a:link, & > a:visited { color: $summer-title-blue; }
-                & > a:active, & > a:hover, &:hover > a { color:#fff; }
+                & > a:active, & > a:hover, &:hover > a { color: $summer-dark-blue; }
             }
         }
     }
