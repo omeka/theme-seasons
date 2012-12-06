@@ -1,326 +1,79 @@
-/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/*
+Syntax error: Undefined mixin 'pie-clearfix'.
+        on line 2 of /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss, in `pie-clearfix'
+        from line 2 of /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
+1: /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-/* ---------------------------------------------------------------------*/
-/* Winter colors */
-/* ---------------------------------------------------------------------*/
-/* Spring colors */
-/* ---------------------------------------------------------------------*/
-/* Summer colors */
-/* ---------------------------------------------------------------------*/
-/* Autumn colors */
-/* line 3, ../../sass/media/screen_768.scss */
-header {
-  *zoom: 1;
-}
-/* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 7, ../../sass/media/screen_768.scss */
-#site-title {
-  width: 66.10169%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
-  text-align: left;
-  float: left;
-}
-/* line 12, ../../sass/media/screen_768.scss */
-#site-title:after {
-  content: "";
-  display: block;
-  height: 0px;
-  clear: both;
-}
-
-/* line 20, ../../sass/media/screen_768.scss */
-#search-container {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
-  margin-top: 1.875em;
-}
-/* line 23, ../../sass/media/screen_768.scss */
-#search-container input {
-  padding: 0.46875em 8px;
-}
-
-/* line 27, ../../sass/media/screen_768.scss */
-nav.top ul {
-  display: block;
-  position: relative;
-  z-index: 1000;
-}
-/* line 31, ../../sass/media/screen_768.scss */
-nav.top ul li {
-  float: left;
-  width: auto;
-  position: relative;
-}
-/* line 36, ../../sass/media/screen_768.scss */
-nav.top ul li a {
-  padding: 0.75em 16px;
-}
-/* line 38, ../../sass/media/screen_768.scss */
-nav.top ul li:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-/* line 40, ../../sass/media/screen_768.scss */
-nav.top ul li:hover > ul {
-  display: block;
-}
-/* line 43, ../../sass/media/screen_768.scss */
-nav.top ul li ul {
-  min-width: 200px;
-  display: none;
-  padding: 0;
-  position: absolute;
-  top: 3em;
-  left: 0px;
-}
-/* line 51, ../../sass/media/screen_768.scss */
-nav.top ul li ul li {
-  width: 100%;
-  clear: both;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 57, ../../sass/media/screen_768.scss */
-nav.top ul li ul li ul {
-  position: absolute;
-  left: 100%;
-  top: 0;
-}
-/* line 66, ../../sass/media/screen_768.scss */
-nav.top .mobile {
-  display: none;
-}
-
-/* line 69, ../../sass/media/screen_768.scss */
-header, nav.top, #content, footer {
-  *zoom: 1;
-  padding-left: 14.70588%;
-  padding-right: 14.70588%;
-}
-/* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-header:after, nav.top:after, #content:after, footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 76, ../../sass/media/screen_768.scss */
-.page #primary > * {
-  padding-left: 5.88235%;
-  padding-right: 5.88235%;
-}
-
-/* line 82, ../../sass/media/screen_768.scss */
-#primary .pagination_list {
-  float: left;
-  padding: 0.375em 16px;
-}
-
-/* line 89, ../../sass/media/screen_768.scss */
-#home #content #intro {
-  border-top: 0;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  font-size: 24px;
-  line-height: 36px;
-  -webkit-box-shadow: transparent 0 0 0;
-  -moz-box-shadow: transparent 0 0 0;
-  box-shadow: transparent 0 0 0;
-  margin-bottom: 1.125em;
-}
-/* line 99, ../../sass/media/screen_768.scss */
-#home #content #intro p {
-  margin: 0;
-}
-/* line 102, ../../sass/media/screen_768.scss */
-#home #content #featured-item {
-  float: left;
-  clear: left;
-  margin-bottom: 1.5em;
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
-  *margin-left: 0;
-}
-/* line 109, ../../sass/media/screen_768.scss */
-#home #content #featured-item img {
-  width: auto;
-}
-/* line 114, ../../sass/media/screen_768.scss */
-#home #content > div {
-  width: 66.10169%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
-}
-/* line 117, ../../sass/media/screen_768.scss */
-#home #content > div img {
-  width: 20%;
-  float: left;
-}
-
-/* line 128, ../../sass/media/screen_768.scss */
-#items #primary div#sort-links {
-  float: right;
-  text-align: center;
-}
-/* line 133, ../../sass/media/screen_768.scss */
-#items .item {
-  clear: both;
-}
-/* line 136, ../../sass/media/screen_768.scss */
-#items .item div {
-  display: inline-block;
-}
-/* line 141, ../../sass/media/screen_768.scss */
-#items .item-img {
-  width: 10%;
-  float: left;
-}
-/* line 148, ../../sass/media/screen_768.scss */
-#items #advanced-search-form > div {
-  width: 61.53846%;
-  float: left;
-  margin-right: 2.5641%;
-  display: inline;
-  clear: both;
-}
-/* line 153, ../../sass/media/screen_768.scss */
-#items #advanced-search-form > div:last-of-type {
-  width: auto;
-}
-
-/* line 160, ../../sass/media/screen_768.scss */
-#item #primary .element-set {
-  width: 61.53846%;
-  float: left;
-  margin-right: 2.5641%;
-  display: inline;
-}
-/* line 164, ../../sass/media/screen_768.scss */
-#item #primary > div {
-  width: 35.89744%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
-  clear: right;
-}
-
-/* line 171, ../../sass/media/screen_768.scss */
-#collections.show #primary .element-set {
-  width: 61.53846%;
-  float: left;
-  margin-right: 2.5641%;
-  display: inline;
-}
-/* line 175, ../../sass/media/screen_768.scss */
-#collections.show #primary > div {
-  width: 35.89744%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
-  clear: right;
-}
-
-/* line 183, ../../sass/media/screen_768.scss */
-#search #search-filters li {
-  float: left;
-  vertical-align: top;
-}
-/* line 186, ../../sass/media/screen_768.scss */
-#search #search-filters li ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-/* line 190, ../../sass/media/screen_768.scss */
-#search #search-filters li ul li {
-  display: inline;
-  padding: 0;
-  margin: 0;
-  float: none;
-}
-/* line 200, ../../sass/media/screen_768.scss */
-#search #search-results {
-  width: 100%;
-}
+Backtrace:
+/Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss:2:in `pie-clearfix'
+/Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss:2
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:249:in `visit_mixin'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:316:in `visit_rule'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:139:in `block in compile'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/logger.rb:45:in `red'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:138:in `compile'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `each'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `block in run'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:100:in `run'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/commands/base.rb:18:in `execute'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/bin/compass:29:in `block in <top (required)>'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/bin/compass:43:in `call'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.13.alpha.0/bin/compass:43:in `<top (required)>'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/bin/compass:23:in `load'
+/Users/knguyen/.rvm/gems/ruby-1.9.2-p320/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'pie-clearfix'.\A         on line 2 of /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss, in `pie-clearfix'\A         from line 2 of /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss\A \A 1: /Users/knguyen/Sites/omeka/themes/seasons/sass/media/screen_768.scss"; }
