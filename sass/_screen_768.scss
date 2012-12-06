@@ -1,5 +1,5 @@
 header {
-    @include pie-clearfix();
+    @include pie-clearfix;
 }
 
 #site-title {
@@ -65,7 +65,7 @@ nav.top {
 }
 
 header, nav.top, #content, footer {
-    @include pie-clearfix();
+    @include pie-clearfix;
     @include prefix(1);
     @include suffix(1);
 }

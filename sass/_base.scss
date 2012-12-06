@@ -1,13 +1,10 @@
 // ---------------------------------------------------------------------------
 // Imports
 
-@import "susy";
-@import "compass/utilities/general/hacks";
-@import "mixins";
+@import "compass";
 @import "compass/reset";
-@import "compass/typography/vertical_rhythm";
-@import "compass/css3";
-@import "compass/utilities/general/clearfix";
+@import "susy";
+@import "mixins";
 
 // ---------------------------------------------------------------------------
 // Basic Grid
