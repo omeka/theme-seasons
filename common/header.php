@@ -15,8 +15,8 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_file('style');
     queue_css_url('http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
+    queue_css_file('style');
     echo head_css();
     ?>
 
