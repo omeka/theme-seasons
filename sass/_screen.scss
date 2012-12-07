@@ -151,11 +151,13 @@ header {
 #search-form{
     text-align: center;
     position: relative;
+    overflow: auto;
 
     input[type=text] {
         width: 60%;
         @include adjust-font-size-to(14px);
         float: left;
+        
     }
     
     input[type=submit] {
@@ -300,6 +302,8 @@ footer {
                 margin: 0 16px rhythm(.5); 
                 border: 1px solid $winter-light-gray;
                 display: block;
+                max-width: 100%;
+                height: auto;
             }
 
             .show {
@@ -479,6 +483,7 @@ footer {
     }
         
     .item-img {
+        max-width: 100%;
         display: inline-block;
         border: 1px solid $winter-light-gray;
         width: 20%;
@@ -508,6 +513,8 @@ footer {
             display:inline-block;
             color: #fff;
             margin: 0 4px;
+            zoom: 1;
+            *display: inline;
         }
         
         .pagination_current { font-weight: 500; }
@@ -600,10 +607,13 @@ footer {
     #sort-links {
         border-top: 0;
         padding: rhythm(.25) 12px;
+        *border: 1px solid #e8e8e8;
         @include trailer();
         span, ul, li { 
             display: inline-block; 
             margin: 0 4px;
+            zoom: 1;
+            display: inline;
         }
     }
 
@@ -637,6 +647,8 @@ footer {
         .item-file {
             border: 1px solid $winter-light-gray;
             display: inline-block;
+            zoom: 1;
+            *display: inline;
             width: 20%;
             overflow: visible;
             margin-right: 16px;
@@ -774,6 +786,9 @@ ul.exhibit-page-nav {
     @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
     @include boxsizing(border-box);
     @include trailer(.75);
+    *border-right: 1px solid #ccc;
+    *border-left: 1px solid #ccc;
+    *border-bottom: 1px solid #ccc;
 
     div {
         border-top: 0;
@@ -858,7 +873,13 @@ ul.exhibit-page-nav {
         background-color: $winter-pale-blue;
     }
 
-    #home #content > div { border-color: $winter-slate; }
+    #home #content > div { 
+        border-color: $winter-slate; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $winter-slate;
+    }
 
     #primary {
         h1 { color: #fff; }
@@ -868,7 +889,11 @@ ul.exhibit-page-nav {
         div { border-color: $winter-title-blue; }
         
         & > div, #collection, #item-tags, #item-citation, #advanced-search-form > div { 
-            border-color: $winter-slate; 
+            border-color: $winter-slate;
+            *border-width: 10px 1px 1px 1px;
+            *border-style: solid;
+            *border-color: #e8e8e8;
+            *border-top-color: $winter-slate; 
         }
         
         .pagination_list { 
@@ -892,7 +917,13 @@ ul.exhibit-page-nav {
         li { background-color: $winter-blue-on-pale-blue; }
     }
 
-    .page #primary { border-color: $winter-slate; }
+    .page #primary { 
+        border-color: $winter-slate; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $winter-slate;
+    }
 
     footer {
         background-color: $winter-footer-blue;
@@ -956,7 +987,13 @@ ul.exhibit-page-nav {
         background-color: $spring-white;
     }
 
-    #home #content > div { border-color: $spring-red; }
+    #home #content > div { 
+        border-color: $spring-red; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $spring-red;
+    }
 
     #primary {
         h1 { color: $spring-link; }
@@ -965,6 +1002,10 @@ ul.exhibit-page-nav {
 
         & > div, #collection, #item-tags, #item-citation, #advanced-search-form > div { 
             border-color: $spring-red; 
+            *border-width: 10px 1px 1px 1px;
+            *border-style: solid;
+            *border-color: #e8e8e8;
+            *border-top-color: $spring-red;
         }
 
         .pagination_list { 
@@ -988,7 +1029,13 @@ ul.exhibit-page-nav {
         li { background-color: $spring-yellow; }
     }
     
-    .page #primary { border-color: $spring-red; }
+    .page #primary { 
+        border-color: $spring-red; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $spring-red;
+    }
 
     footer {
         background-color: $spring-dark-green;
@@ -1049,7 +1096,13 @@ ul.exhibit-page-nav {
         background-color: $summer-light-yellow;
     }
 
-    #home #content > div { border-color: $summer-blue; }
+    #home #content > div { 
+        border-color: $summer-blue; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $summer-blue;
+    }
 
     #primary {
         h1 { color: $summer-link-red; }
@@ -1058,6 +1111,10 @@ ul.exhibit-page-nav {
 
         & > div, #collection, #item-tags, #item-citation, #advanced-search-form > div { 
             border-color: $summer-blue; 
+            *border-width: 10px 1px 1px 1px;
+            *border-style: solid;
+            *border-color: #e8e8e8;
+            *border-top-color: $summer-blue;
         }
 
         .pagination_list { 
@@ -1081,7 +1138,13 @@ ul.exhibit-page-nav {
         li { background-color: #fff; }
     }
     
-    .page #primary { border-color: $summer-blue; }
+    .page #primary { 
+        border-color: $summer-blue; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $summer-blue;
+    }
 
     footer {
         background-color: $summer-dark-blue;
@@ -1142,7 +1205,13 @@ ul.exhibit-page-nav {
         background-color: $autumn-beige;
     }
 
-    #home #content > div { border-color: $autumn-dark-beige; }
+    #home #content > div { 
+        border-color: $autumn-dark-beige; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $autumn-dark-beige;
+    }
 
     #primary {
         h1 { color: $autumn-brown; }
@@ -1151,6 +1220,10 @@ ul.exhibit-page-nav {
 
         & > div, #collection, #item-tags, #item-citation, #advanced-search-form > div { 
             border-color: $autumn-dark-beige; 
+            *border-width: 10px 1px 1px 1px;
+            *border-style: solid;
+            *border-color: #e8e8e8;
+            *border-top-color: $autumn-dark-beige;
         }
 
         .pagination_list { 
@@ -1169,7 +1242,13 @@ ul.exhibit-page-nav {
         li { background-color: #fff; }
     }
     
-    .page #primary { border-color: $autumn-dark-beige; }
+    .page #primary { 
+        border-color: $autumn-dark-beige; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $autumn-dark-beige;
+    }
 
     footer {
         background-color: $autumn-dark-red;

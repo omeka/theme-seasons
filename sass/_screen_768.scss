@@ -104,8 +104,16 @@ header, nav.top, #content, footer {
             @include span-columns(4 alpha, 12);
             *margin-left: 0;
             
-            img {
-                width: auto;
+            .image {
+                display: inline-block;
+                width: 100%;
+            }
+            
+            .image img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                margin: 0;
             }
         }
         
@@ -158,9 +166,12 @@ header, nav.top, #content, footer {
     #primary .element-set {
         @include span-columns (5 alpha, 8);
     }
+
     
     #primary > div {
         @include span-columns (3 omega, 8);
+        display: inline-block;
+        float: right;
         clear: right;
     }
 }
@@ -174,6 +185,8 @@ header, nav.top, #content, footer {
         @include span-columns(3 omega, 8);
         clear: right;
     }
+    
+    .item-img { margin-left: 0; }
 }
 
 #search {
