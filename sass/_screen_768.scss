@@ -165,6 +165,7 @@ header, nav.top, #content, footer {
 #item {
     #primary .element-set {
         @include span-columns (5 alpha, 8);
+        *margin-left: 0;
     }
 
     
@@ -179,6 +180,7 @@ header, nav.top, #content, footer {
 #collections.show {
     #primary .element-set {
         @include span-columns (5 alpha, 8);
+        *margin-left: 0;
     }
     
     #primary > div {

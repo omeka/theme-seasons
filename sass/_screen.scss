@@ -151,7 +151,7 @@ header {
 #search-form{
     text-align: center;
     position: relative;
-    overflow: auto;
+    overflow: visible;
 
     input[type=text] {
         width: 60%;
@@ -524,6 +524,8 @@ footer {
             a {
                 display: inline-block;
                 text-indent: -9999px;
+                *text-indent: 0;
+                
                 &:after {
                     text-indent: 0;
                     display: block;
@@ -531,6 +533,11 @@ footer {
                 }
             }
         }
+
+        .pagination_first a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<<'); }
+        .pagination_last a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>>'); }
+        .pagination_previous a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<'); }
+        .pagination_next a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>'); }
 
         .pagination_first a:after { content: "<<"; }
         .pagination_last a:after { content: ">>"; }
@@ -540,10 +547,15 @@ footer {
     }
 
     #search-filters {
-        border-top: 0;
+        border: 0;
         background-color: transparent;
         @include box-shadow(transparent 0 0 0);
         @include trailer();
+        
+        > ul { 
+            float: left;
+            *border: 1px solid #e8e8e8; 
+        }
         
         li {
             overflow: auto;
@@ -566,7 +578,7 @@ footer {
     }
     
     div.hTagcloud {
-        border-top: 0;
+        border: 0;
         background-color: transparent;
         @include box-shadow(transparent 0 0 0);
         ul {
@@ -575,6 +587,9 @@ footer {
             padding:0;
             li {
                 display:inline-block;
+                *display: inline;
+                *border: 1px solid #e8e8e8;
+                zoom: 1;
                 background-color: #fff;
                 margin: 0 8px rhythm(.5) 0;
                 padding: rhythm(.25) 8px;
@@ -631,10 +646,14 @@ footer {
         }
         
         #advanced-search-form > div:last-of-type {
-            border-top: 0;
+            border: 0;
             background-color: transparent;
             float: left;
             @include pie-clearfix();
+        }
+        
+        #submit_search_advanced {
+            *height: 50px;
         }
     }
 }
@@ -676,10 +695,10 @@ footer {
     }
 }
 
-#collection {
+#collections {
     
     #collection-items {
-        div {
+        > div {
         border-top: 1px solid $winter-light-gray;
 
             &:first-of-type {
@@ -711,7 +730,6 @@ footer {
     }
 }
 
-    /* Advanced Search */
 /* == Exhibit Pages == */
 #exhibits p {
     padding:5px 20px 0;
@@ -909,6 +927,12 @@ ul.exhibit-page-nav {
         }
         
         .item-img { border-color: $winter-light-gray; }
+        
+        div.hTagcloud {
+            border: 0;
+            background-color: transparent;
+            @include box-shadow(transparent 0 0 0);
+        }
     }
 
     #search-results th { background-color: $winter-slate; }
@@ -935,7 +959,7 @@ ul.exhibit-page-nav {
 
 } 
 
-/*Summer Styles*/
+/*Spring Styles*/
 .spring {
 
     body {
@@ -1021,6 +1045,12 @@ ul.exhibit-page-nav {
         }
         
         .item-img { border-color: #e8e8e8; }
+        
+        div.hTagcloud {
+            border: 0;
+            background-color: transparent;
+            @include box-shadow(transparent 0 0 0);
+        }
     }
 
     #search-results th { background-color: $spring-red; }
@@ -1116,7 +1146,7 @@ ul.exhibit-page-nav {
             *border-color: #e8e8e8;
             *border-top-color: $summer-blue;
         }
-
+        
         .pagination_list { 
             background-color: $summer-blue; 
             
@@ -1130,6 +1160,12 @@ ul.exhibit-page-nav {
         }
         
         .item-img { border-color: $summer-light-blue; }
+        
+        div.hTagcloud {
+            border: 0;
+            background-color: transparent;
+            @include box-shadow(transparent 0 0 0);
+        }
     }
 
     #search-results th { background-color: $summer-blue; }
@@ -1225,7 +1261,7 @@ ul.exhibit-page-nav {
             *border-color: #e8e8e8;
             *border-top-color: $autumn-dark-beige;
         }
-
+        
         .pagination_list { 
             background-color: $autumn-dark-red; 
             
@@ -1234,6 +1270,12 @@ ul.exhibit-page-nav {
         }
 
         .item-img { border-color: $autumn-gray; }
+        
+        div.hTagcloud {
+            border: 0;
+            background-color: transparent;
+            @include box-shadow(transparent 0 0 0);
+        }
     }
 
     #search-results th { background-color: $autumn-dark-beige; }
