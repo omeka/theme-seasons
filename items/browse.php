@@ -11,8 +11,10 @@ echo head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
         <?php echo public_nav_items(); ?>
     </nav>
 
-    <?php echo pagination_links(); ?>
+    <?php echo item_search_filters(); ?>
 
+    <?php echo pagination_links(); ?>
+    
     <?php if ($total_results > 0): ?>
     
     <?php
@@ -37,11 +39,7 @@ echo head(array('title'=>$pageTitle,'bodyid'=>'items','bodyclass' => 'browse'));
         </div>
         <?php endif; ?>
 
-        <?php if ($text = metadata('item', array('Item Type Metadata', 'Text'), array('snippet'=>250))): ?>
-        <div class="item-description">
-            <p><?php echo $text; ?></p>
-        </div>
-        <?php elseif ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
+        <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
         <div class="item-description">
             <?php echo $description; ?>
         </div>
