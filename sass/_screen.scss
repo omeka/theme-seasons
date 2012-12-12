@@ -499,8 +499,9 @@ footer {
             margin: 0;
             vertical-align: bottom;
         }
-
     }
+    
+    .pagination { display: inline; }
 
     .pagination_list { 
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
@@ -546,7 +547,7 @@ footer {
         
     }
 
-    #search-filters {
+    #search-filters, #item-filters {
         border: 0;
         background-color: transparent;
         @include box-shadow(transparent 0 0 0);
@@ -937,7 +938,7 @@ ul.exhibit-page-nav {
 
     #search-results th { background-color: $winter-slate; }
 
-    #search-filters {
+    #search-filters, #item-filters {
         li { background-color: $winter-blue-on-pale-blue; }
     }
 
@@ -1055,7 +1056,7 @@ ul.exhibit-page-nav {
 
     #search-results th { background-color: $spring-red; }
 
-    #search-filters {
+    #search-filters, #item-filters {
         li { background-color: $spring-yellow; }
     }
     
@@ -1170,7 +1171,7 @@ ul.exhibit-page-nav {
 
     #search-results th { background-color: $summer-blue; }
 
-    #search-filters {
+    #search-filters, #item-filters {
         li { background-color: #fff; }
     }
     
@@ -1280,7 +1281,7 @@ ul.exhibit-page-nav {
 
     #search-results th { background-color: $autumn-dark-beige; }
 
-    #search-filters {
+    #search-filters, #item-filters {
         li { background-color: #fff; }
     }
     

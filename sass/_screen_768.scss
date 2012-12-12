@@ -191,26 +191,24 @@ header, nav.top, #content, footer {
     .item-img { margin-left: 0; }
 }
 
-#search {
-    #search-filters {
-        li { 
-            float: left; 
-            vertical-align: top;
-            ul { 
-                display: inline; 
-                margin: 0;
+#search-filters, #item-filters {
+    li { 
+        float: left; 
+        vertical-align: top;
+        ul { 
+            display: inline; 
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline;
                 padding: 0;
-                li {
-                    display: inline;
-                    padding: 0;
-                    margin: 0;
-                    float: none;
-                }
+                margin: 0;
+                float: none;
             }
         }
     }
+}
 
-    #search-results {
-        width: 100%;
-    }
+#search-results {
+    width: 100%;
 }
