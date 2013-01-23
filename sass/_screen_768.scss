@@ -70,16 +70,8 @@ header, nav.top, #content, footer {
     @include suffix(1);
 }
 
-.page #primary {
-    & > * {
-        @include prefix(.5);
-        @include suffix(.5);
-    }
-}
-
-#primary .pagination_list {
+#content .pagination_list {
     float: left;
-    padding: rhythm(.25) 16px;
 }
 
 #home {
@@ -131,24 +123,18 @@ header, nav.top, #content, footer {
 
 #items {
     
-    #primary div#sort-links {
+    #content div#sort-links {
         float: right;
         text-align: center;
     }
     
-    .item {
-        clear: both;
-
-        div {
-            display: inline-block;
-        }
-    }
+    .item { clear: both;}
     
     .item-img {
         width: 10%;
         float: left;
     }
-    
+        
     #advanced-search-form {
     
         & > div {
@@ -163,17 +149,18 @@ header, nav.top, #content, footer {
 }
 
 #item {
-    #primary .element-set {
-        @include span-columns (5 alpha, 8);
+    #primary {
         *margin-left: 0;
+        @include span-columns (5 alpha, 8);
     }
 
     
-    #primary > div {
-        @include span-columns (3 omega, 8);
+    #sidebar {
         display: inline-block;
         float: right;
         clear: right;
+        @include span-columns (3 omega, 8);
+                        
     }
 }
 
@@ -211,4 +198,22 @@ header, nav.top, #content, footer {
 
 #search-results {
     width: 100%;
+}
+
+.page #content #primary {
+    @include padding-leader(2);
+    @include padding-trailer(2);
+}
+
+/* Exhibits */
+
+#exhibit.show #exhibit-pages {
+    @include span-columns(2 alpha, 12);
+}
+
+.gallery-full-left, .gallery-full-right, .gallery-thumbnails,
+.gallery-thumbnails-text-bottom, .gallery-thumbnails-text-top, .image-list-left,
+.image-list-left-thumbs, .image-list-right, .image-list-right-thumbs,
+.text, .text-image-left, .text-image-right {
+    @include span-columns(10 omega, 12);
 }
