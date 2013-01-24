@@ -510,7 +510,8 @@ footer {
         @include trailer(.25);
     }
 
-    h2 {
+    & > h2, & > div > h2, #primary > h2, #primary > div > h2,
+    #sidebar > h2, #sidebar > div > h2 {
         padding: 0 16px rhythm(.25);
         font-weight: 500;
         border-style: solid;
@@ -651,9 +652,15 @@ footer {
         @include trailer(.75);
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
         
-        & > div {
+        & > * {
             padding-left: 16px;
             padding-right: 16px;
+        }
+        
+        & > ul, & ol {
+            margin-left: 16px;
+            margin-right: 16px;
+            padding-left: 1em;
         }
     }
     
@@ -794,6 +801,7 @@ footer {
         border-top: 0;
         padding: rhythm(.25) 12px;
         *border: 1px solid #e8e8e8;
+        @include leader(.25);
         @include trailer();
         span, ul, li { 
             display: inline-block; 
@@ -1167,7 +1175,7 @@ footer {
 
         div { border-color: $winter-title-blue; }
         
-        & > div, #collection, #item-tags, #item-citation, 
+        & > div, #primary > div, #sidebar > div,
         #advanced-search-form > div, #exhibit-pages { 
             border-color: $winter-slate;
             *border-width: 10px 1px 1px 1px;
@@ -1291,7 +1299,7 @@ footer {
         
         h2 { border-color: #e8e8e8; }
 
-        & > div, #collection, #item-tags, #item-citation, 
+        & > div, #primary > div, #sidebar > div,
         #advanced-search-form > div, #exhibit-pages { 
             border-color: $spring-red; 
             *border-width: 10px 1px 1px 1px;
@@ -1415,7 +1423,7 @@ footer {
         
         h2 { border-color: $summer-light-red; }
 
-        div, #collection, #item-tags, #item-citation, 
+        & > div, #primary > div, #sidebar > div,
         #advanced-search-form > div, #exhibit-pages { 
             border-color: $summer-blue; 
             *border-width: 10px 1px 1px 1px;
@@ -1536,7 +1544,8 @@ footer {
         
         h2 { border-color: $autumn-gray; }
 
-        & > div, #collection, #item-tags, #item-citation, #advanced-search-form > div { 
+        & > div, #primary > div, #sidebar > div,
+        #advanced-search-form > div, #exhibit-pages { 
             border-color: $autumn-dark-beige; 
             *border-width: 10px 1px 1px 1px;
             *border-style: solid;

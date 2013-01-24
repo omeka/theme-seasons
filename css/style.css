@@ -578,7 +578,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding: 0 0 0.75em 0;
     margin-bottom: 0.375em;
   }
-  #content h2 {
+  #content > h2, #content > div > h2, #content #primary > h2, #content #primary > div > h2,
+  #content #sidebar > h2, #content #sidebar > div > h2 {
     padding: 0 16px 0.375em;
     font-weight: 500;
     border-style: solid;
@@ -716,9 +717,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-  #content #primary > div > div, #content #sidebar > div > div {
+  #content #primary > div > *, #content #sidebar > div > * {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  #content #primary > div > ul, #content #primary > div ol, #content #sidebar > div > ul, #content #sidebar > div ol {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 1em;
   }
   #content .pagination {
     display: inline;
@@ -876,6 +882,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border-top: 0;
     padding: 0.375em 12px;
     *border: 1px solid #e8e8e8;
+    margin-top: 0.375em;
     margin-bottom: 1.5em;
   }
   #items #sort-links span, #items #sort-links ul, #items #sort-links li {
@@ -1260,7 +1267,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .winter #content div {
     border-color: #859ca2;
   }
-  .winter #content > div, .winter #content #collection, .winter #content #item-tags, .winter #content #item-citation,
+  .winter #content > div, .winter #content #primary > div, .winter #content #sidebar > div,
   .winter #content #advanced-search-form > div, .winter #content #exhibit-pages {
     border-color: #4b6569;
     *border-width: 10px 1px 1px 1px;
@@ -1392,7 +1399,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .spring #content h2 {
     border-color: #e8e8e8;
   }
-  .spring #content > div, .spring #content #collection, .spring #content #item-tags, .spring #content #item-citation,
+  .spring #content > div, .spring #content #primary > div, .spring #content #sidebar > div,
   .spring #content #advanced-search-form > div, .spring #content #exhibit-pages {
     border-color: #ba5656;
     *border-width: 10px 1px 1px 1px;
@@ -1526,7 +1533,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .summer #content h2 {
     border-color: #ffe0e0;
   }
-  .summer #content div, .summer #content #collection, .summer #content #item-tags, .summer #content #item-citation,
+  .summer #content > div, .summer #content #primary > div, .summer #content #sidebar > div,
   .summer #content #advanced-search-form > div, .summer #content #exhibit-pages {
     border-color: #8ecac8;
     *border-width: 10px 1px 1px 1px;
@@ -1657,7 +1664,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .autumn #content h2 {
     border-color: #ecebe6;
   }
-  .autumn #content > div, .autumn #content #collection, .autumn #content #item-tags, .autumn #content #item-citation, .autumn #content #advanced-search-form > div {
+  .autumn #content > div, .autumn #content #primary > div, .autumn #content #sidebar > div,
+  .autumn #content #advanced-search-form > div, .autumn #content #exhibit-pages {
     border-color: #cabfa6;
     *border-width: 10px 1px 1px 1px;
     *border-style: solid;
