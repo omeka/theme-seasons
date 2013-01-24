@@ -13,7 +13,7 @@
 
         <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
         
-    <?php fire_plugin_hook('public_theme_footer'); ?>
+    <?php fire_plugin_hook('public_footer'); ?>
     
 </footer>
 
