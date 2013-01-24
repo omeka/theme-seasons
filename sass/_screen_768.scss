@@ -148,7 +148,7 @@ header, nav.top, #content, footer {
     }
 }
 
-#item {
+#item, #exhibit.exhibit-item-show {
     #primary {
         *margin-left: 0;
         @include span-columns (5 alpha, 8);
@@ -207,13 +207,46 @@ header, nav.top, #content, footer {
 
 /* Exhibits */
 
-#exhibit.show #exhibit-pages {
-    @include span-columns(2 alpha, 12);
-}
-
 .gallery-full-left, .gallery-full-right, .gallery-thumbnails,
 .gallery-thumbnails-text-bottom, .gallery-thumbnails-text-top, .image-list-left,
 .image-list-left-thumbs, .image-list-right, .image-list-right-thumbs,
 .text, .text-image-left, .text-image-right {
-    @include span-columns(10 omega, 12);
+}
+
+#exhibit.summary {
+    #primary { 
+        @include span-columns(8 alpha, 12); 
+    }
+
+    #exhibit-pages { 
+        display: inline-block;
+        float: right;
+        @include span-columns (4 omega, 12); 
+    }
+}
+
+#exhibit.show #content {
+    .exhibit-page-nav {
+        & > li:first-child {
+            background-color: rgba(0,0,0,.1);
+            float: left;
+        }
+        
+        & > li:nth-child(2) li:first-of-type { padding-left: 8px; }
+    }
+
+    #exhibit-page-navigation {
+        #exhibit-nav-prev { text-align: left; }
+        
+        #exhibit-nav-next { text-align: right; }
+    
+        & > div { 
+            padding: 0; 
+            width: 33%;
+        }
+        
+        a, span { width: auto; }
+    
+    }
+
 }

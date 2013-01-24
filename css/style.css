@@ -405,15 +405,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   nav li {
     display: block;
-    width: 100%;
   }
   nav li ul li {
     padding-left: 16px;
   }
   nav a {
     display: inline-block;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
   }
 
   .top {
@@ -422,6 +419,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .top ul {
     display: none;
     padding: 0;
+  }
+  .top a {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
   }
   .top .mobile {
     margin: 1.5em auto;
@@ -797,6 +798,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   #content #search-filters > ul, #content #item-filters > ul {
     float: left;
+    padding-left: 0;
     *border: 1px solid #e8e8e8;
   }
   #content #search-filters li, #content #item-filters li {
@@ -986,15 +988,129 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   #exhibit.summary #content h1 {
     margin-bottom: 0.75em;
   }
+  #exhibit.summary #content #primary > div {
+    background-color: transparent;
+    border-top: 0;
+    -webkit-box-shadow: transparent 0 0 0;
+    -moz-box-shadow: transparent 0 0 0;
+    box-shadow: transparent 0 0 0;
+  }
+  #exhibit.summary #content #primary > div:last-child {
+    margin-bottom: 0;
+  }
+  #exhibit.summary #content #exhibit-pages {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 10px 0 0 0;
+    overflow: visible;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  #exhibit.summary #content #exhibit-pages ul {
+    margin-left: 0;
+  }
+  #exhibit.summary #content #exhibit-pages ul ul {
+    padding-left: 0;
+  }
   #exhibit.show #content h1 {
-    margin-bottom: 0.75em;
+    margin-top: 0.1875em;
+    margin-bottom: 0.1875em;
+    font-size: 40px;
+  }
+  #exhibit.show #content .primary:first-child {
+    margin-top: 1.5em;
+  }
+  #exhibit.show #content .primary p, #exhibit.show #content .primary ol, #exhibit.show #content .primary ul {
+    margin-bottom: 1.5em;
   }
   #exhibit.show #content .exhibit-item {
     padding-top: 0;
   }
-  #exhibit.show #content .exhibit-page-nav {
+  #exhibit.show #content #exhibit-page-navigation {
+    background-color: transparent;
+    border-top: 0;
+    -webkit-box-shadow: transparent 0 0 0;
+    -moz-box-shadow: transparent 0 0 0;
+    box-shadow: transparent 0 0 0;
+  }
+  #exhibit.show #content #exhibit-page-navigation a, #exhibit.show #content #exhibit-page-navigation span {
+    background-color: #fff;
+    padding: 0.375em 16px;
+    display: inline-block;
+    width: 100%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url("../javascripts/boxsizing.htc");
+  }
+  #exhibit.show #content #exhibit-page-navigation > div {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #exhibit.show #content #exhibit-page-navigation #exhibit-nav-next {
+    margin-bottom: 1.5em;
+  }
+  #exhibit.show #content #exhibit-pages ul {
+    margin-left: 0 !important;
+  }
+  #exhibit.show #content .exhibit-page-nav, #exhibit.show #content .exhibit-child-nav {
     margin-left: 0;
     padding-left: 0;
+  }
+  #exhibit.show #content .exhibit-page-nav .current, #exhibit.show #content .exhibit-child-nav .current {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  #exhibit.show #content .exhibit-page-nav {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    margin-bottom: 1.5em;
+  }
+  #exhibit.show #content .exhibit-page-nav a {
+    padding: 0;
+  }
+  #exhibit.show #content .exhibit-page-nav > li:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  #exhibit.show #content .exhibit-page-nav > li:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  #exhibit.show #content .exhibit-page-nav > li:nth-child(4) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #exhibit.show #content .exhibit-page-nav > li {
+    display: block;
+    float: none;
+    overflow: auto;
+    margin-right: 0;
+  }
+  #exhibit.show #content .exhibit-page-nav > li:first-of-type {
+    text-transform: uppercase;
+    margin-right: 0;
+    padding: 0.375em 16px;
+  }
+  #exhibit.show #content .exhibit-page-nav > li:first-of-type a:after {
+    content: ":";
+  }
+  #exhibit.show #content .exhibit-page-nav > li ul {
+    padding-left: 0;
+  }
+  #exhibit.show #content .exhibit-page-nav > li ul li {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 0.375em 8px;
+    width: auto;
+  }
+  #exhibit.show #content .exhibit-page-nav > li ul li:first-of-type {
+    padding-left: 16px;
   }
 
   #content .exhibit-item:empty {
@@ -1004,8 +1120,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .gallery-full-left, .gallery-full-right, .gallery-thumbnails,
   .gallery-thumbnails-text-bottom, .gallery-thumbnails-text-top, .image-list-left,
   .image-list-left-thumbs, .image-list-right, .image-list-right-thumbs,
-  .text, .text-image-left, .text-image-right {
+  .text-full, .text-image-left, .text-image-right {
     padding: 1.5em 16px;
+    margin-top: 1.5em;
+  }
+  .gallery-full-left div:empty, .gallery-full-right div:empty, .gallery-thumbnails div:empty,
+  .gallery-thumbnails-text-bottom div:empty, .gallery-thumbnails-text-top div:empty, .image-list-left div:empty,
+  .image-list-left-thumbs div:empty, .image-list-right div:empty, .image-list-right-thumbs div:empty,
+  .text-full div:empty, .text-image-left div:empty, .text-image-right div:empty {
+    display: none;
   }
 
   /* == Simple Pages styles == */
@@ -1118,8 +1241,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .winter #content,
   .winter #secondary-nav .current a,
   .winter #secondary-nav a.current,
-  .winter .exhibit-section-nav .current a,
-  .winter .exhibit-page-nav .current a {
+  .winter .exhibit-section-nav .current a {
     background-color: #98c4c9;
   }
   .winter #home #content > div {
@@ -1244,8 +1366,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .spring #content,
   .spring #secondary-nav .current a,
   .spring #secondary-nav a.current,
-  .spring .exhibit-section-nav .current a,
-  .spring .exhibit-page-nav .current a {
+  .spring .exhibit-section-nav .current a {
     background-color: #f9ffec;
   }
   .spring #home #content > div {
@@ -1366,8 +1487,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .summer #content,
   .summer #secondary-nav .current a,
   .summer #secondary-nav a.current,
-  .summer .exhibit-section-nav .current a,
-  .summer .exhibit-page-nav .current a {
+  .summer .exhibit-section-nav .current a {
     background-color: #fdffe2;
   }
   .summer #home #content > div {
@@ -1386,7 +1506,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .summer #content h2 {
     border-color: #ffe0e0;
   }
-  .summer #content div, .summer #content #collection, .summer #content #item-tags, .summer #content #item-citation, .summer #content #advanced-search-form > div {
+  .summer #content div, .summer #content #collection, .summer #content #item-tags, .summer #content #item-citation,
+  .summer #content #advanced-search-form > div, .summer #content #exhibit-pages {
     border-color: #8ecac8;
     *border-width: 10px 1px 1px 1px;
     *border-style: solid;
@@ -1435,6 +1556,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-color: #3c8f8c;
   }
   .summer footer p {
+    color: #fff;
+  }
+  .summer .exhibit-page-nav {
+    background-color: #8ecac8;
+  }
+  .summer .exhibit-page-nav a:link, .summer .exhibit-page-nav a:visited {
+    color: #fcf283;
+  }
+  .summer .exhibit-page-nav a:hover, .summer .exhibit-page-nav a:active {
     color: #fff;
   }
 
@@ -1491,8 +1621,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .autumn #content,
   .autumn #secondary-nav .current a,
   .autumn #secondary-nav a.current,
-  .autumn .exhibit-section-nav .current a,
-  .autumn .exhibit-page-nav .current a {
+  .autumn .exhibit-section-nav .current a {
     background-color: #f8f1e5;
   }
   .autumn #home #content > div {
@@ -1719,14 +1848,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: auto;
   }
 
-  #item #primary {
+  #item #primary, #exhibit.exhibit-item-show #primary {
     *margin-left: 0;
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
   }
-  #item #sidebar {
+  #item #sidebar, #exhibit.exhibit-item-show #sidebar {
     display: inline-block;
     float: right;
     clear: right;
@@ -1782,22 +1911,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
   /* Exhibits */
-  #exhibit.show #exhibit-pages {
-    width: 15.25424%;
+  #exhibit.summary #primary {
+    width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
   }
-
-  .gallery-full-left, .gallery-full-right, .gallery-thumbnails,
-  .gallery-thumbnails-text-bottom, .gallery-thumbnails-text-top, .image-list-left,
-  .image-list-left-thumbs, .image-list-right, .image-list-right-thumbs,
-  .text, .text-image-left, .text-image-right {
-    width: 83.05085%;
+  #exhibit.summary #exhibit-pages {
+    display: inline-block;
+    float: right;
+    width: 32.20339%;
     float: right;
     margin-right: 0;
     #margin-left: -1em;
     display: inline;
+  }
+
+  #exhibit.show #content .exhibit-page-nav > li:first-child {
+    background-color: rgba(0, 0, 0, 0.1);
+    float: left;
+  }
+  #exhibit.show #content .exhibit-page-nav > li:nth-child(2) li:first-of-type {
+    padding-left: 8px;
+  }
+  #exhibit.show #content #exhibit-page-navigation #exhibit-nav-prev {
+    text-align: left;
+  }
+  #exhibit.show #content #exhibit-page-navigation #exhibit-nav-next {
+    text-align: right;
+  }
+  #exhibit.show #content #exhibit-page-navigation > div {
+    padding: 0;
+    width: 33%;
+  }
+  #exhibit.show #content #exhibit-page-navigation a, #exhibit.show #content #exhibit-page-navigation span {
+    width: auto;
   }
 }
 @media print {
