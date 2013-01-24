@@ -1260,7 +1260,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .winter #content div {
     border-color: #859ca2;
   }
-  .winter #content > div, .winter #content #collection, .winter #content #item-tags, .winter #content #item-citation, .winter #content #advanced-search-form > div {
+  .winter #content > div, .winter #content #collection, .winter #content #item-tags, .winter #content #item-citation,
+  .winter #content #advanced-search-form > div, .winter #content #exhibit-pages {
     border-color: #4b6569;
     *border-width: 10px 1px 1px 1px;
     *border-style: solid;
@@ -1298,7 +1299,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .winter #search-filters li, .winter #item-filters li {
     background-color: #def9ff;
   }
-  .winter .page #content, .winter .exhibit #content {
+  .winter .page #content {
     border-color: #4b6569;
     *border-width: 10px 1px 1px 1px;
     *border-style: solid;
@@ -1309,6 +1310,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-color: #2f3e4a;
   }
   .winter footer p {
+    color: #fff;
+  }
+  .winter .exhibit-page-nav {
+    background-color: #8ecac8;
+  }
+  .winter .exhibit-page-nav a:link, .winter .exhibit-page-nav a:visited {
+    color: #def9ff;
+  }
+  .winter .exhibit-page-nav a:hover, .winter .exhibit-page-nav a:active {
     color: #fff;
   }
 
@@ -1382,7 +1392,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .spring #content h2 {
     border-color: #e8e8e8;
   }
-  .spring #content > div, .spring #content #collection, .spring #content #item-tags, .spring #content #item-citation, .spring #content #advanced-search-form > div {
+  .spring #content > div, .spring #content #collection, .spring #content #item-tags, .spring #content #item-citation,
+  .spring #content #advanced-search-form > div, .spring #content #exhibit-pages {
     border-color: #ba5656;
     *border-width: 10px 1px 1px 1px;
     *border-style: solid;
@@ -1432,6 +1443,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   .spring footer p {
     color: #000;
+  }
+  .spring .exhibit-page-nav {
+    background-color: #ba5656;
+  }
+  .spring .exhibit-page-nav a:link, .spring .exhibit-page-nav a:visited {
+    color: #ffffad;
+  }
+  .spring .exhibit-page-nav a:hover, .spring .exhibit-page-nav a:active {
+    color: #fff;
   }
 
   /*Summer Styles*/
@@ -1680,6 +1700,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-color: #86443c;
   }
   .autumn footer p {
+    color: #fff;
+  }
+  .autumn .exhibit-page-nav {
+    background-color: #86443c;
+  }
+  .autumn .exhibit-page-nav a:link, .autumn .exhibit-page-nav a:visited {
+    color: #cabfa6;
+  }
+  .autumn .exhibit-page-nav a:hover, .autumn .exhibit-page-nav a:active {
     color: #fff;
   }
 }

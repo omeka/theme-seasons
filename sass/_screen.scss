@@ -1167,7 +1167,8 @@ footer {
 
         div { border-color: $winter-title-blue; }
         
-        & > div, #collection, #item-tags, #item-citation, #advanced-search-form > div { 
+        & > div, #collection, #item-tags, #item-citation, 
+        #advanced-search-form > div, #exhibit-pages { 
             border-color: $winter-slate;
             *border-width: 10px 1px 1px 1px;
             *border-style: solid;
@@ -1202,7 +1203,7 @@ footer {
         li { background-color: $winter-blue-on-pale-blue; }
     }
 
-    .page #content, .exhibit #content { 
+    .page #content { 
         border-color: $winter-slate; 
         *border-width: 10px 1px 1px 1px;
         *border-style: solid;
@@ -1217,7 +1218,13 @@ footer {
     footer p {
         color:#fff;
     }
-
+    
+    .exhibit-page-nav { background-color: $summer-blue; }
+    
+    .exhibit-page-nav {
+        a:link, a:visited { color: $winter-blue-on-pale-blue; }
+        a:hover, a:active { color: #fff; }
+    }
 } 
 
 /*Spring Styles*/
@@ -1284,7 +1291,8 @@ footer {
         
         h2 { border-color: #e8e8e8; }
 
-        & > div, #collection, #item-tags, #item-citation, #advanced-search-form > div { 
+        & > div, #collection, #item-tags, #item-citation, 
+        #advanced-search-form > div, #exhibit-pages { 
             border-color: $spring-red; 
             *border-width: 10px 1px 1px 1px;
             *border-style: solid;
@@ -1334,7 +1342,13 @@ footer {
     footer p {
         color:#000;
     }
-
+    
+    .exhibit-page-nav { background-color: $spring-red; }
+    
+    .exhibit-page-nav {
+        a:link, a:visited { color: $spring-yellow; }
+        a:hover, a:active { color: #fff; }
+    }
 } 
 
 /*Summer Styles*/
@@ -1396,6 +1410,7 @@ footer {
     #item h1 { color: $summer-link-red; }
     
     #content {
+
         h1 { color: $summer-link-red; }
         
         h2 { border-color: $summer-light-red; }
@@ -1458,8 +1473,6 @@ footer {
         a:link, a:visited { color: $summer-yellow; }
         a:hover, a:active { color: #fff; }
     }
-
-
 } 
 
 /*Autumn Styles*/
@@ -1569,4 +1582,10 @@ footer {
         color:#fff;
     }
 
+    .exhibit-page-nav { background-color: $autumn-dark-red; }
+    
+    .exhibit-page-nav {
+        a:link, a:visited { color: $autumn-dark-beige; }
+        a:hover, a:active { color: #fff; }
+    }
 } 
