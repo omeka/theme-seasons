@@ -1284,10 +1284,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .winter #content .pagination_list a:hover, .winter #content .pagination_list a:active {
     color: #fff;
   }
-  .winter #content .items-nav a:link, .winter #content .items-nav a:visited {
+  .winter #content .items-nav a:link, .winter #content .items-nav a:visited, .winter #content #secondary-nav a:link, .winter #content #secondary-nav a:visited {
     color: #def9ff;
   }
-  .winter #content .items-nav a:hover, .winter #content .items-nav a:active {
+  .winter #content .items-nav a:hover, .winter #content .items-nav a:active, .winter #content #secondary-nav a:hover, .winter #content #secondary-nav a:active {
     color: #fff;
   }
   .winter #content .item-img {
