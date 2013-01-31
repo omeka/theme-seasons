@@ -53,6 +53,10 @@ p, ol, ul {
     &:only-child, &:last-child { margin-bottom: 0; }
 }
 
+strong, b { font-weight: bold; }
+
+em, i { font-style: italic; }
+
 ul { 
     list-style-type: disc; 
     padding-left: 1em;

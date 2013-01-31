@@ -129,6 +129,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 
+  strong, b {
+    font-weight: bold;
+  }
+
+  em, i {
+    font-style: italic;
+  }
+
   ul {
     list-style-type: disc;
     padding-left: 1em;
