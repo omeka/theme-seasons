@@ -389,7 +389,7 @@
     margin-bottom: 0.75em;
   }
   #item #itemfiles #item-images > div {
-    width: 22.5%;
+    min-width: 22.5%;
     display: inline-block;
     margin-right: 3%;
   }
@@ -401,7 +401,7 @@
     display: inline-block;
     zoom: 1;
     *display: inline;
-    width: 100%;
+    min-width: 100%;
     overflow: visible;
     margin: 0;
     padding: 0;
