@@ -14,7 +14,11 @@
     <?php if (metadata('item', 'has files')): ?>
     <div id="itemfiles" class="element">
         <h2><?php echo __('Files'); ?></h2>
+        <?php if (get_theme_option('Item FileGallery') == 1): ?>
         <?php echo item_image_gallery(); ?>
+        <?php else: ?>
+        <?php echo files_for_item(); ?>
+        <?php endif; ?>
     </div>
     <?php endif; ?>
 
