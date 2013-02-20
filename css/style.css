@@ -822,50 +822,50 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
 
-  #items h1 {
+  .items h1 {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  #items .items-nav {
+  .items .items-nav {
     margin-bottom: 0.375em;
     *zoom: 1;
   }
-  #items .items-nav:after {
+  .items .items-nav:after {
     content: "";
     display: table;
     clear: both;
   }
-  #items .items-nav .active {
+  .items .items-nav .active {
     font-weight: 500;
   }
-  #items .items-nav ul {
+  .items .items-nav ul {
     padding-left: 0;
   }
-  #items .items-nav li {
+  .items .items-nav li {
     display: inline-block;
     float: left;
     width: auto;
     margin-right: 16px;
   }
-  #items #sort-links {
+  .items #sort-links {
     border-top: 0;
     padding: 0.375em 12px;
     *border: 1px solid #e8e8e8;
     margin-top: 0.375em;
     margin-bottom: 1.5em;
   }
-  #items #sort-links span, #items #sort-links ul, #items #sort-links li {
+  .items #sort-links span, .items #sort-links ul, .items #sort-links li {
     display: inline-block;
     margin: 0 4px;
     zoom: 1;
     display: inline;
   }
 
-  #collections:only-of-type, #collections:last-of-type {
+  .collections:only-of-type, .collections:last-of-type {
     border-bottom: 0;
     margin-bottom: 0;
   }
-  #collections #content > div > div, #collections #content > div > p {
+  .collections #content > div > div, .collections #content > div > p {
     background: transparent;
     border: 0;
     padding: 0 16px;
@@ -873,41 +873,41 @@
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-  #collections #content .element-set .element {
+  .collections #content .element-set .element {
     margin-bottom: 1.5em;
   }
-  #collections #content .element-set .element:last-of-type {
+  .collections #content .element-set .element:last-of-type {
     margin-bottom: 0;
   }
-  #collections #collection-items > div {
+  .collections #collection-items > div {
     border-top: 1px solid #dfe2e2;
   }
-  #collections #collection-items > div:first-of-type {
+  .collections #collection-items > div:first-of-type {
     border-top: 0;
   }
-  #collections #collection-items > div div:only-of-type {
+  .collections #collection-items > div div:only-of-type {
     margin-bottom: 0;
   }
-  #collections #content .view-items-link {
+  .collections #content .view-items-link {
     border-top: 1px solid #dfe2e2;
     padding: 0.75em 16px 0;
     margin: 1.5em 0 0 0;
   }
 
-  #search #search-results {
+  .search #search-results {
     background-color: #fff;
     margin-bottom: 1.5em;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-  #search #search-results th {
+  .search #search-results th {
     color: #fff;
   }
-  #search #search-results th, #search #search-results td {
+  .search #search-results th, .search #search-results td {
     padding: 0.75em 8px;
   }
-  #search #search-results th:last-of-type, #search #search-results td:last-of-type {
+  .search #search-results th:last-of-type, .search #search-results td:last-of-type {
     border-right: 0;
   }
 
@@ -1832,36 +1832,36 @@
     float: left;
   }
 
-  #items #content div#sort-links {
+  .items #content div#sort-links {
     float: right;
     text-align: center;
   }
-  #items .item {
+  .items .item {
     clear: both;
   }
-  #items .item-img {
+  .items .item-img {
     width: 10%;
     float: left;
   }
-  #items #advanced-search-form > div {
+  .items #advanced-search-form > div {
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
     clear: both;
   }
-  #items #advanced-search-form > div:last-of-type {
+  .items #advanced-search-form > div:last-of-type {
     width: auto;
   }
 
-  #item #primary, #exhibit.exhibit-item-show #primary {
+  .item #primary, #exhibit.exhibit-item-show #primary {
     *margin-left: 0;
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
   }
-  #item #sidebar, #exhibit.exhibit-item-show #sidebar {
+  .item #sidebar, #exhibit.exhibit-item-show #sidebar {
     display: inline-block;
     float: right;
     clear: right;
@@ -1872,14 +1872,14 @@
     display: inline;
   }
 
-  #collections.show #primary .element-set {
+  .collections.show #primary .element-set {
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
     *margin-left: 0;
   }
-  #collections.show #primary > div {
+  .collections.show #primary > div {
     width: 35.89744%;
     float: right;
     margin-right: 0;
@@ -1887,7 +1887,7 @@
     display: inline;
     clear: right;
   }
-  #collections.show .item-img {
+  .collections.show .item-img {
     margin-left: 0;
   }
 

@@ -788,7 +788,7 @@ footer {
     }
 }
 
-#items {
+.items {
 
     h1 { 
         margin-bottom: 0; 
@@ -826,7 +826,7 @@ footer {
     }
 }
 
-#collections {
+.collections {
     
     &:only-of-type, &:last-of-type { 
         border-bottom: 0; 
@@ -867,7 +867,7 @@ footer {
     }
 }
 
-#search {
+.search {
     #search-results {
         background-color: #fff;
         @include trailer();
