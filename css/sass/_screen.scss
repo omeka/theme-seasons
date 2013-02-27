@@ -1640,3 +1640,153 @@ footer {
         a:hover, a:active { color: #fff; }
     }
 } 
+
+/*Autumn Styles*/
+.night {
+
+    body {
+        background-color: $night-darkest;
+        color: $night-text-on-darker;
+    }
+    
+    h1 { color: $night-light; }
+    
+    #site-title a { color: $night-link; }
+
+    input[type=submit], button, .button, #advanced-search { 
+        background-color: $night-highlight; 
+        color: $night-darker;
+    }
+
+    input[type=text], input[type=password], textarea { 
+        background-color: $night-darker; 
+        border: 1px solid $night-shadow;
+        color: $night-text-on-darker;
+    }
+
+    a {
+        &:link { color: $night-link; }
+        &:visited { color: $night-visited; }
+        &:hover, &:active { color: $night-active; }
+    }
+
+    header { background-color: $night-darkest; }
+    
+    nav.top { 
+        background-color: $night-light; 
+
+        li:hover a { color: $night-shadow; }
+        
+        a:link, a:visited  { color: $night-visited-nav; }
+        a:active, a:hover  {  }
+        
+        ul li ul {
+            background-color: $night-highlight;
+            li {
+                & > a:link, & > a:visited { color: $night-link; }
+                & > a:active, & > a:hover, &:hover > a { color: $night-active; }
+            }
+        }
+    }
+    
+    #intro { color: $night-light; }
+
+    #content,
+    #secondary-nav .current a,
+    #secondary-nav a.current,
+    .exhibit-section-nav .current a {
+        background-color: $night-content;
+    }
+    
+    #advanced-form {
+        background-color: $night-darker;
+        color: $night-text-on-darker;
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        border-color: $night-shadow;
+    }
+
+    #home #content > div { 
+        border-color: $night-highlight; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $night-highlight;
+    }
+    
+    #home #content > div img, .item #itemfiles a,
+    #home #content .item, #home #content div .view-items-link,
+    .collections #content div .view-items-link { 
+        border-color: $night-shadow; 
+    }
+
+    #content {
+        h1 { color: $night-light; }
+        
+        h2 { border-color: $night-shadow; }
+
+        & > div, #primary > div, #sidebar > div,
+        #advanced-search-form > div, #exhibit-pages { 
+            border-color: $night-highlight; 
+            *border-width: 10px 1px 1px 1px;
+            *border-style: solid;
+            *border-color: #e8e8e8;
+            *border-top-color: $night-highlight;
+            background-color: $night-darker;
+        }
+        
+        .pagination_list { 
+            background-color: $night-darker; 
+            
+            a:link, a:visited { color: $night-highlight; }
+            a:hover, a:active { color: #fff; }
+        }
+
+        .item-img { border-color: $night-shadow; }
+        
+        div.hTagcloud {
+            border: 0;
+            background-color: transparent;
+            @include box-shadow(transparent 0 0 0);
+        }
+        
+        #primary > div, #sidebar > div,
+        .item-pagination li { background-color: $night-darker; }
+    }
+    
+    #search-results th { 
+        background-color: $night-highlight; 
+        color: $night-light;
+    }
+    
+    #search-results td { background-color: $night-darker; }
+
+    #search-filters, #item-filters {
+        li { background-color: $night-highlight; }
+    }
+    
+    .page #content { 
+        border-color: $night-highlight; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $night-highlight;
+    }
+    
+    .page #content #primary { background-color: $night-darker; }
+
+    footer {
+        background-color: transparent;
+    }
+
+    footer p {
+        color: $night-text-on-darker;
+    }
+
+    .exhibit-page-nav { background-color: $night-darker; }
+    
+    .exhibit-page-nav {
+        a:link, a:visited { color: $night-darkest; }
+        a:hover, a:active { color: #fff; }
+    }
+} 

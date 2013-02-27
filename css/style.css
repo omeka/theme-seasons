@@ -6,6 +6,8 @@
 /* Summer colors */
 /* ---------------------------------------------------------------------*/
 /* Autumn colors */
+/* ---------------------------------------------------------------------*/
+/* Night colors */
 @media screen {
   /* -------------------------------------------------------------------------*/
   /* Layout */
@@ -1717,6 +1719,158 @@
     color: #cabfa6;
   }
   .autumn .exhibit-page-nav a:hover, .autumn .exhibit-page-nav a:active {
+    color: #fff;
+  }
+
+  /*Autumn Styles*/
+  .night body {
+    background-color: black;
+    color: #cccccc;
+  }
+  .night h1 {
+    color: #bdbdbd;
+  }
+  .night #site-title a {
+    color: #ffe000;
+  }
+  .night input[type=submit], .night button, .night .button, .night #advanced-search {
+    background-color: #666666;
+    color: #252525;
+  }
+  .night input[type=text], .night input[type=password], .night textarea {
+    background-color: #252525;
+    border: 1px solid #313131;
+    color: #cccccc;
+  }
+  .night a:link {
+    color: #ffe000;
+  }
+  .night a:visited {
+    color: #c0a900;
+  }
+  .night a:hover, .night a:active {
+    color: #ffffa0;
+  }
+  .night header {
+    background-color: black;
+  }
+  .night nav.top {
+    background-color: #bdbdbd;
+  }
+  .night nav.top li:hover a {
+    color: #313131;
+  }
+  .night nav.top a:link, .night nav.top a:visited {
+    color: #6d6d6d;
+  }
+  .night nav.top ul li ul {
+    background-color: #666666;
+  }
+  .night nav.top ul li ul li > a:link, .night nav.top ul li ul li > a:visited {
+    color: #ffe000;
+  }
+  .night nav.top ul li ul li > a:active, .night nav.top ul li ul li > a:hover, .night nav.top ul li ul li:hover > a {
+    color: #ffffa0;
+  }
+  .night #intro {
+    color: #bdbdbd;
+  }
+  .night #content,
+  .night #secondary-nav .current a,
+  .night #secondary-nav a.current,
+  .night .exhibit-section-nav .current a {
+    background-color: #333333;
+  }
+  .night #advanced-form {
+    background-color: #252525;
+    color: #cccccc;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #313131;
+  }
+  .night #home #content > div {
+    border-color: #666666;
+    *border-width: 10px 1px 1px 1px;
+    *border-style: solid;
+    *border-color: #e8e8e8;
+    *border-top-color: #666666;
+  }
+  .night #home #content > div img, .night .item #itemfiles a,
+  .night #home #content .item, .night #home #content div .view-items-link,
+  .night .collections #content div .view-items-link {
+    border-color: #313131;
+  }
+  .night #content h1 {
+    color: #bdbdbd;
+  }
+  .night #content h2 {
+    border-color: #313131;
+  }
+  .night #content > div, .night #content #primary > div, .night #content #sidebar > div,
+  .night #content #advanced-search-form > div, .night #content #exhibit-pages {
+    border-color: #666666;
+    *border-width: 10px 1px 1px 1px;
+    *border-style: solid;
+    *border-color: #e8e8e8;
+    *border-top-color: #666666;
+    background-color: #252525;
+  }
+  .night #content .pagination_list {
+    background-color: #252525;
+  }
+  .night #content .pagination_list a:link, .night #content .pagination_list a:visited {
+    color: #666666;
+  }
+  .night #content .pagination_list a:hover, .night #content .pagination_list a:active {
+    color: #fff;
+  }
+  .night #content .item-img {
+    border-color: #313131;
+  }
+  .night #content div.hTagcloud {
+    border: 0;
+    background-color: transparent;
+    -webkit-box-shadow: transparent 0 0 0;
+    -moz-box-shadow: transparent 0 0 0;
+    box-shadow: transparent 0 0 0;
+  }
+  .night #content #primary > div, .night #content #sidebar > div,
+  .night #content .item-pagination li {
+    background-color: #252525;
+  }
+  .night #search-results th {
+    background-color: #666666;
+    color: #bdbdbd;
+  }
+  .night #search-results td {
+    background-color: #252525;
+  }
+  .night #search-filters li, .night #item-filters li {
+    background-color: #666666;
+  }
+  .night .page #content {
+    border-color: #666666;
+    *border-width: 10px 1px 1px 1px;
+    *border-style: solid;
+    *border-color: #e8e8e8;
+    *border-top-color: #666666;
+  }
+  .night .page #content #primary {
+    background-color: #252525;
+  }
+  .night footer {
+    background-color: transparent;
+  }
+  .night footer p {
+    color: #cccccc;
+  }
+  .night .exhibit-page-nav {
+    background-color: #252525;
+  }
+  .night .exhibit-page-nav a:link, .night .exhibit-page-nav a:visited {
+    color: black;
+  }
+  .night .exhibit-page-nav a:hover, .night .exhibit-page-nav a:active {
     color: #fff;
   }
 }
