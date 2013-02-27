@@ -317,6 +317,15 @@ footer {
                 padding: rhythm(.5) 16px 0;
                 border-top: 1px solid $winter-light-gray;
             }
+            
+            .item-img {
+                display: inline;
+            }
+            
+            .item-description {
+                margin-top: 0;
+                padding-top: 0;
+            }
 
         }
         
