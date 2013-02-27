@@ -372,14 +372,14 @@ footer {
 
 /* == Items Pages == */
 
-#item {
+.item {
     
     h3 { @include trailer(.5); }
     
     #itemfiles {
             
         #item-images > div { 
-            min-width: 22.5%; 
+            width: 22.5%; 
             display: inline-block;
             margin-right: 3%;
             
