@@ -527,6 +527,37 @@
     padding: 0.375em 16px 1.125em;
   }
 
+  /* == File Pages == */
+  .files #content #primary {
+    background-color: transparent;
+    border-top: 0;
+    -webkit-box-shadow: transparent 0 0 0;
+    -moz-box-shadow: transparent 0 0 0;
+    box-shadow: transparent 0 0 0;
+    padding-top: 0;
+  }
+  .files #content #primary:first-child {
+    margin-top: 0;
+  }
+  .files #content #sidebar h3 {
+    padding-left: 0;
+  }
+  .files .download-file {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url("../javascripts/boxsizing.htc");
+    width: 100%;
+    overflow: auto;
+    padding: 0.375em;
+    display: block;
+  }
+  .files .download-file img {
+    max-width: 100%;
+    vertical-align: bottom;
+    float: left;
+  }
+
   #content {
     *zoom: 1;
   }
@@ -1854,14 +1885,14 @@
     width: auto;
   }
 
-  .item #primary, #exhibit.exhibit-item-show #primary {
+  .item #primary, #exhibit.exhibit-item-show #primary, .files #primary {
     *margin-left: 0;
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
   }
-  .item #sidebar, #exhibit.exhibit-item-show #sidebar {
+  .item #sidebar, #exhibit.exhibit-item-show #sidebar, .files #sidebar {
     display: inline-block;
     float: right;
     clear: right;

@@ -148,7 +148,7 @@ header, nav.top, #content, footer {
     }
 }
 
-.item, #exhibit.exhibit-item-show {
+.item, #exhibit.exhibit-item-show, .files {
     #primary {
         *margin-left: 0;
         @include span-columns (5 alpha, 8);

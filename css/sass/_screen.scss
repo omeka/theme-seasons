@@ -508,6 +508,34 @@ footer {
 
 }
 
+/* == File Pages == */
+
+.files {
+    #content #primary { 
+        @include block-reset(); 
+        padding-top: 0;
+        
+        &:first-child { margin-top: 0; }
+    }
+    
+    #content #sidebar h3 { padding-left: 0; }
+    
+    .download-file { 
+        @include boxsizing(border-box);
+        width: 100%; 
+        overflow: auto;
+        padding: rhythm(.25);
+        display: block;
+        
+        img {
+            max-width: 100%; 
+            vertical-align: bottom;
+            float: left;
+        }
+    }
+}
+
+
 #content {
     
     @include pie-clearfix();
