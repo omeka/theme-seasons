@@ -531,10 +531,9 @@ footer {
     
     .download-file { 
         @include boxsizing(border-box);
-        width: 100%; 
         overflow: auto;
         padding: rhythm(.25);
-        display: block;
+        display: inline-block;
         
         img {
             max-width: 100%; 
@@ -542,6 +541,8 @@ footer {
             float: left;
         }
     }
+    
+    .item-file { text-align: center; }
 }
 
 

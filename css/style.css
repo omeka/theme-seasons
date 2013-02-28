@@ -556,15 +556,17 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
-    width: 100%;
     overflow: auto;
     padding: 0.375em;
-    display: block;
+    display: inline-block;
   }
   .files .download-file img {
     max-width: 100%;
     vertical-align: bottom;
     float: left;
+  }
+  .files .item-file {
+    text-align: center;
   }
 
   #content {
