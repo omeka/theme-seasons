@@ -89,7 +89,6 @@
 
   input[type=text], input[type=password], textarea,
   input[type=submit], button, .button {
-    height: 35px;
     border: 0;
     padding: 0.46875em 16px;
     margin: 0;
@@ -97,6 +96,11 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
+  }
+
+  input[type=text], input[type=password],
+  input[type=submit], button, .button {
+    height: 35px;
   }
 
   input[type=text], input[type=password], textarea {

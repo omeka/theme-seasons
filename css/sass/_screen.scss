@@ -68,11 +68,15 @@ label {
 
 input[type=text], input[type=password], textarea,
 input[type=submit], button, .button {
-    height: 35px;
     border: 0;
     padding: rhythm(.3125) 16px;
     margin: 0;
     @include boxsizing(border-box);
+}
+
+input[type=text], input[type=password],
+input[type=submit], button, .button {
+    height: 35px;
 }
 
 input[type=text], input[type=password], textarea { width: 100%; }
