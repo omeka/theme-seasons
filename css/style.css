@@ -423,24 +423,36 @@
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
   }
-  .item #itemfiles a img {
+  .items.show #itemfiles a img {
     width: 100%;
     height: auto;
     vertical-align: bottom;
   }
-  .item #itemfiles .element-text div:first-of-type {
+  .items.show #itemfiles .element-text div:first-of-type {
     border-top: 1px solid #dfe2e2;
   }
-  .item #content #primary .element:last-of-type {
+  .items.show #content #primary .element:last-of-type {
     padding-bottom: 0;
   }
-  .item #primary {
+  .items.show #content #primary {
     background-color: transparent;
     border-top: 0;
-    padding: 0;
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
+    padding: 0;
+  }
+  .items.show #content #primary > div {
+    border-top-width: 10px;
+    border-top-style: solid;
+    padding: 0.75em 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+  }
+  .items.show #content #primary > div > div {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .advanced-search #content > * > div {
@@ -1818,7 +1830,7 @@
     *border-color: #e8e8e8;
     *border-top-color: #666666;
   }
-  .night #home #content > div img, .night .item #itemfiles a,
+  .night #home #content > div img, .night .items.show #itemfiles a,
   .night #home #content .item, .night #home #content div .view-items-link,
   .night .collections #content div .view-items-link {
     border-color: #313131;
@@ -2062,14 +2074,14 @@
     width: auto;
   }
 
-  .item #primary, #exhibit.exhibit-item-show #primary, .files #primary {
+  .items.show #primary, #exhibit.exhibit-item-show #primary, .files #primary {
     *margin-left: 0;
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
     display: inline;
   }
-  .item #sidebar, #exhibit.exhibit-item-show #sidebar, .files #sidebar {
+  .items.show #sidebar, #exhibit.exhibit-item-show #sidebar, .files #sidebar {
     display: inline-block;
     float: right;
     clear: right;
