@@ -592,7 +592,9 @@ footer {
         @include boxsizing(border-box);
         @include trailer(.75);
 
-        .view-items-link { padding: rhythm(.25) 16px rhythm(.75); }
+        .view-items-link { 
+            padding: rhythm(.25) 16px rhythm(.75); 
+        }
 
         & > div, & > h3, & > h4, & > h5, & > h6, & > p {
             padding-left: 16px;
@@ -618,6 +620,8 @@ footer {
                 &:first-of-type { border-top: 0; }
             }
         }
+        
+        & *:only-child { margin-top: 0; }
 
         @include pie-clearfix();
 
@@ -906,6 +910,12 @@ footer {
         border-top: 1px solid $winter-light-gray;
         padding: rhythm(.5) 16px 0;
         margin: rhythm(1) 0 0 0;
+            
+        & + div { 
+            border-color: #DFE2E2;
+            @include leader(.5);
+            @include leading-border(1px, 1, $base-font-size, solid);
+        }
     }
 }
 

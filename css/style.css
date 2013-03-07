@@ -648,6 +648,9 @@
   #content > div div div:first-of-type, #content > div div h3:first-of-type, #content > div div h4:first-of-type, #content > div div h5:first-of-type, #content > div div h6:first-of-type, #content > div div p:first-of-type, #content section div div:first-of-type, #content section div h3:first-of-type, #content section div h4:first-of-type, #content section div h5:first-of-type, #content section div h6:first-of-type, #content section div p:first-of-type {
     border-top: 0;
   }
+  #content > div *:only-child, #content section *:only-child {
+    margin-top: 0;
+  }
   #content > div:after, #content section:after {
     content: "";
     display: table;
@@ -938,6 +941,13 @@
     border-top: 1px solid #dfe2e2;
     padding: 0.75em 16px 0;
     margin: 1.5em 0 0 0;
+  }
+  .collections #content .view-items-link + div {
+    border-color: #DFE2E2;
+    margin-top: 0.75em;
+    border-top-style: solid;
+    border-top-width: 0.0625em;
+    padding-top: 1.4375em;
   }
 
   .search #search-results {

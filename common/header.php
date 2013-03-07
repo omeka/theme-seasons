@@ -34,13 +34,13 @@
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <div id="wrap">
         <header>
-            <?php fire_plugin_hook('public_header'); ?>
             <div id="site-title">
                 <?php echo link_to_home_page(theme_logo()); ?>
             </div>
             <div id="search-container">
                 <?php echo search_form(array('show_advanced' => true)); ?>
             </div>
+            <?php fire_plugin_hook('public_header'); ?>
         </header>
 
         <nav class="top">
@@ -48,4 +48,3 @@
         </nav>
 
         <div id="content">
-            <?php fire_plugin_hook('public_content_top'); ?>

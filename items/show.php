@@ -5,6 +5,10 @@
 <div id="primary">
     
     <?php echo all_element_texts('item'); ?>
+    
+    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+
+
 
 </div><!-- end primary -->
 
@@ -43,8 +47,6 @@
         <h2><?php echo __('Citation'); ?></h2>
         <div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
     </div>
-
-    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
 </aside>
 
