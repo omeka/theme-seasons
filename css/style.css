@@ -289,17 +289,17 @@
   }
 
   /* -- General -- */
-  #home #content div .item {
+  #home #content div .items-list .item {
     border-top: 1px solid #dfe2e2;
     overflow: auto;
   }
-  #home #content div .item:first-of-type {
+  #home #content div .items-list .item:first-of-type {
     border-top: 0;
   }
-  #home #content div .item:first-of-type h3 {
+  #home #content div .items-list .item:first-of-type h3 {
     margin-top: 0.375em;
   }
-  #home #content div .item h3 {
+  #home #content div .items-list .item h3 {
     margin-top: 0.75em;
     padding-left: 16px;
     padding-right: 16px;
@@ -398,18 +398,18 @@
   }
 
   /* == Items Pages == */
-  .item h3 {
+  .items.show h3 {
     margin-bottom: 0.75em;
   }
-  .item #itemfiles #item-images > div {
+  .items.show #itemfiles #item-images > div {
     width: 22.5%;
     display: inline-block;
     margin-right: 3%;
   }
-  .item #itemfiles #item-images > div:nth-of-type(4n) {
+  .items.show #itemfiles #item-images > div:nth-of-type(4n) {
     margin-right: 0;
   }
-  .item #itemfiles a {
+  .items.show #itemfiles a {
     border: 1px solid #dfe2e2;
     display: inline-block;
     zoom: 1;
@@ -921,6 +921,10 @@
     zoom: 1;
     display: inline;
   }
+  .items #content #primary {
+    padding-right: 0%;
+    padding-left: 0%;
+  }
 
   .collections:only-of-type, .collections:last-of-type {
     border-bottom: 0;
@@ -940,13 +944,17 @@
   .collections #content .element-set .element:last-of-type {
     margin-bottom: 0;
   }
-  .collections #collection-items > div {
+  .collections #collection-items .item {
     border-top: 1px solid #dfe2e2;
+    padding-bottom: 1.5em;
   }
-  .collections #collection-items > div:first-of-type {
+  .collections #collection-items .item:first-of-type {
     border-top: 0;
   }
-  .collections #collection-items > div div:only-of-type {
+  .collections #collection-items .item:last-of-type {
+    padding-bottom: 0.75em;
+  }
+  .collections #collection-items .item div:only-of-type {
     margin-bottom: 0;
   }
   .collections #content .view-items-link {
@@ -1176,7 +1184,7 @@
   }
 
   /* == Simple Pages styles == */
-  .page #content #primary {
+  #content #primary {
     background-color: #fff;
     border-style: solid;
     border-width: 10px 0 0 0;
@@ -1197,16 +1205,16 @@
     *border-left: 1px solid #ccc;
     *border-bottom: 1px solid #ccc;
   }
-  .page #content #primary div {
+  #content #primary div {
     border-top: 0;
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-  .page #content #primary > * {
+  #content #primary > * {
     padding: 0;
   }
-  .page #content #primary > ul, .page #content #primary > ol {
+  #content #primary > ul, #content #primary > ol {
     padding-left: 1em;
   }
 
@@ -1233,6 +1241,16 @@
   #simple-pages-breadcrumbs {
     font-weight: bold;
     margin-bottom: 1.5em;
+  }
+
+  #content #primary div {
+    padding: 0;
+  }
+  #content #primary h1 {
+    color: inherit;
+  }
+  #content #primary h1:first-child {
+    margin-top: 0;
   }
 
   /* Winter Styles */

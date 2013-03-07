@@ -265,7 +265,7 @@ footer {
 
         #content div {
             
-            .item {
+            .items-list .item {
                 border-top: 1px solid $winter-light-gray;
                 overflow: auto;
                 
@@ -425,12 +425,23 @@ footer {
     
     #content #primary .element:last-of-type { padding-bottom: 0; }
 
-    #primary {
-        background-color: transparent;
-        border-top: 0;
+    #content #primary {
+        @include block-reset(); 
         padding: 0;
-        @include box-shadow(transparent 0 0 0);
+        
+        & > div {
+            border-top-width: 10px;
+            border-top-style: solid;
+            padding: rhythm(.5) 0;
+            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            
+            & > div {
+              padding-left: 16px;
+              padding-right: 16px;
+            }
+        }
     }
+    
     
 }
 
@@ -870,6 +881,11 @@ footer {
             display: inline;
         }
     }
+    
+    #content #primary {
+        @include suffix(0);
+        @include prefix(0);
+    }
 }
 
 .collections {
@@ -892,18 +908,15 @@ footer {
         &:last-of-type { margin-bottom: 0; }
     }
 
-    #collection-items {
-        > div {
+    #collection-items .item {
         border-top: 1px solid $winter-light-gray;
+        @include padding-trailer(1);
 
-            &:first-of-type {
-                border-top: 0;
-            }
-            
-            div:only-of-type {
-                margin-bottom: 0;
-            }
-        }
+        &:first-of-type { border-top: 0; }
+        
+        &:last-of-type { @include padding-trailer(.5) }
+        
+        div:only-of-type { margin-bottom: 0; }
     }
     
     #content .view-items-link {
@@ -1129,7 +1142,7 @@ footer {
 
 
 /* == Simple Pages styles == */
-.page #content #primary {
+#content #primary {
     background-color: #fff;
     border-style: solid;
     border-width: 10px 0 0 0;
@@ -1176,6 +1189,13 @@ footer {
 #simple-pages-breadcrumbs {
     font-weight:bold;
     @include trailer();
+}
+
+#content #primary {
+  
+  div { padding: 0; }
+  h1 { color: inherit; }
+  h1:first-child { margin-top: 0; }
 }
 
 /* Winter Styles */
