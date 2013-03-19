@@ -743,7 +743,6 @@
     vertical-align: bottom;
   }
   #content #primary > div, #content #sidebar > div {
-    background-color: #fff;
     border-style: solid;
     border-width: 10px 0 0 0;
     -webkit-box-sizing: border-box;
@@ -900,27 +899,6 @@
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .items .items-nav {
-    margin-bottom: 0.375em;
-    *zoom: 1;
-  }
-  .items .items-nav:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .items .items-nav .active {
-    font-weight: 500;
-  }
-  .items .items-nav ul {
-    padding-left: 0;
-  }
-  .items .items-nav li {
-    display: inline-block;
-    float: left;
-    width: auto;
-    margin-right: 16px;
-  }
   .items #sort-links {
     border-top: 0;
     padding: 0.375em 12px;
@@ -937,6 +915,28 @@
   .items #content #primary {
     padding-right: 0%;
     padding-left: 0%;
+  }
+
+  .items-nav, #secondary-nav {
+    margin-bottom: 1.5em;
+    *zoom: 1;
+  }
+  .items-nav:after, #secondary-nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .items-nav .active, #secondary-nav .active {
+    font-weight: 500;
+  }
+  .items-nav ul, #secondary-nav ul {
+    padding-left: 0;
+  }
+  .items-nav li, #secondary-nav li {
+    display: inline-block;
+    float: left;
+    width: auto;
+    margin-right: 16px;
   }
 
   .collections:only-of-type, .collections:last-of-type {
@@ -1198,7 +1198,6 @@
 
   /* == Simple Pages styles == */
   #content #primary {
-    background-color: #fff;
     border-style: solid;
     border-width: 10px 0 0 0;
     overflow: visible;
@@ -1343,6 +1342,9 @@
     *border-color: #e8e8e8;
     *border-top-color: #4b6569;
   }
+  .winter #content #primary > div, .winter #content #sidebar > div {
+    background-color: #fff;
+  }
   .winter #content .pagination_list {
     background-color: #56acba;
   }
@@ -1474,6 +1476,9 @@
     *border-style: solid;
     *border-color: #e8e8e8;
     *border-top-color: #ba5656;
+  }
+  .spring #content #primary > div, .spring #content #sidebar > div {
+    background-color: #fff;
   }
   .spring #content .pagination_list {
     background-color: #ba5656;
@@ -1609,6 +1614,9 @@
     *border-color: #e8e8e8;
     *border-top-color: #8ecac8;
   }
+  .summer #content #primary > div, .summer #content #sidebar > div {
+    background-color: #fff;
+  }
   .summer #content .pagination_list {
     background-color: #8ecac8;
   }
@@ -1731,6 +1739,9 @@
   }
   .autumn #content h2 {
     border-color: #ecebe6;
+  }
+  .autumn #content #primary > div, .autumn #content #sidebar > div {
+    background-color: #fff;
   }
   .autumn #content > div, .autumn #content #primary > div, .autumn #content #sidebar > div,
   .autumn #content #advanced-search-form > div, .autumn #content #exhibit-pages {
@@ -1881,6 +1892,10 @@
     *border-top-color: #666666;
     background-color: #252525;
   }
+  .night #content #primary > div, .night #content #sidebar > div,
+  .night #content .item-pagination li {
+    background-color: #252525;
+  }
   .night #content .pagination_list {
     background-color: #252525;
   }
@@ -1899,10 +1914,6 @@
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
-  }
-  .night #content #primary > div, .night #content #sidebar > div,
-  .night #content .item-pagination li {
-    background-color: #252525;
   }
   .night #search-results th {
     background-color: #666666;

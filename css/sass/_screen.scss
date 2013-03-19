@@ -721,7 +721,6 @@ footer {
     }
 
     #primary > div, #sidebar > div {
-        background-color: #fff;
         border-style: solid;
         border-width: 10px 0 0 0;
         @include boxsizing(border-box);
@@ -860,22 +859,6 @@ footer {
         margin-bottom: 0; 
         padding-bottom: 0;
     }
-
-    .items-nav {
-        @include trailer(.25);
-        @include pie-clearfix();
-        
-        .active { font-weight: 500; }
-        
-        ul { padding-left: 0; }
-        
-        li { 
-            display: inline-block; 
-            float: left;
-            width: auto;
-            margin-right: 16px;
-        }
-    }
     
     #sort-links {
         border-top: 0;
@@ -894,6 +877,22 @@ footer {
     #content #primary {
         @include suffix(0);
         @include prefix(0);
+    }
+}
+
+.items-nav, #secondary-nav {
+    @include trailer();
+    @include pie-clearfix();
+    
+    .active { font-weight: 500; }
+    
+    ul { padding-left: 0; }
+    
+    li { 
+        display: inline-block; 
+        float: left;
+        width: auto;
+        margin-right: 16px;
     }
 }
 
@@ -1152,7 +1151,6 @@ footer {
 
 /* == Simple Pages styles == */
 #content #primary {
-    background-color: #fff;
     border-style: solid;
     border-width: 10px 0 0 0;
     overflow: visible;
@@ -1279,6 +1277,8 @@ footer {
             *border-top-color: $winter-slate; 
         }
         
+        #primary > div, #sidebar > div { background-color: #fff; }
+    
         .pagination_list { 
             background-color: $winter-bright-blue; 
             
@@ -1305,7 +1305,7 @@ footer {
     #search-filters, #item-filters {
         li { background-color: $winter-blue-on-pale-blue; }
     }
-
+    
     .page #content { 
         border-color: $winter-slate; 
         *border-width: 10px 1px 1px 1px;
@@ -1403,6 +1403,8 @@ footer {
             *border-top-color: $spring-red;
         }
 
+        #primary > div, #sidebar > div { background-color: #fff; }
+    
         .pagination_list { 
             background-color: $spring-red; 
             
@@ -1527,6 +1529,8 @@ footer {
             *border-top-color: $summer-blue;
         }
         
+        #primary > div, #sidebar > div { background-color: #fff; }
+    
         .pagination_list { 
             background-color: $summer-blue; 
             
@@ -1553,7 +1557,7 @@ footer {
     #search-filters, #item-filters {
         li { background-color: #fff; }
     }
-    
+
     .page #content { 
         border-color: $summer-blue; 
         *border-width: 10px 1px 1px 1px;
@@ -1639,6 +1643,8 @@ footer {
         
         h2 { border-color: $autumn-gray; }
 
+        #primary > div, #sidebar > div { background-color: #fff; }
+
         & > div, #primary > div, #sidebar > div,
         #advanced-search-form > div, #exhibit-pages { 
             border-color: $autumn-dark-beige; 
@@ -1669,7 +1675,7 @@ footer {
     #search-filters, #item-filters {
         li { background-color: #fff; }
     }
-    
+
     .page #content { 
         border-color: $autumn-dark-beige; 
         *border-width: 10px 1px 1px 1px;
@@ -1787,7 +1793,10 @@ footer {
             *border-top-color: $night-highlight;
             background-color: $night-darker;
         }
-        
+
+        #primary > div, #sidebar > div,
+        .item-pagination li { background-color: $night-darker; }
+    
         .pagination_list { 
             background-color: $night-darker; 
             
@@ -1803,8 +1812,6 @@ footer {
             @include box-shadow(transparent 0 0 0);
         }
         
-        #primary > div, #sidebar > div,
-        .item-pagination li { background-color: $night-darker; }
     }
     
     #search-results th { 
@@ -1817,7 +1824,7 @@ footer {
     #search-filters, #item-filters {
         li { background-color: $night-highlight; }
     }
-    
+
     .page #content { 
         border-color: $night-highlight; 
         *border-width: 10px 1px 1px 1px;
