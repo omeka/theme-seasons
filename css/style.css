@@ -1261,7 +1261,7 @@
   .winter h1, .winter #site-title a {
     color: #859ca2;
   }
-  .winter input[type=submit], .winter button {
+  .winter input[type=submit], .winter button, .winter .button, .winter #advanced-search {
     background-color: #4b6569;
   }
   .winter input[type=text], .winter input[type=password], .winter textarea {
@@ -1392,7 +1392,7 @@
   .spring h1, .spring #site-title a {
     color: #4a6f14;
   }
-  .spring input[type=submit], .spring button, .spring .button {
+  .spring input[type=submit], .spring button, .spring .button, .spring #advanced-search {
     background-color: #ba5656;
   }
   .spring input[type=text], .spring input[type=password], .spring textarea {
@@ -1524,7 +1524,7 @@
   .summer h1, .summer #site-title a {
     color: #13bbbb;
   }
-  .summer input[type=submit], .summer button, .summer .button {
+  .summer input[type=submit], .summer button, .summer .button, .summer #advanced-search {
     background-color: #8ecac8;
   }
   .summer input[type=text], .summer input[type=password], .summer textarea {
@@ -1658,7 +1658,7 @@
   .autumn h1, .autumn #site-title a {
     color: #f8f1e5;
   }
-  .autumn input[type=submit], .autumn button, .autumn .button {
+  .autumn input[type=submit], .autumn button, .autumn .button, .autumn #advanced-search {
     background-color: #86443c;
   }
   .autumn input[type=text], .autumn input[type=password], .autumn textarea {

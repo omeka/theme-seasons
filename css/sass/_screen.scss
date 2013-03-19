@@ -1208,7 +1208,7 @@ footer {
     
     h1, #site-title a { color:#859ca2; }
 
-    input[type=submit], button { background-color: $winter-slate; }
+    input[type=submit], button, .button, #advanced-search { background-color: $winter-slate; }
 
     input[type=text], input[type=password], textarea { background-color: $winter-light-gray; }
 
@@ -1331,7 +1331,7 @@ footer {
     
     h1, #site-title a { color: $spring-dark-green; }
 
-    input[type=submit], button, .button {  background-color: $spring-red; }
+    input[type=submit], button, .button, #advanced-search {  background-color: $spring-red; }
 
     input[type=text], input[type=password], textarea { 
         background-color: #fff; 
@@ -1455,7 +1455,7 @@ footer {
     
     h1, #site-title a { color: $summer-title-blue; }
 
-    input[type=submit], button, .button { background-color: $summer-blue; }
+    input[type=submit], button, .button, #advanced-search { background-color: $summer-blue; }
 
     input[type=text], input[type=password], textarea { background-color: $summer-light-blue; }
 
@@ -1579,7 +1579,7 @@ footer {
     
     h1, #site-title a { color: $autumn-beige; }
 
-    input[type=submit], button, .button { background-color: $autumn-dark-red; }
+    input[type=submit], button, .button, #advanced-search { background-color: $autumn-dark-red; }
 
     input[type=text], input[type=password], textarea { background-color: $autumn-beige; }
 
