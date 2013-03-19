@@ -3,6 +3,10 @@
 <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
 
 <div id="primary">
+
+    <?php if ((get_theme_option('Item FileGallery') == 0) && metadata('item', 'has files')): ?>
+    <?php echo files_for_item(); ?>
+    <?php endif; ?>
     
     <?php echo all_element_texts('item'); ?>
     
@@ -15,14 +19,10 @@
 <aside id="sidebar">
 
     <!-- The following returns all of the files associated with an item. -->
-    <?php if (metadata('item', 'has files')): ?>
+    <?php if ((get_theme_option('Item FileGallery') == 1) && metadata('item', 'has files')): ?>
     <div id="itemfiles" class="element">
         <h2><?php echo __('Files'); ?></h2>
-        <?php if (get_theme_option('Item FileGallery') == 1): ?>
         <?php echo item_image_gallery(); ?>
-        <?php else: ?>
-        <?php echo files_for_item(); ?>
-        <?php endif; ?>
     </div>
     <?php endif; ?>
 

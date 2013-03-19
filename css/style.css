@@ -454,6 +454,9 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+  .items.show .item-file {
+    text-align: center;
+  }
 
   .advanced-search #content > * > div {
     background-color: #fff;
