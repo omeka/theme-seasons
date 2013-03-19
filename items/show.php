@@ -5,7 +5,7 @@
 <div id="primary">
 
     <?php if ((get_theme_option('Item FileGallery') == 0) && metadata('item', 'has files')): ?>
-    <?php echo files_for_item(); ?>
+    <?php echo files_for_item(array('imageSize' => 'fullsize')); ?>
     <?php endif; ?>
     
     <?php echo all_element_texts('item'); ?>

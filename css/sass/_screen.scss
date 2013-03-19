@@ -442,7 +442,15 @@ footer {
         }
     }
     
-    .item-file { text-align: center; }
+    .item-file { 
+        text-align: center; 
+        
+        * { max-width: 100%; }
+        
+        img { vertical-align: bottom; }
+    }
+    
+    .download-file { display: inline-table; }
 
 }
 
