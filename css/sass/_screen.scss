@@ -960,7 +960,7 @@ footer {
 
 /* == Exhibit Pages == */
 
-#exhibit {
+.exhibits {
     
     h1 { 
         margin-bottom: 0;
@@ -969,7 +969,6 @@ footer {
     
     #content .navigation {
         padding-left: 0; 
-        @include trailer(.25);
         @include pie-clearfix();
 
         .active { font-weight: 500; }
@@ -1008,6 +1007,10 @@ footer {
     &.summary #content {
         h1 { @include trailer(.5); }
         
+        #primary { 
+            padding-left: 0; 
+            padding-right: 0; 
+        }
         
         #primary > div {
             @include block-reset; 
@@ -1016,7 +1019,6 @@ footer {
         }
         
         #exhibit-pages {
-            background-color: #fff;
             border-style: solid;
             border-width: 10px 0 0 0;
             overflow: visible;
@@ -1053,7 +1055,6 @@ footer {
             @include block-reset();
 
             a, span {
-                background-color: #fff;
                 padding: rhythm(.25) 16px;
                 display: inline-block;
                 width: 100%;
@@ -1078,11 +1079,10 @@ footer {
             
             .current { 
                 font-weight: bold; 
-                background-color: rgba(0, 0, 0, .1);
             }
 
         }
-        
+
         .exhibit-page-nav {
         
             @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
@@ -1324,9 +1324,15 @@ footer {
     
     .exhibit-page-nav { background-color: $summer-blue; }
     
+    .exhibit-page-nav .current, .exhibit-child-nav .current { background-color: rgba(0,0,0,.1); }
+    
     .exhibit-page-nav {
         a:link, a:visited { color: $winter-blue-on-pale-blue; }
         a:hover, a:active { color: #fff; }
+    }
+
+    #exhibit-page-navigation {
+        a, span { background-color: #fff; }
     }
 } 
 
@@ -1450,9 +1456,15 @@ footer {
     
     .exhibit-page-nav { background-color: $spring-red; }
     
+    .exhibit-page-nav .current, .exhibit-child-nav .current { background-color: rgba(0,0,0,.1); }
+
     .exhibit-page-nav {
         a:link, a:visited { color: $spring-yellow; }
         a:hover, a:active { color: #fff; }
+    }
+
+    #exhibit-page-navigation {
+        a, span { background-color: #fff; }
     }
 } 
 
@@ -1575,10 +1587,16 @@ footer {
     }
     
     .exhibit-page-nav { background-color: $summer-blue; }
-    
+
+    .exhibit-page-nav .current, .exhibit-child-nav .current { background-color: rgba(0,0,0,.1); }
+
     .exhibit-page-nav {
         a:link, a:visited { color: $summer-yellow; }
         a:hover, a:active { color: #fff; }
+    }
+
+    #exhibit-page-navigation {
+        a, span { background-color: #fff; }
     }
 } 
 
@@ -1693,10 +1711,16 @@ footer {
     }
 
     .exhibit-page-nav { background-color: $autumn-dark-red; }
-    
+
+    .exhibit-page-nav .current, .exhibit-child-nav .current { background-color: rgba(0,0,0,.1); }
+
     .exhibit-page-nav {
         a:link, a:visited { color: $autumn-dark-beige; }
         a:hover, a:active { color: #fff; }
+    }
+    
+    #exhibit-page-navigation {
+        a, span { background-color: #fff; }
     }
 } 
 
@@ -1844,9 +1868,10 @@ footer {
     }
 
     .exhibit-page-nav { background-color: $night-darker; }
+
+    .exhibit-page-nav .current, .exhibit-child-nav .current { background-color: rgba(255,255,255,.1); }
     
-    .exhibit-page-nav {
-        a:link, a:visited { color: $night-darkest; }
-        a:hover, a:active { color: #fff; }
+    #exhibit-page-navigation {
+        a, span { background-color: $night-darker; }
     }
 } 
