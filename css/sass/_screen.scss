@@ -1040,7 +1040,7 @@ footer {
             font-size: 2.5 * $base-font-size;
         }
         
-        .primary {
+        #primary {
         
             &:first-child { @include leader(); }
             
@@ -1132,6 +1132,15 @@ footer {
                     }
                 }
             }
+        }
+    }
+    
+    
+    #content { 
+        #secondary-nav .current a,
+        #secondary-nav a.current,
+        .exhibit-section-nav .current a {
+            background-color: transparent;
         }
     }
 }
@@ -1873,5 +1882,9 @@ footer {
     
     #exhibit-page-navigation {
         a, span { background-color: $night-darker; }
+    }
+    
+    .exhibits.show #content .exhibit-page-nav > li:nth-child(3) {
+        background-color: rgba(255,255,255,.08);
     }
 } 
