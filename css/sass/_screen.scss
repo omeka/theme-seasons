@@ -884,7 +884,7 @@ footer {
     @include trailer();
     @include pie-clearfix();
     
-    .active { font-weight: 500; }
+    .current, .active { font-weight: 500; }
     
     ul { padding-left: 0; }
     
@@ -971,7 +971,7 @@ footer {
         padding-left: 0; 
         @include pie-clearfix();
 
-        .active { font-weight: 500; }
+        .current, .active { font-weight: 500; }
         
         li { 
             display: inline-block; 

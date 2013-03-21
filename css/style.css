@@ -925,7 +925,7 @@
     display: table;
     clear: both;
   }
-  .items-nav .active, #secondary-nav .active {
+  .items-nav .current, .items-nav .active, #secondary-nav .current, #secondary-nav .active {
     font-weight: 500;
   }
   .items-nav ul, #secondary-nav ul {
@@ -1013,7 +1013,7 @@
     display: table;
     clear: both;
   }
-  .exhibits #content .navigation .active {
+  .exhibits #content .navigation .current, .exhibits #content .navigation .active {
     font-weight: 500;
   }
   .exhibits #content .navigation li {
