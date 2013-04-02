@@ -190,6 +190,15 @@
     position: relative;
     overflow: visible;
   }
+  #search-form input[type=text], #search-form input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+  }
   #search-form input[type=text] {
     width: 60%;
     font-size: 0.875em;
@@ -266,6 +275,9 @@
   #advanced-form p {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
+  }
+  #advanced-form p:last-of-type {
+    margin-bottom: 0em;
   }
 
   /* == Footer == */
@@ -911,6 +923,9 @@
     zoom: 1;
     display: inline;
   }
+  .items #sort-links-list {
+    padding-left: 0;
+  }
   .items #content #primary {
     padding-right: 0%;
     padding-left: 0%;
@@ -981,6 +996,9 @@
     border-top-width: 0.0625em;
     padding-top: 1.4375em;
   }
+  .collections .collection {
+    clear: both;
+  }
 
   .search #search-results {
     background-color: #fff;
@@ -1026,8 +1044,8 @@
     padding-bottom: 0;
   }
   .exhibits .exhibit > div {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
   .exhibits .exhibit-page {
     font-weight: bold;
@@ -1037,6 +1055,7 @@
     border-style: solid;
     border-width: 10px 0 0 0;
     overflow: visible;
+    padding: 0 16px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
@@ -1900,6 +1919,12 @@
     *border-color: #e8e8e8;
     *border-top-color: #666666;
   }
+  .night #home #content div .items-list .item {
+    border-top: 1px solid #313131;
+  }
+  .night #home #content div .items-list .item:first-of-type {
+    border-top: 0;
+  }
   .night #home #content > div img, .night .items.show #itemfiles a,
   .night #home #content .item, .night #home #content div .view-items-link,
   .night .collections #content div .view-items-link {
@@ -1980,6 +2005,13 @@
   }
   .night .exhibits.show #content .exhibit-page-nav > li:nth-child(3) {
     background-color: rgba(255, 255, 255, 0.08);
+  }
+  .night .exhibits.tags #content p:only-of-type {
+    background-color: #252525;
+    border-color: #666666;
+  }
+  .night #content div.hTagcloud ul li {
+    background-color: #252525;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2244,7 +2276,7 @@
     width: 33%;
   }
   .exhibits.show #content #exhibit-page-navigation a, .exhibits.show #content #exhibit-page-navigation span {
-    width: auto;
+    width: 100%;
   }
 }
 @media print {

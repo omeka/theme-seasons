@@ -162,6 +162,12 @@ header {
     position: relative;
     overflow: visible;
 
+    input[type=text], input[type=submit] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        @include border-radius(0px);
+    }
+
     input[type=text] {
         width: 60%;
         @include adjust-font-size-to(14px);
@@ -170,11 +176,11 @@ header {
     }
     
     input[type=submit] {
-      width: 30%;
-      padding: 0;
-      position: absolute;
-      top: 0;
-      left: 60%;
+        width: 30%;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 60%;
     }
 }
 
@@ -235,6 +241,8 @@ header {
     p {
         @include leader(.5);
         @include trailer(.5);
+        
+        &:last-of-type { @include trailer(0); }
     }
 }
 
@@ -662,7 +670,7 @@ footer {
     
     & > .element { border-bottom: 0; }
 
-    & > * >.element {
+    & > * > .element {
         @include trailer(.5);
         border-bottom: 1px solid $winter-light-gray;
 
@@ -874,6 +882,8 @@ footer {
         }
     }
     
+    #sort-links-list { padding-left: 0; }
+    
     #content #primary {
         @include suffix(0);
         @include prefix(0);
@@ -938,6 +948,10 @@ footer {
             @include leading-border(1px, 1, $base-font-size, solid);
         }
     }
+    
+    .collection {
+        clear: both;
+    }
 }
 
 .search {
@@ -985,8 +999,8 @@ footer {
     
     .exhibit {
         & > div {
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 16px !important;
+            padding-right: 16px !important;
         }
     }
         
@@ -997,6 +1011,7 @@ footer {
         border-style: solid;
         border-width: 10px 0 0 0;
         overflow: visible;
+        padding: 0 16px;
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
         @include boxsizing(border-box);
         @include padding-leader();
@@ -1806,6 +1821,15 @@ footer {
         *border-top-color: $night-highlight;
     }
     
+    #home #content div .items-list .item {
+        border-top: 1px solid $night-shadow;
+        
+        &:first-of-type {
+            border-top: 0;
+        }
+    }
+
+    
     #home #content > div img, .items.show #itemfiles a,
     #home #content .item, #home #content div .view-items-link,
     .collections #content div .view-items-link { 
@@ -1887,4 +1911,11 @@ footer {
     .exhibits.show #content .exhibit-page-nav > li:nth-child(3) {
         background-color: rgba(255,255,255,.08);
     }
+    
+    .exhibits.tags #content p:only-of-type {
+        background-color: $night-darker;
+        border-color: $night-highlight;
+    }
+    
+    #content div.hTagcloud ul li { background-color: $night-darker; }
 } 
