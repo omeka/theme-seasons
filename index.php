@@ -16,7 +16,7 @@
 </div><!--end featured-item-->
 <?php endif; ?>
 
-<?php fire_plugin_hook('public_content_top'); ?>
+<?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
 
 <?php if (get_theme_option('Display Featured Collection') !== '0'): ?>
 <!-- Featured Collection -->

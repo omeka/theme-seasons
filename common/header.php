@@ -40,7 +40,7 @@
             <div id="search-container">
                 <?php echo search_form(array('show_advanced' => true)); ?>
             </div>
-            <?php fire_plugin_hook('public_header'); ?>
+            <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
 
         <nav class="top">
