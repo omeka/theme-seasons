@@ -7,7 +7,9 @@
 
 /* -------------------------------------------------------------------------*/
 
-/* == Generic == */
+
+/* @group ---------- General HTML Elements ---------- */
+
 body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -58,7 +60,10 @@ ul {
     padding-left: 1em;
 }
 
-/* -- Form Elements -- */
+/* @end */
+
+
+/* @group ---------- Form Elements ---------- */
 
 label {
     @include padding-leader(.5);
@@ -100,35 +105,107 @@ fieldset {
     margin: 0;
     padding: 0;
 }
-    
-    /* -- Misc Classes -- */
-    .center-div {
+
+/* @end */
+
+
+/* @group ---------- Navigation ---------- */
+
+nav {
+    ul {
+        list-style:none;
         margin:0 auto;
-        overflow: auto;
     }
+    
+    li {
+        display:block;
         
-        /* Pagination Classes */
-        
-        .item-pagination {
-            clear:both;
-            @include padding-trailer(.5);
-
-            li {
-                display:inline-block;
-                background-color: #fff;
-                margin: 0 0 rhythm(.5) 0;
-                padding: rhythm(.25) 8px;
-                @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-                
-                &:empty { display: none; }
-            }
-
-            .next { float: right; }
-            .previous { float: left; }
+        ul li {
+            padding-left: 16px;
         }
-        
-        
-/* == Header == */
+    }
+    
+    a { display: inline-block; }
+}
+
+.top {
+    padding: 0 16px;
+    
+    ul {
+        display: none;
+        padding: 0;
+    }
+    
+    a {
+        @include padding-leader(.5);
+        @include padding-trailer(.5);
+    }
+    
+    .mobile {
+        margin: rhythm(1) auto;
+        width: 100%;
+    }
+}
+
+.navigation ul, ul.navigation { padding-left: 0; }
+
+.secondary-nav {
+    @include trailer();
+    @include pie-clearfix();
+    
+    .current, .active { font-weight: 500; }
+    
+    ul { padding-left: 0; }
+    
+    li { 
+        display: inline-block; 
+        float: left;
+        width: auto;
+        margin-right: 16px;
+    }
+}
+
+
+/* @end */
+
+
+/* @group ---------- Pagination ---------- */
+
+.pagination { 
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+    overflow: auto;
+    line-height: 2 * $base-line-height;
+    
+    li { 
+        display: inline-block; 
+        margin-right: 5px;
+    }
+    
+    & > *:last-child { padding-bottom: rhythm(.25); }
+    
+    input[type=text] {
+        width: 50px;
+        text-align: right;
+        margin-right: 10px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        @include rhythm-borders(1px, 0, $base-font-size, solid);
+    }
+}
+
+.pagination_previous a, .pagination_next a { 
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    padding: 0 10px;
+}
+
+/* @end */
+
+
+/* @group ---------- Header ---------- */
 
 header { 
     padding: 0 16px;
@@ -246,7 +323,11 @@ header {
     }
 }
 
-/* == Footer == */
+/* @end */
+
+
+/* @group ---------- Footer ---------- */
+
 footer {
     @include leader();
     padding: 0 16px;
@@ -259,336 +340,25 @@ footer {
     &:empty { display: none; }
 }
 
-/* == Content == */
+/* @end */
 
-    /* -- Structure -- */
-    #content {
-        clear:both;
-        overflow:visible;
-        padding: rhythm(1) 16px;
-    }
-    
-    /* -- General -- */
-    #home {
 
-        #content div {
-            
-            .items-list .item {
-                border-top: 1px solid $winter-light-gray;
-                overflow: auto;
-                
-                &:first-of-type { 
-                    border-top: 0; 
-                    
-                    h3 { margin-top: rhythm(.25); }
-                }
-                
-                h3 { 
-                    margin-top: rhythm(.5); 
-                    padding-left: 16px;
-                    padding-right: 16px;
-                }
-            }
-
-            .items-list {
-                margin-bottom: 0;
-                .item-description {
-                    margin: rhythm(.5) 16px 0;
-                }
-            }
-
-            h3, h4, h5, h6,
-            p, input, textarea {
-                margin: rhythm(.5) 0;
-            }
-
-            h3 {
-                margin-top: 0;
-                font-weight: 300;
-                text-transform: uppercase;
-            }
-            
-            img { 
-                margin: 0 16px rhythm(.5); 
-                border: 1px solid $winter-light-gray;
-                display: block;
-                max-width: 100%;
-                height: auto;
-                @include boxsizing(border-box);
-            }
-
-            .show {
-                display: block;
-                text-transform: capitalize;
-                &:before { content: "("; }
-                &:after { content: "...)"; }
-            }
-            
-            .view-items-link {
-                margin: 0;
-                padding: rhythm(.5) 16px 0;
-                border-top: 1px solid $winter-light-gray;
-            }
-            
-            .item-img {
-                display: inline;
-            }
-            
-            .item-description {
-                margin-top: 0;
-                padding-top: 0;
-            }
-
-        }
-        
-        #intro {
-            @include trailer();
-        }
-        
-        #featured-item p { clear: both; }
-        
-        #recent-items h2 { @include padding-trailer(.5); }
-
-    }
-        
-    /* -- Navigation -- */
-    nav {
-        ul {
-            list-style:none;
-            margin:0 auto;
-        }
-        
-        li {
-            display:block;
-            
-            ul li {
-                padding-left: 16px;
-            }
-        }
-        
-        a { display: inline-block; }
-    }
-    
-    .top {
-        padding: 0 16px;
-        
-        ul {
-            display: none;
-            padding: 0;
-        }
-        
-        a {
-            @include padding-leader(.5);
-            @include padding-trailer(.5);
-        }
-        
-        .mobile {
-            margin: rhythm(1) auto;
-            width: 100%;
-        }
-    }
-    
-    .navigation ul, ul.navigation { padding-left: 0; }
-      
-
-/* == Items Pages == */
-
-.items.show {
-    
-    h3 { @include trailer(.5); }
-    
-    #itemfiles {
-            
-        #item-images > div { 
-            width: 22.5%; 
-            display: inline-block;
-            margin-right: 3%;
-            
-            &:nth-of-type(4n) { margin-right: 0; }
-        }
-            
-        a {
-            border: 1px solid $winter-light-gray;
-            display: inline-block;
-            zoom: 1;
-            *display: inline;
-            min-width: 100%;
-            overflow: visible;
-            margin: 0;
-            padding: 0;
-            @include boxsizing(border-box);
-            
-            img {
-                width: 100%;
-                height: auto;
-                vertical-align: bottom;
-            }
-        }
-        .element-text {
-            div:first-of-type {
-                border-top: 1px solid $winter-light-gray;
-            }
-        }
-    }
-    
-    #content #primary .element:last-of-type { padding-bottom: 0; }
-
-    #content #primary {
-        @include block-reset(); 
-        padding: 0;
-        
-        & > div {
-            border-top-width: 10px;
-            border-top-style: solid;
-            padding: rhythm(.5) 0;
-            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-            
-            & > div {
-              padding-left: 16px;
-              padding-right: 16px;
-            }
-        }
-    }
-    
-    .item-file { 
-        text-align: center; 
-        
-        * { max-width: 100%; }
-        
-        img { vertical-align: bottom; }
-    }
-    
-    .download-file { display: inline-table; }
-
-}
-
-.advanced-search #content {
-    & > * > div {
-        background-color: #fff;
-        border-style: solid;
-        border-width: 10px 0 0 0;
-        overflow: visible;
-        padding: 0 0 rhythm(1) 0;
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-        @include boxsizing(border-box);
-        @include trailer(.75);
-        
-        &:last-of-type { padding: 0; }
-        
-        & > * {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-        
-        input { @include trailer(); }
-        
-        div.label {
-            @include trailer(.5);
-            @include leader(.5);
-        }
-        
-        & > div { 
-            @include box-shadow(transparent 0 0 0);
-            border-top: 0;
-            margin-bottom: 0;
-            padding: 0 16px;
-            
-            &:only-of-type, &:last-of-type { 
-                margin-bottom: 0; 
-            }
-            
-            div, h1, h2, h3, h4, h5, h6, p { 
-                
-                &:first-of-type { border-top: 0; }
-            }
-        }
-
-        @include pie-clearfix();
-
-    }
-
-    .remove_search {
-        @include trailer();
-        margin-left: 0;
-    }
-    
-    select { float: left; }
-    
-    button {
-        display: inline-block;
-        margin: 0 16px rhythm(1);
-        
-        &:last-of-type { margin-bottom: 0; }
-    }
-    
-    .search-entry { 
-        @include trailer(); 
-        
-        &:first-of-type { padding-bottom: 0; }
-        
-        &:last-of-type { @include trailer(); }
-        
-        &:only-of-type { @include trailer(0); }
-    }
-    
-    #advanced-search-form { @include leader(.5); }
-    
-    #advanced-search-form > div:last-of-type {
-        border: 0;
-        background-color: transparent;
-        float: left;
-        @include pie-clearfix();
-    }
-    
-    #submit_search_advanced {
-        *height: 50px;
-        margin-bottom: 0;
-    }
-    
-    .view-items-link { padding: rhythm(.25) 16px rhythm(.75); }
-
-}
-
-/* == File Pages == */
-
-.files {
-    #content #primary { 
-        @include block-reset(); 
-        padding-top: 0;
-        
-        &:first-child { margin-top: 0; }
-    }
-    
-    #content #sidebar h3 { padding-left: 0; }
-    
-    .download-file { 
-        @include boxsizing(border-box);
-        overflow: auto;
-        padding: rhythm(.25);
-        display: inline-block;
-        
-        img {
-            max-width: 100%; 
-            vertical-align: bottom;
-            float: left;
-        }
-    }
-    
-    .item-file { text-align: center; }
-}
+/* @group ---------- Content ---------- */
 
 
 #content {
-    
+    clear:both;
+    overflow:visible;
+    padding: rhythm(1) 16px;
     @include pie-clearfix();
 
     h1 {
         font-size:1.5 * $base-font-size; 
-        line-height: 1.5 * $base-line-height;
+        line-height: 2 * $base-line-height;
         text-transform: uppercase;
         border-top: 0;
-        padding: 0 0 rhythm(.5) 0;
-        @include trailer(.25);
+        padding: 0 0 $base-line-height 0;
+        margin: 0;
     }
 
     & > h2, & > div > h2, #primary > h2, #primary > div > h2,
@@ -601,7 +371,32 @@ footer {
         @include trailer(.5);
     }
 
-    #primary { 
+    #primary {
+        border-style: solid;
+        border-width: 10px 0 0 0;
+        overflow: visible;
+        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        @include boxsizing(border-box);
+        @include padding-leader();
+        @include padding-trailer();
+        @include trailer(.75);
+        @include prefix(.5);
+        @include suffix(.5);
+        *border-right: 1px solid #ccc;
+        *border-left: 1px solid #ccc;
+        *border-bottom: 1px solid #ccc;
+    
+        div {
+            border-top: 0;
+            @include box-shadow(transparent 0 0 0);
+            padding: 0;
+        }
+
+        h1:first-child { margin-top: 0; }
+        
+        & > * { padding: 0; }
+        
+        & > ul, & > ol { padding-left: 1em; }
         
         & > div > * {
             padding-left: 16px;
@@ -751,59 +546,6 @@ footer {
         }
     }
     
-    .pagination { 
-        display: inline; 
-        
-        & > *:last-child { padding-bottom: rhythm(.25); }
-    }
-
-    .pagination_list { 
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-        @include leader(.25);
-        @include trailer();
-        padding: rhythm(.25) 16px;
-        text-align: center;
-        
-        li { 
-            display:inline-block;
-            width: auto;
-            color: #fff;
-            margin: 0 4px;
-            zoom: 1;
-            *display: inline;
-        }
-        
-        a { padding: 0; }
-        
-        .pagination_current { font-weight: 500; }
-        
-        .pagination_first, .pagination_last,
-        .pagination_previous, .pagination_next {
-            a {
-                display: inline-block;
-                text-indent: -9999px;
-                *text-indent: 0;
-                
-                &:after {
-                    text-indent: 0;
-                    display: block;
-                    margin-top: -2em;
-                }
-            }
-        }
-
-        .pagination_first a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<<'); }
-        .pagination_last a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>>'); }
-        .pagination_previous a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<'); }
-        .pagination_next a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>'); }
-
-        .pagination_first a:after { content: "<<"; }
-        .pagination_last a:after { content: ">>"; }
-        .pagination_previous a:after { content: "<"; }
-        .pagination_next a:after { content: ">"; }
-        
-    }
-    
     #sidebar h3 { padding: 0 16px; }
 
 
@@ -861,6 +603,100 @@ footer {
     }
 }
 
+
+
+/* @end */
+
+
+/* @group ---------- Home ---------- */
+
+    #home {
+
+        #content div {
+            
+            .items-list .item {
+                border-top: 1px solid $winter-light-gray;
+                overflow: auto;
+                
+                &:first-of-type { 
+                    border-top: 0; 
+                    
+                    h3 { margin-top: rhythm(.25); }
+                }
+                
+                h3 { 
+                    margin-top: rhythm(.5); 
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+
+            .items-list {
+                margin-bottom: 0;
+                .item-description {
+                    margin: rhythm(.5) 16px 0;
+                }
+            }
+
+            h3, h4, h5, h6,
+            p, input, textarea {
+                margin: rhythm(.5) 0;
+            }
+
+            h3 {
+                margin-top: 0;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+            
+            img { 
+                margin: 0 16px rhythm(.5); 
+                border: 1px solid $winter-light-gray;
+                display: block;
+                max-width: 100%;
+                height: auto;
+                @include boxsizing(border-box);
+            }
+
+            .show {
+                display: block;
+                text-transform: capitalize;
+                &:before { content: "("; }
+                &:after { content: "...)"; }
+            }
+            
+            .view-items-link {
+                margin: 0;
+                padding: rhythm(.5) 16px 0;
+                border-top: 1px solid $winter-light-gray;
+            }
+            
+            .item-img {
+                display: inline;
+            }
+            
+            .item-description {
+                margin-top: 0;
+                padding-top: 0;
+            }
+
+        }
+        
+        #intro {
+            @include trailer();
+        }
+        
+        #featured-item p { clear: both; }
+        
+        #recent-items h2 { @include padding-trailer(.5); }
+
+    }
+
+/* @end */
+
+
+/* @group ---------- Items ---------- */
+
 .items {
 
     h1 { 
@@ -890,21 +726,202 @@ footer {
     }
 }
 
-.items-nav, #secondary-nav {
-    @include trailer();
-    @include pie-clearfix();
+.items.show {
     
-    .current, .active { font-weight: 500; }
+    h3 { @include trailer(.5); }
     
-    ul { padding-left: 0; }
-    
-    li { 
-        display: inline-block; 
-        float: left;
-        width: auto;
-        margin-right: 16px;
+    #itemfiles {
+            
+        #item-images > div { 
+            width: 22.5%; 
+            display: inline-block;
+            margin-right: 3%;
+            
+            &:nth-of-type(4n) { margin-right: 0; }
+        }
+            
+        a {
+            border: 1px solid $winter-light-gray;
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+            min-width: 100%;
+            overflow: visible;
+            margin: 0;
+            padding: 0;
+            @include boxsizing(border-box);
+            
+            img {
+                width: 100%;
+                height: auto;
+                vertical-align: bottom;
+            }
+        }
+        .element-text {
+            div:first-of-type {
+                border-top: 1px solid $winter-light-gray;
+            }
+        }
     }
+    
+    #content #primary .element:last-of-type { padding-bottom: 0; }
+
+    #content #primary {
+        @include block-reset(); 
+        padding: 0;
+        
+        & > div {
+            border-top-width: 10px;
+            border-top-style: solid;
+            padding: rhythm(.5) 0;
+            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            
+            & > div {
+              padding-left: 16px;
+              padding-right: 16px;
+            }
+        }
+    }
+    
+    .item-file { 
+        text-align: center; 
+        
+        * { max-width: 100%; }
+        
+        img { vertical-align: bottom; }
+    }
+    
+    .download-file { display: inline-table; }
+
 }
+
+/* @end */
+
+
+/* @group ---------- Advanced Search ---------- */
+
+.advanced-search #content {
+    & > * > div {
+        background-color: #fff;
+        border-style: solid;
+        border-width: 10px 0 0 0;
+        overflow: visible;
+        padding: 0 0 rhythm(1) 0;
+        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        @include boxsizing(border-box);
+        @include trailer(.75);
+        
+        &:last-of-type { padding: 0; }
+        
+        & > * {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        
+        input { @include trailer(); }
+        
+        div.label {
+            @include trailer(.5);
+            @include leader(.5);
+        }
+        
+        & > div { 
+            @include box-shadow(transparent 0 0 0);
+            border-top: 0;
+            margin-bottom: 0;
+            padding: 0 16px;
+            
+            &:only-of-type, &:last-of-type { 
+                margin-bottom: 0; 
+            }
+            
+            div, h1, h2, h3, h4, h5, h6, p { 
+                
+                &:first-of-type { border-top: 0; }
+            }
+        }
+
+        @include pie-clearfix();
+
+    }
+
+    .remove_search {
+        @include trailer();
+        margin-left: 0;
+    }
+    
+    select { float: left; }
+    
+    button {
+        display: inline-block;
+        margin: 0 16px rhythm(1);
+        
+        &:last-of-type { margin-bottom: 0; }
+    }
+    
+    .search-entry { 
+        @include trailer(); 
+        
+        &:first-of-type { padding-bottom: 0; }
+        
+        &:last-of-type { @include trailer(); }
+        
+        &:only-of-type { @include trailer(0); }
+    }
+    
+    #advanced-search-form { @include leader(.5); }
+    
+    #advanced-search-form > div:last-of-type {
+        border: 0;
+        background-color: transparent;
+        float: left;
+        @include pie-clearfix();
+    }
+    
+    #submit_search_advanced {
+        *height: 50px;
+        margin-bottom: 0;
+    }
+    
+    .view-items-link { padding: rhythm(.25) 16px rhythm(.75); }
+
+}
+
+/* @end */
+
+
+/* @group ---------- File Pages ---------- */
+
+.files {
+    #content #primary { 
+        @include block-reset(); 
+        padding-top: 0;
+        
+        &:first-child { margin-top: 0; }
+    }
+    
+    #content #sidebar h3 { padding-left: 0; }
+    
+    .download-file { 
+        @include boxsizing(border-box);
+        overflow: auto;
+        padding: rhythm(.25);
+        display: inline-block;
+        
+        img {
+            max-width: 100%; 
+            vertical-align: bottom;
+            float: left;
+        }
+    }
+    
+    .item-file { text-align: center; }
+}
+
+/* @end */
+
+
+/* @group ---------- Collections ---------- */
 
 .collections {
     
@@ -954,6 +971,11 @@ footer {
     }
 }
 
+/* @end */
+
+
+/* @group ---------- Search ---------- */
+
 .search {
     #search-results {
         background-color: #fff;
@@ -972,7 +994,10 @@ footer {
     }
 }
 
-/* == Exhibit Pages == */
+/* @end */
+
+
+/* @group ---------- ExhibitBuilder ---------- */
 
 .exhibits {
     
@@ -1172,32 +1197,10 @@ footer {
     div:empty { display: none; }
 }
 
+/* @end */
 
-/* == Simple Pages styles == */
-#content #primary {
-    border-style: solid;
-    border-width: 10px 0 0 0;
-    overflow: visible;
-    @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-    @include boxsizing(border-box);
-    @include padding-leader();
-    @include padding-trailer();
-    @include trailer(.75);
-    @include prefix(.5);
-    @include suffix(.5);
-    *border-right: 1px solid #ccc;
-    *border-left: 1px solid #ccc;
-    *border-bottom: 1px solid #ccc;
 
-    div {
-        border-top: 0;
-        @include box-shadow(transparent 0 0 0);
-    }
-    
-    & > * { padding: 0; }
-    
-    & > ul, & > ol { padding-left: 1em; }
-}
+/* @group ---------- Simple Pages ---------- */
 
 .simple-pages-navigation {
     list-style:none;
@@ -1222,14 +1225,11 @@ footer {
     @include trailer();
 }
 
-#content #primary {
-  
-  div { padding: 0; }
-  h1 { color: inherit; }
-  h1:first-child { margin-top: 0; }
-}
+/* @end */
 
-/* Winter Styles */
+
+/* @group ---------- Winter Styles ---------- */
+
 .winter {
 
     body {
@@ -1303,11 +1303,8 @@ footer {
         
         #primary > div, #sidebar > div { background-color: #fff; }
     
-        .pagination_list { 
+        .pagination_previous a, .pagination_next a { 
             background-color: $winter-bright-blue; 
-            
-            a:link, a:visited { color: $winter-blue-on-pale-blue; }
-            a:hover, a:active { color: #fff; }
         }
         
         .items-nav, #secondary-nav {
@@ -1360,7 +1357,11 @@ footer {
     }
 } 
 
-/*Spring Styles*/
+/* @end */
+
+
+/* @group ---------- Spring Styles ---------- */
+
 .spring {
 
     body {
@@ -1435,11 +1436,11 @@ footer {
 
         #primary > div, #sidebar > div { background-color: #fff; }
     
-        .pagination_list { 
-            background-color: $spring-red; 
+        .pagination_previous a, .pagination_next a { 
+            background-color: $spring-green; 
             
-            a:link, a:visited { color: $spring-yellow; }
-            a:hover, a:active { color: #fff; }
+            &:link, &:visited { color: $spring-light-green; }
+            &:active, &:hover { color: #fff; }
         }
         
         .items-nav {
@@ -1492,7 +1493,11 @@ footer {
     }
 } 
 
-/*Summer Styles*/
+/* @end */
+
+
+/* @group ---------- Summer Styles ---------- */
+
 .summer {
 
     body {
@@ -1504,7 +1509,10 @@ footer {
 
     input[type=submit], button, .button, #advanced-search { background-color: $summer-blue; }
 
-    input[type=text], input[type=password], textarea { background-color: $summer-light-blue; }
+    input[type=text], input[type=password], textarea { 
+        background-color: $summer-light-blue; 
+        color: $summer-title-blue;
+    }
 
     a {
         &:link { color: $summer-link-red; }
@@ -1567,11 +1575,13 @@ footer {
         
         #primary > div, #sidebar > div { background-color: #fff; }
     
-        .pagination_list { 
+        .pagination input[type=text] { border-color: $summer-light-blue; }
+        
+        .pagination_previous a, .pagination_next a { 
             background-color: $summer-blue; 
-            
-            a:link, a:visited { color: $summer-yellow; }
-            a:hover, a:active { color: #fff; }
+
+            &:link, &:visited { color: $summer-light-blue; }
+            &:active, &:hover { color: #fff; }
         }
         
         .items-nav {
@@ -1624,7 +1634,11 @@ footer {
     }
 } 
 
-/*Autumn Styles*/
+/* @end */
+
+
+/* @group ---------- Autumn Styles ---------- */
+
 .autumn {
 
     body {
@@ -1636,7 +1650,10 @@ footer {
 
     input[type=submit], button, .button, #advanced-search { background-color: $autumn-dark-red; }
 
-    input[type=text], input[type=password], textarea { background-color: $autumn-beige; }
+    input[type=text], input[type=password], textarea { 
+        background-color: $autumn-beige; 
+        color: $autumn-brown;
+    }
 
     a {
         &:link { color: $autumn-link; }
@@ -1696,11 +1713,10 @@ footer {
             *border-top-color: $autumn-dark-beige;
         }
         
-        .pagination_list { 
+        .pagination input[type=text] { border-color: $autumn-dark-beige; }
+        
+        .pagination_previous a, .pagination_next a { 
             background-color: $autumn-dark-red; 
-            
-            a:link, a:visited { color: $autumn-dark-beige; }
-            a:hover, a:active { color: #fff; }
         }
 
         .item-img { border-color: $autumn-gray; }
@@ -1748,7 +1764,11 @@ footer {
     }
 } 
 
-/*Autumn Styles*/
+/* @end */
+
+
+/* @group ---------- Night Styles ---------- */
+
 .night {
 
     body {
@@ -1767,7 +1787,7 @@ footer {
 
     input[type=text], input[type=password], textarea { 
         background-color: $night-darker; 
-        border: 1px solid $night-shadow;
+        border: 1px solid $night-highlight;
         color: $night-text-on-darker;
     }
 
@@ -1854,11 +1874,8 @@ footer {
         #primary > div, #sidebar > div,
         .item-pagination li { background-color: $night-darker; }
     
-        .pagination_list { 
+        .pagination_previous a, .pagination_next a { 
             background-color: $night-darker; 
-            
-            a:link, a:visited { color: $night-highlight; }
-            a:hover, a:active { color: #fff; }
         }
 
         .item-img { border-color: $night-shadow; }
@@ -1919,3 +1936,5 @@ footer {
     
     #content div.hTagcloud ul li { background-color: $night-darker; }
 } 
+
+/* @end */
