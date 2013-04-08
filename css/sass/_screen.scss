@@ -202,6 +202,24 @@ nav {
     padding: 0 10px;
 }
 
+.item-pagination {
+    clear:both;
+    @include padding-trailer(.5);
+
+    li {
+        display:inline-block;
+        background-color: #fff;
+        margin: 0 0 rhythm(.5) 0;
+        padding: rhythm(.25) 8px;
+        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        
+        &:empty { display: none; }
+    }
+
+    .next { float: right; }
+    .previous { float: left; }
+}
+
 /* @end */
 
 
