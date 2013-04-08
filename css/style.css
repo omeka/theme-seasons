@@ -213,6 +213,9 @@
     border-style: solid;
     border-width: 0.0625em;
     padding: -0.0625em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
 
   .pagination_previous a, .pagination_next a {
@@ -220,6 +223,9 @@
     display: inline-block;
     line-height: 35px;
     padding: 0 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
 
   .item-pagination {

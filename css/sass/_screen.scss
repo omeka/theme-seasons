@@ -192,14 +192,17 @@ nav {
         padding-left: 5px !important;
         padding-right: 5px !important;
         @include rhythm-borders(1px, 0, $base-font-size, solid);
+        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
     }
 }
+
 
 .pagination_previous a, .pagination_next a { 
     height: 35px;
     display: inline-block;
     line-height: 35px;
     padding: 0 10px;
+    @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
 }
 
 .item-pagination {
