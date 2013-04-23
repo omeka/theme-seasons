@@ -196,11 +196,11 @@ nav {
 }
 
 nav.pagination {
-	padding: 0;
-	display: inline; 
-	line-height: $base-line-height;
+    padding: 0;
+    display: inline; 
+    line-height: $base-line-height;
 
-	.pagination_list { 
+    .pagination_list { 
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
         @include trailer(1.25);
         clear: both;
@@ -1827,8 +1827,8 @@ footer {
         }
                        
         .pagination input[type=text] { 
-        	border-color: #fff; 
-        	background-color: #fff;
+            border-color: #fff; 
+            background-color: #fff;
         }
 
         nav .pagination_list { 
