@@ -149,7 +149,7 @@ nav {
 
 .navigation ul, ul.navigation { padding-left: 0; }
 
-.secondary-nav {
+.secondary-nav, #secondary-nav {
     @include trailer();
     @include pie-clearfix();
     
@@ -175,7 +175,6 @@ nav {
     display: inline;
     list-style-type: none;
     padding-left: 0;
-    overflow: auto;
     line-height: 2 * $base-line-height;
     
     li { 
@@ -193,6 +192,62 @@ nav {
         padding-right: 5px !important;
         @include rhythm-borders(1px, 0, $base-font-size, solid);
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+    }
+}
+
+nav.pagination {
+	padding: 0;
+	display: inline; 
+	line-height: $base-line-height;
+
+	.pagination_list { 
+        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        @include trailer(1.25);
+        clear: both;
+        padding: rhythm(.25) 16px;
+        text-align: center;
+        
+        li { 
+            display:inline-block;
+            width: auto;
+            color: #fff;
+            margin: 0 4px;
+            zoom: 1;
+            *display: inline;
+        }
+        
+        a { padding: 0; }
+        
+        .pagination_current { font-weight: 500; }
+        
+        .pagination_first, .pagination_last,
+        .pagination_previous, .pagination_next {
+            a {
+                display: inline-block;
+                text-indent: -9999px;
+                *text-indent: 0;
+                height: auto;
+                line-height: $base-line-height;
+                @include box-shadow(transparent 0 0 0);
+                
+                &:after {
+                    text-indent: 0;
+                    display: block;
+                    margin-top: -2em;
+                }
+            }
+        }
+
+        .pagination_first a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<<'); }
+        .pagination_last a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>>'); }
+        .pagination_previous a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<'); }
+        .pagination_next a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>'); }
+
+        .pagination_first a:after { content: "<<"; }
+        .pagination_last a:after { content: ">>"; }
+        .pagination_previous a:after { content: "<"; }
+        .pagination_next a:after { content: ">"; }
+        
     }
 }
 
@@ -1293,6 +1348,8 @@ footer {
     #content,
     #secondary-nav .current a,
     #secondary-nav a.current,
+    .secondary-nav .current a,
+    .secondary-nav a.current,
     .exhibit-section-nav .current a {
         background-color: $winter-pale-blue;
     }
@@ -1328,7 +1385,18 @@ footer {
             background-color: $winter-bright-blue; 
         }
         
-        .items-nav, #secondary-nav {
+        .pagination { 
+            a:link, a:visited { color: $winter-blue-on-pale-blue; }
+            a:hover, a:active { color: #fff; }
+        }
+               
+        .pagination input[type=text] { border-color: $winter-light-gray; }
+
+        nav .pagination_list { 
+            background-color: $winter-bright-blue;             
+        }
+        
+        .items-nav, .secondary-nav, #secondary-nav {
             a:link, a:visited { color: $winter-blue-on-pale-blue; }
             a:hover, a:active { color: #fff; }
         }
@@ -1429,6 +1497,8 @@ footer {
     #content,
     #secondary-nav .current a,
     #secondary-nav a.current,
+    .secondary-nav .current a,
+    .secondary-nav a.current,
     .exhibit-section-nav .current a {
         background-color: $spring-white;
     }
@@ -1456,14 +1526,22 @@ footer {
         }
 
         #primary > div, #sidebar > div { background-color: #fff; }
-    
+
         .pagination_previous a, .pagination_next a { 
             background-color: $spring-green; 
-            
-            &:link, &:visited { color: $spring-light-green; }
-            &:active, &:hover { color: #fff; }
         }
         
+        .pagination { 
+            a:link, a:visited { color: $spring-light-green; }
+            a:hover, a:active { color: #fff; }
+        }
+               
+        .pagination input[type=text] { border-color: $spring-light-green; }
+
+        nav .pagination_list { 
+            background-color: $spring-green;             
+        }
+    
         .items-nav {
             a:link, a:visited { color: $spring-green; }
             a:active, a:hover { color: $spring-hover-green; }
@@ -1565,6 +1643,8 @@ footer {
     #content,
     #secondary-nav .current a,
     #secondary-nav a.current,
+    .secondary-nav .current a,
+    .secondary-nav a.current,
     .exhibit-section-nav .current a {
         background-color: $summer-light-yellow;
     }
@@ -1595,14 +1675,20 @@ footer {
         }
         
         #primary > div, #sidebar > div { background-color: #fff; }
-    
-        .pagination input[type=text] { border-color: $summer-light-blue; }
-        
+
         .pagination_previous a, .pagination_next a { 
             background-color: $summer-blue; 
+        }
+        
+        .pagination { 
+            a:link, a:visited { color: $summer-light-blue; }
+            a:hover, a:active { color: #fff; }
+        }
+               
+        .pagination input[type=text] { border-color: $summer-light-blue; }
 
-            &:link, &:visited { color: $summer-light-blue; }
-            &:active, &:hover { color: #fff; }
+        nav .pagination_list { 
+            background-color: $summer-blue;             
         }
         
         .items-nav {
@@ -1706,6 +1792,8 @@ footer {
     #content,
     #secondary-nav .current a,
     #secondary-nav a.current,
+    .secondary-nav .current a,
+    .secondary-nav a.current,
     .exhibit-section-nav .current a {
         background-color: $autumn-beige;
     }
@@ -1733,13 +1821,20 @@ footer {
             *border-color: #e8e8e8;
             *border-top-color: $autumn-dark-beige;
         }
-        
-        .pagination input[type=text] { border-color: $autumn-dark-beige; }
-        
+
         .pagination_previous a, .pagination_next a { 
             background-color: $autumn-dark-red; 
         }
+                       
+        .pagination input[type=text] { 
+        	border-color: #fff; 
+        	background-color: #fff;
+        }
 
+        nav .pagination_list { 
+            background-color: $autumn-dark-red;             
+        }
+        
         .item-img { border-color: $autumn-gray; }
         
         div.hTagcloud {
@@ -1895,6 +1990,14 @@ footer {
         #primary > div, #sidebar > div,
         .item-pagination li { background-color: $night-darker; }
     
+        .pagination_previous a, .pagination_next a { 
+            background-color: $night-darker; 
+        }
+        
+        nav .pagination_list { 
+            background-color: $night-darker;             
+        }
+
         .pagination_previous a, .pagination_next a { 
             background-color: $night-darker; 
         }

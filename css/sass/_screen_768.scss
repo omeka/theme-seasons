@@ -70,8 +70,13 @@ header, nav.top, #content, footer {
     @include suffix(1);
 }
 
-#content .pagination_list {
+.pagination {
     float: left;
+    margin: 0;
+}
+
+#content nav .pagination_list {
+	@include leader(.25);
 }
 
 #home {
