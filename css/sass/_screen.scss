@@ -1099,6 +1099,7 @@ footer {
     #content .primary { padding-bottom: 0; }
     
     .exhibit {
+        clear: both;
         & > div {
             padding-left: 16px !important;
             padding-right: 16px !important;

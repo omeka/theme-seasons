@@ -1127,6 +1127,9 @@
   .exhibits #content .primary {
     padding-bottom: 0;
   }
+  .exhibits .exhibit {
+    clear: both;
+  }
   .exhibits .exhibit > div {
     padding-left: 16px !important;
     padding-right: 16px !important;
