@@ -888,12 +888,18 @@
   }
   .items.show .item-file {
     text-align: center;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
   }
   .items.show .item-file * {
     max-width: 100%;
   }
   .items.show .item-file img {
     vertical-align: bottom;
+  }
+  .items.show .item-file .download-file {
+    display: table-cell;
   }
   .items.show .download-file {
     display: inline-table;

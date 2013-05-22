@@ -861,10 +861,15 @@ footer {
     
     .item-file { 
         text-align: center; 
+        display: table;
+        table-layout: fixed;
+        width: 100%; 
         
         * { max-width: 100%; }
         
         img { vertical-align: bottom; }
+        
+        .download-file { display: table-cell; }
     }
     
     .download-file { display: inline-table; }
