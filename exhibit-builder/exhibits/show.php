@@ -8,7 +8,7 @@ echo head(array(
     <?php echo exhibit_builder_page_nav(); ?>
 </nav>
 
-<h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></h1>
+<h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h1>
 
 <nav id="exhibit-child-pages">
     <?php echo exhibit_builder_child_page_nav(); ?>
