@@ -876,6 +876,13 @@ footer {
 
 }
 
+#content #outputs {
+    @include block-reset;
+    clear: both;
+    
+    p { padding-left: 0; }
+}
+
 /* @end */
 
 
@@ -1402,7 +1409,7 @@ footer {
             background-color: $winter-bright-blue;             
         }
         
-        .items-nav, .secondary-nav, #secondary-nav {
+        .items-nav, .secondary-nav, #secondary-nav, #outputs {
             a:link, a:visited { color: $winter-blue-on-pale-blue; }
             a:hover, a:active { color: #fff; }
         }
