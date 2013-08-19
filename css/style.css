@@ -1189,22 +1189,6 @@
   .exhibits.summary #content #primary > div:last-child {
     margin-bottom: 0;
   }
-  .exhibits.summary #content #exhibit-pages {
-    border-style: solid;
-    border-width: 10px 0 0 0;
-    overflow: visible;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-  }
-  .exhibits.summary #content #exhibit-pages ul {
-    margin-left: 0;
-  }
-  .exhibits.summary #content #exhibit-pages ul ul {
-    padding-left: 0;
-  }
   .exhibits.show #content h1 {
     margin-top: 0.1875em;
     margin-bottom: 0.1875em;
@@ -1304,6 +1288,24 @@
   .exhibits #content #secondary-nav a.current,
   .exhibits #content .exhibit-section-nav .current a {
     background-color: transparent;
+  }
+
+  #exhibit-pages {
+    border-style: solid;
+    border-width: 10px 0 0 0;
+    overflow: visible;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: #fff;
+  }
+  #exhibit-pages ul {
+    margin-left: 0;
+  }
+  #exhibit-pages ul ul {
+    padding-left: 0;
   }
 
   #content .exhibit-item:empty {
