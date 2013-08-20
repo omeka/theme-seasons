@@ -1191,8 +1191,10 @@
   }
   .exhibits.show #content h1 {
     margin-top: 0.1875em;
-    margin-bottom: 0.1875em;
     font-size: 40px;
+  }
+  .exhibits.show #content div[role="main"] {
+    margin-top: 1.5em;
   }
   .exhibits.show #content #primary:first-child {
     margin-top: 1.5em;
@@ -1306,6 +1308,13 @@
   }
   .summary #exhibit-pages ul ul {
     padding-left: 0;
+  }
+
+  .exhibit-block {
+    padding: 0 16px !important;
+  }
+  .exhibit-block:first-child p:first-of-type {
+    margin-top: 0;
   }
 
   #content .exhibit-item:empty {
@@ -1451,10 +1460,10 @@
   .winter #content nav .pagination_list {
     background-color: #56acba;
   }
-  .winter #content .items-nav a:link, .winter #content .items-nav a:visited, .winter #content .secondary-nav a:link, .winter #content .secondary-nav a:visited, .winter #content #secondary-nav a:link, .winter #content #secondary-nav a:visited, .winter #content #outputs a:link, .winter #content #outputs a:visited {
+  .winter #content .items-nav a:link, .winter #content .items-nav a:visited, .winter #content .secondary-nav a:link, .winter #content .secondary-nav a:visited, .winter #content #secondary-nav a:link, .winter #content #secondary-nav a:visited, .winter #content #outputs a:link, .winter #content #outputs a:visited, .winter #content #exhibit-child-pages a:link, .winter #content #exhibit-child-pages a:visited {
     color: #def9ff;
   }
-  .winter #content .items-nav a:hover, .winter #content .items-nav a:active, .winter #content .secondary-nav a:hover, .winter #content .secondary-nav a:active, .winter #content #secondary-nav a:hover, .winter #content #secondary-nav a:active, .winter #content #outputs a:hover, .winter #content #outputs a:active {
+  .winter #content .items-nav a:hover, .winter #content .items-nav a:active, .winter #content .secondary-nav a:hover, .winter #content .secondary-nav a:active, .winter #content #secondary-nav a:hover, .winter #content #secondary-nav a:active, .winter #content #outputs a:hover, .winter #content #outputs a:active, .winter #content #exhibit-child-pages a:hover, .winter #content #exhibit-child-pages a:active {
     color: #fff;
   }
   .winter #content .item-img {
@@ -1487,7 +1496,7 @@
     color: #fff;
   }
   .winter .exhibit-page-nav {
-    background-color: #8ecac8;
+    background-color: #4b6569;
   }
   .winter .exhibit-page-nav .current, .winter .exhibit-child-nav .current {
     background-color: rgba(0, 0, 0, 0.1);
