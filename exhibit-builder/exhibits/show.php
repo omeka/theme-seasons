@@ -1,7 +1,4 @@
 <?php
-foreach ($layout_styles as $css_url):
-    queue_css_url($css_url);
-endforeach;
 echo head(array(
     'title' => metadata('exhibit_page', 'title') . ' &middot; ' . metadata('exhibit', 'title'),
     'bodyclass' => 'exhibits show'));
