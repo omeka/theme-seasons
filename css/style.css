@@ -1364,19 +1364,6 @@
 
   /* @end */
   /* @group ---------- Winter Styles ---------- */
-  #content > div .exhibit-geolocation-map div {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: auto;
-    padding-bottom: auto;
-    padding-left: auto;
-    padding-right: auto;
-  }
-
-  /* @end */
-  /* @group ---------- Winter Styles ---------- */
   .winter body {
     background-color: #2f3e4a;
     color: #5a5a5a;
