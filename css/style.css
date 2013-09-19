@@ -552,23 +552,23 @@
   #content > div > div > *:last-child, #content > div > h3 > *:last-child, #content > div > h4 > *:last-child, #content > div > h5 > *:last-child, #content > div > h6 > *:last-child, #content > div > p > *:last-child, #content section > div > *:last-child, #content section > h3 > *:last-child, #content section > h4 > *:last-child, #content section > h5 > *:last-child, #content section > h6 > *:last-child, #content section > p > *:last-child {
     padding-bottom: 0;
   }
-  #content > div div, #content section div {
+  #content > div > div, #content section > div {
     padding: 0.75em 0;
   }
-  #content > div div:first-of-type, #content section div:first-of-type {
+  #content > div > div:first-of-type, #content section > div:first-of-type {
     padding-top: 0;
   }
-  #content > div div:only-of-type, #content > div div:last-of-type, #content section div:only-of-type, #content section div:last-of-type {
+  #content > div > div:only-of-type, #content > div > div:last-of-type, #content section > div:only-of-type, #content section > div:last-of-type {
     margin-bottom: 0;
   }
-  #content > div div div, #content > div div h3, #content > div div h4, #content > div div h5, #content > div div h6, #content > div div p, #content section div div, #content section div h3, #content section div h4, #content section div h5, #content section div h6, #content section div p {
+  #content > div > div div, #content > div > div h3, #content > div > div h4, #content > div > div h5, #content > div > div h6, #content > div > div p, #content section > div div, #content section > div h3, #content section > div h4, #content section > div h5, #content section > div h6, #content section > div p {
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
     border-top: 0;
     margin-bottom: 0;
   }
-  #content > div div div:first-of-type, #content > div div h3:first-of-type, #content > div div h4:first-of-type, #content > div div h5:first-of-type, #content > div div h6:first-of-type, #content > div div p:first-of-type, #content section div div:first-of-type, #content section div h3:first-of-type, #content section div h4:first-of-type, #content section div h5:first-of-type, #content section div h6:first-of-type, #content section div p:first-of-type {
+  #content > div > div div:first-of-type, #content > div > div h3:first-of-type, #content > div > div h4:first-of-type, #content > div > div h5:first-of-type, #content > div > div h6:first-of-type, #content > div > div p:first-of-type, #content section > div div:first-of-type, #content section > div h3:first-of-type, #content section > div h4:first-of-type, #content section > div h5:first-of-type, #content section > div h6:first-of-type, #content section > div p:first-of-type {
     border-top: 0;
   }
   #content > div *:only-child, #content section *:only-child {
@@ -1360,6 +1360,19 @@
   #simple-pages-breadcrumbs {
     font-weight: bold;
     margin-bottom: 1.5em;
+  }
+
+  /* @end */
+  /* @group ---------- Winter Styles ---------- */
+  #content > div .exhibit-geolocation-map div {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
   }
 
   /* @end */
