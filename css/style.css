@@ -1292,6 +1292,11 @@
     background-color: transparent;
   }
 
+  #content .exhibit-items,
+  #content .gallery {
+    padding-bottom: 0;
+  }
+
   .summary #exhibit-pages {
     border-style: solid;
     border-width: 10px 0 0 0;
@@ -1333,6 +1338,10 @@
   .image-list-left-thumbs div:empty, .image-list-right div:empty, .image-list-right-thumbs div:empty,
   .text-full div:empty, .text-image-left div:empty, .text-image-right div:empty {
     display: none;
+  }
+
+  #content .layout-text p:only-child {
+    margin-top: 1.5em;
   }
 
   /* @end */
