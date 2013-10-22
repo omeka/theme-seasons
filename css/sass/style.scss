@@ -2,15 +2,15 @@
 
 // screen --------------------------------------------------------------------
 @media screen {
-  @import "screen";
+    @import "screen";
 }
 
 // 768px  --------------------------------------------------------------------
 @media screen and (min-width: 768px) {
-  @import "screen_768"; 
+    @import "screen_768"; 
 }
 
 // print ---------------------------------------------------------------------
 @media print {
-  @import "print";
+    @import "print";
 }

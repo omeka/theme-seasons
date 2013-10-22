@@ -1,14 +1,32 @@
-/* -------------------------------------------------------------------------*/
-/* Layout */
+/*
+Table of Contents
+=================
+-- General HTML Elements
+----- Headings
+----- Form Elements
+-- Global Classes
+-- Navigation
+----- Pagination
+-- Header 
+-- Footer
+-- Content
+-- Home
+-- Items
+-- Search
+----- Advanced Search
+-- Files
+-- Collections
+-- ExhibitBuilder
+-- Simple Pages
+-- Winter Styles
+-- Spring Styles
+-- Summer Styles
+-- Autumn Styles
+-- Night Styles
+*/
 
-.container {
-  @include container;
-}
 
-/* -------------------------------------------------------------------------*/
-
-
-/* @group ---------- General HTML Elements ---------- */
+/* !---------- General HTML Elements ---------- */
 
 body {
     font-family: "Ubuntu", sans-serif;
@@ -21,95 +39,97 @@ body {
 
 a { text-decoration: none; }
 
-/* -- Headings -- */
 
-h1 {
-    font-size: 2 * $base-font-size;
-    line-height: 2 * $base-line-height;
-}
-
-h2 {
-    font-size:1.5 * $base-font-size; 
-    line-height: 1.5 * $base-line-height;
-}
-
-h3 {
-    font-size: 1.25 * $base-font-size; 
-    line-height: 1.25 * $base-line-height;
-    font-weight: 500;
-}
-
-h4 { 
-    font-size: 1.125 * $base-font-size;
-    line-height: 1.125 * $base-line-height; 
-}
-
-h5, h6 {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-}
-
-p, ol, ul {
-    @include trailer();
+    /* !---------- Headings ---------- */
     
-    &:only-child, &:last-child { margin-bottom: 0; }
-}
-
-ul { 
-    list-style-type: disc; 
-    padding-left: 1em;
-}
-
-/* @end */
-
-
-/* @group ---------- Form Elements ---------- */
-
-label {
-    @include padding-leader(.5);
-    @include padding-trailer(.5);
-    display: inline-block;
-}
-
-input[type=text], input[type=password], textarea,
-input[type=submit], button, .button {
-    border: 0;
-    padding: rhythm(.3125) 16px;
-    margin: 0;
-    @include boxsizing(border-box);
-}
-
-input[type=text], input[type=password],
-input[type=submit], button, .button {
-    height: 35px;
-}
-
-input[type=text], input[type=password], textarea { width: 100%; }
-
-input[type=radio] { margin-right: 5px; }
-
-select {
-    width: 100%;
-    margin-top: 0;
-    @include trailer();
-}
-
-input[type=submit], button, .button {
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-}
+    h1 {
+        font-size: 2 * $base-font-size;
+        line-height: 2 * $base-line-height;
+    }
     
-fieldset { 
-    border: 0; 
-    margin: 0;
-    padding: 0;
+    h2 {
+        font-size:1.5 * $base-font-size; 
+        line-height: 1.5 * $base-line-height;
+    }
+    
+    h3 {
+        font-size: 1.25 * $base-font-size; 
+        line-height: 1.25 * $base-line-height;
+        font-weight: 500;
+    }
+    
+    h4 { 
+        font-size: 1.125 * $base-font-size;
+        line-height: 1.125 * $base-line-height; 
+    }
+    
+    h5, h6 {
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+    }
+    
+    p, ol, ul {
+        @include trailer();
+        
+        &:only-child, &:last-child { margin-bottom: 0; }
+    }
+    
+    ul { 
+        list-style-type: disc; 
+        padding-left: 1em;
+    }
+    
+    /* !---------- Form Elements ---------- */
+    
+    label {
+        @include padding-leader(.5);
+        @include padding-trailer(.5);
+        display: inline-block;
+    }
+    
+    input[type=text], input[type=password], textarea,
+    input[type=submit], button, .button {
+        border: 0;
+        padding: rhythm(.3125) 16px;
+        margin: 0;
+        @include boxsizing(border-box);
+    }
+    
+    input[type=text], input[type=password],
+    input[type=submit], button, .button {
+        height: 35px;
+    }
+    
+    input[type=text], input[type=password], textarea { width: 100%; }
+    
+    input[type=radio] { margin-right: 5px; }
+    
+    select {
+        width: 100%;
+        margin-top: 0;
+        @include trailer();
+    }
+    
+    input[type=submit], button, .button {
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+        
+    fieldset { 
+        border: 0; 
+        margin: 0;
+        padding: 0;
+    }
+
+/* !---------- Global classes ---------- */
+
+.container {
+  @include container;
 }
 
-/* @end */
 
-
-/* @group ---------- Navigation ---------- */
+/* !---------- Navigation ---------- */
 
 nav {
     ul {
@@ -166,122 +186,117 @@ nav {
 }
 
 
-/* @end */
-
-
-/* @group ---------- Pagination ---------- */
-
-.pagination { 
-    display: inline;
-    list-style-type: none;
-    padding-left: 0;
-    line-height: 2 * $base-line-height;
+    /* !---------- Pagination ---------- */
     
-    li { 
-        display: inline-block; 
-        margin-right: 5px;
-    }
-    
-    & > *:last-child { padding-bottom: rhythm(.25); }
-    
-    input[type=text] {
-        width: 50px;
-        text-align: right;
-        margin-right: 10px;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-        @include rhythm-borders(1px, 0, $base-font-size, solid);
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-    }
-}
-
-nav.pagination {
-    padding: 0;
-    display: inline; 
-    line-height: $base-line-height;
-
-    .pagination_list { 
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-        @include trailer(1.25);
-        clear: both;
-        padding: rhythm(.25) 16px;
-        text-align: center;
+    .pagination { 
+        display: inline;
+        list-style-type: none;
+        padding-left: 0;
+        line-height: 2 * $base-line-height;
         
         li { 
-            display:inline-block;
-            width: auto;
-            color: #fff;
-            margin: 0 4px;
-            zoom: 1;
-            *display: inline;
+            display: inline-block; 
+            margin-right: 5px;
         }
         
-        a { padding: 0; }
+        & > *:last-child { padding-bottom: rhythm(.25); }
         
-        .pagination_current { font-weight: 500; }
-        
-        .pagination_first, .pagination_last,
-        .pagination_previous, .pagination_next {
-            a {
-                display: inline-block;
-                text-indent: -9999px;
-                *text-indent: 0;
-                height: auto;
-                line-height: $base-line-height;
-                @include box-shadow(transparent 0 0 0);
-                
-                &:after {
-                    text-indent: 0;
-                    display: block;
-                    margin-top: -2em;
+        input[type=text] {
+            width: 50px;
+            text-align: right;
+            margin-right: 10px;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+            @include rhythm-borders(1px, 0, $base-font-size, solid);
+            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        }
+    }
+    
+    nav.pagination {
+        padding: 0;
+        display: inline; 
+        line-height: $base-line-height;
+    
+        .pagination_list { 
+            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            @include trailer(1.25);
+            clear: both;
+            padding: rhythm(.25) 16px;
+            text-align: center;
+            
+            li { 
+                display:inline-block;
+                width: auto;
+                color: #fff;
+                margin: 0 4px;
+                zoom: 1;
+                *display: inline;
+            }
+            
+            a { padding: 0; }
+            
+            .pagination_current { font-weight: 500; }
+            
+            .pagination_first, .pagination_last,
+            .pagination_previous, .pagination_next {
+                a {
+                    display: inline-block;
+                    text-indent: -9999px;
+                    *text-indent: 0;
+                    height: auto;
+                    line-height: $base-line-height;
+                    @include box-shadow(transparent 0 0 0);
+                    
+                    &:after {
+                        text-indent: 0;
+                        display: block;
+                        margin-top: -2em;
+                    }
                 }
             }
+    
+            .pagination_first a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<<'); }
+            .pagination_last a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>>'); }
+            .pagination_previous a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<'); }
+            .pagination_next a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>'); }
+    
+            .pagination_first a:after { content: "<<"; }
+            .pagination_last a:after { content: ">>"; }
+            .pagination_previous a:after { content: "<"; }
+            .pagination_next a:after { content: ">"; }
+            
         }
-
-        .pagination_first a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<<'); }
-        .pagination_last a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>>'); }
-        .pagination_previous a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '<'); }
-        .pagination_next a { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '>'); }
-
-        .pagination_first a:after { content: "<<"; }
-        .pagination_last a:after { content: ">>"; }
-        .pagination_previous a:after { content: "<"; }
-        .pagination_next a:after { content: ">"; }
-        
     }
-}
-
-
-.pagination_previous a, .pagination_next a { 
-    height: 35px;
-    display: inline-block;
-    line-height: 35px;
-    padding: 0 10px;
-    @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-}
-
-.item-pagination {
-    clear:both;
-    @include padding-trailer(.5);
-
-    li {
-        display:inline-block;
-        background-color: #fff;
-        margin: 0 0 rhythm(.5) 0;
-        padding: rhythm(.25) 8px;
+    
+    
+    .pagination_previous a, .pagination_next a { 
+        height: 35px;
+        display: inline-block;
+        line-height: 35px;
+        padding: 0 10px;
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-        
-        &:empty { display: none; }
+    }
+    
+    .item-pagination {
+        clear:both;
+        @include padding-trailer(.5);
+    
+        li {
+            display:inline-block;
+            background-color: #fff;
+            margin: 0 0 rhythm(.5) 0;
+            padding: rhythm(.25) 8px;
+            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            
+            &:empty { display: none; }
+        }
+    
+        .next { float: right; }
+        .previous { float: left; }
     }
 
-    .next { float: right; }
-    .previous { float: left; }
-}
 
-/* @end */
-
-
-/* @group ---------- Header ---------- */
+/* !---------- Header ---------- */
 
 header { 
     padding: 0 16px;
@@ -399,10 +414,8 @@ header {
     }
 }
 
-/* @end */
 
-
-/* @group ---------- Footer ---------- */
+/* !---------- Footer ---------- */
 
 footer {
     @include leader();
@@ -416,11 +429,8 @@ footer {
     &:empty { display: none; }
 }
 
-/* @end */
 
-
-/* @group ---------- Content ---------- */
-
+/* !---------- Content ---------- */
 
 #content {
     clear:both;
@@ -680,11 +690,7 @@ footer {
 }
 
 
-
-/* @end */
-
-
-/* @group ---------- Home ---------- */
+/* !---------- Home ---------- */
 
     #home {
 
@@ -768,10 +774,8 @@ footer {
 
     }
 
-/* @end */
 
-
-/* @group ---------- Items ---------- */
+/* !---------- Items ---------- */
 
 .items {
 
@@ -883,102 +887,119 @@ footer {
     p { padding-left: 0; }
 }
 
-/* @end */
 
+/* !---------- Search ---------- */
 
-/* @group ---------- Advanced Search ---------- */
-
-.advanced-search #content {
-    & > * > div {
+.search {
+    #search-results {
         background-color: #fff;
-        border-style: solid;
-        border-width: 10px 0 0 0;
-        overflow: visible;
-        padding: 0 0 rhythm(1) 0;
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-        @include boxsizing(border-box);
-        @include trailer(.75);
-        
-        &:last-of-type { padding: 0; }
-        
-        & > * {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-        
-        input { @include trailer(); }
-        
-        div.label {
-            @include trailer(.5);
-            @include leader(.5);
-        }
-        
-        & > div { 
-            @include box-shadow(transparent 0 0 0);
-            border-top: 0;
-            margin-bottom: 0;
-            padding: 0 16px;
-            
-            &:only-of-type, &:last-of-type { 
-                margin-bottom: 0; 
-            }
-            
-            div, h1, h2, h3, h4, h5, h6, p { 
-                
-                &:first-of-type { border-top: 0; }
-            }
-        }
-
-        @include pie-clearfix();
-
-    }
-
-    .remove_search {
         @include trailer();
-        margin-left: 0;
-    }
-    
-    select { float: left; }
-    
-    button {
-        display: inline-block;
-        margin: 0 16px rhythm(1);
+        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
         
-        &:last-of-type { margin-bottom: 0; }
-    }
-    
-    .search-entry { 
-        @include trailer(); 
+        th { 
+            color: #fff;
+        }
         
-        &:first-of-type { padding-bottom: 0; }
+        th, td {
+            padding: rhythm(.5) 8px;
+            &:last-of-type { border-right: 0; }
+        }
         
-        &:last-of-type { @include trailer(); }
-        
-        &:only-of-type { @include trailer(0); }
     }
-    
-    #advanced-search-form { @include leader(.5); }
-    
-    #advanced-search-form > div:last-of-type {
-        border: 0;
-        background-color: transparent;
-        float: left;
-        @include pie-clearfix();
-    }
-    
-    #submit_search_advanced {
-        *height: 50px;
-        margin-bottom: 0;
-    }
-    
-    .view-items-link { padding: rhythm(.25) 16px rhythm(.75); }
-
 }
 
-/* @end */
+
+    /* !---------- Advanced Search ---------- */
+    
+    .advanced-search #content {
+        & > * > div {
+            background-color: #fff;
+            border-style: solid;
+            border-width: 10px 0 0 0;
+            overflow: visible;
+            padding: 0 0 rhythm(1) 0;
+            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            @include boxsizing(border-box);
+            @include trailer(.75);
+            
+            &:last-of-type { padding: 0; }
+            
+            & > * {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            
+            input { @include trailer(); }
+            
+            div.label {
+                @include trailer(.5);
+                @include leader(.5);
+            }
+            
+            & > div { 
+                @include box-shadow(transparent 0 0 0);
+                border-top: 0;
+                margin-bottom: 0;
+                padding: 0 16px;
+                
+                &:only-of-type, &:last-of-type { 
+                    margin-bottom: 0; 
+                }
+                
+                div, h1, h2, h3, h4, h5, h6, p { 
+                    
+                    &:first-of-type { border-top: 0; }
+                }
+            }
+    
+            @include pie-clearfix();
+    
+        }
+    
+        .remove_search {
+            @include trailer();
+            margin-left: 0;
+        }
+        
+        select { float: left; }
+        
+        button {
+            display: inline-block;
+            margin: 0 16px rhythm(1);
+            
+            &:last-of-type { margin-bottom: 0; }
+        }
+        
+        .search-entry { 
+            @include trailer(); 
+            
+            &:first-of-type { padding-bottom: 0; }
+            
+            &:last-of-type { @include trailer(); }
+            
+            &:only-of-type { @include trailer(0); }
+        }
+        
+        #advanced-search-form { @include leader(.5); }
+        
+        #advanced-search-form > div:last-of-type {
+            border: 0;
+            background-color: transparent;
+            float: left;
+            @include pie-clearfix();
+        }
+        
+        #submit_search_advanced {
+            *height: 50px;
+            margin-bottom: 0;
+        }
+        
+        .view-items-link { padding: rhythm(.25) 16px rhythm(.75); }
+    
+    }
 
 
-/* @group ---------- File Pages ---------- */
+/* !---------- File Pages ---------- */
 
 .files {
     #content #primary { 
@@ -1006,10 +1027,8 @@ footer {
     .item-file { text-align: center; }
 }
 
-/* @end */
 
-
-/* @group ---------- Collections ---------- */
+/* !---------- Collections ---------- */
 
 .collections {
     
@@ -1059,33 +1078,8 @@ footer {
     }
 }
 
-/* @end */
 
-
-/* @group ---------- Search ---------- */
-
-.search {
-    #search-results {
-        background-color: #fff;
-        @include trailer();
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-        
-        th { 
-            color: #fff;
-        }
-        
-        th, td {
-            padding: rhythm(.5) 8px;
-            &:last-of-type { border-right: 0; }
-        }
-        
-    }
-}
-
-/* @end */
-
-
-/* @group ---------- ExhibitBuilder ---------- */
+/* !---------- ExhibitBuilder ---------- */
 
 .exhibits {
     
@@ -1305,10 +1299,8 @@ footer {
     @include leader();
 }
 
-/* @end */
 
-
-/* @group ---------- Simple Pages ---------- */
+/* !---------- Simple Pages ---------- */
 
 .simple-pages-navigation {
     list-style:none;
@@ -1333,9 +1325,8 @@ footer {
     @include trailer();
 }
 
-/* @end */
 
-/* @group ---------- Winter Styles ---------- */
+/* !---------- Winter Styles ---------- */
 
 .winter {
 
@@ -1477,10 +1468,8 @@ footer {
     }
 } 
 
-/* @end */
 
-
-/* @group ---------- Spring Styles ---------- */
+/* !---------- Spring Styles ---------- */
 
 .spring {
 
@@ -1623,10 +1612,8 @@ footer {
     }
 } 
 
-/* @end */
 
-
-/* @group ---------- Summer Styles ---------- */
+/* !---------- Summer Styles ---------- */
 
 .summer {
 
@@ -1772,10 +1759,8 @@ footer {
     }
 } 
 
-/* @end */
 
-
-/* @group ---------- Autumn Styles ---------- */
+/* !---------- Autumn Styles ---------- */
 
 .autumn {
 
@@ -1911,10 +1896,8 @@ footer {
     }
 } 
 
-/* @end */
 
-
-/* @group ---------- Night Styles ---------- */
+/* !---------- Night Styles ---------- */
 
 .night {
 
@@ -2091,5 +2074,3 @@ footer {
     
     #content div.hTagcloud ul li { background-color: $night-darker; }
 } 
-
-/* @end */

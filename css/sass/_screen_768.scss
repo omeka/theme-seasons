@@ -1,3 +1,19 @@
+/*
+Table of Contents
+=================
+-- Header
+-- Navigation
+----- Pagination
+-- Search
+-- Content
+-- Home
+-- Items
+-- Collections
+-- ExhibitBuilder
+*/
+
+/* !---------- Header ---------- */
+
 header {
     @include pie-clearfix;
 }
@@ -15,11 +31,7 @@ header {
     }
 }
 
-#search-container {
-    @include span-columns(4 omega,12);
-    @include leader(1.25);
-    input { padding: rhythm(.3125) 8px; }
-}
+/* !---------- Navigation --------- */
 
 nav.top {
     ul { 
@@ -64,20 +76,66 @@ nav.top {
     .mobile { display: none; }
 }
 
+
+    /* !---------- Pagination ---------- */
+
+    .pagination {
+        float: left;
+        margin: 0;
+    }
+    
+    #content nav .pagination_list {
+    	@include leader(.25);
+    }
+    
+
+
+/* !---------- Search ---------- */
+
+#search-container {
+    @include span-columns(4 omega,12);
+    @include leader(1.25);
+    input { padding: rhythm(.3125) 8px; }
+}
+
+#search-results {
+    width: 100%;
+}
+
+#search-filters, #item-filters {
+    li { 
+        float: left; 
+        vertical-align: top;
+        ul { 
+            display: inline; 
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline;
+                padding: 0;
+                margin: 0;
+                float: none;
+            }
+        }
+    }
+}
+
+
+/* !---------- Content --------- */
+
 header, nav.top, #content, footer {
     @include pie-clearfix;
     @include prefix(1);
     @include suffix(1);
 }
 
-.pagination {
-    float: left;
-    margin: 0;
+.page #content #primary {
+    @include padding-leader(2);
+    @include padding-trailer(2);
 }
 
-#content nav .pagination_list {
-	@include leader(.25);
-}
+
+/* !---------- Home ---------- */
 
 #home {
     #content {
@@ -126,6 +184,9 @@ header, nav.top, #content, footer {
     }
 }
 
+
+/* !---------- Items --------- */
+
 .items {
     
     #content div#sort-links {
@@ -169,6 +230,9 @@ header, nav.top, #content, footer {
     }
 }
 
+
+/* !---------- Collections ---------- */
+
 .collections.show {
     #primary .element-set {
         @include span-columns (5 alpha, 8);
@@ -183,34 +247,7 @@ header, nav.top, #content, footer {
     .item-img { margin-left: 0; }
 }
 
-#search-filters, #item-filters {
-    li { 
-        float: left; 
-        vertical-align: top;
-        ul { 
-            display: inline; 
-            margin: 0;
-            padding: 0;
-            li {
-                display: inline;
-                padding: 0;
-                margin: 0;
-                float: none;
-            }
-        }
-    }
-}
-
-#search-results {
-    width: 100%;
-}
-
-.page #content #primary {
-    @include padding-leader(2);
-    @include padding-trailer(2);
-}
-
-/* Exhibits */
+/* !---------- ExhibitBuilder ---------- */
 
 .exhibits.summary {
     #primary { 
