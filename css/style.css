@@ -143,6 +143,37 @@
     clear: both;
   }
 
+  .show #primary > div, .show #sidebar > div {
+    border-style: solid;
+    border-width: 10px 0 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url("../javascripts/boxsizing.htc");
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-bottom: 1.125em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+  }
+  .show #primary > div > *:first-child, .show #sidebar > div > *:first-child {
+    margin-top: 0em;
+  }
+  .show #primary > div > *, .show #sidebar > div > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .show #primary > div > ul, .show #primary > div ol, .show #sidebar > div > ul, .show #sidebar > div ol {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 1em;
+  }
+
+  .gm-style {
+    word-wrap: normal;
+  }
+
   /* !---------- Navigation ---------- */
   nav ul {
     list-style: none;
@@ -647,32 +678,6 @@
     height: auto;
     margin: 0;
     vertical-align: bottom;
-  }
-  #content #primary > div, #content #sidebar > div {
-    border-style: solid;
-    border-width: 10px 0 0 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    *behavior: url("../javascripts/boxsizing.htc");
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    margin-bottom: 1.125em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-  }
-  #content #primary > div > *:first-child, #content #sidebar > div > *:first-child {
-    margin-top: 0em;
-  }
-  #content #primary > div > *, #content #sidebar > div > * {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  #content #primary > div > ul, #content #primary > div ol, #content #sidebar > div > ul, #content #sidebar > div ol {
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-left: 1em;
   }
   #content #sidebar h3 {
     padding: 0 16px;
