@@ -129,13 +129,16 @@ a { text-decoration: none; }
 }
 
 .show {
-
-    #primary > div, #sidebar > div {
+    
+    #content #primary {
+        padding: 0;
+    }
+    
+    #content #primary > div, #content #sidebar > div {
         border-style: solid;
         border-width: 10px 0 0 0;
+        padding: rhythm(.5) 0;
         @include boxsizing(border-box);
-        @include padding-leader(.5);
-        @include padding-trailer(.5);
         @include trailer(.75);
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
         
@@ -505,7 +508,6 @@ footer {
         div {
             border-top: 0;
             @include box-shadow(transparent 0 0 0);
-            padding: 0;
         }
 
         h1:first-child { margin-top: 0; }
@@ -560,7 +562,7 @@ footer {
             }
         }
         
-        & *:only-child { margin-top: 0; }
+        & > *:only-child { margin-top: 0; }
 
         @include pie-clearfix();
 
@@ -832,7 +834,7 @@ footer {
             display: inline-block;
             zoom: 1;
             *display: inline;
-            min-width: 100%;
+            /* min-width: 100%; */
             overflow: visible;
             margin: 0;
             padding: 0;
@@ -872,19 +874,21 @@ footer {
     
     .item-file { 
         text-align: center; 
-        display: table;
-        table-layout: fixed;
         width: 100%; 
         
-        * { max-width: 100%; }
-        
-        img { vertical-align: bottom; }
-        
-        .download-file { display: table-cell; }
-    }
-    
-    .download-file { display: inline-table; }
+        .download-file {
+            display: inline-block;
+        }
 
+        img { 
+            vertical-align: bottom; 
+            max-width: 100%;
+        }
+        
+        & > div {
+            display: inline-block;
+        }
+    }
 }
 
 #content #outputs {
@@ -1031,7 +1035,13 @@ footer {
         }
     }
     
-    .item-file { text-align: center; }
+    .item-file { 
+        text-align: center; 
+        
+        & > div {
+            display: inline-block;
+        }
+    }
 }
 
 
