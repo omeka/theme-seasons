@@ -12,8 +12,6 @@
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
-
-
 </div><!-- end primary -->
 
 <aside id="sidebar">

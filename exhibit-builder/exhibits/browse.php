@@ -29,7 +29,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
         <div class="description"><?php echo $exhibitDescription; ?></div>
         <?php endif; ?>
         <?php if ($exhibitTags = tag_string('exhibit', 'exhibits')): ?>
-        <p class="tags"><?php echo $exhibitTags; ?></p>
+        <p class="tags"><?php echo __('Tags: ') . $exhibitTags; ?></p>
         <?php endif; ?>
     </div>
 <?php endforeach; ?>

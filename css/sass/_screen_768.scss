@@ -21,7 +21,6 @@ header {
 #site-title {
     @include span-columns (8 alpha, 12);
     text-align: left;
-    float: left;
     
     &:after {
         content: "";
@@ -81,11 +80,10 @@ nav.top {
 
     .pagination {
         float: left;
-        margin: 0;
     }
     
     #content nav .pagination_list {
-    	@include leader(.25);
+        @include leader(.25);
     }
     
 
@@ -93,6 +91,7 @@ nav.top {
 /* !---------- Search ---------- */
 
 #search-container {
+    padding: 0;
     @include span-columns(4 omega,12);
     @include leader(1.25);
     input { padding: rhythm(.3125) 8px; }
@@ -103,17 +102,14 @@ nav.top {
 }
 
 #search-filters, #item-filters {
+    float: left;
+
     li { 
         float: left; 
-        vertical-align: top;
         ul { 
             display: inline; 
-            margin: 0;
             padding: 0;
             li {
-                display: inline;
-                padding: 0;
-                margin: 0;
                 float: none;
             }
         }
@@ -129,7 +125,7 @@ header, nav.top, #content, footer {
     @include suffix(1);
 }
 
-.page #content #primary {
+.page #primary {
     @include padding-leader(2);
     @include padding-trailer(2);
 }
@@ -137,50 +133,38 @@ header, nav.top, #content, footer {
 
 /* !---------- Home ---------- */
 
-#home {
-    #content {
-        #intro {
-                border-top: 0;
-                background-color: transparent;
-                padding: 0;
-                margin: 0;
-                font-size: 1.5 * $base-font-size;
-                line-height: 1.5 * $base-line-height;
-                @include box-shadow(transparent 0 0 0);
-                @include trailer(.75);
-                
-                p { margin: 0; }
-            }
+#home #content {
+    #intro {
+        font-size: 1.5 * $base-font-size;
+        line-height: 1.5 * $base-line-height;
+          @include trailer(.75);
+        
+        p { margin: 0; }
+    }
 
-        #featured-item {
-            float: left;
-            clear: left;
-            @include trailer();
-            @include span-columns(4 alpha, 12);
-            *margin-left: 0;
-            
-            .image {
-                display: inline-block;
-                width: 100%;
-            }
-            
-            .image img {
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                margin: 0;
-            }
+    #featured-item {
+        @include trailer();
+        @include span-columns(4 alpha, 12);
+        
+        .image {
+            display: inline-block;
+            width: 100%;
         }
         
-        & > div {
-            @include span-columns(8 omega, 12);
-            
-            img {
-                width: 20%;
-                float: left;
-            }
+        img {
+            width: 100%;
+            height: auto;
         }
-
+    }
+    
+    & > div {
+        @include span-columns(8 omega, 12);
+        
+        img {
+            width: 20%;
+            float: left;
+            margin-right: 16px;
+        }
     }
 }
 
@@ -189,7 +173,7 @@ header, nav.top, #content, footer {
 
 .items {
     
-    #content div#sort-links {
+    #content #sort-links {
         float: right;
         text-align: center;
     }
@@ -214,17 +198,12 @@ header, nav.top, #content, footer {
     }
 }
 
-.items.show, .exhibits.exhibit-item-show, .files {
+.show, .exhibit-item-show {
     #primary {
-        *margin-left: 0;
         @include span-columns (5 alpha, 8);
     }
-
     
     #sidebar {
-        display: inline-block;
-        float: right;
-        clear: right;
         @include span-columns (3 omega, 8);
                         
     }
@@ -236,7 +215,6 @@ header, nav.top, #content, footer {
 .collections.show {
     #primary .element-set {
         @include span-columns (5 alpha, 8);
-        *margin-left: 0;
     }
     
     #primary > div {
@@ -252,12 +230,12 @@ header, nav.top, #content, footer {
 .exhibits.summary {
     #primary { 
         @include span-columns(8 alpha, 12); 
+        padding: 0 16px;
     }
 
     #exhibit-pages { 
-        display: inline-block;
-        float: right;
         @include span-columns(4 omega, 12); 
+        @include box-sizing(border-box);
     }
 }
 
