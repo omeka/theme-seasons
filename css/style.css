@@ -130,8 +130,8 @@
   /* !---------- Global classes ---------- */
   .container {
     *zoom: 1;
-    max-width: 34em;
-    _width: 34em;
+    max-width: 59em;
+    _width: 59em;
     padding-left: 1em;
     padding-right: 1em;
     margin-left: auto;
@@ -644,8 +644,8 @@
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
     margin-bottom: 1.125em;
-    padding-left: 5.88235%;
-    padding-right: 5.88235%;
+    padding-left: 3.38983%;
+    padding-right: 3.38983%;
   }
   #primary div {
     border-top: 0;
@@ -1998,8 +1998,8 @@
   /* !---------- Content --------- */
   header, nav.top, #content, footer {
     *zoom: 1;
-    padding-left: 14.70588%;
-    padding-right: 14.70588%;
+    padding-left: 8.47458%;
+    padding-right: 8.47458%;
   }
   header:after, nav.top:after, #content:after, footer:after {
     content: "";
