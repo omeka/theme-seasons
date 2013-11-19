@@ -383,8 +383,11 @@ nav {
     line-height: 30px;
     background-color: #4b6569;
     @include boxsizing(content-box);
-
     
+    &:focus {
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
     &:link, &:hover, &:active, &:visited { color: #fff; }
 
     &:after {
@@ -812,6 +815,9 @@ footer {
     }
 }
 
+#no-results {
+    clear: both;
+}
 
     /* !---------- Advanced Search ---------- */
     

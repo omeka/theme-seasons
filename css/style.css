@@ -407,6 +407,9 @@
     box-sizing: content-box;
     *behavior: url("../javascripts/boxsizing.htc");
   }
+  #advanced-search:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
   #advanced-search:link, #advanced-search:hover, #advanced-search:active, #advanced-search:visited {
     color: #fff;
   }
@@ -834,6 +837,10 @@
   }
   .search #search-results th:last-of-type, .search #search-results td:last-of-type {
     border-right: 0;
+  }
+
+  #no-results {
+    clear: both;
   }
 
   /* !---------- Advanced Search ---------- */
