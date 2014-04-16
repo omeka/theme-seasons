@@ -55,4 +55,8 @@
         </nav>
 
         <div id="content">
-            <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
+            <?php
+                if(! is_current_url(WEB_ROOT)) {
+                  fire_plugin_hook('public_content_top', array('view'=>$this));
+                }
+            ?>
