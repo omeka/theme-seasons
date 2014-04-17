@@ -221,7 +221,6 @@ nav {
     }
 }
 
-
     /* !---------- Pagination ---------- */
     
     .pagination { 
@@ -600,6 +599,23 @@ footer {
             @include leading-border(1px, 1, $base-font-size, solid);
         }
     }
+
+    #sort-links {
+        border-top: 0;
+        padding: rhythm(.25) 12px;
+        @include trailer();
+
+        span, ul, li { 
+            display: inline-block; 
+            margin: 0 4px;
+            zoom: 1;
+            display: inline;
+        }
+    }
+
+    #sort-links-list { 
+        padding-left: 0; 
+    }
 }
 
 
@@ -716,26 +732,6 @@ footer {
 
 
 /* !---------- Items ---------- */
-
-.items {
-    
-    #sort-links {
-        border-top: 0;
-        padding: rhythm(.25) 12px;
-        @include trailer();
-
-        span, ul, li { 
-            display: inline-block; 
-            margin: 0 4px;
-            zoom: 1;
-            display: inline;
-        }
-    }
-    
-    #sort-links-list { 
-        padding-left: 0; 
-    }
-}
 
 .items.show {
     

@@ -30,6 +30,8 @@ header {
     }
 }
 
+
+
 /* !---------- Navigation --------- */
 
 nav.top {
@@ -130,6 +132,11 @@ header, nav.top, #content, footer {
     @include padding-trailer(2);
 }
 
+#content #sort-links {
+    float: right;
+    text-align: center;
+}
+
 
 /* !---------- Home ---------- */
 
@@ -172,12 +179,6 @@ header, nav.top, #content, footer {
 /* !---------- Items --------- */
 
 .items {
-    
-    #content #sort-links {
-        float: right;
-        text-align: center;
-    }
-    
     .item { clear: both;}
     
     .item-img {
