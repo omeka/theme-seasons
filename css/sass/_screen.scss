@@ -347,38 +347,56 @@ nav {
     position: relative;
     overflow: visible;
 
-    input[type=text], input[type=submit] {
+    input[type=text], button {
         -webkit-appearance: none;
         -moz-appearance: none;
         @include border-radius(0px);
     }
 
     input[type=text] {
-        width: 60%;
+        width: 100%;
         @include adjust-font-size-to(14px);
-        float: left;
-        
+        padding-right: rhythm(2, 14px);
     }
     
-    input[type=submit] {
-        width: 30%;
+    button {
+        width: rhythm(1.5);
         padding: 0;
         position: absolute;
         top: 0;
-        left: 60%;
+        right: 0;
+        text-indent: -9999px;
+        
+        &:after {
+            font-family: "FontAwesome";
+            content: "\f002";
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-indent: 0;
+            width: rhythm(1.5);
+            line-height: rhythm(1.5);
+        }
+    }
+    
+    &.with-advanced input[type=text] {
+        padding-right: rhythm(3.5, 14px);
+    }
+    
+    &.with-advanced button {
+        right: rhythm(1.5);
     }
 }
 
 #advanced-search {
-    width: 10%;
+    width: rhythm(1.5);
     height: 35px;
     text-indent: -9999px;
     display: block;
     position: absolute;
     padding: 0;
     top: 0;
-    left: 90%;
-    font-weight: bold;
+    right: 0;
     line-height: 30px;
     background-color: #4b6569;
     @include boxsizing(content-box);
@@ -390,11 +408,17 @@ nav {
     &:link, &:hover, &:active, &:visited { color: #fff; }
 
     &:after {
-        content: "+";
+        width: rhythm(1.5);
+        content: "\2026";
         display: block;
         text-indent: 0;
         text-align: center;
-        margin-top: -1.75em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: rhythm(1.5);
+        line-height: rhythm(1.5);
+        border-left: 1px solid rgba(255,255,255,.2);
     }
 }
 

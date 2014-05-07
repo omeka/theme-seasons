@@ -23,8 +23,7 @@
     <!-- Stylesheets -->
     <?php
     queue_css_url('//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
-    queue_css_file('normalize');
-    queue_css_file('style', 'screen');
+    queue_css_file(array('iconfonts', 'normalize', 'style'), 'screen');
     queue_css_file('print', 'print');
     echo head_css();
     ?>
@@ -45,7 +44,11 @@
                 <?php echo link_to_home_page(theme_logo()); ?>
             </div>
             <div id="search-container">
+                <?php if (get_theme_option('use_advanced_search')): ?>
                 <?php echo search_form(array('show_advanced' => true)); ?>
+                <?php else: ?>
+                <?Php echo search_form(); ?>
+                <?php endif; ?>
             </div>
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
