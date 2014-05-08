@@ -231,6 +231,7 @@ nav {
         li { 
             display: inline-block; 
             margin-right: 5px;
+            vertical-align: top;
         }
         
         input[type=text] {
@@ -292,11 +293,31 @@ nav {
     
     
     .pagination_previous a, .pagination_next a { 
-        height: 35px;
+        width: rhythm(1.5);
+        height: rhythm(1.5);
         display: inline-block;
-        line-height: 35px;
-        padding: 0 10px;
+        text-indent: -9999px;
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        position: relative;
+        
+        &:after {
+            font-family: "FontAwesome";
+            text-indent: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: rhythm(1.5);
+            text-align: center;
+            line-height: rhythm(1.5);
+        }
+    }
+    
+    .pagination_previous a:after {
+        content: "\f0d9";
+    }
+        
+    .pagination_next a:after {
+        content: "\f0da";
     }
     
     .item-pagination {
@@ -642,6 +663,20 @@ footer {
     }
 }
 
+.asc a:after,
+.desc a:after {
+    font-family: "FontAwesome";
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.asc a:after {
+    content: "\f0d8";
+}
+
+.desc a:after {
+    content: "\f0d7";
+}
 
 #primary {
     border-style: solid;

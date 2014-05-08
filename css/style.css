@@ -239,6 +239,7 @@
   .pagination li {
     display: inline-block;
     margin-right: 5px;
+    vertical-align: top;
   }
   .pagination input[type=text] {
     width: 50px;
@@ -308,13 +309,32 @@
   }
 
   .pagination_previous a, .pagination_next a {
-    height: 35px;
+    width: 2.25em;
+    height: 2.25em;
     display: inline-block;
-    line-height: 35px;
-    padding: 0 10px;
+    text-indent: -9999px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    position: relative;
+  }
+  .pagination_previous a:after, .pagination_next a:after {
+    font-family: "FontAwesome";
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.25em;
+    text-align: center;
+    line-height: 2.25em;
+  }
+
+  .pagination_previous a:after {
+    content: "\f0d9";
+  }
+
+  .pagination_next a:after {
+    content: "\f0da";
   }
 
   .item-pagination {
@@ -668,6 +688,21 @@
   }
   #content #sort-links-list {
     padding-left: 0;
+  }
+
+  .asc a:after,
+  .desc a:after {
+    font-family: "FontAwesome";
+    display: inline-block;
+    margin-left: 3px;
+  }
+
+  .asc a:after {
+    content: "\f0d8";
+  }
+
+  .desc a:after {
+    content: "\f0d7";
   }
 
   #primary {
