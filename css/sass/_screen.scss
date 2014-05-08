@@ -563,21 +563,13 @@ footer {
         .item-description { padding-top: 0; }
     
         .item-img {
-            max-width: 100%;
-            display: inline-block;
             border: 1px solid $winter-light-gray;
-            width: 15%;
-            margin: 0 0 rhythm(.75);
-            float: left;
             padding: 0;
-            overflow: visible;
-            @include box-shadow(border-box);
+            float: left;
+            margin: 0 rhythm(.5) rhythm(.5) 0;
             
             img {
-                width: 100%;
-                height: auto;
                 margin: 0;
-                vertical-align: bottom;
             }
         }
     }
@@ -708,10 +700,12 @@ footer {
 
         #content div {
             
-            .items-list .item {
+            &#recent-items .item {
+                @include bleed(16px);
                 border-top: 1px solid $winter-light-gray;
-                padding: 0 16px rhythm(.5) 16px;
-                overflow: auto;
+                padding: 0 16px rhythm(.5);
+                overflow: hidden;
+                clear: both;
                 
                 &:first-of-type { 
                     border-top: 0; 
@@ -745,11 +739,10 @@ footer {
             }
             
             img { 
-                margin: 0 0 rhythm(.5); 
                 border: 1px solid $winter-light-gray;
                 display: block;
-                max-width: 100%;
-                height: auto;
+                max-height: 100%;
+                width: auto;
                 @include boxsizing(border-box);
             }
 
@@ -847,6 +840,13 @@ footer {
     clear: both;
     
     p { padding-left: 0; }
+}
+
+.item img {
+    height: rhythm(3);
+    width: auto;
+    float: left;
+    margin: 0 rhythm(.5) rhythm(.5) 0;
 }
 
 

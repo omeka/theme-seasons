@@ -587,23 +587,13 @@
     padding-top: 0;
   }
   #content .item-meta .item-img {
-    max-width: 100%;
-    display: inline-block;
     border: 1px solid #dfe2e2;
-    width: 15%;
-    margin: 0 0 1.125em;
-    float: left;
     padding: 0;
-    overflow: visible;
-    -webkit-box-shadow: border-box;
-    -moz-box-shadow: border-box;
-    box-shadow: border-box;
+    float: left;
+    margin: 0 0.75em 0.75em 0;
   }
   #content .item-meta .item-img img {
-    width: 100%;
-    height: auto;
     margin: 0;
-    vertical-align: bottom;
   }
   #content #search-filters, #content #item-filters {
     background-color: transparent;
@@ -738,18 +728,23 @@
   }
 
   /* !---------- Home ---------- */
-  #home #content div .items-list .item {
+  #home #content div#recent-items .item {
+    margin-left: -16px;
+    padding-left: 16px;
+    margin-right: -16px;
+    padding-right: 16px;
     border-top: 1px solid #dfe2e2;
-    padding: 0 16px 0.75em 16px;
-    overflow: auto;
+    padding: 0 16px 0.75em;
+    overflow: hidden;
+    clear: both;
   }
-  #home #content div .items-list .item:first-of-type {
+  #home #content div#recent-items .item:first-of-type {
     border-top: 0;
   }
-  #home #content div .items-list .item:first-of-type h3 {
+  #home #content div#recent-items .item:first-of-type h3 {
     margin-top: 0em;
   }
-  #home #content div .items-list .item h3 {
+  #home #content div#recent-items .item h3 {
     margin-top: 0.75em;
   }
   #home #content div .items-list {
@@ -769,11 +764,10 @@
     text-transform: uppercase;
   }
   #home #content div img {
-    margin: 0 0 0.75em;
     border: 1px solid #dfe2e2;
     display: block;
-    max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    width: auto;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -875,6 +869,13 @@
   }
   #content #outputs p {
     padding-left: 0;
+  }
+
+  .item img {
+    height: 4.5em;
+    width: auto;
+    float: left;
+    margin: 0 0.75em 0.75em 0;
   }
 
   /* !---------- Search ---------- */
@@ -2111,19 +2112,10 @@
     *margin-left: -1em;
     display: inline;
   }
-  #home #content > div img {
-    width: 20%;
-    float: left;
-    margin-right: 16px;
-  }
 
   /* !---------- Items --------- */
   .items .item {
     clear: both;
-  }
-  .items .item-img {
-    width: 10%;
-    float: left;
   }
   .items #advanced-search-form > div {
     width: 61.53846%;

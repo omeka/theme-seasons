@@ -166,12 +166,6 @@ header, nav.top, #content, footer {
     
     & > div {
         @include span-columns(8 omega, 12);
-        
-        img {
-            width: 20%;
-            float: left;
-            margin-right: 16px;
-        }
     }
 }
 
@@ -180,11 +174,6 @@ header, nav.top, #content, footer {
 
 .items {
     .item { clear: both;}
-    
-    .item-img {
-        width: 10%;
-        float: left;
-    }
         
     #advanced-search-form {
     
