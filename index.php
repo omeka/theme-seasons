@@ -1,9 +1,5 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<aside id="intro" role="introduction">
-    <p><?php echo option('description'); ?></p>
-</aside>
-
 <?php if (get_theme_option('Homepage Text')): ?>
 <p><?php echo get_theme_option('Homepage Text'); ?></p>
 <?php endif; ?>
