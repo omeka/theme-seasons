@@ -2137,6 +2137,7 @@
   #home #content #featured-item .image {
     display: inline-block;
     width: 100%;
+    height: auto;
   }
   #home #content #featured-item img {
     width: 100%;
