@@ -168,18 +168,23 @@ a { text-decoration: none; }
     word-wrap: normal;
 }
 
-.collection.record-image {
+.image {
     height: rhythm(4);
     width: auto;
     float: left;
     display: block;
-    margin: 0 rhythm(.5) rhythm(.5) 7px;
-    @include box-shadow(-3px -3px 0 #bbb, -4px -4px 0 #fff, -7px -7px 0 #dedede);
+    margin: 0 rhythm(.5) rhythm(.5) 0;
     
     img {
         height: 100%;
         width: auto;
     }
+}
+
+.collection .image,
+.exhibit .image {
+    @include box-shadow(-3px -3px 0 #bbb, -4px -4px 0 #fff, -7px -7px 0 #dedede);
+    margin-left: 7px;
 }
 
 
@@ -890,6 +895,12 @@ footer {
         border-color: #ddd;
         @include trailing-border(1px, 0, $base-font-size, solid);
         @include padding-leader(1);
+    }
+    
+    .item img {
+        margin: 0;
+        height: 100%;
+        width: auto;
     }
 }
 
