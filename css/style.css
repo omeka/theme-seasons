@@ -201,6 +201,10 @@
     margin-left: 7px;
   }
 
+  .record {
+    clear: both;
+  }
+
   /* !---------- Navigation ---------- */
   nav ul {
     list-style: none;
