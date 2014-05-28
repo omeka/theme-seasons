@@ -189,6 +189,7 @@ a { text-decoration: none; }
 
 .record {
     clear: both;
+    overflow: hidden;
 }
 
 
@@ -727,9 +728,6 @@ footer {
             &#recent-items .item {
                 @include bleed(16px);
                 border-top: 1px solid $winter-light-gray;
-                padding: 0 16px rhythm(.5);
-                overflow: hidden;
-                clear: both;
                 
                 &:first-of-type { 
                     border-top: 0; 

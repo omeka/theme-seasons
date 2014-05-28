@@ -203,6 +203,7 @@
 
   .record {
     clear: both;
+    overflow: hidden;
   }
 
   /* !---------- Navigation ---------- */
@@ -759,9 +760,6 @@
     margin-right: -16px;
     padding-right: 16px;
     border-top: 1px solid #dfe2e2;
-    padding: 0 16px 0.75em;
-    overflow: hidden;
-    clear: both;
   }
   #home #content div#recent-items .item:first-of-type {
     border-top: 0;
