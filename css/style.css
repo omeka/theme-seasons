@@ -110,9 +110,11 @@
   }
 
   select {
-    width: 100%;
-    margin-top: 0 0 1.5em;
-    margin-bottom: 1.5em;
+    margin: 0 0 1.5em;
+    border: 1px solid #dfe2e2;
+    line-height: 36px;
+    height: 36px;
+    font-size: 16px;
   }
 
   input[type=submit], button, .button {
@@ -973,17 +975,35 @@
     clear: both;
   }
 
-  .search-entry {
-    margin-bottom: 1.5em;
+  .search-entry select, .search-entry input[type=text] {
+    width: 28%;
+  }
+  .search-entry select {
+    margin-right: 1%;
   }
   .search-entry:first-of-type {
     padding-bottom: 0;
   }
-  .search-entry:last-of-type {
-    margin-bottom: 1.5em;
-  }
   .search-entry:only-of-type {
     margin-bottom: 0em;
+  }
+
+  .remove_search {
+    text-indent: -9999px;
+    width: 36px;
+    position: relative;
+    height: 36px;
+  }
+  .remove_search:after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    text-indent: 0;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    line-height: 36px;
   }
 
   .advanced-search button {

@@ -105,9 +105,11 @@ a { text-decoration: none; }
     input[type=radio] { margin-right: 5px; }
     
     select {
-        width: 100%;
-        margin-top: 0 0 rhythm();
-        @include trailer();
+        margin: 0 0 rhythm();
+        border: 1px solid $winter-light-gray;
+        line-height: 1.5 * $base-line-height;
+        height: 1.5 * $base-line-height;
+        font-size: $base-font-size;
     }
     
     input[type=submit], button, .button {
@@ -938,13 +940,37 @@ footer {
     }
 
     .search-entry { 
-        @include trailer(); 
+        
+        select, input[type=text] {
+            width: 28%;
+        }
+        
+        select {
+            margin-right: 1%;
+        }
         
         &:first-of-type { padding-bottom: 0; }
         
-        &:last-of-type { @include trailer(); }
-        
         &:only-of-type, { @include trailer(0); }
+    }
+
+    .remove_search {
+        text-indent: -9999px;
+        width: 1.5 * $base-line-height;
+        position: relative;
+        height: 1.5 * $base-line-height;
+        
+        &:after {
+            content: "\f00d";
+            font-family: "FontAwesome";
+            text-indent: 0;
+            text-align: center;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            line-height: 1.5 * $base-line-height;
+        }
     }
 
     .advanced-search {
