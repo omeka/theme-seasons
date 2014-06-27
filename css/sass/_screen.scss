@@ -1047,6 +1047,7 @@ footer {
         border-top: 1px solid $winter-light-gray;
         margin: 0 -16px;
         padding: 0 16px rhythm();
+        overflow: hidden;
 
         &:first-of-type { border-top: 0; }
         

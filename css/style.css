@@ -1077,6 +1077,7 @@
     border-top: 1px solid #dfe2e2;
     margin: 0 -16px;
     padding: 0 16px 1.5em;
+    overflow: hidden;
   }
   .collections #collection-items .item:first-of-type {
     border-top: 0;
