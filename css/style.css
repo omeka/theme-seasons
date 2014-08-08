@@ -75,7 +75,7 @@
 
   ul {
     list-style-type: disc;
-    padding-left: 1em;
+    padding-left: 1.5em;
   }
 
   /* !---------- Form Elements ---------- */
@@ -167,9 +167,12 @@
   .show .item-file {
     text-align: center;
     width: 100%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
   }
   .show .item-file .download-file {
-    display: inline-block;
+    display: table-cell;
   }
   .show .item-file img {
     vertical-align: bottom;
@@ -548,7 +551,7 @@
     display: table;
     clear: both;
   }
-  #content h1 {
+  #content > h1 {
     font-size: 24px;
     line-height: 48px;
     text-transform: uppercase;
@@ -556,8 +559,9 @@
     padding: 0 0 0.75em;
     margin: 0;
   }
-  #content > h2, #content > div > h2, #content #primary > h2, #content #primary > div > h2,
-  #content #sidebar > h2, #content #sidebar > div > h2 {
+  #content > h2:first-child, #content > div > h2:first-child,
+  #content #primary > h2:first-child, #content #primary > div > h2:first-child,
+  #content #sidebar > h2:first-child, #content #sidebar > div > h2:first-child {
     padding: 0 16px 0.375em;
     font-weight: 500;
     border-style: solid;
@@ -752,7 +756,7 @@
     padding: 0;
   }
   #primary > ul, #primary > ol {
-    padding-left: 1em;
+    padding-left: 1.5em;
   }
 
   /* !---------- Home ---------- */
@@ -1359,7 +1363,7 @@
   .winter #home #content > div {
     border-color: #4b6569;
   }
-  .winter #content h1 {
+  .winter #content > h1 {
     color: #fff;
   }
   .winter #content h2 {
@@ -1499,7 +1503,7 @@
   .spring #home #content > div {
     border-color: #ba5656;
   }
-  .spring #content h1 {
+  .spring #content > h1 {
     color: #ff8f00;
   }
   .spring #content h2 {
@@ -1639,7 +1643,7 @@
   .summer #item h1 {
     color: #eb4c0f;
   }
-  .summer #content h1 {
+  .summer #content > h1 {
     color: #eb4c0f;
   }
   .summer #content h2 {
@@ -1776,7 +1780,7 @@
   .autumn #home #content > div {
     border-color: #cabfa6;
   }
-  .autumn #content h1 {
+  .autumn #content > h1 {
     color: #815442;
   }
   .autumn #content h2 {
@@ -1920,7 +1924,7 @@
   .night .collections #content div .view-items-link {
     border-color: #313131;
   }
-  .night #content h1 {
+  .night #content > h1 {
     color: #bdbdbd;
   }
   .night #content h2 {

@@ -76,7 +76,7 @@ a { text-decoration: none; }
     
     ul { 
         list-style-type: disc; 
-        padding-left: 1em;
+        padding-left: 1.5em;
     }
     
     /* !---------- Form Elements ---------- */
@@ -150,9 +150,12 @@ a { text-decoration: none; }
     .item-file { 
         text-align: center; 
         width: 100%; 
+        display: table;
+        table-layout: fixed;
+        width: 100%;
         
         .download-file {
-            display: inline-block;
+            display: table-cell;;
         }
 
         img { 
@@ -525,7 +528,7 @@ footer {
     padding: rhythm(1) 16px;
     @include pie-clearfix();
 
-    h1 {
+    & > h1 {
         font-size:1.5 * $base-font-size; 
         line-height: 2 * $base-line-height;
         text-transform: uppercase;
@@ -534,8 +537,9 @@ footer {
         margin: 0;
     }
 
-    & > h2, & > div > h2, #primary > h2, #primary > div > h2,
-    #sidebar > h2, #sidebar > div > h2 {
+    & > h2:first-child, & > div > h2:first-child, 
+    #primary > h2:first-child, #primary > div > h2:first-child,
+    #sidebar > h2:first-child, #sidebar > div > h2:first-child {
         padding: 0 16px rhythm(.25);
         font-weight: 500;
         border-style: solid;
@@ -717,7 +721,7 @@ footer {
     
     & > * { padding: 0; }
     
-    & > ul, & > ol { padding-left: 1em; }
+    & > ul, & > ol { padding-left: 1.5em; }
 }
 
 
@@ -1323,7 +1327,7 @@ footer {
 
     #content {
         
-        h1 { color: #fff; }
+        & > h1 { color: #fff; }
         
         h2 { border-color: $winter-light-gray; }
 
@@ -1457,7 +1461,7 @@ footer {
     }
 
     #content {
-        h1 { color: $spring-link; }
+        & > h1 { color: $spring-link; }
         
         h2 { border-color: #e8e8e8; }
 
@@ -1592,7 +1596,7 @@ footer {
     
     #content {
 
-        h1 { color: $summer-link-red; }
+        & > h1 { color: $summer-link-red; }
         
         h2 { border-color: $summer-light-red; }
 
@@ -1724,7 +1728,7 @@ footer {
     }
 
     #content {
-        h1 { color: $autumn-brown; }
+        & > h1 { color: $autumn-brown; }
         
         h2 { border-color: $autumn-gray; }
 
@@ -1876,7 +1880,7 @@ footer {
     }
 
     #content {
-        h1 { color: $night-light; }
+        & > h1 { color: $night-light; }
         
         h2 { border-color: $night-shadow; }
 
