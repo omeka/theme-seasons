@@ -167,12 +167,9 @@
   .show .item-file {
     text-align: center;
     width: 100%;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
   }
   .show .item-file .download-file {
-    display: table-cell;
+    display: block;
   }
   .show .item-file img {
     vertical-align: bottom;

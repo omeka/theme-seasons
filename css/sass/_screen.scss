@@ -150,12 +150,9 @@ a { text-decoration: none; }
     .item-file { 
         text-align: center; 
         width: 100%; 
-        display: table;
-        table-layout: fixed;
-        width: 100%;
         
         .download-file {
-            display: table-cell;;
+            display: block;
         }
 
         img { 
