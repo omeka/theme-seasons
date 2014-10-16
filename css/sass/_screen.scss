@@ -1267,6 +1267,11 @@ footer {
     @include trailer();
 }
 
+/* !---------- Other Plugin Styles ---------- */
+
+#recaptcha_area input {
+    height: intrinsic;
+}
 
 /* !---------- Winter Styles ---------- */
 
