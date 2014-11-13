@@ -1118,9 +1118,6 @@
   .exhibits .exhibit-page {
     font-weight: bold;
   }
-  .exhibits.summary #content h1 {
-    margin-bottom: 0.75em;
-  }
   .exhibits.summary #content #primary > div {
     background-color: transparent;
     border-top: 0;
@@ -1131,6 +1128,15 @@
   }
   .exhibits.summary #content #primary > div:last-child {
     margin-bottom: 0;
+  }
+  .exhibits.summary #exhibit-pages > ul > li:not(:last-of-type) {
+    border-color: #dfe2e2;
+    border-bottom-width: 0.0625em;
+    border-bottom-style: solid;
+    padding-bottom: -0.0625em;
+  }
+  .exhibits.summary #exhibit-pages a {
+    margin: 0.375em 0;
   }
   .exhibits.show #content h1 {
     font-size: 32px;
@@ -1239,7 +1245,7 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    padding: 1.5em 16px;
+    padding: 0.75em 16px;
     background-color: #fff;
   }
   .summary #exhibit-pages ul {
@@ -1998,6 +2004,9 @@
   .night #exhibit-page-navigation a, .night #exhibit-page-navigation span {
     background-color: #252525;
   }
+  .night .exhibits.summary #exhibit-pages > ul > li:not(:last-of-type) {
+    border-color: #313131;
+  }
   .night .exhibits.show #content .exhibit-page-nav > li:nth-child(3) {
     background-color: rgba(255, 255, 255, 0.08);
   }
@@ -2242,7 +2251,7 @@
     float: left;
     margin-right: 1.69492%;
     display: inline;
-    padding: 0 16px;
+    padding: 0 16px 1.5em;
   }
   .exhibits.summary #exhibit-pages {
     width: 32.20339%;

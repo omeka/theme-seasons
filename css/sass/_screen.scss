@@ -1089,7 +1089,6 @@ footer {
     .exhibit-page { font-weight: bold; }
     
     &.summary #content {
-        h1 { @include trailer(.5); }
         
         #primary > div {
             @include block-reset; 
@@ -1097,6 +1096,14 @@ footer {
             &:last-child { margin-bottom: 0; }
         }
     }
+    
+    &.summary #exhibit-pages > ul > li:not(:last-of-type) {
+        border-color: $winter-light-gray;
+        @include trailing-border(1px, 0, $base-font-size, solid);
+    }
+    
+    &.summary #exhibit-pages a { margin: rhythm(.25) 0; }
+    
     
     &.show #content { 
         h1 { 
@@ -1212,7 +1219,7 @@ footer {
     border-width: 10px 0 0 0;
     overflow: visible;
     @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-    padding: rhythm() 16px;
+    padding: rhythm(.5) 16px;
     background-color: #fff;
     
     ul { 
@@ -1957,6 +1964,10 @@ footer {
     
     #exhibit-page-navigation {
         a, span { background-color: $night-darker; }
+    }
+    
+    .exhibits.summary #exhibit-pages > ul > li:not(:last-of-type) {
+        border-color: $night-shadow;
     }
     
     .exhibits.show #content .exhibit-page-nav > li:nth-child(3) {

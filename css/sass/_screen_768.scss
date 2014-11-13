@@ -221,7 +221,7 @@ header, nav.top, #content, footer {
 .exhibits.summary {
     #primary { 
         @include span-columns(8 alpha, 12); 
-        padding: 0 16px;
+        padding: 0 16px rhythm();
     }
 
     #exhibit-pages { 
