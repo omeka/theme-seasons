@@ -47,7 +47,7 @@ nav.top {
             a { padding: rhythm(.5) 16px; }
             
             &:hover {
-                background-color:rgba(0,0,0,.05);
+                background-color:rgba(0,0,0,.25);
                 & > ul { display: block; }
             }
 

@@ -234,6 +234,7 @@ nav {
     
     .current, .active { 
         font-weight: 500; 
+        text-transform: uppercase;
     }
     
     ul { 
@@ -268,6 +269,7 @@ nav {
             padding-right: 5px !important;
             @include rhythm-borders(1px, 0, $base-font-size, solid);
             @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            @include trailer();
         }
     }
     
@@ -1343,21 +1345,28 @@ footer {
         #primary > div, #sidebar > div { background-color: #fff; }
     
         .pagination_previous a, .pagination_next a { 
-            background-color: $winter-bright-blue; 
+            background-color: $winter-slate; 
         }
         
         .pagination { 
+            color: #fff;
+
             a:link, a:visited { color: $winter-blue-on-pale-blue; }
             a:hover, a:active { color: #fff; }
         }
                
-        .pagination input[type=text] { border-color: $winter-light-gray; }
+        .pagination input[type=text] { 
+            border-color: $winter-light-gray; 
+            background-color: #fff;
+        }
 
         nav .pagination_list { 
             background-color: $winter-bright-blue;             
         }
         
         .items-nav, .secondary-nav, #secondary-nav, #outputs, #exhibit-child-pages {
+            color: #fff;
+
             a:link, a:visited { color: $winter-blue-on-pale-blue; }
             a:hover, a:active { color: #fff; }
         }
