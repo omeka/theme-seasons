@@ -749,9 +749,6 @@
   #primary h1:first-child {
     margin-top: 0;
   }
-  #primary > * {
-    padding: 0;
-  }
   #primary > ul, #primary > ol {
     padding-left: 1.5em;
   }
@@ -1097,6 +1094,9 @@
   }
 
   /* !---------- ExhibitBuilder ---------- */
+  .exhibits {
+    /* !---------- !long title fix ----------- */
+  }
   .exhibits #content .navigation {
     padding-left: 0;
     *zoom: 1;
@@ -1137,6 +1137,16 @@
   }
   .exhibits.summary #exhibit-pages a {
     margin: 0.375em 0;
+  }
+  .exhibits.show #exhibit-pages li a {
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .exhibits.show #exhibit-pages li {
+    max-width: 40%;
   }
   .exhibits.show #content h1 {
     font-size: 32px;
