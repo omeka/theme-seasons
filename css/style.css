@@ -118,7 +118,7 @@
   }
 
   input[type=submit], button, .button {
-    color: #fff;
+    color: #fff !important;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -127,6 +127,35 @@
     border: 0;
     margin: 0;
     padding: 0;
+  }
+
+  /* !---------- Tables ---------- */
+  table {
+    width: 100%;
+    margin: 1.5em 0;
+  }
+  table caption {
+    text-align: left;
+    font-style: italic;
+  }
+
+  td,
+  th {
+    text-align: left;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 0.375em;
+  }
+
+  td {
+    border-bottom-width: 0.0625em;
+    border-bottom-style: solid;
+    padding-bottom: 0.3125em;
+  }
+
+  th {
+    border-bottom-width: 0.3125em;
+    border-bottom-style: solid;
+    padding-bottom: 0.0625em;
   }
 
   /* !---------- Global classes ---------- */
@@ -1094,9 +1123,6 @@
   }
 
   /* !---------- ExhibitBuilder ---------- */
-  .exhibits {
-    /* !---------- !long title fix ----------- */
-  }
   .exhibits #content .navigation {
     padding-left: 0;
     *zoom: 1;
@@ -1209,6 +1235,7 @@
   }
   .exhibits.show #content .exhibit-page-nav > li:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.1);
+    max-width: none;
   }
   .exhibits.show #content .exhibit-page-nav > li:nth-child(3) {
     background-color: rgba(0, 0, 0, 0.2);
@@ -1742,6 +1769,9 @@
   .summer #exhibit-page-navigation a, .summer #exhibit-page-navigation span {
     background-color: #fff;
   }
+  .summer th, .summer td {
+    border-color: #D0EEEE;
+  }
 
   /* !---------- Autumn Styles ---------- */
   .autumn body {
@@ -1813,6 +1843,9 @@
   }
   .autumn #content #primary > div, .autumn #content #sidebar > div {
     background-color: #fff;
+  }
+  .autumn #content #primary > h1 {
+    color: #815442;
   }
   .autumn #content > div, .autumn #content #primary > div, .autumn #content #sidebar > div,
   .autumn #content #advanced-search-form > div, .autumn #content #exhibit-pages {
@@ -2026,6 +2059,9 @@
   }
   .night #content div.hTagcloud ul li {
     background-color: #252525;
+  }
+  .night td, .night th {
+    border-color: #333333;
   }
 }
 @media screen and (min-width: 768px) {
