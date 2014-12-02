@@ -1217,7 +1217,7 @@ footer {
             & > li {
                 display: block;
                 float: none;
-                overflow: auto;
+                overflow: hidden;
                 margin-right: 0;
                 
                 &:first-of-type {

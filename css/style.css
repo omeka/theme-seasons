@@ -1249,7 +1249,7 @@
   .exhibits.show #content .exhibit-page-nav > li {
     display: block;
     float: none;
-    overflow: auto;
+    overflow: hidden;
     margin-right: 0;
   }
   .exhibits.show #content .exhibit-page-nav > li:first-of-type {
