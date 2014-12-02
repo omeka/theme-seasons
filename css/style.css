@@ -1232,6 +1232,7 @@
   }
   .exhibits.show #content .exhibit-page-nav a {
     padding: 0;
+    vertical-align: bottom;
   }
   .exhibits.show #content .exhibit-page-nav > li:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.1);
@@ -1239,9 +1240,11 @@
   }
   .exhibits.show #content .exhibit-page-nav > li:nth-child(3) {
     background-color: rgba(0, 0, 0, 0.2);
+    max-width: none;
   }
   .exhibits.show #content .exhibit-page-nav > li:nth-child(4) {
     background-color: rgba(0, 0, 0, 0.3);
+    max-width: none;
   }
   .exhibits.show #content .exhibit-page-nav > li {
     display: block;

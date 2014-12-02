@@ -1194,7 +1194,10 @@ footer {
             @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
             @include trailer();
 
-            a { padding: 0; }
+            a { 
+                padding: 0; 
+                vertical-align: bottom;
+            }
 
             & > li:nth-child(2) {
                 background-color: rgba(0,0,0,.1);
@@ -1203,10 +1206,12 @@ footer {
             
             & > li:nth-child(3) {
                 background-color: rgba(0,0,0,.2);
+                max-width: none;
             }
             
             & > li:nth-child(4) {
                 background-color: rgba(0,0,0,.3);
+                max-width: none;
             }
             
             & > li {
