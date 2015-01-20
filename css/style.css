@@ -1352,6 +1352,10 @@
   #recaptcha_area input {
     height: intrinsic;
   }
+  
+  #recaptcha_area #recaptcha_response_field { 
+    height: 22px;
+  }
 
   /* !---------- Winter Styles ---------- */
   .winter body {
