@@ -218,16 +218,25 @@ header, nav.top, #content, footer {
 
 /* !---------- ExhibitBuilder ---------- */
 
-.exhibits.summary {
-    #primary { 
+.exhibits {
+    #primary,
+    #exhibit-blocks,
+    #exhibit-page-navigation { 
         @include span-columns(8 alpha, 12); 
         padding: 0 16px rhythm();
     }
 
-    #exhibit-pages { 
-        @include span-columns(4 omega, 12); 
+    #exhibit-pages:not(.full)
+     { 
+        width: columns(4);
+        display: inline-block;
         @include box-sizing(border-box);
     }
+}
+
+.exhibits #exhibit-pages.full ~ #exhibit-blocks,
+.exhibits #exhibit-pages.full ~ #exhibit-page-navigation {
+    width: 100%;
 }
 
 .exhibits.show #content {
