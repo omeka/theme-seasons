@@ -1297,7 +1297,17 @@ footer {
     @include leader();
 }
 
+.exhibit-block {
+    overflow: hidden;
+}
 
+.exhibit-block > *:last-child {
+    margin-bottom: 0;
+}
+
+.exhibit-item .exhibit-item-link img {
+    width: 100%;
+}
 /* !---------- Simple Pages ---------- */
 
 .simple-pages-navigation {
