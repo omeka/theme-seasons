@@ -37,6 +37,7 @@
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
+    <a href='#content' id="skipnav">Skip to main content</a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <div id="wrap">
         <header role="banner">
@@ -57,7 +58,7 @@
             <?php echo public_nav_main(); ?>
         </nav>
 
-        <div id="content" role="main">
+        <div id="content" role="main" tabindex="-1">
             <?php
                 if(! is_current_url(WEB_ROOT)) {
                   fire_plugin_hook('public_content_top', array('view'=>$this));

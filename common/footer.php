@@ -23,6 +23,7 @@
 jQuery(document).ready(function () {
     Seasons.showAdvancedForm();
     Seasons.mobileSelectNav();
+    Seasons.skipNav();
 });
 </script>
 
