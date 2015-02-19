@@ -82,16 +82,9 @@ Modernizr.addTest("boxsizing", function() {
     }
 
     Seasons.skipNav = function() {
-      $("a[href^='#']").click(function() {
-      // get the href attribute of the internal link
-      // then strip the first character off it (#)
-      // leaving the corresponding id attribute
-      $("#"+$(this).attr("href").slice(1)+"")
-        // give that id focus (for browsers that didn't already do so)
-        .focus()
-        // add a highlight effect to that id (comment out if not using)
-        //.effect("highlight", {}, 3000);
-      });
+        $("#skipnav").click(function() {
+            $("#content").focus();
+        });
     };
 
 })(jQuery);
