@@ -592,6 +592,7 @@ footer {
     
     .field {
         div:only-of-type { margin-bottom: 0; }
+        @include trailer(2);
     }
     
     .inputs {

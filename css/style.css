@@ -619,6 +619,9 @@
     display: table;
     clear: both;
   }
+  #content .field {
+    margin-bottom: 3em;
+  }
   #content .field div:only-of-type {
     margin-bottom: 0;
   }
