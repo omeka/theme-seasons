@@ -35,19 +35,19 @@ Modernizr.addTest("boxsizing", function() {
             $('#search-form input[type=submit]').addClass("blue button");
         }
     };
-    
-    
+
+
     Seasons.mobileSelectNav = function () {
         // Create the dropdown base
         $("<select class=\"mobile\" />").appendTo("nav.top");
-        
+
         // Create default option "Go to..."
         $("<option />", {
            "selected": "selected",
            "value"   : "",
            "text"    : "Go to..."
         }).appendTo("nav select");
-        
+
         // Populate dropdown with menu items
         $("nav.top a").each(function() {
             var el = $(this);
@@ -76,9 +76,15 @@ Modernizr.addTest("boxsizing", function() {
                 actualW = $(this).width(),
                 wDiff = fullW - actualW,
                 newW = actualW - wDiff;
- 
+
             $(this).css('width',newW);
         });
     }
+
+    Seasons.skipNav = function() {
+        $("#skipnav").click(function() {
+            $("#content").focus();
+        });
+    };
 
 })(jQuery);
