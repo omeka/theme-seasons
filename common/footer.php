@@ -1,6 +1,6 @@
 </div><!-- end content -->
 
-<footer>
+<footer role="contentinfo">
 
         <div id="custom-footer-text">
             <?php if ( $footerText = get_theme_option('Footer Text') ): ?>
@@ -23,6 +23,7 @@
 jQuery(document).ready(function () {
     Seasons.showAdvancedForm();
     Seasons.mobileSelectNav();
+    Seasons.skipNav();
 });
 </script>
 
