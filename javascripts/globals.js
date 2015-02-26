@@ -80,5 +80,11 @@ Modernizr.addTest("boxsizing", function() {
             $(this).css('width',newW);
         });
     }
+    
+    Seasons.skipNav = function() {
+        $("#skipnav").click(function() {
+            $("#content").focus();
+        });
+    };
 
 })(jQuery);
