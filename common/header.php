@@ -32,6 +32,7 @@
     <?php queue_js_file('vendor/modernizr'); ?>
     <?php queue_js_file('vendor/selectivizr'); ?>
     <?php queue_js_file('jquery-extra-selectors'); ?>
+    <?php queue_js_file('jquery-accessibleMegaMenu'); ?>
     <?php queue_js_file('vendor/respond'); ?>
     <?php queue_js_file('globals'); ?>
     <?php echo head_js(); ?>
@@ -54,7 +55,7 @@
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
 
-        <nav class="top" role="navigation">
+        <nav id="top-nav" class="top" role="navigation">
             <?php echo public_nav_main(); ?>
         </nav>
 

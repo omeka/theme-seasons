@@ -1438,6 +1438,9 @@
   .winter nav.top ul li ul li > a:link, .winter nav.top ul li ul li > a:visited, .winter nav.top ul li ul li > a:active, .winter nav.top ul li ul li > a:hover {
     color: #fff;
   }
+  .winter #top-nav a:focus {
+    color: #fff;
+  }
   .winter #intro {
     color: #fff;
   }
@@ -1585,6 +1588,9 @@
   .spring nav.top ul li ul li > a:active, .spring nav.top ul li ul li > a:hover, .spring nav.top ul li ul li:hover > a {
     color: #fff;
   }
+  .spring #top-nav a:focus {
+    color: #fff;
+  }
   .spring #intro {
     color: #FF8F00;
   }
@@ -1720,6 +1726,9 @@
     color: #13BBBB;
   }
   .summer nav.top ul li ul li > a:active, .summer nav.top ul li ul li > a:hover, .summer nav.top ul li ul li:hover > a {
+    color: #3C8F8C;
+  }
+  .summer #top-nav a:focus {
     color: #3C8F8C;
   }
   .summer #intro {
@@ -1865,6 +1874,9 @@
   .autumn nav.top ul li ul li > a:active, .autumn nav.top ul li ul li > a:hover, .autumn nav.top ul li ul li:hover > a {
     color: #fff;
   }
+  .autumn #top-nav a:focus {
+    color: #fff;
+  }
   .autumn #intro {
     color: #815442;
   }
@@ -1995,6 +2007,9 @@
   }
   .night nav.top ul li ul li > a:active, .night nav.top ul li ul li > a:hover, .night nav.top ul li ul li:hover > a {
     color: #FFFFA0;
+  }
+  .night #top-nav a:focus {
+    color: #313131;
   }
   .night #intro {
     color: #BDBDBD;
@@ -2147,6 +2162,19 @@
   }
 
   /* !---------- Navigation --------- */
+  nav.top {
+    /* mega menu list */
+    /* a top level navigation item in the mega menu */
+    /* first descendant link within a top level navigation item */
+    /* focus/open states of first descendant link within a top level 
+       navigation item */
+    /* open state of first descendant link within a top level 
+       navigation item */
+    /* sub-navigation panel */
+    /* sub-navigation panel open state */
+    /* list of items within sub-navigation panel */
+    /* list item within sub-navigation panel */
+  }
   nav.top ul {
     display: block;
     position: relative;
@@ -2161,7 +2189,7 @@
     padding: 0.75em 16px;
   }
   nav.top ul li:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.05);
   }
   nav.top ul li:hover > ul {
     display: block;
@@ -2186,6 +2214,55 @@
     position: absolute;
     left: 100%;
     top: 0;
+  }
+  nav.top .nav-menu {
+    display: block;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 15;
+  }
+  nav.top .nav-item {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  nav.top .nav-item > a {
+    position: relative;
+    display: inline-block;
+    border: 1px solid transparent;
+  }
+  nav.top .nav-item > a:focus,
+  nav.top .nav-item > a.open {
+    border: 1px solid #dedede;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  nav.top .nav-item > a.open {
+    border-bottom: none;
+  }
+  nav.top .sub-nav {
+    position: absolute;
+    display: none;
+    border: 1px solid #dedede;
+  }
+  nav.top .sub-nav.open {
+    display: block;
+  }
+  nav.top .sub-nav ul {
+    display: inline-block;
+    vertical-align: top;
+  }
+  nav.top .sub-nav li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav.top .sub-nav a:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
   }
   nav.top .mobile {
     display: none;

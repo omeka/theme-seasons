@@ -293,7 +293,7 @@ nav {
         margin-right: 16px;
     }
 }
-
+ 
     /* !---------- Pagination ---------- */
     
     .pagination { 
@@ -1397,6 +1397,8 @@ footer {
             }
         }
     }
+    
+    #top-nav a:focus { color: #fff; }
 
     #intro { color: #fff; }
     
@@ -1540,6 +1542,8 @@ footer {
         }
     }
     
+    #top-nav a:focus { color: #fff; }
+    
     #intro { color: $spring-link; }
 
     #content,
@@ -1671,6 +1675,8 @@ footer {
             }
         }
     }
+    
+    #top-nav a:focus { color: $summer-dark-blue; }
     
     #intro { color: $summer-link-red; }
 
@@ -1809,6 +1815,8 @@ footer {
         }
     }
     
+    #top-nav a:focus { color: #fff; }
+    
     #intro { color: $autumn-brown; }
 
     #content,
@@ -1941,6 +1949,8 @@ footer {
             }
         }
     }
+    
+    #top-nav a:focus { color: $night-shadow; }
     
     #intro { color: $night-light; }
 

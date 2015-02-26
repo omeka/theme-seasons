@@ -24,6 +24,7 @@ jQuery(document).ready(function () {
     Seasons.showAdvancedForm();
     Seasons.mobileSelectNav();
     Seasons.skipNav();
+    Seasons.megaMenu();
 });
 </script>
 
