@@ -35,47 +35,11 @@ header {
 /* !---------- Navigation --------- */
 
 nav.top {
-    ul { 
-        display: block; 
-        position: relative;
-        z-index: 1000;
-        li {
-            float: left;
-            width: auto;
-            position: relative;
-            
-            a { padding: rhythm(.5) 16px; }
-            
-            &:hover {
-                background-color:rgba(0,0,0,.05);
-                & > ul { display: block; }
-            }
-
-
-            ul {
-                min-width: 200px;
-                display: none;
-                padding: 0;
-                position: absolute;
-                top: rhythm(2);
-                left: 0px;
-                
-                li {
-                    width: 100%;
-                    clear: both;
-                    padding: 0;
-                    @include box-sizing(border-box);
-                    
-                    ul {
-                    position: absolute;
-                    left: 100%;
-                    top: 0;
-                    }
-                }
-            }
-        }
-    }
     /* mega menu list */
+    box-sizing: border-box;
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
     .nav-menu {
         display: block;
         position: relative;
@@ -91,6 +55,11 @@ nav.top {
         display: inline-block;
         padding: 0;
         margin: 0;
+        position: relative;
+        
+        a {
+          padding: rhythm(.5) 16px;
+        }
     }
 
     /* first descendant link within a top level navigation item */
@@ -103,17 +72,16 @@ nav.top {
     /* focus/open states of first descendant link within a top level 
        navigation item */
     .nav-item > a:focus,
+    .nav-item > a:hover,
     .nav-item > a.open {
         border: 1px solid #dedede;
-        background-color: rgba(0,0,0,.05); 
+        background-color: rgba(0,0,0,.15); 
     }
 
     /* open state of first descendant link within a top level 
        navigation item */
     .nav-item > a.open {
-        // background-color: #fff;
         border-bottom: none;
-        // z-index: 1;
     }
 
     /* sub-navigation panel */
@@ -121,30 +89,44 @@ nav.top {
         position: absolute;
         display: none;
         border: 1px solid #dedede;
+        min-width: 200px;
+        
+        &.open {
+            display: block;
+        }
+        
+        ul {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            a {
+              width: 100%;
+              display: block;
+              padding: .25em 16px;
+            
+              &:before {
+                content: "\2014\0020";
+              }
+            }
+            ul {
+              padding-left: 1em;
+            }
+        }
+        
+        li {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a:focus, a:hover {
+            background-color: rgba(0,0,0,.05);
+            display:block;
+            border-bottom: 1px solid #dedede;
+        } 
+        
     }
-
-    /* sub-navigation panel open state */
-    .sub-nav.open {
-        display: block;
-    }
-
-    /* list of items within sub-navigation panel */
-    .sub-nav ul {
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    /* list item within sub-navigation panel */
-    .sub-nav li {
-        display: block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    .sub-nav a:focus {
-        background-color: rgba(0,0,0,.10);
-        display:block;
-    } 
     
     .mobile { display: none; }
 }

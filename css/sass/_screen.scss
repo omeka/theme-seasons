@@ -1377,7 +1377,7 @@ footer {
     a {
         &:link { color: $winter-bright-blue; }
         &:visited { color: $winter-pale-blue; }
-        &:hover, &:active { color: $winter-hover-blue; }
+        &:hover, &:active, &:focus { color: $winter-hover-blue; }
     }
     
     header { background-color: #fff; }
@@ -1388,17 +1388,19 @@ footer {
         li:hover a { color: #fff; }
 
         a:link, a:visited  { color: $winter-blue-on-pale-blue; }
-        a:active, a:hover  { color: #fff; }
+        a:active, a:hover, a:focus, a.open  { color: #fff; }
         
-        ul li ul {
-            background-color: $winter-bright-blue;
+        .sub-nav {
+            background-color: lighten($winter-bright-blue, 5%);
             li {
-                & > a:link, & > a:visited, & > a:active, & > a:hover { color:#fff; }
+                & > a:link, & > a:visited, & > a:active, & > a:hover, & > a:focus { color:#fff; }
+                
+                a:focus, a:hover { background-color: rgba(0,0,0,.15); }
             }
         }
     }
     
-    #top-nav a:focus { color: #fff; }
+    // #top-nav a:focus { color: #fff; }
 
     #intro { color: #fff; }
     
@@ -1520,30 +1522,28 @@ footer {
     a {
         &:link { color: $spring-link; }
         &:visited { color: $spring-visited; }
-        &:hover, &:active { color: $spring-active; }
+        &:hover, &:active, &:focus { color: $spring-active; }
     }
 
     header { background-color: $spring-light-green; }
     
     nav.top { 
         background-color: $spring-green; 
-
-        li:hover a { color: #fff; }
         
         a:link, a:visited  { color: $spring-light-green; }
-        a:active, a:hover  { color: $spring-white; }
+        a:active, a:hover, a:focus  { color: $spring-white; }
         
-        ul li ul {
+        .sub-nav {
             background-color: $spring-green;
             li {
                 & > a:link, & > a:visited { color: $spring-light-green; }
-                & > a:active, & > a:hover, &:hover > a { color:#fff; }
-            }
+                & > a:hover, & > a:focus { color: #fff; }
+              }
+            
+            // a:hover, a:focus, a.open { color: #fff; }
+          }
         }
-    }
-    
-    #top-nav a:focus { color: #fff; }
-    
+            
     #intro { color: $spring-link; }
 
     #content,
@@ -1654,7 +1654,7 @@ footer {
     a {
         &:link { color: $summer-link-red; }
         &:visited { color: $summer-visited-red; }
-        &:hover, &:active { color: $summer-active-red; }
+        &:hover, &:active, &:focus { color: $summer-active-red; }
     }
 
     header { background-color: #fff; }
@@ -1662,18 +1662,31 @@ footer {
     nav.top { 
         background-color: $summer-yellow; 
 
-        li:hover a { color: $summer-dark-blue; }
+        li:hover a { 
+          color: $summer-dark-blue; 
+          }
         
         a:link, a:visited  { color: $summer-title-blue; }
         a:active, a:hover  { color: $summer-dark-blue; }
         
-        ul li ul {
+        .nav-item > a:focus,
+        .nav-item > a:hover,
+        .nav-item > a.open {
+            background-color: rgba(0,0,0,.05); 
+        }
+        
+        .sub-nav {
             background-color: $summer-yellow;
             li {
                 & > a:link, & > a:visited { color: $summer-title-blue; }
-                & > a:active, & > a:hover, &:hover > a { color: $summer-dark-blue; }
+                & > a:hover { color: $summer-dark-blue; }
+              }
             }
+        .sub-nav a:hover { 
+            color: $summer-dark-blue; 
+            background-color: rgba(0,0,0,.025); 
         }
+        
     }
     
     #top-nav a:focus { color: $summer-dark-blue; }
@@ -1793,7 +1806,7 @@ footer {
     a {
         &:link { color: $autumn-link; }
         &:visited { color: $autumn-visited; }
-        &:hover, &:active { color: $autumn-active; }
+        &:hover, &:active, &:focus { color: $autumn-active; }
     }
 
     header { background-color: $autumn-red; }
@@ -1804,14 +1817,15 @@ footer {
         li:hover a { color: #fff; }
         
         a:link, a:visited  { color: $autumn-nav-link; }
-        a:active, a:hover  { color: #fff; }
+        a:active, a:hover, a.open  { color: #fff; }
         
-        ul li ul {
+        .sub-nav {
             background-color: $autumn-dark-beige;
             li {
                 & > a:link, & > a:visited { color: $autumn-nav-link; }
-                & > a:active, & > a:hover, &:hover > a { color:#fff; }
+                & > a:hover { color:#fff; }
             }
+            .sub-nav a:hover { color: #fff; }
         }
     }
     
@@ -1928,7 +1942,7 @@ footer {
     a {
         &:link { color: $night-link; }
         &:visited { color: $night-visited; }
-        &:hover, &:active { color: $night-active; }
+        &:hover, &:active, &:focus { color: $night-active; }
     }
 
     header { background-color: $night-darkest; }
@@ -1941,17 +1955,17 @@ footer {
         a:link, a:visited  { color: $night-visited-nav; }
         a:active, a:hover  {  }
         
-        ul li ul {
+        a:focus, a.open { color: $night-shadow; }
+        
+        .sub-nav {
             background-color: $night-highlight;
             li {
                 & > a:link, & > a:visited { color: $night-link; }
-                & > a:active, & > a:hover, &:hover > a { color: $night-active; }
+                & > a:active, & > a:hover, & > a:focus { color: $night-active; }
             }
         }
     }
-    
-    #top-nav a:focus { color: $night-shadow; }
-    
+        
     #intro { color: $night-light; }
 
     #content,

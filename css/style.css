@@ -1414,7 +1414,7 @@
   .winter a:visited {
     color: #43ADB8;
   }
-  .winter a:hover, .winter a:active {
+  .winter a:hover, .winter a:active, .winter a:focus {
     color: #3acacc;
   }
   .winter header {
@@ -1429,17 +1429,17 @@
   .winter nav.top a:link, .winter nav.top a:visited {
     color: #def9ff;
   }
-  .winter nav.top a:active, .winter nav.top a:hover {
+  .winter nav.top a:active, .winter nav.top a:hover, .winter nav.top a:focus, .winter nav.top a.open {
     color: #fff;
   }
-  .winter nav.top ul li ul {
-    background-color: #228494;
+  .winter nav.top .sub-nav {
+    background-color: #2796a9;
   }
-  .winter nav.top ul li ul li > a:link, .winter nav.top ul li ul li > a:visited, .winter nav.top ul li ul li > a:active, .winter nav.top ul li ul li > a:hover {
+  .winter nav.top .sub-nav li > a:link, .winter nav.top .sub-nav li > a:visited, .winter nav.top .sub-nav li > a:active, .winter nav.top .sub-nav li > a:hover, .winter nav.top .sub-nav li > a:focus {
     color: #fff;
   }
-  .winter #top-nav a:focus {
-    color: #fff;
+  .winter nav.top .sub-nav li a:focus, .winter nav.top .sub-nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.15);
   }
   .winter #intro {
     color: #fff;
@@ -1561,7 +1561,7 @@
   .spring a:visited {
     color: #D89966;
   }
-  .spring a:hover, .spring a:active {
+  .spring a:hover, .spring a:active, .spring a:focus {
     color: #FF5C00;
   }
   .spring header {
@@ -1570,25 +1570,19 @@
   .spring nav.top {
     background-color: #92BA56;
   }
-  .spring nav.top li:hover a {
-    color: #fff;
-  }
   .spring nav.top a:link, .spring nav.top a:visited {
     color: #F1FFBA;
   }
-  .spring nav.top a:active, .spring nav.top a:hover {
+  .spring nav.top a:active, .spring nav.top a:hover, .spring nav.top a:focus {
     color: #F9FFEC;
   }
-  .spring nav.top ul li ul {
+  .spring nav.top .sub-nav {
     background-color: #92BA56;
   }
-  .spring nav.top ul li ul li > a:link, .spring nav.top ul li ul li > a:visited {
+  .spring nav.top .sub-nav li > a:link, .spring nav.top .sub-nav li > a:visited {
     color: #F1FFBA;
   }
-  .spring nav.top ul li ul li > a:active, .spring nav.top ul li ul li > a:hover, .spring nav.top ul li ul li:hover > a {
-    color: #fff;
-  }
-  .spring #top-nav a:focus {
+  .spring nav.top .sub-nav li > a:hover, .spring nav.top .sub-nav li > a:focus {
     color: #fff;
   }
   .spring #intro {
@@ -1701,7 +1695,7 @@
   .summer a:visited {
     color: #F09999;
   }
-  .summer a:hover, .summer a:active {
+  .summer a:hover, .summer a:active, .summer a:focus {
     color: #FF0000;
   }
   .summer header {
@@ -1719,14 +1713,23 @@
   .summer nav.top a:active, .summer nav.top a:hover {
     color: #3C8F8C;
   }
-  .summer nav.top ul li ul {
+  .summer nav.top .nav-item > a:focus,
+  .summer nav.top .nav-item > a:hover,
+  .summer nav.top .nav-item > a.open {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .summer nav.top .sub-nav {
     background-color: #FCF283;
   }
-  .summer nav.top ul li ul li > a:link, .summer nav.top ul li ul li > a:visited {
+  .summer nav.top .sub-nav li > a:link, .summer nav.top .sub-nav li > a:visited {
     color: #13BBBB;
   }
-  .summer nav.top ul li ul li > a:active, .summer nav.top ul li ul li > a:hover, .summer nav.top ul li ul li:hover > a {
+  .summer nav.top .sub-nav li > a:hover {
     color: #3C8F8C;
+  }
+  .summer nav.top .sub-nav a:hover {
+    color: #3C8F8C;
+    background-color: rgba(0, 0, 0, 0.025);
   }
   .summer #top-nav a:focus {
     color: #3C8F8C;
@@ -1847,7 +1850,7 @@
   .autumn a:visited {
     color: #E2B76B;
   }
-  .autumn a:hover, .autumn a:active {
+  .autumn a:hover, .autumn a:active, .autumn a:focus {
     color: #F16100;
   }
   .autumn header {
@@ -1862,16 +1865,19 @@
   .autumn nav.top a:link, .autumn nav.top a:visited {
     color: #BE5E5E;
   }
-  .autumn nav.top a:active, .autumn nav.top a:hover {
+  .autumn nav.top a:active, .autumn nav.top a:hover, .autumn nav.top a.open {
     color: #fff;
   }
-  .autumn nav.top ul li ul {
+  .autumn nav.top .sub-nav {
     background-color: #CABFA6;
   }
-  .autumn nav.top ul li ul li > a:link, .autumn nav.top ul li ul li > a:visited {
+  .autumn nav.top .sub-nav li > a:link, .autumn nav.top .sub-nav li > a:visited {
     color: #BE5E5E;
   }
-  .autumn nav.top ul li ul li > a:active, .autumn nav.top ul li ul li > a:hover, .autumn nav.top ul li ul li:hover > a {
+  .autumn nav.top .sub-nav li > a:hover {
+    color: #fff;
+  }
+  .autumn nav.top .sub-nav .sub-nav a:hover {
     color: #fff;
   }
   .autumn #top-nav a:focus {
@@ -1984,7 +1990,7 @@
   .night a:visited {
     color: #C0A900;
   }
-  .night a:hover, .night a:active {
+  .night a:hover, .night a:active, .night a:focus {
     color: #FFFFA0;
   }
   .night header {
@@ -1999,17 +2005,17 @@
   .night nav.top a:link, .night nav.top a:visited {
     color: #6d6d6d;
   }
-  .night nav.top ul li ul {
+  .night nav.top a:focus, .night nav.top a.open {
+    color: #313131;
+  }
+  .night nav.top .sub-nav {
     background-color: #666;
   }
-  .night nav.top ul li ul li > a:link, .night nav.top ul li ul li > a:visited {
+  .night nav.top .sub-nav li > a:link, .night nav.top .sub-nav li > a:visited {
     color: #FFE000;
   }
-  .night nav.top ul li ul li > a:active, .night nav.top ul li ul li > a:hover, .night nav.top ul li ul li:hover > a {
+  .night nav.top .sub-nav li > a:active, .night nav.top .sub-nav li > a:hover, .night nav.top .sub-nav li > a:focus {
     color: #FFFFA0;
-  }
-  .night #top-nav a:focus {
-    color: #313131;
   }
   .night #intro {
     color: #BDBDBD;
@@ -2164,6 +2170,7 @@
   /* !---------- Navigation --------- */
   nav.top {
     /* mega menu list */
+    box-sizing: border-box;
     /* a top level navigation item in the mega menu */
     /* first descendant link within a top level navigation item */
     /* focus/open states of first descendant link within a top level 
@@ -2171,49 +2178,9 @@
     /* open state of first descendant link within a top level 
        navigation item */
     /* sub-navigation panel */
-    /* sub-navigation panel open state */
-    /* list of items within sub-navigation panel */
-    /* list item within sub-navigation panel */
   }
-  nav.top ul {
-    display: block;
-    position: relative;
-    z-index: 1000;
-  }
-  nav.top ul li {
-    float: left;
-    width: auto;
-    position: relative;
-  }
-  nav.top ul li a {
-    padding: 0.75em 16px;
-  }
-  nav.top ul li:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  nav.top ul li:hover > ul {
-    display: block;
-  }
-  nav.top ul li ul {
-    min-width: 200px;
-    display: none;
-    padding: 0;
-    position: absolute;
-    top: 3em;
-    left: 0px;
-  }
-  nav.top ul li ul li {
-    width: 100%;
-    clear: both;
-    padding: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  nav.top ul li ul li ul {
-    position: absolute;
-    left: 100%;
-    top: 0;
+  nav.top *, nav.top *:before, nav.top *:after {
+    box-sizing: inherit;
   }
   nav.top .nav-menu {
     display: block;
@@ -2228,6 +2195,10 @@
     display: inline-block;
     padding: 0;
     margin: 0;
+    position: relative;
+  }
+  nav.top .nav-item a {
+    padding: 0.75em 16px;
   }
   nav.top .nav-item > a {
     position: relative;
@@ -2235,9 +2206,10 @@
     border: 1px solid transparent;
   }
   nav.top .nav-item > a:focus,
+  nav.top .nav-item > a:hover,
   nav.top .nav-item > a.open {
     border: 1px solid #dedede;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.15);
   }
   nav.top .nav-item > a.open {
     border-bottom: none;
@@ -2246,6 +2218,7 @@
     position: absolute;
     display: none;
     border: 1px solid #dedede;
+    min-width: 200px;
   }
   nav.top .sub-nav.open {
     display: block;
@@ -2253,6 +2226,18 @@
   nav.top .sub-nav ul {
     display: inline-block;
     vertical-align: top;
+    width: 100%;
+  }
+  nav.top .sub-nav ul a {
+    width: 100%;
+    display: block;
+    padding: .25em 16px;
+  }
+  nav.top .sub-nav ul a:before {
+    content: "\2014\0020";
+  }
+  nav.top .sub-nav ul ul {
+    padding-left: 1em;
   }
   nav.top .sub-nav li {
     display: block;
@@ -2260,9 +2245,10 @@
     margin: 0;
     padding: 0;
   }
-  nav.top .sub-nav a:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+  nav.top .sub-nav a:focus, nav.top .sub-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
     display: block;
+    border-bottom: 1px solid #dedede;
   }
   nav.top .mobile {
     display: none;
