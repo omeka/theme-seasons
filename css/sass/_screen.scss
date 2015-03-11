@@ -483,7 +483,7 @@ nav {
     }
 }
 
-#advanced-search {
+.show-advanced.button {
     width: rhythm(1.5);
     height: 35px;
     text-indent: -9999px;
@@ -491,7 +491,7 @@ nav {
     position: absolute;
     padding: 0;
     top: 0;
-    right: 0;
+    right: rhythm(1.5);
     line-height: 30px;
     background-color: #4b6569;
     @include boxsizing(content-box);
@@ -531,6 +531,10 @@ nav {
     text-align: left;
     @include boxsizing(border-box);
     @include box-shadow(rgba(0,0,0,.25) 0 5px 10px);
+
+    &.open {
+        display: block;
+    }
     
     #query-types *:first-child {
         margin-top: 0;
@@ -1370,7 +1374,7 @@ footer {
     
     h1, #site-title a { color:#859ca2; }
 
-    input[type=submit], button, .button, #advanced-search { background-color: $winter-slate; }
+    input[type=submit], button, .button, .show-advanced.button { background-color: $winter-slate; }
 
     input[type=text], input[type=password], textarea { background-color: $winter-light-gray; }
 
@@ -1512,7 +1516,7 @@ footer {
     
     h1, #site-title a { color: $spring-dark-green; }
 
-    input[type=submit], button, .button, #advanced-search {  background-color: $spring-red; }
+    input[type=submit], button, .button, .show-advanced.button {  background-color: $spring-red; }
 
     input[type=text], input[type=password], textarea { 
         background-color: #fff; 
@@ -1644,7 +1648,7 @@ footer {
     
     h1, #site-title a { color: $summer-title-blue; }
 
-    input[type=submit], button, .button, #advanced-search { background-color: $summer-blue; }
+    input[type=submit], button, .button, .show-advanced.button { background-color: $summer-blue; }
 
     input[type=text], input[type=password], textarea { 
         background-color: $summer-light-blue; 
@@ -1796,7 +1800,7 @@ footer {
     
     h1, #site-title a { color: $autumn-beige; }
 
-    input[type=submit], button, .button, #advanced-search { background-color: $autumn-dark-red; }
+    input[type=submit], button, .button, .show-advanced.button { background-color: $autumn-dark-red; }
 
     input[type=text], input[type=password], textarea { 
         background-color: $autumn-beige; 
@@ -1928,7 +1932,7 @@ footer {
     
     #site-title a { color: $night-link; }
 
-    input[type=submit], button, .button, #advanced-search { 
+    input[type=submit], button, .button, .show-advanced.button { 
         background-color: $night-highlight; 
         color: $night-darker;
     }

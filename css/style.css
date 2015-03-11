@@ -504,7 +504,7 @@
     right: 2.25em;
   }
 
-  #advanced-search {
+  .show-advanced.button {
     width: 2.25em;
     height: 35px;
     text-indent: -9999px;
@@ -512,7 +512,7 @@
     position: absolute;
     padding: 0;
     top: 0;
-    right: 0;
+    right: 2.25em;
     line-height: 30px;
     background-color: #4b6569;
     -webkit-box-sizing: content-box;
@@ -520,13 +520,13 @@
     box-sizing: content-box;
     *behavior: url("../javascripts/boxsizing.htc");
   }
-  #advanced-search:focus {
+  .show-advanced.button:focus {
     outline: -webkit-focus-ring-color auto 5px;
   }
-  #advanced-search:link, #advanced-search:hover, #advanced-search:active, #advanced-search:visited {
+  .show-advanced.button:link, .show-advanced.button:hover, .show-advanced.button:active, .show-advanced.button:visited {
     color: #fff;
   }
-  #advanced-search:after {
+  .show-advanced.button:after {
     width: 2.25em;
     content: "\2026";
     display: block;
@@ -559,6 +559,9 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
+  }
+  #advanced-form.open {
+    display: block;
   }
   #advanced-form #query-types *:first-child {
     margin-top: 0;
@@ -1402,7 +1405,7 @@
   .winter h1, .winter #site-title a {
     color: #859ca2;
   }
-  .winter input[type=submit], .winter button, .winter .button, .winter #advanced-search {
+  .winter input[type=submit], .winter button, .winter .button, .winter .show-advanced.button {
     background-color: #4b6569;
   }
   .winter input[type=text], .winter input[type=password], .winter textarea {
@@ -1548,7 +1551,7 @@
   .spring h1, .spring #site-title a {
     color: #4A6F14;
   }
-  .spring input[type=submit], .spring button, .spring .button, .spring #advanced-search {
+  .spring input[type=submit], .spring button, .spring .button, .spring .show-advanced.button {
     background-color: #BA5656;
   }
   .spring input[type=text], .spring input[type=password], .spring textarea {
@@ -1682,7 +1685,7 @@
   .summer h1, .summer #site-title a {
     color: #13BBBB;
   }
-  .summer input[type=submit], .summer button, .summer .button, .summer #advanced-search {
+  .summer input[type=submit], .summer button, .summer .button, .summer .show-advanced.button {
     background-color: #8ECAC8;
   }
   .summer input[type=text], .summer input[type=password], .summer textarea {
@@ -1837,7 +1840,7 @@
   .autumn h1, .autumn #site-title a {
     color: #F8F1E5;
   }
-  .autumn input[type=submit], .autumn button, .autumn .button, .autumn #advanced-search {
+  .autumn input[type=submit], .autumn button, .autumn .button, .autumn .show-advanced.button {
     background-color: #86443C;
   }
   .autumn input[type=text], .autumn input[type=password], .autumn textarea {
@@ -1975,7 +1978,7 @@
   .night #site-title a {
     color: #FFE000;
   }
-  .night input[type=submit], .night button, .night .button, .night #advanced-search {
+  .night input[type=submit], .night button, .night .button, .night .show-advanced.button {
     background-color: #666;
     color: #252525;
   }
@@ -2222,6 +2225,7 @@
   }
   nav.top .sub-nav.open {
     display: block;
+    z-index: 20;
   }
   nav.top .sub-nav ul {
     display: inline-block;
@@ -2231,10 +2235,13 @@
   nav.top .sub-nav ul a {
     width: 100%;
     display: block;
-    padding: .25em 16px;
+    padding: .25em 16px .25em 2em;
+    text-indent: -1em;
   }
   nav.top .sub-nav ul a:before {
-    content: "\2014\0020";
+    font-family: "FontAwesome";
+    content: "\f101";
+    margin-right: .5em;
   }
   nav.top .sub-nav ul ul {
     padding-left: 1em;
@@ -2248,7 +2255,14 @@
   nav.top .sub-nav a:focus, nav.top .sub-nav a:hover {
     background-color: rgba(0, 0, 0, 0.05);
     display: block;
-    border-bottom: 1px solid #dedede;
+  }
+  nav.top [aria-haspopup="true"]:after {
+    font-family: "FontAwesome";
+    content: "\f0da";
+    margin-left: .5em;
+  }
+  nav.top [aria-haspopup="true"].open:after {
+    content: "\f0d7";
   }
   nav.top .mobile {
     display: none;

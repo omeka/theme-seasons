@@ -21,10 +21,10 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function () {
-    Seasons.showAdvancedForm();
+    Omeka.showAdvancedForm();
+    Omeka.skipNav();
+    Omeka.megaMenu("#top-nav");
     Seasons.mobileSelectNav();
-    Seasons.skipNav();
-    Seasons.megaMenu();
 });
 </script>
 

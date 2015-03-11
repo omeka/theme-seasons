@@ -29,12 +29,17 @@
     ?>
 
     <!-- JavaScripts -->
-    <?php queue_js_file('vendor/modernizr'); ?>
-    <?php queue_js_file('vendor/selectivizr'); ?>
-    <?php queue_js_file('jquery-extra-selectors'); ?>
-    <?php queue_js_file('jquery-accessibleMegaMenu'); ?>
-    <?php queue_js_file('vendor/respond'); ?>
-    <?php queue_js_file('globals'); ?>
+    <?php 
+    queue_js_file(array(
+        'vendor/selectivizr',
+        'vendor/jquery-accessibleMegaMenu',
+        'vendor/respond',
+        'jquery-extra-selectors',
+        'seasons',
+        'globals'
+    )); 
+    ?>
+
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>

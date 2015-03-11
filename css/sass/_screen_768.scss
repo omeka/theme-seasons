@@ -93,6 +93,7 @@ nav.top {
         
         &.open {
             display: block;
+            z-index: 20;
         }
         
         ul {
@@ -102,10 +103,13 @@ nav.top {
             a {
               width: 100%;
               display: block;
-              padding: .25em 16px;
+              padding: .25em 16px .25em 2em;
+              text-indent: -1em;
             
               &:before {
-                content: "\2014\0020";
+                font-family: "FontAwesome";
+                content: "\f101";
+                margin-right: .5em;
               }
             }
             ul {
@@ -123,11 +127,20 @@ nav.top {
         a:focus, a:hover {
             background-color: rgba(0,0,0,.05);
             display:block;
-            border-bottom: 1px solid #dedede;
         } 
-        
+
     }
-    
+
+    [aria-haspopup="true"]:after {
+        font-family: "FontAwesome";
+        content: "\f0da";
+        margin-left: .5em;
+    }
+
+    [aria-haspopup="true"].open:after {
+        content: "\f0d7";
+    }
+
     .mobile { display: none; }
 }
 
