@@ -8,7 +8,7 @@
   -- Global Classes
   -- Navigation
   ----- Pagination
-  -- Header 
+  -- Header
   -- Footer
   -- Content
   -- Home
@@ -2176,9 +2176,9 @@
     box-sizing: border-box;
     /* a top level navigation item in the mega menu */
     /* first descendant link within a top level navigation item */
-    /* focus/open states of first descendant link within a top level 
+    /* focus/open states of first descendant link within a top level
        navigation item */
-    /* open state of first descendant link within a top level 
+    /* open state of first descendant link within a top level
        navigation item */
     /* sub-navigation panel */
   }

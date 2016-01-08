@@ -21,7 +21,7 @@ header {
 #site-title {
     @include span-columns (8 alpha, 12);
     text-align: left;
-    
+
     &:after {
         content: "";
         display: block;
@@ -56,7 +56,7 @@ nav.top {
         padding: 0;
         margin: 0;
         position: relative;
-        
+
         a {
           padding: rhythm(.5) 16px;
         }
@@ -69,16 +69,16 @@ nav.top {
         border: 1px solid transparent;
     }
 
-    /* focus/open states of first descendant link within a top level 
+    /* focus/open states of first descendant link within a top level
        navigation item */
     .nav-item > a:focus,
     .nav-item > a:hover,
     .nav-item > a.open {
         border: 1px solid #dedede;
-        background-color: rgba(0,0,0,.15); 
+        background-color: rgba(0,0,0,.15);
     }
 
-    /* open state of first descendant link within a top level 
+    /* open state of first descendant link within a top level
        navigation item */
     .nav-item > a.open {
         border-bottom: none;
@@ -90,12 +90,12 @@ nav.top {
         display: none;
         border: 1px solid #dedede;
         min-width: 200px;
-        
+
         &.open {
             display: block;
             z-index: 20;
         }
-        
+
         ul {
             display: inline-block;
             vertical-align: top;
@@ -105,7 +105,7 @@ nav.top {
               display: block;
               padding: .25em 16px .25em 2em;
               text-indent: -1em;
-            
+
               &:before {
                 font-family: "FontAwesome";
                 content: "\f101";
@@ -116,18 +116,18 @@ nav.top {
               padding-left: 1em;
             }
         }
-        
+
         li {
             display: block;
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
-        
+
         a:focus, a:hover {
             background-color: rgba(0,0,0,.05);
             display:block;
-        } 
+        }
 
     }
 
@@ -150,11 +150,11 @@ nav.top {
     .pagination {
         float: left;
     }
-    
+
     #content nav .pagination_list {
         @include leader(.25);
     }
-    
+
 
 
 /* !---------- Search ---------- */
@@ -173,10 +173,10 @@ nav.top {
 #search-filters, #item-filters {
     float: left;
 
-    li { 
-        float: left; 
-        ul { 
-            display: inline; 
+    li {
+        float: left;
+        ul {
+            display: inline;
             padding: 0;
             li {
                 float: none;
@@ -212,26 +212,26 @@ header, nav.top, #content, footer {
         font-size: 1.5 * $base-font-size;
         line-height: 1.5 * $base-line-height;
           @include trailer(.75);
-        
+
         p { margin: 0; }
     }
 
     #featured-item {
         @include trailer();
         @include span-columns(4 alpha, 12);
-        
+
         .image {
             display: inline-block;
             width: 100%;
             height: auto;
         }
-        
+
         img {
             width: 100%;
             height: auto;
         }
     }
-    
+
     & > div {
         @include span-columns(8 omega, 12);
     }
@@ -242,14 +242,14 @@ header, nav.top, #content, footer {
 
 .items {
     .item { clear: both;}
-        
+
     #advanced-search-form {
-    
+
         & > div {
             @include span-columns(5 alpha, 8);
             clear: both;
         }
-        
+
         & > div:last-of-type {
             width: auto;
         }
@@ -260,10 +260,10 @@ header, nav.top, #content, footer {
     #primary {
         @include span-columns (5 alpha, 8);
     }
-    
+
     #sidebar {
         @include span-columns (3 omega, 8);
-                        
+
     }
 }
 
@@ -274,12 +274,12 @@ header, nav.top, #content, footer {
     #primary .element-set {
         @include span-columns (5 alpha, 8);
     }
-    
+
     #primary > div {
         @include span-columns(3 omega, 8);
         clear: right;
     }
-    
+
     .item-img { margin-left: 0; }
 }
 
@@ -288,13 +288,13 @@ header, nav.top, #content, footer {
 .exhibits {
     #primary,
     #exhibit-blocks,
-    #exhibit-page-navigation { 
-        @include span-columns(8 alpha, 12); 
+    #exhibit-page-navigation {
+        @include span-columns(8 alpha, 12);
         padding: 0 16px rhythm();
     }
 
     #exhibit-pages:not(.full)
-     { 
+     {
         width: columns(4);
         display: inline-block;
         @include box-sizing(border-box);
@@ -312,22 +312,22 @@ header, nav.top, #content, footer {
             background-color: rgba(0,0,0,.1);
             float: left;
         }
-        
+
         & > li:nth-child(2) li:first-of-type { padding-left: 8px; }
     }
 
     #exhibit-page-navigation {
         .exhibits-nav-prev { text-align: left; }
-        
+
         .exhibits-nav-next { text-align: right; }
-    
-        & > div { 
-            padding: 0; 
+
+        & > div {
+            padding: 0;
             width: 33%;
         }
-        
+
         a, span { width: 100%; }
-    
+
     }
 
 }
