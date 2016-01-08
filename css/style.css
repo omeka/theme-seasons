@@ -619,7 +619,7 @@
     margin: 0 0 0.75em -16px;
     width: 100%;
   }
-  #content > div, #content section {
+  #content > div, #content section, #content #login-form {
     background-color: #fff;
     border-style: solid;
     border-width: 10px 0 0 0;
@@ -635,10 +635,10 @@
     margin-bottom: 1.125em;
     *zoom: 1;
   }
-  #content > div > *:only-child, #content section > *:only-child {
+  #content > div > *:only-child, #content section > *:only-child, #content #login-form > *:only-child {
     margin-top: 0;
   }
-  #content > div:after, #content section:after {
+  #content > div:after, #content section:after, #content #login-form:after {
     content: "";
     display: table;
     clear: both;
