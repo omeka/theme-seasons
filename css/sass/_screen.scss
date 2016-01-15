@@ -104,6 +104,7 @@ a { text-decoration: none; }
         @include padding-leader(.5);
         @include padding-trailer(.5);
         display: inline-block;
+        font-weight: bold;
     }
 
     input[type=text], input[type=password], textarea,
