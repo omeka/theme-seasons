@@ -39,7 +39,7 @@ echo head(array(
     </div>
 </div>
 
-<?php if ($exhibitNavOption == 'side'): ?>
+<?php if (($exhibitNavOption == 'side') || !isset($exhibitNavOption)): ?>
 <nav id="exhibit-pages" class="side">
     <h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
     <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
