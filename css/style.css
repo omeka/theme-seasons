@@ -620,7 +620,7 @@
     margin: 0 0 0.75em -16px;
     width: 100%;
   }
-  #content > div, #content section, #content #login-form {
+  #content > div, #content section {
     background-color: #fff;
     border-style: solid;
     border-width: 10px 0 0 0;
@@ -636,10 +636,10 @@
     margin-bottom: 1.125em;
     *zoom: 1;
   }
-  #content > div > *:only-child, #content section > *:only-child, #content #login-form > *:only-child {
+  #content > div > *:only-child, #content section > *:only-child {
     margin-top: 0;
   }
-  #content > div:after, #content section:after, #content #login-form:after {
+  #content > div:after, #content section:after {
     content: "";
     display: table;
     clear: both;
@@ -764,6 +764,31 @@
   }
   #content #sort-links-list {
     padding-left: 0;
+  }
+
+  .login #content form {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 10px 0 0 0;
+    overflow: visible;
+    padding: 0.75em 16px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url("../javascripts/boxsizing.htc");
+    margin-bottom: 1.125em;
+    *zoom: 1;
+  }
+  .login #content form > *:only-child {
+    margin-top: 0;
+  }
+  .login #content form:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   .asc a:after,
@@ -1494,13 +1519,33 @@
   .winter #content nav .pagination_list {
     background-color: #228494;
   }
-  .winter #content .items-nav, .winter #content .secondary-nav, .winter #content #secondary-nav, .winter #content #outputs, .winter #content #exhibit-child-pages {
+  .winter #content .items-nav, .winter #content .secondary-nav,
+  .winter #content #secondary-nav,
+  .winter #content #outputs,
+  .winter #content #exhibit-child-pages,
+  .winter #content #login-links a {
     color: #fff;
   }
-  .winter #content .items-nav a:link, .winter #content .items-nav a:visited, .winter #content .secondary-nav a:link, .winter #content .secondary-nav a:visited, .winter #content #secondary-nav a:link, .winter #content #secondary-nav a:visited, .winter #content #outputs a:link, .winter #content #outputs a:visited, .winter #content #exhibit-child-pages a:link, .winter #content #exhibit-child-pages a:visited {
+  .winter #content .items-nav a:link, .winter #content .items-nav a:visited, .winter #content .secondary-nav a:link, .winter #content .secondary-nav a:visited,
+  .winter #content #secondary-nav a:link,
+  .winter #content #secondary-nav a:visited,
+  .winter #content #outputs a:link,
+  .winter #content #outputs a:visited,
+  .winter #content #exhibit-child-pages a:link,
+  .winter #content #exhibit-child-pages a:visited,
+  .winter #content #login-links a a:link,
+  .winter #content #login-links a a:visited {
     color: #def9ff;
   }
-  .winter #content .items-nav a:hover, .winter #content .items-nav a:active, .winter #content .secondary-nav a:hover, .winter #content .secondary-nav a:active, .winter #content #secondary-nav a:hover, .winter #content #secondary-nav a:active, .winter #content #outputs a:hover, .winter #content #outputs a:active, .winter #content #exhibit-child-pages a:hover, .winter #content #exhibit-child-pages a:active {
+  .winter #content .items-nav a:hover, .winter #content .items-nav a:active, .winter #content .secondary-nav a:hover, .winter #content .secondary-nav a:active,
+  .winter #content #secondary-nav a:hover,
+  .winter #content #secondary-nav a:active,
+  .winter #content #outputs a:hover,
+  .winter #content #outputs a:active,
+  .winter #content #exhibit-child-pages a:hover,
+  .winter #content #exhibit-child-pages a:active,
+  .winter #content #login-links a a:hover,
+  .winter #content #login-links a a:active {
     color: #fff;
   }
   .winter #content .item-img {
@@ -2084,6 +2129,10 @@
     -moz-box-shadow: transparent 0 0 0;
     -webkit-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
+  }
+  .night .login #content form {
+    border-color: #666;
+    background-color: #252525;
   }
   .night #search-results th {
     background-color: #666;

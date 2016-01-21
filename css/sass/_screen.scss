@@ -598,7 +598,7 @@ footer {
         width: 100%;
     }
 
-    & > div, section, #login-form {
+    & > div, section {
         background-color: #fff;
         border-style: solid;
         border-width: 10px 0 0 0;
@@ -735,6 +735,21 @@ footer {
     #sort-links-list {
         padding-left: 0;
     }
+}
+
+.login #content form {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 10px 0 0 0;
+    overflow: visible;
+    padding: rhythm(.5) 16px;
+    @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+    @include boxsizing(border-box);
+    @include trailer(.75);
+
+    & > *:only-child { margin-top: 0; }
+
+    @include pie-clearfix();
 }
 
 .asc a:after,
@@ -1414,7 +1429,7 @@ footer {
     #secondary-nav a.current,
     .secondary-nav .current a,
     .secondary-nav a.current,
-    .exhibit-section-nav .current a {
+    .exhibit-section-nav .current a{
         background-color: $winter-pale-blue;
     }
 
@@ -1457,7 +1472,11 @@ footer {
             background-color: $winter-bright-blue;
         }
 
-        .items-nav, .secondary-nav, #secondary-nav, #outputs, #exhibit-child-pages {
+        .items-nav, .secondary-nav,
+        #secondary-nav,
+        #outputs,
+        #exhibit-child-pages,
+        #login-links a  {
             color: #fff;
 
             a:link, a:visited { color: $winter-blue-on-pale-blue; }
@@ -1976,7 +1995,7 @@ footer {
     #content,
     #secondary-nav .current a,
     #secondary-nav a.current,
-    .exhibit-section-nav .current a {
+    .exhibit-section-nav .current a{
         background-color: $night-content;
     }
 
@@ -2041,6 +2060,11 @@ footer {
             @include box-shadow(transparent 0 0 0);
         }
 
+    }
+
+    .login #content form {
+        border-color: $night-highlight;
+        background-color: $night-darker;
     }
 
     #search-results th {
