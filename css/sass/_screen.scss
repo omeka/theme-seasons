@@ -1009,8 +1009,13 @@ footer {
 
     .search-entry {
 
-        select, input[type=text] {
-            width: 28%;
+        select {
+            width: calc(49% - 2.25em);
+            margin-bottom: rhythm(.25);
+        }
+
+        input[type=text] {
+            width: calc(100% - #{rhythm(2)});
         }
 
         select {
@@ -1018,6 +1023,10 @@ footer {
         }
 
         &:first-of-type { padding-bottom: 0; }
+
+        &:first-of-type .advanced-search-joiner { display: none; }
+
+        .advanced-search-joiner { width: 4em; }
 
         &:only-of-type, { @include trailer(0); }
     }

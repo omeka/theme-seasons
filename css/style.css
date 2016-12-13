@@ -1055,14 +1055,24 @@
     clear: both;
   }
 
-  .search-entry select, .search-entry input[type=text] {
-    width: 28%;
+  .search-entry select {
+    width: calc(49% - 2.25em);
+    margin-bottom: 0.375em;
+  }
+  .search-entry input[type=text] {
+    width: calc(100% - 3em);
   }
   .search-entry select {
     margin-right: 1%;
   }
   .search-entry:first-of-type {
     padding-bottom: 0;
+  }
+  .search-entry:first-of-type .advanced-search-joiner {
+    display: none;
+  }
+  .search-entry .advanced-search-joiner {
+    width: 4em;
   }
   .search-entry:only-of-type {
     margin-bottom: 0em;
@@ -2357,6 +2367,12 @@
   }
   #search-filters li ul li, #item-filters li ul li {
     float: none;
+  }
+
+  /* !---------- Advanced Search ---------- */
+  .search-entry select,
+  .search-entry input[type=text] {
+    width: 24%;
   }
 
   /* !---------- Content --------- */
