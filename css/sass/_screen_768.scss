@@ -90,10 +90,10 @@ nav.top {
         display: none;
         border: 1px solid #dedede;
         min-width: 200px;
+        z-index: 20;
 
         &.open {
             display: block;
-            z-index: 20;
         }
 
         ul {

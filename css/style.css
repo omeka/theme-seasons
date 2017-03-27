@@ -2280,10 +2280,10 @@
     display: none;
     border: 1px solid #dedede;
     min-width: 200px;
+    z-index: 20;
   }
   nav.top .sub-nav.open {
     display: block;
-    z-index: 20;
   }
   nav.top .sub-nav ul {
     display: inline-block;

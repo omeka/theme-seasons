@@ -23,11 +23,12 @@
 jQuery(document).ready(function () {
     Omeka.showAdvancedForm();
     Omeka.skipNav();
-    if (jQuery('.touch').length == 0) {
+    if (jQuery('.touch').length > 0) {
+        Seasons.touchHoverNav();
+    } else {
         Omeka.megaMenu("#top-nav");
     }
     Seasons.mobileSelectNav();
-    Seasons.touchHoverNav();
 });
 </script>
 
