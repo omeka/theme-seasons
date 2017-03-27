@@ -34,6 +34,7 @@
         'vendor/selectivizr',
         'vendor/jquery-accessibleMegaMenu',
         'vendor/respond',
+        'vendor/modernizr',
         'jquery-extra-selectors',
         'seasons',
         'globals'

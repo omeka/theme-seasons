@@ -50,7 +50,7 @@ nav.top {
     }
 
     /* a top level navigation item in the mega menu */
-    .nav-item {
+    & > ul > li {
         list-style: none;
         display: inline-block;
         padding: 0;
@@ -63,7 +63,7 @@ nav.top {
     }
 
     /* first descendant link within a top level navigation item */
-    .nav-item > a {
+    & > ul > li > a {
         position: relative;
         display: inline-block;
         border: 1px solid transparent;
@@ -71,16 +71,16 @@ nav.top {
 
     /* focus/open states of first descendant link within a top level
        navigation item */
-    .nav-item > a:focus,
-    .nav-item > a:hover,
-    .nav-item > a.open {
+    & > ul > li > a:focus,
+    & > ul > li > a:hover,
+    & > ul > li > a.open {
         border: 1px solid #dedede;
         background-color: rgba(0,0,0,.15);
     }
 
     /* open state of first descendant link within a top level
        navigation item */
-    .nav-item > a.open {
+    & > ul > li > a.open {
         border-bottom: none;
     }
 
@@ -131,19 +131,60 @@ nav.top {
 
     }
 
-    [aria-haspopup="true"]:after {
-        font-family: "FontAwesome";
-        content: "\f0da";
-        margin-left: .5em;
+    .nav-item a[aria-haspopup="true"] {
+        position: relative;
+        padding-right: rhythm(1.5);
     }
 
-    [aria-haspopup="true"].open:after {
+    .nav-toggle {
+        background: transparent;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: rhythm(1.25);
+        text-align: center;
+        height: auto
+    }
+
+    [aria-haspopup="true"]:after,
+    .nav-toggle:after {
+        font-family: "FontAwesome";
+        content: "\f0da";
+        width: rhythm(1.25);
+        text-align: center;
+    }
+
+    [aria-haspopup="true"].open:after,
+    .nav-toggle.open:after {
         content: "\f0d7";
     }
 
+    [aria-haspopup="true"]:after {
+        margin-left: .5em;
+    }
+
     .mobile { display: none; }
+
+    .parent {
+        padding-right: rhythm(.75);
+    }
 }
 
+.touch {
+    nav.top > ul {
+        display: block;
+    }
+
+    nav.top [aria-haspopup="true"]:after {
+        background-color: #000 !important;
+        padding: rhythm(.5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
 
     /* !---------- Pagination ---------- */
 

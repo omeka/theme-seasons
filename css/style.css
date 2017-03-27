@@ -2253,28 +2253,26 @@
     padding: 0;
     z-index: 15;
   }
-  nav.top .nav-item {
+  nav.top > ul > li {
     list-style: none;
     display: inline-block;
     padding: 0;
     margin: 0;
     position: relative;
   }
-  nav.top .nav-item a {
+  nav.top > ul > li a {
     padding: 0.75em 16px;
   }
-  nav.top .nav-item > a {
+  nav.top > ul > li > a {
     position: relative;
     display: inline-block;
     border: 1px solid transparent;
   }
-  nav.top .nav-item > a:focus,
-  nav.top .nav-item > a:hover,
-  nav.top .nav-item > a.open {
+  nav.top > ul > li > a:focus, nav.top > ul > li > a:hover, nav.top > ul > li > a.open {
     border: 1px solid #dedede;
     background-color: rgba(0, 0, 0, 0.15);
   }
-  nav.top .nav-item > a.open {
+  nav.top > ul > li > a.open {
     border-bottom: none;
   }
   nav.top .sub-nav {
@@ -2316,16 +2314,51 @@
     background-color: rgba(0, 0, 0, 0.05);
     display: block;
   }
-  nav.top [aria-haspopup="true"]:after {
+  nav.top .nav-item a[aria-haspopup="true"] {
+    position: relative;
+    padding-right: 2.25em;
+  }
+  nav.top .nav-toggle {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1.875em;
+    text-align: center;
+    height: auto;
+  }
+  nav.top [aria-haspopup="true"]:after,
+  nav.top .nav-toggle:after {
     font-family: "FontAwesome";
     content: "\f0da";
-    margin-left: .5em;
+    width: 1.875em;
+    text-align: center;
   }
-  nav.top [aria-haspopup="true"].open:after {
+  nav.top [aria-haspopup="true"].open:after,
+  nav.top .nav-toggle.open:after {
     content: "\f0d7";
+  }
+  nav.top [aria-haspopup="true"]:after {
+    margin-left: .5em;
   }
   nav.top .mobile {
     display: none;
+  }
+  nav.top .parent {
+    padding-right: 1.125em;
+  }
+
+  .touch nav.top > ul {
+    display: block;
+  }
+  .touch nav.top [aria-haspopup="true"]:after {
+    background-color: #000 !important;
+    padding: 0.75em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 
   /* !---------- Pagination ---------- */
