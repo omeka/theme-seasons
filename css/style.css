@@ -451,6 +451,12 @@
     padding-bottom: 0.75em;
   }
 
+  #site-title img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
   #search-container {
     padding: 0 16px 1.5em;
   }

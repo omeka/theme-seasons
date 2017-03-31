@@ -426,6 +426,12 @@ nav {
     @include padding-trailer(.5);
 }
 
+#site-title img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
 #search-container {
     padding: 0 16px rhythm();
 
