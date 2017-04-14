@@ -427,13 +427,14 @@ nav {
 }
 
 #site-title img {
-    max-width: 100%;
+    max-width: calc(100% - #{rhythm(2/3)});
     height: auto;
     vertical-align: top;
+    margin: auto;
 }
 
 #search-container {
-    padding: 0 16px rhythm();
+    padding: 0 rhythm(2/3) rhythm();
 
     &:after {
         content: "";
