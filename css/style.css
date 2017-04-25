@@ -2527,15 +2527,31 @@
 /* Mobile */
 @media screen
 {
+	/* #3 */
 	#ucsdlib-footer #custom-footer-text p{margin-top:0;font-size:90%;text-align:center;}
 	#ucsdlib-footer #library-logo img{display:block;width:33%;margin:0 auto;margin-bottom:2em;}	
 }
 /* Desktop */
 @media screen and (min-width: 768px)
 {
+	/* #3 */
 	#ucsdlib-footer{overflow:auto;}
 	#ucsdlib-footer div:nth-child(1){width:75%;float:left;}
 	#ucsdlib-footer div:nth-child(2){width:25%;float:right;}
 	#ucsdlib-footer #custom-footer-text p{margin-top:0;font-size:90%;text-align:left;}
 	#ucsdlib-footer #library-logo img{display:block;width:100%;}
+
+	/* #2 */
+	#home #content #featured-item .image
+	{
+		display: block;
+		max-width: 200px;
+		float: none;
+		margin:0 auto 0.75em auto;
+	}
+	#home #content #featured-item img
+	{
+		display: block;
+		float: none;
+	}
 }
