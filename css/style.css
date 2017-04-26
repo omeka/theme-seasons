@@ -2529,7 +2529,11 @@
 {
 	/* #3 */
 	#ucsdlib-footer #custom-footer-text p{margin-top:0;font-size:90%;text-align:center;}
-	#ucsdlib-footer #library-logo img{display:block;width:33%;margin:0 auto;margin-bottom:2em;}	
+	#ucsdlib-footer #library-logo img{display:block;width:200px;margin:0 auto;margin-bottom:2em;}	
+
+	/* #6 */
+	#content .item-meta .item-description .extra-metadata{list-style-type:none;margin:1em 0 0 0;padding:0;}
+	#content .item-meta .item-description .extra-metadata li{display:inline;margin:0;padding:0;}
 }
 /* Desktop */
 @media screen and (min-width: 768px)
@@ -2542,16 +2546,6 @@
 	#ucsdlib-footer #library-logo img{display:block;width:100%;}
 
 	/* #2 */
-	#home #content #featured-item .image
-	{
-		display: block;
-		max-width: 200px;
-		float: none;
-		margin:0 auto 0.75em auto;
-	}
-	#home #content #featured-item img
-	{
-		display: block;
-		float: none;
-	}
+	#home #content #featured-item .image{display:block;max-width:200px;float:none;margin:0 auto 0.75em auto;}
+	#home #content #featured-item img{display: block;float:none;}
 }

@@ -39,6 +39,11 @@ $sortLinks[__('Date Added')] = 'added';
     <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>1000))): ?>
     <div class="item-description">
         <?php echo $description; ?>
+		<ul class="extra-metadata">
+			<?php if (metadata('item', array('Dublin Core', 'Creator')) != ''): ?>
+				<?php echo '<li><b>Creator:</b> ',metadata('item', array('Dublin Core', 'Creator')); ?>
+			<?php endif; ?>
+		</ul>
     </div>
     <?php endif; ?>
 
