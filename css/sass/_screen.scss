@@ -133,7 +133,7 @@ a { text-decoration: none; }
     }
 
     input[type=submit], button, .button {
-        color: #fff !important;
+        color: #fff;
         text-transform: uppercase;
         cursor: pointer;
     }
@@ -784,11 +784,6 @@ footer {
     @include trailer(.75);
     @include prefix(.5);
     @include suffix(.5);
-
-    div {
-        border-top: 0;
-        @include box-shadow(transparent 0 0 0);
-    }
 
     h1:first-child { margin-top: 0; }
 

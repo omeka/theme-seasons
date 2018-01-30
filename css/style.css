@@ -140,7 +140,7 @@
   }
 
   input[type=submit], button, .button {
-    color: #fff !important;
+    color: #fff;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -828,12 +828,6 @@
     margin-bottom: 1.125em;
     padding-left: 3.38983%;
     padding-right: 3.38983%;
-  }
-  #primary div {
-    border-top: 0;
-    -moz-box-shadow: transparent 0 0 0;
-    -webkit-box-shadow: transparent 0 0 0;
-    box-shadow: transparent 0 0 0;
   }
   #primary h1:first-child {
     margin-top: 0;
