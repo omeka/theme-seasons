@@ -14,12 +14,17 @@ Table of Contents
 
 /* !---------- Header ---------- */
 
-header {
-    @include pie-clearfix;
+header:after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
 }
 
+
 #site-title {
-    @include span-columns (8 alpha, 12);
+    @include span(8 of 12);
+    display: inline;
     text-align: left;
 
     &:after {
@@ -58,7 +63,7 @@ nav.top {
         position: relative;
 
         a {
-          padding: rhythm(.5) 16px;
+          padding: (.5 * $spacing-unit) 16px;
         }
     }
 
@@ -152,7 +157,7 @@ nav.top {
     }
 
     #content nav .pagination_list {
-        @include leader(.25);
+        margin-top: .25;
     }
 
 
@@ -161,9 +166,12 @@ nav.top {
 
 #search-container {
     padding: 0;
-    @include span-columns(4 omega,12);
-    @include leader(1.25);
-    input { padding: rhythm(.3125) 8px; }
+    width: span(4 of 12);
+    margin-right: 0;
+    float: right;
+    display: inline;
+    margin-top: (1.25 * $spacing-unit);
+    input { padding: (.3125 * $spacing-unit) 8px; }
 }
 
 #search-results {
@@ -197,14 +205,18 @@ nav.top {
 /* !---------- Content --------- */
 
 header, nav.top, #content, footer {
-    @include pie-clearfix;
-    @include prefix(1);
-    @include suffix(1);
+    padding-left: span(1 of 12);
+    padding-right: span(1 of 12);
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .page #primary {
-    @include padding-leader(2);
-    @include padding-trailer(2);
+    padding: (2 * $spacing-unit);
 }
 
 #content #sort-links {
@@ -219,14 +231,15 @@ header, nav.top, #content, footer {
     #intro {
         font-size: 1.5 * $base-font-size;
         line-height: 1.5 * $base-line-height;
-          @include trailer(.75);
+          margin-bottom: (.75 * $spacing-unit);
 
         p { margin: 0; }
     }
 
     #featured-item {
-        @include trailer();
-        @include span-columns(4 alpha, 12);
+        margin-bottom: $spacing-unit;
+        @include span(4 of 12);
+        margin-left: 0;
 
         .image {
             display: inline-block;
@@ -241,7 +254,8 @@ header, nav.top, #content, footer {
     }
 
     & > div {
-        @include span-columns(8 omega, 12);
+        @include span(8 of 12);
+        margin-right: 0;
     }
 }
 
@@ -254,7 +268,7 @@ header, nav.top, #content, footer {
     #advanced-search-form {
 
         & > div {
-            @include span-columns(5 alpha, 8);
+            @include span(5 of 8);
             clear: both;
         }
 
@@ -266,12 +280,13 @@ header, nav.top, #content, footer {
 
 .show, .exhibit-item-show {
     #primary {
-        @include span-columns (5 alpha, 8);
+        @include span(5 of 8);
+        margin-left: 0;
     }
 
     #sidebar {
-        @include span-columns (3 omega, 8);
-
+        @include span(3 of 8);
+        margin-right: 0;
     }
 }
 
@@ -280,11 +295,13 @@ header, nav.top, #content, footer {
 
 .collections.show {
     #primary .element-set {
-        @include span-columns (5 alpha, 8);
+        @include span(5 of 8);
+        margin-left: 0;
     }
 
     #primary > div {
-        @include span-columns(3 omega, 8);
+        @include span(3 of 8);
+        margin-right: 0;
         clear: right;
     }
 
@@ -297,15 +314,16 @@ header, nav.top, #content, footer {
     #primary,
     #exhibit-blocks,
     #exhibit-page-navigation {
-        @include span-columns(8 alpha, 12);
-        padding: 0 16px rhythm();
+        @include span(8 of 12);
+        margin-left: 0;
+        padding: 0 16px $spacing-unit;
     }
 
     #exhibit-pages:not(.full)
      {
         width: columns(4);
         display: inline-block;
-        @include box-sizing(border-box);
+        box-sizing: border-box;
     }
 }
 

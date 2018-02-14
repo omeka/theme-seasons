@@ -1,11 +1,4 @@
 // ---------------------------------------------------------------------------
-// Imports
-
-@import "compass";
-@import "susyone";
-@import "mixins";
-
-// ---------------------------------------------------------------------------
 // Basic Grid
 
 $base-font-size: 16px;
@@ -17,6 +10,7 @@ $column-width   : 4em;
 $gutter-width   : 1em;
 $grid-padding   : $gutter-width;
 $break          : 50em 16;
+$spacing-unit   : $base-line-height;
 
     // ---------------------------------------------------------------------
     // Winter colors

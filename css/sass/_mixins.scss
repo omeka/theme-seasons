@@ -1,12 +1,6 @@
-@mixin boxsizing($bs) {
-    $bs: unquote($bs);
-    @include experimental(box-sizing, $bs, -moz, -webkit, not -o, not -ms, not -khtml, official);
-    *behavior: url('../javascripts/boxsizing.htc');
-}
-
 @mixin block-reset {
     background-color: transparent;
     border-top: 0;
-    @include box-shadow(transparent 0 0 0);
+    box-shadow: 0px 0px 0px transparent;
     padding: 0;
 }

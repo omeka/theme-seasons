@@ -88,7 +88,7 @@ a { text-decoration: none; }
     }
 
     p, ol, ul {
-        @include trailer();
+        margin-bottom: $spacing-unit;
 
         &:only-child, &:last-child { margin-bottom: 0; }
     }
@@ -101,8 +101,7 @@ a { text-decoration: none; }
     /* !---------- Form Elements ---------- */
 
     label {
-        @include padding-leader(.5);
-        @include padding-trailer(.5);
+        padding: (.5 * $spacing-unit) 0;
         display: inline-block;
         font-weight: bold;
     }
@@ -110,9 +109,9 @@ a { text-decoration: none; }
     input[type=text], input[type=password], textarea,
     input[type=submit], button, .button {
         border: 0;
-        padding: rhythm(.3125) 16px;
+        padding: (.3125 * $spacing-unit) 16px;
         margin: 0;
-        @include boxsizing(border-box);
+        box-sizing: border-box;
     }
 
     input[type=text], input[type=password],
@@ -125,7 +124,7 @@ a { text-decoration: none; }
     input[type=radio] { margin-right: 5px; }
 
     select {
-        margin: 0 0 rhythm();
+        margin: 0 0 $spacing-unit;
         border: 1px solid $winter-light-gray;
         line-height: 1.5 * $base-line-height;
         height: 1.5 * $base-line-height;
@@ -148,7 +147,7 @@ a { text-decoration: none; }
 
     table {
         width: 100%;
-        margin: rhythm() 0;
+        margin: $spacing-unit 0;
 
         caption {
             text-align: left;
@@ -160,21 +159,25 @@ a { text-decoration: none; }
     th {
         text-align: left;
         border-color: rgba(0,0,0,.2);
-        padding: rhythm(.25);
+        padding: (.25 * $spacing-unit);
     }
 
     td {
-        @include trailing-border(1px, .25, $base-font-size, solid);
+        border-bottom: 1px solid;
+        padding-bottom: ((.25 * $spacing-unit) - 1px);
     }
 
     th {
-        @include trailing-border(5px, .25, $base-font-size, solid);
+        border-bottom: 5px solid;
+        padding-bottom: ((.25 * $spacing-unit) - 1px);
     }
 
 /* !---------- Global classes ---------- */
 
 .container {
-  @include container;
+    max-width: ($total-columns * $column-width) + (($total-columns - 1) * $gutter-width);
+    padding: 0 $gutter-width;
+    margin: 0 auto;
 }
 
 .show {
@@ -186,12 +189,12 @@ a { text-decoration: none; }
     #primary > div, #content #sidebar > div {
         border-style: solid;
         border-width: 10px 0 0 0;
-        padding: rhythm(.5) 16px;
-        @include boxsizing(border-box);
-        @include trailer(.75);
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        padding: (.5 * $spacing-unit) 16px;
+        box-sizing: border-box;
+        margin-bottom: (.75 * $spacing-unit);
+        box-shadow: rgba(0,0,0,.15) 0 0 10px;
 
-        & > *:first-child { @include leader(0); }
+        & > *:first-child { margin-top: 0; }
     }
 
     .item-file {
@@ -218,11 +221,11 @@ a { text-decoration: none; }
 }
 
 .image {
-    height: rhythm(3);
+    height: (3 * $spacing-unit);
     width: auto;
     float: left;
     display: block;
-    margin: 0 rhythm(.5) rhythm(.5) 0;
+    margin: 0 (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
 
     img {
         height: 100%;
@@ -232,7 +235,7 @@ a { text-decoration: none; }
 
 .collection .image,
 .exhibit .image {
-    @include box-shadow(-3px -3px 0 #bbb, -4px -4px 0 #fff, -7px -7px 0 #dedede);
+    box-shadow: -3px -3px 0 #bbb, -4px -4px 0 #fff, -7px -7px 0 #dedede;
     margin-left: 7px;
 }
 
@@ -261,12 +264,11 @@ nav {
     }
 
     a {
-        @include padding-leader(.5);
-        @include padding-trailer(.5);
+        padding: (.5 * $spacing-unit) 0;
     }
 
     .mobile {
-        margin: rhythm(1) auto;
+        margin: (1 * $spacing-unit) auto;
         width: 100%;
     }
 }
@@ -276,8 +278,14 @@ nav {
 }
 
 .secondary-nav, #secondary-nav {
-    @include trailer();
-    @include pie-clearfix();
+    margin-bottom: $spacing-unit;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 0px;
+        clear: both;
+    }
 
     .current, .active {
         font-weight: 500;
@@ -300,7 +308,7 @@ nav {
     .pagination {
         list-style-type: none;
         padding-left: 0;
-        margin: 0 0 rhythm();
+        margin: 0 0 $spacing-unit;
 
         li {
             display: inline-block;
@@ -314,9 +322,9 @@ nav {
             margin-right: 10px;
             padding-left: 5px !important;
             padding-right: 5px !important;
-            @include rhythm-borders(1px, 0, $base-font-size, solid);
-            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-            @include trailer();
+            border: 1px solid;
+            box-shadow: rgba(0,0,0,.15) 0 0 10px;
+            margin-bottom: $spacing-unit;
         }
     }
 
@@ -324,10 +332,10 @@ nav {
         padding: 0;
 
         .pagination_list {
-            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-            @include trailer(1.25);
+            box-shadow: rgba(0,0,0,.15) 0 0 10px;
+            margin-bottom: (1.25 * $spacing-unit);
             clear: both;
-            padding: rhythm(.25) 0;
+            padding: (.25 * $spacing-unit) 0;
             text-align: center;
 
             li {
@@ -348,7 +356,7 @@ nav {
                     display: inline-block;
                     text-indent: -9999px;
                     height: auto;
-                    @include box-shadow(transparent 0 0 0);
+                    box-shadow: transparent 0 0 0;
 
                     &:after {
                         text-indent: 0;
@@ -368,11 +376,11 @@ nav {
 
 
     .pagination_previous a, .pagination_next a {
-        width: rhythm(1.5);
-        height: rhythm(1.5);
+        width: (1.5 * $spacing-unit);
+        height: (1.5 * $spacing-unit);
         display: inline-block;
         text-indent: -9999px;
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        box-shadow: rgba(0,0,0,.15) 0 0 10px;
         position: relative;
 
         &:after {
@@ -381,9 +389,9 @@ nav {
             position: absolute;
             top: 0;
             left: 0;
-            width: rhythm(1.5);
+            width: (1.5 * $spacing-unit);
             text-align: center;
-            line-height: rhythm(1.5);
+            line-height: (1.5 * $spacing-unit);
         }
     }
 
@@ -397,14 +405,15 @@ nav {
 
     .item-pagination {
         clear:both;
-        @include padding-trailer(.5);
+        padding-bottom: (.5 * $spacing-unit);
+        overflow: hidden;
 
         li {
             display:inline-block;
             background-color: #fff;
-            margin: 0 0 rhythm(.5) 0;
-            padding: rhythm(.25) 8px;
-            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            margin: 0 0 (.5 * $spacing-unit) 0;
+            padding: (.25 * $spacing-unit) 8px;
+            box-shadow: rgba(0,0,0,.15) 0 0 10px;
 
             &:empty { display: none; }
         }
@@ -422,19 +431,18 @@ nav {
     font-weight: 300;
     text-align: center;
     margin: 0;
-    @include padding-leader(.5);
-    @include padding-trailer(.5);
+    padding: $spacing-unit 0;
 }
 
 #site-title img {
-    max-width: calc(100% - #{rhythm(2/3)});
+    max-width: calc(100% - #{(2/3 * $spacing-unit)});
     height: auto;
     vertical-align: top;
     margin: auto;
 }
 
 #search-container {
-    padding: 0 rhythm(2/3) rhythm();
+    padding: 0 (2/3 * $spacing-unit) $spacing-unit;
 
     &:after {
         content: "";
@@ -453,17 +461,17 @@ nav {
     input[type=text], button {
         -webkit-appearance: none;
         -moz-appearance: none;
-        @include border-radius(0px);
+        border-radius: 0px;
     }
 
     input[type=text] {
         width: 100%;
-        @include adjust-font-size-to(14px);
-        padding-right: rhythm(2);
+        font-size: .875 * $base-font-size;
+        padding-right: (2 * $spacing-unit);
     }
 
     button {
-        width: rhythm(1.5);
+        width: (1.5 * $spacing-unit);
         padding: 0;
         position: absolute;
         top: 0;
@@ -477,32 +485,32 @@ nav {
             left: 0;
             top: 0;
             text-indent: 0;
-            width: rhythm(1.5);
-            line-height: rhythm(1.5);
+            width: (1.5 * $spacing-unit);
+            line-height: (1.5 * $spacing-unit);
         }
     }
 
     &.with-advanced input[type=text] {
-        padding-right: rhythm(3.5);
+        padding-right: (3.5 * $spacing-unit);
     }
 
     &.with-advanced button {
-        right: rhythm(1.5);
+        right: (1.5 * $spacing-unit);
     }
 }
 
 .show-advanced.button {
-    width: rhythm(1.5);
+    width: (1.5 * $spacing-unit);
     height: 35px;
     text-indent: -9999px;
     display: block;
     position: absolute;
     padding: 0;
     top: 0;
-    right: rhythm(1.5);
+    right: (1.5 * $spacing-unit);
     line-height: 30px;
     background-color: #4b6569;
-    @include boxsizing(content-box);
+    box-sizing: content-box;
 
     &:focus {
         outline: -webkit-focus-ring-color auto 5px;
@@ -511,7 +519,7 @@ nav {
     &:link, &:hover, &:active, &:visited { color: #fff; }
 
     &:after {
-        width: rhythm(1.5);
+        width: (1.5 * $spacing-unit);
         content: "\2026";
         display: block;
         text-indent: 0;
@@ -519,8 +527,8 @@ nav {
         position: absolute;
         left: 0;
         top: 0;
-        height: rhythm(1.5);
-        line-height: rhythm(1.5);
+        height: (1.5 * $spacing-unit);
+        line-height: (1.5 * $spacing-unit);
         border-left: 1px solid rgba(255,255,255,.2);
     }
 }
@@ -535,10 +543,10 @@ nav {
     left: 0;
     border: 1px solid #e7e7e7;
     width: 100%;
-    padding: rhythm(1) 16px;
+    padding: (1 * $spacing-unit) 16px;
     text-align: left;
-    @include boxsizing(border-box);
-    @include box-shadow(rgba(0,0,0,.25) 0 5px 10px);
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,.25) 0 5px 10px;
 
     &.open {
         display: block;
@@ -554,9 +562,9 @@ nav {
     }
 
     p {
-        margin: rhythm(.5) 0;
+        margin: (.5 * $spacing-unit) 0;
 
-        &:last-of-type { @include trailer(0); }
+        &:last-of-type { margin-bottom: 0; }
     }
 }
 
@@ -564,12 +572,12 @@ nav {
 /* !---------- Footer ---------- */
 
 footer {
-    @include leader();
+    margin-top: $spacing-unit;
     padding: 0 16px;
 
 
     p {
-        @include padding-trailer();
+        padding-bottom: $spacing-unit;
     }
 
     &:empty { display: none; }
@@ -582,26 +590,32 @@ footer {
 #content {
     clear:both;
     overflow:visible;
-    padding: rhythm(1) 16px;
-    @include pie-clearfix();
+    padding: (1 * $spacing-unit) 16px;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 0px;
+        clear: both;
+    }
 
     & > h1 {
         font-size:1.5 * $base-font-size;
         line-height: 2 * $base-line-height;
         text-transform: uppercase;
         border-top: 0;
-        padding: 0 0 rhythm(.5);
+        padding: 0 0 (.5 * $spacing-unit);
         margin: 0;
     }
 
     & > h2:first-child, & > div > h2:first-child,
     #primary > h2:first-child, #primary > div > h2:first-child,
     #sidebar > h2:first-child, #sidebar > div > h2:first-child {
-        padding: 0 16px rhythm(.25);
+        padding: 0 16px (.25 * $spacing-unit);
         font-weight: 500;
         border-style: solid;
         border-width: 0 0 5px 0;
-        margin: 0 0 rhythm(.5) -16px;
+        margin: 0 0 (.5 * $spacing-unit) -16px;
         width: 100%;
     }
 
@@ -609,25 +623,31 @@ footer {
         background-color: #fff;
         border-style: solid;
         border-width: 10px 0 0 0;
-        overflow: visible;
-        padding: rhythm(.5) 16px;
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-        @include boxsizing(border-box);
-        @include trailer(.75);
+        overflow: hidden;
+        padding: (.5 * $spacing-unit) 16px;
+        box-shadow: rgba(0,0,0,.15) 0 0 10px;
+        box-sizing: border-box;
+        margin-bottom: (.75 * $spacing-unit);
+
+        &:after {
+            content: "";
+            display: block;
+            height: 0px;
+            clear: both;
+        }
 
         & > *:only-child { margin-top: 0; }
 
-        @include pie-clearfix();
-
+    
     }
 
     .field {
         div:only-of-type { margin-bottom: 0; }
-        @include trailer(2);
+        margin-bottom: (2 * $spacing-unit);
     }
 
     .inputs {
-        padding: rhythm(.5) 0 0;
+        padding: (.5 * $spacing-unit) 0 0;
         clear: both;
     }
 
@@ -635,12 +655,12 @@ footer {
 
     .element-set {
         div {
-            @include padding-trailer(.5);
+            padding-bottom: (.5 * $spacing-unit);
             margin-bottom: 0;
 
             &:only-of-type, &:last-of-type {
                 border-bottom: 0;
-                @include padding-trailer(.25);
+                padding-bottom: (.25 * $spacing-unit);
             }
         }
     }
@@ -654,7 +674,7 @@ footer {
             border: 1px solid $winter-light-gray;
             padding: 0;
             float: left;
-            margin: 0 rhythm(.5) rhythm(.5) 0;
+            margin: 0 (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
 
             img {
                 margin: 0;
@@ -664,7 +684,7 @@ footer {
 
     #search-filters, #item-filters {
         @include block-reset();
-        @include trailer();
+        margin-bottom: $spacing-unit;
 
         & > ul {
             float: left;
@@ -673,14 +693,14 @@ footer {
 
         li {
             overflow: auto;
-            padding: rhythm(.25) 8px;
-            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            padding: (.25 * $spacing-unit) 8px;
+            box-shadow: rgba(0,0,0,.15) 0 0 10px;
 
             li {
                 display: inline;
-                padding: rhythm(.25) 0;
+                padding: (.25 * $spacing-unit) 0;
                 text-transform: lowercase;
-                @include box-shadow(transparent 0 0 0);
+                box-shadow: transparent 0 0 0;
                 &:last-of-type:after {
                     content: "";
                 }
@@ -694,7 +714,7 @@ footer {
     div.hTagcloud {
         border: 0;
         background-color: transparent;
-        @include box-shadow(transparent 0 0 0);
+        box-shadow: transparent 0 0 0;
         padding: 0;
 
         ul {
@@ -705,31 +725,32 @@ footer {
                 display:inline-block;
                 zoom: 1;
                 background-color: #fff;
-                margin: 0 8px rhythm(.5) 0;
-                padding: rhythm(.25) 8px;
-                @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+                margin: 0 8px (.5 * $spacing-unit) 0;
+                padding: (.25 * $spacing-unit) 8px;
+                box-shadow: rgba(0,0,0,.15) 0 0 10px;
             }
         }
     }
 
     .view-items-link {
         border-top: 1px solid $winter-light-gray !important;
-        margin: rhythm(.5) 0 0 -16px !important;
-        padding: rhythm(.5) 16px 0 !important;
+        margin: (.5 * $spacing-unit) 0 0 -16px !important;
+        padding: (.5 * $spacing-unit) 16px 0 !important;
         width: 100% !important;
         clear: both;
+        display: block;
 
         & + div {
-            border-color: #DFE2E2;
-            @include leader(.5);
-            @include leading-border(1px, 1, $base-font-size, solid);
+            border-top: 1px solid #DFE2E2;
+            padding-top: ($spacing-unit - 1px);
+            margin-top: (.5 * $spacing-unit);
         }
     }
 
     #sort-links {
         border-top: 0;
-        padding: rhythm(.25) 12px;
-        @include trailer();
+        padding: (.25 * $spacing-unit) 12px;
+        margin-bottom: $spacing-unit;
 
         span, ul, li {
             display: inline-block;
@@ -749,14 +770,19 @@ footer {
     border-style: solid;
     border-width: 10px 0 0 0;
     overflow: visible;
-    padding: rhythm(.5) 16px;
-    @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-    @include boxsizing(border-box);
-    @include trailer(.75);
+    padding: (.5 * $spacing-unit) 16px;
+    box-shadow: rgba(0,0,0,.15) 0 0 10px;
+    box-sizing: border-box;
+    margin-bottom: (.75 * $spacing-unit);
+
+    &:after {
+        content: "";
+        display: block;
+        height: 0px;
+        clear: both;
+    }
 
     & > *:only-child { margin-top: 0; }
-
-    @include pie-clearfix();
 }
 
 .asc a:after,
@@ -778,10 +804,10 @@ footer {
     border-style: solid;
     border-width: 10px 0 0 0;
     overflow: visible;
-    padding: rhythm() 16px;
-    @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-    @include boxsizing(border-box);
-    @include trailer(.75);
+    padding: $spacing-unit 16px;
+    box-shadow: rgba(0,0,0,.15) 0 0 10px;
+    box-sizing: border-box;
+    margin-bottom: (.75 * $spacing-unit);
     @include prefix(.5);
     @include suffix(.5);
 
@@ -804,11 +830,11 @@ footer {
                 &:first-of-type {
                     border-top: 0;
 
-                    h3 { margin-top: rhythm(0); }
+                    h3 { margin-top: (0 * $spacing-unit); }
                 }
 
                 h3 {
-                    margin-top: rhythm(.5);
+                    margin-top: (.5 * $spacing-unit);
                 }
             }
 
@@ -816,14 +842,14 @@ footer {
                 margin: 0 -16px;
 
                 .item-description {
-                    margin: rhythm(.5) 0 0;
+                    margin: (.5 * $spacing-unit) 0 0;
                 }
             }
 
             h3, h4, h5, h6,
             p, input, textarea {
-                margin-top: rhythm(.5);
-                margin-bottom: rhythm(.5);
+                margin-top: (.5 * $spacing-unit);
+                margin-bottom: (.5 * $spacing-unit);
             }
 
             h3 {
@@ -837,7 +863,7 @@ footer {
                 display: block;
                 max-height: 100%;
                 width: auto;
-                @include boxsizing(border-box);
+                box-sizing: border-box;
             }
 
             .show {
@@ -863,7 +889,7 @@ footer {
         }
 
         #intro {
-            @include trailer();
+            margin-bottom: $spacing-unit;
         }
 
         #featured-item p { clear: both; }
@@ -872,7 +898,7 @@ footer {
             margin-bottom: 0;
         }
 
-        #recent-items h2 { @include padding-trailer(.5); }
+        #recent-items h2 { padding-bottom: (.5 * $spacing-unit); }
 
     }
 
@@ -881,7 +907,7 @@ footer {
 
 .items.show {
 
-    h3 { @include trailer(.5); }
+    h3 { margin-bottom: (.5 * $spacing-unit); }
 
     #itemfiles {
 
@@ -900,7 +926,7 @@ footer {
             overflow: visible;
             margin: 0;
             padding: 0;
-            @include boxsizing(border-box);
+            box-sizing: border-box;
 
             img {
                 width: 100%;
@@ -924,7 +950,7 @@ footer {
         & > div {
             border-top-width: 10px;
             border-top-style: solid;
-            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+            box-shadow: rgba(0,0,0,.15) 0 0 10px;
         }
     }
 }
@@ -937,10 +963,10 @@ footer {
 }
 
 .item img {
-    height: rhythm(3);
+    height: (3 * $spacing-unit);
     width: auto;
     float: left;
-    margin: 0 rhythm(.5) rhythm(.5) 0;
+    margin: 0 (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
 }
 
 
@@ -948,11 +974,11 @@ footer {
 
 #search-results {
     background-color: #fff;
-    @include trailer();
-    @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+    margin-bottom: $spacing-unit;
+    box-shadow: rgba(0,0,0,.15) 0 0 10px;
 
     .record-image {
-        height: rhythm(3);
+        height: (3 * $spacing-unit);
     }
 
     th {
@@ -960,16 +986,15 @@ footer {
     }
 
     th, td {
-        padding: rhythm(.5) 8px;
+        padding: (.5 * $spacing-unit) 8px;
         &:last-of-type { border-right: 0; }
         text-align: left;
         vertical-align: top;
     }
 
     td {
-        border-color: #ddd;
-        @include trailing-border(1px, 0, $base-font-size, solid);
-        @include padding-leader(1);
+        border-bottom: 1px solid #ddd;
+        padding-top: (1 * $spacing-unit);
     }
 
     .item img {
@@ -991,33 +1016,32 @@ footer {
         border-width: 10px 0 0 0;
         overflow: visible;
         padding: 0 16px;
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-        @include boxsizing(border-box);
-        @include trailer(.75);
+        box-shadow: rgba(0,0,0,.15) 0 0 10px;
+        box-sizing: border-box;
+        margin-bottom: (.75 * $spacing-unit);
 
         &:last-of-type { padding: 0; }
 
         input {
-            @include trailer();
+            margin-bottom: $spacing-unit;
         }
 
         .label {
-            @include trailer(.5);
-            @include leader(.5);
+            margin-bottom: (.5 * $spacing-unit);
+            margin-top: (.5 * $spacing-unit);
         }
 
-        @include pie-clearfix();
-    }
+        }
 
     .search-entry {
 
         select {
             width: calc(49% - 2.25em);
-            margin-bottom: rhythm(.25);
+            margin-bottom: (.25 * $spacing-unit);
         }
 
         input[type=text] {
-            width: calc(100% - #{rhythm(2)});
+            width: calc(100% - #{(2 * $spacing-unit)});
         }
 
         select {
@@ -1030,7 +1054,7 @@ footer {
 
         .advanced-search-joiner { width: 4em; }
 
-        &:only-of-type, { @include trailer(0); }
+        &:only-of-type, { margin-bottom: 0; }
     }
 
     .remove_search {
@@ -1055,15 +1079,14 @@ footer {
     .advanced-search {
         button {
             display: inline-block;
-            margin: 0 0 rhythm(1);
+            margin: 0 0 (1 * $spacing-unit);
         }
 
         #advanced-search-form > div:last-of-type {
             border: 0;
             background-color: transparent;
             float: left;
-            @include pie-clearfix();
-        }
+                }
 
         #submit_search_advanced {
             margin-bottom: 0 !important;
@@ -1085,9 +1108,9 @@ footer {
     #content #sidebar h3 { padding-left: 0; }
 
     .download-file {
-        @include boxsizing(border-box);
+        box-sizing: border-box;
         overflow: auto;
-        padding: rhythm(.25);
+        padding: (.25 * $spacing-unit);
         display: inline-block;
 
         img {
@@ -1117,7 +1140,7 @@ footer {
     }
 
     #content .element-set .element {
-        @include trailer();
+        margin-bottom: $spacing-unit;
 
         &:last-of-type { margin-bottom: 0; }
     }
@@ -1125,12 +1148,12 @@ footer {
     #collection-items .item {
         border-top: 1px solid $winter-light-gray;
         margin: 0 -16px;
-        padding: 0 16px rhythm();
+        padding: 0 16px $spacing-unit;
         overflow: hidden;
 
         &:first-of-type { border-top: 0; }
 
-        &:last-of-type { @include padding-trailer(.5) }
+        &:last-of-type { margin-bottom: (.5 * $spacing-unit); }
 
         div:only-of-type { margin-bottom: 0; }
     }
@@ -1140,7 +1163,7 @@ footer {
     }
 
     h3:only-child {
-        @include trailer(0);
+        margin-bottom: 0;
     }
 }
 
@@ -1151,8 +1174,7 @@ footer {
 
     #content .navigation {
         padding-left: 0;
-        @include pie-clearfix();
-
+    
         .current, .active { font-weight: 500; }
     }
 
@@ -1174,11 +1196,10 @@ footer {
     }
 
     #exhibit-pages:not(.full) > ul > li:not(:last-of-type) {
-        border-color: $winter-light-gray;
-        @include trailing-border(1px, 0, $base-font-size, solid);
+        border-bottom: 1px solid $winter-light-gray;
     }
 
-    #exhibit-pages:not(.full) a { margin: rhythm(.25) 0; }
+    #exhibit-pages:not(.full) a { margin: (.25 * $spacing-unit) 0; }
 
     #exhibit-pages.top li a {
         max-width: 100%;
@@ -1199,10 +1220,10 @@ footer {
 
         #primary {
 
-            &:first-child { @include leader(); }
+            &:first-child { margin-top: $spacing-unit; }
 
             p, ol, ul {
-                @include trailer();
+                margin-bottom: $spacing-unit;
             }
         }
 
@@ -1212,11 +1233,11 @@ footer {
             @include block-reset();
 
             a, span {
-                padding: rhythm(.25) 0;
+                padding: (.25 * $spacing-unit) 0;
                 display: inline-block;
                 width: 100%;
-                @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-                @include boxsizing(border-box);
+                box-shadow: rgba(0,0,0,.15) 0 0 10px;
+                box-sizing: border-box;
             }
 
             & > div {
@@ -1225,7 +1246,7 @@ footer {
                 text-align: center;
             }
 
-            #exhibit-nav-next { @include trailer(); }
+            #exhibit-nav-next { margin-bottom: $spacing-unit; }
         }
 
         #exhibit-pages ul { margin-left: 0 !important; }
@@ -1243,8 +1264,8 @@ footer {
 
         .exhibit-page-nav {
 
-            @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-            @include trailer();
+            box-shadow: rgba(0,0,0,.15) 0 0 10px;
+            margin-bottom: $spacing-unit;
 
             a {
                 padding: 0;
@@ -1274,7 +1295,7 @@ footer {
 
                 &:first-of-type {
                     text-transform: uppercase;
-                    padding: rhythm(.25) 8px;
+                    padding: (.25 * $spacing-unit) 8px;
 
                     a:after { content: ":"; }
                 }
@@ -1284,7 +1305,7 @@ footer {
 
                     li {
                         display: inline-block;
-                        padding: rhythm(.25) 8px;
+                        padding: (.25 * $spacing-unit) 8px;
                         width: auto;
 
                     }
@@ -1312,8 +1333,8 @@ footer {
     border-style: solid;
     border-width: 10px 0 0 0;
     overflow: visible;
-    @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
-    padding: rhythm(.5) 16px;
+    box-shadow: rgba(0,0,0,.15) 0 0 10px;
+    padding: (.5 * $spacing-unit) 16px;
     background-color: #fff;
 
     ul {
@@ -1327,7 +1348,7 @@ footer {
 }
 
 #exhibit-pages h4 {
-    margin: rhythm(.125) 0 0;
+    margin: (.125 * $spacing-unit) 0 0;
 }
 
 .exhibit-block:first-child p:first-of-type { margin-top: 0; }
@@ -1338,14 +1359,14 @@ footer {
 .gallery-thumbnails-text-bottom, .gallery-thumbnails-text-top, .image-list-left,
 .image-list-left-thumbs, .image-list-right, .image-list-right-thumbs,
 .text-full, .text-image-left, .text-image-right {
-    padding: rhythm(1) 0;
-    @include leader();
+    padding: (1 * $spacing-unit) 0;
+    margin-top: $spacing-unit;
 
     div:empty { display: none; }
 }
 
 #content .layout-text p:only-child {
-    @include leader();
+    margin-top: $spacing-unit;
 }
 
 .exhibit-block {
@@ -1381,7 +1402,7 @@ footer {
 
 #simple-pages-breadcrumbs {
     font-weight:bold;
-    @include trailer();
+    margin-bottom: $spacing-unit;
 }
 
 /* !---------- Other Plugin Styles ---------- */
@@ -1497,7 +1518,7 @@ footer {
         div.hTagcloud {
             border: 0;
             background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
+            box-shadow: transparent 0 0 0;
         }
     }
 
@@ -1629,7 +1650,7 @@ footer {
         div.hTagcloud {
             border: 0;
             background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
+            box-shadow: transparent 0 0 0;
         }
     }
 
@@ -1779,7 +1800,7 @@ footer {
         div.hTagcloud {
             border: 0;
             background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
+            box-shadow: transparent 0 0 0;
         }
     }
 
@@ -1911,7 +1932,7 @@ footer {
         div.hTagcloud {
             border: 0;
             background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
+            box-shadow: transparent 0 0 0;
         }
     }
 
@@ -2066,7 +2087,7 @@ footer {
         div.hTagcloud {
             border: 0;
             background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
+            box-shadow: transparent 0 0 0;
         }
 
     }
