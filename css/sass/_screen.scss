@@ -309,6 +309,7 @@ nav {
         list-style-type: none;
         padding-left: 0;
         margin: 0 0 $spacing-unit;
+        clear: left;
 
         li {
             display: inline-block;
@@ -689,6 +690,10 @@ footer {
         & > ul {
             float: left;
             padding-left: 0;
+        }
+
+        & > ul > li {
+            margin-right: .5 * $spacing-unit;
         }
 
         li {

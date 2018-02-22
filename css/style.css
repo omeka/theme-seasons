@@ -207,7 +207,8 @@ Table of Contents
   .pagination {
     list-style-type: none;
     padding-left: 0;
-    margin: 0 0 24px; }
+    margin: 0 0 24px;
+    clear: left; }
     .pagination li {
       display: inline-block;
       margin-right: 5px;
@@ -485,6 +486,8 @@ Table of Contents
       #content #search-filters > ul, #content #item-filters > ul {
         float: left;
         padding-left: 0; }
+      #content #search-filters > ul > li, #content #item-filters > ul > li {
+        margin-right: 12px; }
       #content #search-filters li, #content #item-filters li {
         overflow: auto;
         padding: 6px 8px;
@@ -1657,8 +1660,8 @@ Table of Contents
       height: auto; }
   #home #content > div {
     width: 66.10169%;
-    float: left;
-    margin-right: 1.69492%;
+    float: right;
+    margin-right: 0;
     margin-right: 0; }
   /* !---------- Items --------- */
   .items .item {
@@ -1702,9 +1705,9 @@ Table of Contents
     float: left;
     margin-right: 1.69492%;
     margin-left: 0;
-    padding: 0 16px 24px; }
+    padding: 24px 16px; }
   .exhibits #exhibit-pages:not(.full) {
-    width: columns(4);
+    width: 32.20339%;
     display: inline-block;
     box-sizing: border-box; }
   .exhibits #exhibit-pages.full ~ #exhibit-blocks,

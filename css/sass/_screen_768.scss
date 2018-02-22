@@ -254,7 +254,7 @@ header, nav.top, #content, footer {
     }
 
     & > div {
-        @include span(8 of 12);
+        @include span(last 8 of 12);
         margin-right: 0;
     }
 }
@@ -316,12 +316,12 @@ header, nav.top, #content, footer {
     #exhibit-page-navigation {
         @include span(8 of 12);
         margin-left: 0;
-        padding: 0 16px $spacing-unit;
+        padding: $spacing-unit 16px;
     }
 
     #exhibit-pages:not(.full)
      {
-        width: columns(4);
+        width: span(4 of 12);
         display: inline-block;
         box-sizing: border-box;
     }
