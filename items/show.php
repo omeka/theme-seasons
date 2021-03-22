@@ -1,6 +1,6 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 
-<h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
+<h1><?php echo metadata('item', 'rich_title', array('no_escape' => true)); ?></h1>
 
 <div id="primary">
 
