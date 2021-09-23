@@ -112,7 +112,8 @@ nav.top {
               text-indent: -1em;
 
               &:before {
-                font-family: "FontAwesome";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
                 content: "\f101";
                 margin-right: .5em;
               }
@@ -137,7 +138,8 @@ nav.top {
     }
 
     [aria-haspopup="true"]:after {
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
         content: "\f0da";
         margin-left: .5em;
     }
@@ -154,6 +156,14 @@ nav.top {
 
     .pagination {
         float: left;
+    }
+
+    .pagination form label {
+        padding: 0;
+    }
+
+    .pagination input[type="text"] {
+        margin-left: .5rem;
     }
 
     #content nav .pagination_list {
