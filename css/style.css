@@ -478,7 +478,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     right: 36px;
   }
 
-  .show-advanced.button {
+  #search-form .show-advanced.button {
     width: 36px;
     height: 35px;
     text-indent: -9999px;
@@ -488,16 +488,15 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     top: 0;
     right: 36px;
     line-height: 30px;
-    background-color: #4b6569;
     box-sizing: content-box;
   }
-  .show-advanced.button:focus {
+  #search-form .show-advanced.button:focus {
     outline: -webkit-focus-ring-color auto 5px;
   }
-  .show-advanced.button:link, .show-advanced.button:hover, .show-advanced.button:active, .show-advanced.button:visited {
+  #search-form .show-advanced.button:link, #search-form .show-advanced.button:hover, #search-form .show-advanced.button:active, #search-form .show-advanced.button:visited {
     color: #fff;
   }
-  .show-advanced.button:after {
+  #search-form .show-advanced.button:after {
     width: 36px;
     content: "…";
     display: block;

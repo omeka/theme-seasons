@@ -502,7 +502,7 @@ nav {
     }
 }
 
-.show-advanced.button {
+#search-form .show-advanced.button {
     width: (1.5 * $spacing-unit);
     height: 35px;
     text-indent: -9999px;
@@ -512,7 +512,6 @@ nav {
     top: 0;
     right: (1.5 * $spacing-unit);
     line-height: 30px;
-    background-color: #4b6569;
     box-sizing: content-box;
 
     &:focus {
@@ -1054,7 +1053,7 @@ footer {
 
         .advanced-search-joiner { width: 4em; }
 
-        &:only-of-type, { margin-bottom: 0; }
+        &:only-of-type { margin-bottom: 0; }
     }
 
     #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
