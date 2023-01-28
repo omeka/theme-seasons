@@ -1043,17 +1043,9 @@ footer {
 
     .search-entry {
 
-        select {
-            width: calc(49% - 2.25em);
-            margin-bottom: (.25 * $spacing-unit);
-        }
-
+        select,
         input[type=text] {
-            width: calc(100% - #{(2 * $spacing-unit)});
-        }
-
-        select {
-            margin-right: 1%;
+            margin-bottom: 0 !important;
         }
 
         &:first-of-type { padding-bottom: 0; }
@@ -1065,11 +1057,17 @@ footer {
         &:only-of-type, { margin-bottom: 0; }
     }
 
-    .remove_search {
+    #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
+        width: calc(100% - #{2 * $spacing-unit});
+    }
+
+    .advanced-search button.remove_search {
         text-indent: -9999px;
         width: 1.5 * $base-line-height;
         position: relative;
         height: 1.5 * $base-line-height;
+        align-self: flex-end;
+        margin-bottom: .5rem;
 
         &:after {
             content: "\f00d";
