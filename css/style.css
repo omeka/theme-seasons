@@ -961,6 +961,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     margin-top: 12px;
   }
 
+  .search-entry {
+    justify-content: space-between;
+  }
   .search-entry select,
 .search-entry input[type=text] {
     margin-bottom: 0 !important;
