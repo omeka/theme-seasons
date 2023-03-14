@@ -975,35 +975,13 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     display: none;
   }
   .search-entry .advanced-search-joiner {
-    width: 4em;
+    width: 100%;
+  }
+  .search-entry .advanced-search-joiner select {
+    width: auto;
   }
   .search-entry:only-of-type {
     margin-bottom: 0;
-  }
-
-  #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
-    width: calc(100% - 48px);
-  }
-
-  .advanced-search button.remove_search {
-    text-indent: -9999px;
-    width: 36px;
-    position: relative;
-    height: 36px;
-    align-self: flex-end;
-    margin-bottom: 0.5rem;
-  }
-  .advanced-search button.remove_search:after {
-    content: "";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    text-indent: 0;
-    text-align: center;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    line-height: 36px;
   }
 
   .advanced-search button {
