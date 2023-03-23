@@ -1,6 +1,6 @@
 {
   "name": "seasons",
-  "version": "2.6.2",
+  "version": "2.7.0",
   "description": "\"A colorful theme with a configuration option to switch style sheets for a particular season, plus 'night'.\"",
   "main": "gulpfile.js",
   "devDependencies": {
