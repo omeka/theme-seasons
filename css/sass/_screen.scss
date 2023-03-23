@@ -1052,35 +1052,11 @@ footer {
 
         &:first-of-type .advanced-search-joiner { display: none; }
 
-        .advanced-search-joiner { width: 4em; }
+        .advanced-search-joiner { width: 100%; }
+
+        .advanced-search-joiner select { width: auto; }
 
         &:only-of-type { margin-bottom: 0; }
-    }
-
-    #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
-        width: calc(100% - #{2 * $spacing-unit});
-    }
-
-    .advanced-search button.remove_search {
-        text-indent: -9999px;
-        width: 1.5 * $base-line-height;
-        position: relative;
-        height: 1.5 * $base-line-height;
-        align-self: flex-end;
-        margin-bottom: .5rem;
-
-        &:after {
-            content: "\f00d";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            text-indent: 0;
-            text-align: center;
-            width: 100%;
-            top: 0;
-            left: 0;
-            position: absolute;
-            line-height: 1.5 * $base-line-height;
-        }
     }
 
     .advanced-search {
