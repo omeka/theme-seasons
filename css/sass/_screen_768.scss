@@ -142,6 +142,8 @@ nav.top {
         font-weight: 900;
         content: "\f0da";
         margin-left: .5em;
+        display: inline-block;
+        width: .25 * $spacing-unit;
     }
 
     [aria-haspopup="true"].open:after {

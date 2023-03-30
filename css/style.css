@@ -2162,6 +2162,8 @@ nav.top .nav-item > a.open {
     font-weight: 900;
     content: "";
     margin-left: 0.5em;
+    display: inline-block;
+    width: 6px;
   }
   nav.top [aria-haspopup=true].open:after {
     content: "";
