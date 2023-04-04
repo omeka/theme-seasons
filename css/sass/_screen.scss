@@ -653,6 +653,10 @@ footer {
         clear: both;
     }
 
+    .inputs select {
+        max-width: 100%;
+    }
+
     & > .element { border-bottom: 0; }
 
     .element-set {

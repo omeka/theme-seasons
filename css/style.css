@@ -613,6 +613,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     padding: 12px 0 0;
     clear: both;
   }
+  #content .inputs select {
+    max-width: 100%;
+  }
   #content > .element {
     border-bottom: 0;
   }
