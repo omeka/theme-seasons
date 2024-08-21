@@ -6,8 +6,8 @@
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "glob": "^7.1.1",
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
     "postcss": "^8.4.31",
