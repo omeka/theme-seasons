@@ -59,6 +59,7 @@ a { text-decoration: none; }
     padding:.5em;
     border:1px blue dashed;
 }
+
     /* !---------- Headings ---------- */
 
     h1 {
@@ -96,6 +97,17 @@ a { text-decoration: none; }
     ul {
         list-style-type: disc;
         padding-left: 1.5em;
+    }
+
+    .sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
     }
 
     /* !---------- Form Elements ---------- */
@@ -496,10 +508,6 @@ nav {
     &.with-advanced input[type=text] {
         padding-right: (3.5 * $spacing-unit);
     }
-
-    &.with-advanced button {
-        right: (1.5 * $spacing-unit);
-    }
 }
 
 #search-form .show-advanced.button {
@@ -583,11 +591,14 @@ footer {
     }
 
     &:empty { display: none; }
+
+    a {
+        text-decoration: underline;
+    }
 }
 
 
 /* !---------- Content ---------- */
-
 
 #content {
     clear:both;
@@ -1523,7 +1534,7 @@ footer {
         background-color: $winter-footer-blue;
     }
 
-    footer p {
+    footer {
         color:#fff;
     }
 
@@ -1561,15 +1572,14 @@ footer {
     }
 
     a {
-        &:link { color: $spring-link; }
-        &:visited { color: $spring-visited; }
+        &:link, &:visited { color: $spring-red; }
         &:hover, &:active, &:focus { color: $spring-active; }
     }
 
     header { background-color: $spring-light-green; }
 
     nav.top {
-        background-color: $spring-green;
+        background-color: $spring-dark-green;
 
         a:link, a:visited  { color: $spring-light-green; }
         a:active, a:hover, a:focus  { color: $spring-white; }
@@ -1653,10 +1663,13 @@ footer {
 
     footer {
         background-color: $spring-dark-green;
+        color:#fff;
     }
 
-    footer p {
-        color:#000;
+    footer a:link,
+    footer a:visited {
+        color: $spring-light-green;
+        text-decoration: underline;
     }
 
     .exhibit-page-nav { background-color: $spring-red; }
@@ -1683,54 +1696,55 @@ footer {
         color: $summer-gray;
     }
 
-    h1, #site-title a { color: $summer-title-blue; }
+    h1, #site-title a { color: $summer-dark-blue; }
 
     input[type=submit], button, .button, .show-advanced.button { background-color: $summer-blue; }
 
     input[type=text], input[type=password], textarea {
         background-color: $summer-light-blue;
-        color: $summer-title-blue;
+        color: $summer-darkest-blue;
     }
 
     a {
         &:link { color: $summer-link-red; }
-        &:visited { color: $summer-visited-red; }
+        &:visited { color: $summer-link-red; }
         &:hover, &:active, &:focus { color: $summer-active-red; }
     }
 
     header { background-color: #fff; }
 
     nav.top {
-        background-color: $summer-yellow;
+        background-color: $summer-dark-blue;
 
         li:hover a {
-          color: $summer-dark-blue;
+          color: $summer-yellow;
           }
-
-        a:link, a:visited  { color: $summer-title-blue; }
-        a:active, a:hover  { color: $summer-dark-blue; }
 
         .nav-item > a:focus,
         .nav-item > a:hover,
         .nav-item > a.open {
-            background-color: rgba(0,0,0,.05);
+            background-color: $summer-darkest-blue;
         }
 
         .sub-nav {
-            background-color: $summer-yellow;
+            background-color: $summer-darkest-blue;
             li {
-                & > a:link, & > a:visited { color: $summer-title-blue; }
-                & > a:hover { color: $summer-dark-blue; }
+                & > a:link, & > a:visited { color: $summer-yellow; }
+                & > a:hover { color: $summer-yellow; }
               }
             }
         .sub-nav a:hover {
-            color: $summer-dark-blue;
+            color: $summer-yellow;
             background-color: rgba(0,0,0,.025);
         }
 
     }
 
-    #top-nav a:focus { color: $summer-dark-blue; }
+nav.top,
+footer {
+    a:link, a:visited  { color: $summer-yellow; }
+    a:active, a:hover, a:focus  { color: $summer-yellow; }
+}
 
     #intro { color: $summer-link-red; }
 
@@ -1803,9 +1817,6 @@ footer {
 
     footer {
         background-color: $summer-dark-blue;
-    }
-
-    footer p {
         color:#fff;
     }
 
@@ -1857,7 +1868,7 @@ footer {
 
         li:hover a { color: #fff; }
 
-        a:link, a:visited  { color: $autumn-nav-link; }
+        a:link, a:visited  { color: $autumn-dark-red; }
         a:active, a:hover, a.open  { color: #fff; }
 
         .sub-nav {
@@ -1868,6 +1879,11 @@ footer {
             }
             .sub-nav a:hover { color: #fff; }
         }
+    }
+
+    footer {
+        a:link, a:visited  { color: $autumn-beige; }
+        a:active, a:hover, a.open  { color: $autumn-beige; }
     }
 
     #top-nav a:focus { color: #fff; }
@@ -1935,9 +1951,6 @@ footer {
 
     footer {
         background-color: $autumn-dark-red;
-    }
-
-    footer p {
         color:#fff;
     }
 
@@ -2103,9 +2116,6 @@ footer {
 
     footer {
         background-color: transparent;
-    }
-
-    footer p {
         color: $night-text-on-darker;
     }
 
