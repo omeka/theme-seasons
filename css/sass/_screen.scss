@@ -583,7 +583,7 @@ nav {
 
 footer {
     margin-top: $spacing-unit;
-    padding: 0 16px;
+    padding: $spacing-unit;
 
 
     p {
@@ -676,6 +676,7 @@ footer {
             margin-bottom: 0;
 
             &:only-of-type, &:last-of-type {
+                display: flow-root;
                 border-bottom: 0;
                 padding-bottom: (.25 * $spacing-unit);
             }
@@ -1418,22 +1419,22 @@ footer {
         color: $winter-dark-gray;
     }
 
-    h1, #site-title a { color:#859ca2; }
+    h1, #site-title a { color: $winter-title-blue; }
 
     input[type=submit], button, .button, .show-advanced.button { background-color: $winter-slate; }
 
     input[type=text], input[type=password], textarea { background-color: $winter-light-gray; }
 
     a {
-        &:link { color: $winter-bright-blue; }
-        &:visited { color: $winter-pale-blue; }
-        &:hover, &:active, &:focus { color: $winter-hover-blue; }
+        &:link { color: $winter-link-blue; }
+        &:visited { color: $winter-slate; }
+        &:hover, &:active, &:focus { color: $winter-link-blue; }
     }
 
     header { background-color: #fff; }
 
     nav.top {
-        background-color: $winter-bright-blue;
+        background-color: $winter-slate;
 
         li:hover a { color: #fff; }
 
@@ -1441,7 +1442,7 @@ footer {
         a:active, a:hover, a:focus, a.open  { color: #fff; }
 
         .sub-nav {
-            background-color: lighten($winter-bright-blue, 5%);
+            background-color: lighten($winter-slate, 5%);
             li {
                 & > a:link, & > a:visited, & > a:active, & > a:hover, & > a:focus { color:#fff; }
 
@@ -1460,7 +1461,7 @@ footer {
     .secondary-nav .current a,
     .secondary-nav a.current,
     .exhibit-section-nav .current a{
-        background-color: $winter-pale-blue;
+        background-color: $winter-bright-blue;
     }
 
     #home #content > div {
@@ -1536,6 +1537,10 @@ footer {
 
     footer {
         color:#fff;
+    }
+
+    footer a {
+        color: $winter-pale-blue !important;
     }
 
     .exhibit-page-nav { background-color: $winter-slate; }

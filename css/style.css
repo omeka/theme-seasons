@@ -553,7 +553,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   /* !---------- Footer ---------- */
   footer {
     margin-top: 24px;
-    padding: 0 16px;
+    padding: 24px;
   }
   footer p {
     padding-bottom: 24px;
@@ -635,6 +635,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     margin-bottom: 0;
   }
   #content .element-set div:only-of-type, #content .element-set div:last-of-type {
+    display: flow-root;
     border-bottom: 0;
     padding-bottom: 6px;
   }
@@ -1308,7 +1309,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     color: #5a5a5a;
   }
   .winter h1, .winter #site-title a {
-    color: #859ca2;
+    color: #739199;
   }
   .winter input[type=submit], .winter button, .winter .button, .winter .show-advanced.button {
     background-color: #4b6569;
@@ -1317,19 +1318,19 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     background-color: #dfe2e2;
   }
   .winter a:link {
-    color: #228494;
+    color: #008297;
   }
   .winter a:visited {
-    color: #43ADB8;
+    color: #4b6569;
   }
   .winter a:hover, .winter a:active, .winter a:focus {
-    color: #3acacc;
+    color: #008297;
   }
   .winter header {
     background-color: #fff;
   }
   .winter nav.top {
-    background-color: #228494;
+    background-color: #4b6569;
   }
   .winter nav.top li:hover a {
     color: #fff;
@@ -1341,7 +1342,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     color: #fff;
   }
   .winter nav.top .sub-nav {
-    background-color: #2796a9;
+    background-color: #567378;
   }
   .winter nav.top .sub-nav li > a:link, .winter nav.top .sub-nav li > a:visited, .winter nav.top .sub-nav li > a:active, .winter nav.top .sub-nav li > a:hover, .winter nav.top .sub-nav li > a:focus {
     color: #fff;
@@ -1358,7 +1359,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
 .winter .secondary-nav .current a,
 .winter .secondary-nav a.current,
 .winter .exhibit-section-nav .current a {
-    background-color: #43ADB8;
+    background-color: #0E6F8C;
   }
   .winter #home #content > div {
     border-color: #4b6569;
@@ -1393,7 +1394,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     background-color: #fff;
   }
   .winter #content nav .pagination_list {
-    background-color: #228494;
+    background-color: #0E6F8C;
   }
   .winter #content .items-nav, .winter #content .secondary-nav,
 .winter #content #secondary-nav,
@@ -1446,6 +1447,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .winter footer {
     color: #fff;
+  }
+  .winter footer a {
+    color: #54C5D0 !important;
   }
   .winter .exhibit-page-nav {
     background-color: #4b6569;
@@ -1506,7 +1510,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     color: #fff;
   }
   .spring #intro {
-    color: #FF8F00;
+    color: #DB7B00;
   }
   .spring #content,
 .spring #secondary-nav .current a,
@@ -1520,7 +1524,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     border-color: #BA5656;
   }
   .spring #content > h1 {
-    color: #FF8F00;
+    color: #DB7B00;
   }
   .spring #content h2 {
     border-color: #e8e8e8;
