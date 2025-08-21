@@ -671,11 +671,13 @@ footer {
     & > .element { border-bottom: 0; }
 
     .element-set {
-        div {
+        & > div,
+        .element-text {
             padding-bottom: (.5 * $spacing-unit);
             margin-bottom: 0;
 
-            &:only-of-type, &:last-of-type {
+            &:only-of-type, 
+            &:last-of-type {
                 display: flow-root;
                 border-bottom: 0;
                 padding-bottom: (.25 * $spacing-unit);

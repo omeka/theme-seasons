@@ -630,11 +630,14 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   #content > .element {
     border-bottom: 0;
   }
-  #content .element-set div {
+  #content .element-set > div,
+#content .element-set .element-text {
     padding-bottom: 12px;
     margin-bottom: 0;
   }
-  #content .element-set div:only-of-type, #content .element-set div:last-of-type {
+  #content .element-set > div:only-of-type, #content .element-set > div:last-of-type,
+#content .element-set .element-text:only-of-type,
+#content .element-set .element-text:last-of-type {
     display: flow-root;
     border-bottom: 0;
     padding-bottom: 6px;
