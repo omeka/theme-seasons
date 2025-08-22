@@ -28,6 +28,10 @@ Table of Contents
 
 /* !---------- General HTML Elements ---------- */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -628,8 +632,8 @@ footer {
         font-weight: 500;
         border-style: solid;
         border-width: 0 0 5px 0;
-        margin: 0 0 (.5 * $spacing-unit) -16px;
-        width: 100%;
+        margin: 0 -16px (.5 * $spacing-unit) -16px;
+        width: calc(100% + 32px);
     }
 
     & > div, section {
@@ -758,9 +762,9 @@ footer {
 
     .view-items-link {
         border-top: 1px solid $winter-light-gray !important;
-        margin: (.5 * $spacing-unit) 0 0 -16px !important;
+        margin: (.5 * $spacing-unit) -16px 0 -16px !important;
         padding: (.5 * $spacing-unit) 16px 0 !important;
-        width: 100% !important;
+        width: calc(100% + 32px) !important;
         clear: both;
         display: block;
 

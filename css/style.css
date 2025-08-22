@@ -27,6 +27,10 @@
   -- Night Styles
   */
   /* !---------- General HTML Elements ---------- */
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -592,8 +596,8 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     font-weight: 500;
     border-style: solid;
     border-width: 0 0 5px 0;
-    margin: 0 0 12px -16px;
-    width: 100%;
+    margin: 0 -16px 12px -16px;
+    width: calc(100% + 32px);
   }
   #content > div, #content section {
     background-color: #fff;
@@ -709,9 +713,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   #content .view-items-link {
     border-top: 1px solid #dfe2e2 !important;
-    margin: 12px 0 0 -16px !important;
+    margin: 12px -16px 0 -16px !important;
     padding: 12px 16px 0 !important;
-    width: 100% !important;
+    width: calc(100% + 32px) !important;
     clear: both;
     display: block;
   }
