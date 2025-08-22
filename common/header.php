@@ -66,8 +66,8 @@
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
 
-        <nav id="top-nav" class="top" role="navigation">
-            <?php echo public_nav_main(); ?>
+        <nav id="top-nav" class="top" aria-label="<?php echo __('Main navigation'); ?>">
+    <?php echo public_nav_main(); ?>
         </nav>
 
         <div id="content" role="main" tabindex="-1">
