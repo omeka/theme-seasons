@@ -1709,7 +1709,13 @@ footer {
 
     h1, #site-title a { color: $summer-dark-blue; }
 
-    input[type=submit], button, .button, .show-advanced.button { background-color: $summer-blue; }
+    input[type=submit], 
+    button, 
+    .button, 
+    .show-advanced.button { 
+        background-color: $summer-blue; 
+        color: $summer-darkest-blue;
+    }
 
     input[type=text], input[type=password], textarea {
         background-color: $summer-light-blue;
@@ -1994,13 +2000,13 @@ footer {
     #site-title a { color: $night-link; }
 
     input[type=submit], button, .button, .show-advanced.button {
-        background-color: $night-highlight;
+        background-color: $night-light;
         color: $night-darker;
     }
 
     input[type=text], input[type=password], textarea {
         background-color: $night-darker;
-        border: 1px solid $night-highlight;
+        border: 1px solid $night-light;
         color: $night-text-on-darker;
     }
 
@@ -2015,15 +2021,14 @@ footer {
     nav.top {
         background-color: $night-light;
 
-        li:hover a { color: $night-shadow; }
+        li:hover a { color: $night-darkest; }
 
-        a:link, a:visited  { color: $night-visited-nav; }
-        a:active, a:hover  {  }
+        a:link, a:visited  { color: $night-darkest; }
 
         a:focus, a.open { color: $night-shadow; }
 
         .sub-nav {
-            background-color: $night-highlight;
+            background-color: $night-shadow;
             li {
                 & > a:link, & > a:visited { color: $night-link; }
                 & > a:active, & > a:hover, & > a:focus { color: $night-active; }

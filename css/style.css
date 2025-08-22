@@ -1614,8 +1614,12 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   .summer h1, .summer #site-title a {
     color: #156663;
   }
-  .summer input[type=submit], .summer button, .summer .button, .summer .show-advanced.button {
+  .summer input[type=submit],
+.summer button,
+.summer .button,
+.summer .show-advanced.button {
     background-color: #8ECAC8;
+    color: #0a4a48;
   }
   .summer input[type=text], .summer input[type=password], .summer textarea {
     background-color: #D0EEEE;
@@ -1908,12 +1912,12 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     color: #FFE000;
   }
   .night input[type=submit], .night button, .night .button, .night .show-advanced.button {
-    background-color: #666;
+    background-color: #BDBDBD;
     color: #252525;
   }
   .night input[type=text], .night input[type=password], .night textarea {
     background-color: #252525;
-    border: 1px solid #666;
+    border: 1px solid #BDBDBD;
     color: #ccc;
   }
   .night a:link {
@@ -1932,16 +1936,16 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     background-color: #BDBDBD;
   }
   .night nav.top li:hover a {
-    color: #313131;
+    color: #000;
   }
   .night nav.top a:link, .night nav.top a:visited {
-    color: #6d6d6d;
+    color: #000;
   }
   .night nav.top a:focus, .night nav.top a.open {
     color: #313131;
   }
   .night nav.top .sub-nav {
-    background-color: #666;
+    background-color: #313131;
   }
   .night nav.top .sub-nav li > a:link, .night nav.top .sub-nav li > a:visited {
     color: #FFE000;
