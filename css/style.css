@@ -53,6 +53,7 @@
     padding: 0;
     position: absolute;
     width: 1px;
+    background-color: #fff;
   }
 
   #skipnav:focus {
@@ -1619,7 +1620,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
 .summer .button,
 .summer .show-advanced.button {
     background-color: #8ECAC8;
-    color: #0a4a48;
+    color: #0a4a48 !important;
   }
   .summer input[type=text], .summer input[type=password], .summer textarea {
     background-color: #D0EEEE;
@@ -1901,6 +1902,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
 
   /* !---------- Night Styles ---------- */
+  .night #skipnav {
+    background-color: #252525;
+  }
   .night body {
     background-color: #000;
     color: #ccc;
@@ -1913,7 +1917,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .night input[type=submit], .night button, .night .button, .night .show-advanced.button {
     background-color: #BDBDBD;
-    color: #252525;
+    color: #252525 !important;
   }
   .night input[type=text], .night input[type=password], .night textarea {
     background-color: #252525;

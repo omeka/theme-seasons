@@ -52,6 +52,7 @@ a { text-decoration: none; }
     padding: 0;
     position: absolute;
     width: 1px;
+    background-color: #fff;
 }
 
 #skipnav:focus {
@@ -1714,7 +1715,7 @@ footer {
     .button, 
     .show-advanced.button { 
         background-color: $summer-blue; 
-        color: $summer-darkest-blue;
+        color: $summer-darkest-blue !important;
     }
 
     input[type=text], input[type=password], textarea {
@@ -1990,6 +1991,8 @@ footer {
 
 .night {
 
+#skipnav { background-color: $night-darker; }
+
     body {
         background-color: $night-darkest;
         color: $night-text-on-darker;
@@ -2001,7 +2004,7 @@ footer {
 
     input[type=submit], button, .button, .show-advanced.button {
         background-color: $night-light;
-        color: $night-darker;
+        color: $night-darker !important;
     }
 
     input[type=text], input[type=password], textarea {
