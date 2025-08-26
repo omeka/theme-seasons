@@ -1633,7 +1633,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     color: #CC4807;
   }
   .summer a:hover, .summer a:active, .summer a:focus {
-    color: #FF0000;
+    color: #CC4807;
   }
   .summer header {
     background-color: #fff;
@@ -1786,7 +1786,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     color: #BD592A;
   }
   .autumn a:hover, .autumn a:active, .autumn a:focus {
-    color: #F16100;
+    color: #BD592A;
   }
   .autumn header {
     background-color: #CE6C3E;

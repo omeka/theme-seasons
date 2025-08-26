@@ -1726,7 +1726,7 @@ footer {
     a {
         &:link { color: $summer-link-red; }
         &:visited { color: $summer-link-red; }
-        &:hover, &:active, &:focus { color: $summer-active-red; }
+        &:hover, &:active, &:focus { color: $summer-link-red; }
     }
 
     header { background-color: #fff; }
@@ -1876,7 +1876,7 @@ footer {
     a {
         &:link { color: $autumn-link; }
         &:visited { color: $autumn-visited; }
-        &:hover, &:active, &:focus { color: $autumn-active; }
+        &:hover, &:active, &:focus { color: $autumn-link; }
     }
 
     header { background-color: $autumn-red; }
