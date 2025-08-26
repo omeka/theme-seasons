@@ -1509,12 +1509,13 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     color: #F9FFEC;
   }
   .spring nav.top .sub-nav {
-    background-color: #92BA56;
+    background-color: #4A6F14;
   }
   .spring nav.top .sub-nav li > a:link, .spring nav.top .sub-nav li > a:visited {
     color: #F1FFBA;
   }
   .spring nav.top .sub-nav li > a:hover, .spring nav.top .sub-nav li > a:focus {
+    background-color: rgba(0, 0, 0, 0.25);
     color: #fff;
   }
   .spring #intro {
@@ -1796,24 +1797,26 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .autumn nav.top li:hover a {
     color: #fff;
+    background-color: #86443C;
+    width: 100%;
   }
   .autumn nav.top a:link, .autumn nav.top a:visited {
-    color: #86443C;
+    color: #BD592A;
   }
   .autumn nav.top a:active, .autumn nav.top a:hover, .autumn nav.top a.open {
     color: #fff;
   }
   .autumn nav.top .sub-nav {
-    background-color: #DFD2B5;
+    background-color: #86443C;
   }
-  .autumn nav.top .sub-nav li > a:link, .autumn nav.top .sub-nav li > a:visited {
-    color: #BE5E5E;
+  .autumn nav.top .sub-nav li > a:link, .autumn nav.top .sub-nav li > a:visited, .autumn nav.top .sub-nav li > a:hover {
+    color: #fff;
   }
   .autumn nav.top .sub-nav li > a:hover {
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.15);
   }
-  .autumn nav.top .sub-nav .sub-nav a:hover {
-    color: #fff;
+  .autumn nav.top .nav-item > a.open {
+    background-color: #86443C;
   }
   .autumn footer a:link, .autumn footer a:visited {
     color: #F8F1E5;

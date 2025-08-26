@@ -1597,13 +1597,14 @@ footer {
         a:active, a:hover, a:focus  { color: $spring-white; }
 
         .sub-nav {
-            background-color: $spring-green;
+            background-color: $spring-dark-green;
             li {
                 & > a:link, & > a:visited { color: $spring-light-green; }
-                & > a:hover, & > a:focus { color: #fff; }
+                & > a:hover, & > a:focus { 
+                    background-color: rgba(0,0,0,.25);
+                    color: #fff; 
+                }
               }
-
-            // a:hover, a:focus, a.open { color: #fff; }
           }
         }
 
@@ -1884,19 +1885,31 @@ footer {
     nav.top {
         background-color: $autumn-dark-beige;
 
-        li:hover a { color: #fff; }
+        li:hover a { 
+            color: #fff; 
+            background-color: $autumn-dark-red;
+            width: 100%;
+        }
 
-        a:link, a:visited  { color: $autumn-dark-red; }
-        a:active, a:hover, a.open  { color: #fff; }
+        a:link, a:visited  { color: $autumn-link; }
+        a:active, a:hover, a.open  {
+            color: #fff; 
+        }
 
         .sub-nav {
-            background-color: $autumn-dark-beige;
+            background-color: $autumn-dark-red;
             li {
-                & > a:link, & > a:visited { color: $autumn-nav-link; }
-                & > a:hover { color:#fff; }
+                & > a:link, 
+                & > a:visited,
+                & > a:hover { 
+                    color:#fff; 
+                }
+
+                & > a:hover { background-color: rgba(0,0,0,.15) }
             }
-            .sub-nav a:hover { color: #fff; }
         }
+
+        .nav-item > a.open { background-color: $autumn-dark-red; }
     }
 
     footer {
