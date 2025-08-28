@@ -1795,7 +1795,8 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   .autumn nav.top {
     background-color: #DFD2B5;
   }
-  .autumn nav.top li:hover a {
+  .autumn nav.top li:hover a,
+.autumn nav.top li a:focus {
     color: #fff;
     background-color: #86443C;
     width: 100%;

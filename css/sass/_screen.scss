@@ -1885,7 +1885,8 @@ footer {
     nav.top {
         background-color: $autumn-dark-beige;
 
-        li:hover a { 
+        li:hover a,
+        li a:focus { 
             color: #fff; 
             background-color: $autumn-dark-red;
             width: 100%;
