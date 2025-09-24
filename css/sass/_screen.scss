@@ -26,6 +26,13 @@ Table of Contents
 */
 
 
+/* !---------- Color Variables ---------- */
+
+:root {
+    --seasons-border-color: #ccc;
+    --seasons-matte-bg-color: #fff;
+}
+
 /* !---------- General HTML Elements ---------- */
 
 * {
@@ -206,6 +213,7 @@ a { text-decoration: none; }
     #primary > div, #content #sidebar > div {
         border-style: solid;
         border-width: 10px 0 0 0;
+        border-color: var(--seasons-border-color);
         padding: (.5 * $spacing-unit) 16px;
         box-sizing: border-box;
         margin-bottom: (.75 * $spacing-unit);
@@ -637,10 +645,16 @@ footer {
         width: calc(100% + 32px);
     }
 
-    & > div, section {
-        background-color: #fff;
-        border-style: solid;
+    & > div, 
+    section,
+    #primary > div,
+    #sidebar > div,
+    #advanced-search-form > div,
+    #exhibit-pages {
+        background-color: var(--seasons-matte-bg-color );
+        border-style: solid;   
         border-width: 10px 0 0 0;
+        border-color: var(--seasons-border-color);
         overflow: hidden;
         padding: (.5 * $spacing-unit) 16px;
         box-shadow: rgba(0,0,0,.15) 0 0 10px;
@@ -831,19 +845,15 @@ footer {
 }
 
 #primary {
-    border-style: solid;
-    border-width: 10px 0 0 0;
-    overflow: visible;
-    padding: $spacing-unit 16px;
-    box-shadow: rgba(0,0,0,.15) 0 0 10px;
-    box-sizing: border-box;
-    margin-bottom: (.75 * $spacing-unit);
-    @include prefix(.5);
-    @include suffix(.5);
+    @include primary-container;
 
     h1:first-child { margin-top: 0; }
 
     & > ul, & > ol { padding-left: 1.5em; }
+
+    & > div {
+        border-color: var(--seasons-border-color);
+    }
 }
 
 
@@ -1417,9 +1427,19 @@ footer {
     height: auto;
 }
 
+.guest-user #content > form {
+    @include primary-container;
+}
+
+.guest-user #content .inputs {
+    clear: none;
+    width: auto;
+}
+
 /* !---------- Winter Styles ---------- */
 
 .winter {
+    --seasons-border-color: #{$winter-slate};
 
     body {
         background-color: $winter-footer-blue;
@@ -1480,11 +1500,6 @@ footer {
         & > h1 { color: #fff; }
 
         h2 { border-color: $winter-light-gray; }
-
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages {
-            border-color: $winter-slate;
-        }
 
         #primary > div, #sidebar > div { background-color: #fff; }
 
@@ -1569,6 +1584,8 @@ footer {
 
 .spring {
 
+    --seasons-border-color: #{$spring-red};
+
     body {
         background-color: $spring-dark-green;
         color: $spring-brown;
@@ -1627,11 +1644,6 @@ footer {
         & > h1 { color: $spring-link; }
 
         h2 { border-color: #e8e8e8; }
-
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages {
-            border-color: $spring-red;
-        }
 
         #primary > div, #sidebar > div { background-color: #fff; }
 
@@ -1703,6 +1715,7 @@ footer {
 /* !---------- Summer Styles ---------- */
 
 .summer {
+    --seasons-border-color: #{$summer-blue};
 
     body {
         background-color: $summer-dark-blue;
@@ -1788,11 +1801,6 @@ footer {
 
         h2 { border-color: $summer-light-red; }
 
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages {
-            border-color: $summer-blue;
-        }
-
         #primary > div, #sidebar > div { background-color: #fff; }
 
         .pagination_previous a, .pagination_next a {
@@ -1859,6 +1867,8 @@ footer {
 /* !---------- Autumn Styles ---------- */
 
 .autumn {
+
+    --seasons-border-color: #{$autumn-dark-beige};
 
     body {
         background-color: $autumn-dark-red;
@@ -1944,11 +1954,6 @@ footer {
 
         #primary > h1 { color: $autumn-brown; }
 
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages {
-            border-color: $autumn-dark-beige;
-        }
-
         .pagination_previous a, .pagination_next a {
             background-color: $autumn-dark-red;
         }
@@ -2004,8 +2009,10 @@ footer {
 /* !---------- Night Styles ---------- */
 
 .night {
+    --seasons-border-color: #{$night-highlight};
+    --seasons-matte-bg-color: #{$night-content};
 
-#skipnav { background-color: $night-darker; }
+    #skipnav { background-color: $night-darker; }
 
     body {
         background-color: $night-darkest;
@@ -2055,13 +2062,6 @@ footer {
 
     #intro { color: $night-light; }
 
-    #content,
-    #secondary-nav .current a,
-    #secondary-nav a.current,
-    .exhibit-section-nav .current a{
-        background-color: $night-content;
-    }
-
     #advanced-form {
         background-color: $night-darker;
         color: $night-text-on-darker;
@@ -2093,12 +2093,6 @@ footer {
         & > h1 { color: $night-light; }
 
         h2 { border-color: $night-shadow; }
-
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages {
-            border-color: $night-highlight;
-            background-color: $night-darker;
-        }
 
         #primary > div, #sidebar > div,
         .item-pagination li { background-color: $night-darker; }
@@ -2176,4 +2170,8 @@ footer {
     #content div.hTagcloud ul li { background-color: $night-darker; }
 
     td, th { border-color: $night-content; }
+
+    .required-label {
+        background-color: $night-darker;
+    }
 }

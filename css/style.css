@@ -26,6 +26,12 @@
   -- Autumn Styles
   -- Night Styles
   */
+  /* !---------- Color Variables ---------- */
+  :root {
+    --seasons-border-color: #ccc;
+    --seasons-matte-bg-color: #fff;
+  }
+
   /* !---------- General HTML Elements ---------- */
   * {
     box-sizing: border-box;
@@ -204,6 +210,7 @@ th {
   .show #primary > div, .show #content #sidebar > div {
     border-style: solid;
     border-width: 10px 0 0 0;
+    border-color: var(--seasons-border-color);
     padding: 12px 16px;
     box-sizing: border-box;
     margin-bottom: 18px;
@@ -600,23 +607,39 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     margin: 0 -16px 12px -16px;
     width: calc(100% + 32px);
   }
-  #content > div, #content section {
-    background-color: #fff;
+  #content > div,
+#content section,
+#content #primary > div,
+#content #sidebar > div,
+#content #advanced-search-form > div,
+#content #exhibit-pages {
+    background-color: var(--seasons-matte-bg-color);
     border-style: solid;
     border-width: 10px 0 0 0;
+    border-color: var(--seasons-border-color);
     overflow: hidden;
     padding: 12px 16px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-sizing: border-box;
     margin-bottom: 18px;
   }
-  #content > div:after, #content section:after {
+  #content > div:after,
+#content section:after,
+#content #primary > div:after,
+#content #sidebar > div:after,
+#content #advanced-search-form > div:after,
+#content #exhibit-pages:after {
     content: "";
     display: block;
     height: 0px;
     clear: both;
   }
-  #content > div > *:only-child, #content section > *:only-child {
+  #content > div > *:only-child,
+#content section > *:only-child,
+#content #primary > div > *:only-child,
+#content #sidebar > div > *:only-child,
+#content #advanced-search-form > div > *:only-child,
+#content #exhibit-pages > *:only-child {
     margin-top: 0;
   }
   #content .field {
@@ -777,10 +800,12 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
 
   #primary {
+    background-color: var(--seasons-matte-bg-color);
     border-style: solid;
     border-width: 10px 0 0 0;
-    overflow: visible;
-    padding: 24px 16px;
+    border-color: var(--seasons-border-color);
+    display: flow-root;
+    padding: 12px 16px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-sizing: border-box;
     margin-bottom: 18px;
@@ -792,6 +817,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   #primary > ul, #primary > ol {
     padding-left: 1.5em;
+  }
+  #primary > div {
+    border-color: var(--seasons-border-color);
   }
 
   /* !---------- Home ---------- */
@@ -1311,7 +1339,29 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     height: auto;
   }
 
+  .guest-user #content > form {
+    background-color: var(--seasons-matte-bg-color);
+    border-style: solid;
+    border-width: 10px 0 0 0;
+    border-color: var(--seasons-border-color);
+    display: flow-root;
+    padding: 12px 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    padding-left: 13.1578947368%;
+    padding-right: 13.1578947368%;
+  }
+
+  .guest-user #content .inputs {
+    clear: none;
+    width: auto;
+  }
+
   /* !---------- Winter Styles ---------- */
+  .winter {
+    --seasons-border-color: #4b6569;
+  }
   .winter body {
     background-color: #2f3e4a;
     color: #5a5a5a;
@@ -1377,10 +1427,6 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .winter #content h2 {
     border-color: #dfe2e2;
-  }
-  .winter #content > div, .winter #content #primary > div, .winter #content #sidebar > div,
-.winter #content #advanced-search-form > div, .winter #content #exhibit-pages {
-    border-color: #4b6569;
   }
   .winter #content #primary > div, .winter #content #sidebar > div {
     background-color: #fff;
@@ -1476,6 +1522,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
 
   /* !---------- Spring Styles ---------- */
+  .spring {
+    --seasons-border-color: #BA5656;
+  }
   .spring body {
     background-color: #4A6F14;
     color: #5A4E36;
@@ -1537,10 +1586,6 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .spring #content h2 {
     border-color: #e8e8e8;
-  }
-  .spring #content > div, .spring #content #primary > div, .spring #content #sidebar > div,
-.spring #content #advanced-search-form > div, .spring #content #exhibit-pages {
-    border-color: #BA5656;
   }
   .spring #content #primary > div, .spring #content #sidebar > div {
     background-color: #fff;
@@ -1609,6 +1654,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
 
   /* !---------- Summer Styles ---------- */
+  .summer {
+    --seasons-border-color: #8ECAC8;
+  }
   .summer body {
     background-color: #156663;
     color: #5F7986;
@@ -1697,10 +1745,6 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   .summer #content h2 {
     border-color: #ffe0e0;
   }
-  .summer #content > div, .summer #content #primary > div, .summer #content #sidebar > div,
-.summer #content #advanced-search-form > div, .summer #content #exhibit-pages {
-    border-color: #8ECAC8;
-  }
   .summer #content #primary > div, .summer #content #sidebar > div {
     background-color: #fff;
   }
@@ -1766,6 +1810,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
 
   /* !---------- Autumn Styles ---------- */
+  .autumn {
+    --seasons-border-color: #DFD2B5;
+  }
   .autumn body {
     background-color: #86443C;
     color: #86443C;
@@ -1854,10 +1901,6 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   .autumn #content #primary > h1 {
     color: #815442;
   }
-  .autumn #content > div, .autumn #content #primary > div, .autumn #content #sidebar > div,
-.autumn #content #advanced-search-form > div, .autumn #content #exhibit-pages {
-    border-color: #DFD2B5;
-  }
   .autumn #content .pagination_previous a, .autumn #content .pagination_next a {
     background-color: #86443C;
   }
@@ -1906,6 +1949,10 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
 
   /* !---------- Night Styles ---------- */
+  .night {
+    --seasons-border-color: #666;
+    --seasons-matte-bg-color: #333333;
+  }
   .night #skipnav {
     background-color: #252525;
   }
@@ -1964,12 +2011,6 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   .night #intro {
     color: #BDBDBD;
   }
-  .night #content,
-.night #secondary-nav .current a,
-.night #secondary-nav a.current,
-.night .exhibit-section-nav .current a {
-    background-color: #333333;
-  }
   .night #advanced-form {
     background-color: #252525;
     color: #ccc;
@@ -1996,11 +2037,6 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .night #content h2 {
     border-color: #313131;
-  }
-  .night #content > div, .night #content #primary > div, .night #content #sidebar > div,
-.night #content #advanced-search-form > div, .night #content #exhibit-pages {
-    border-color: #666;
-    background-color: #252525;
   }
   .night #content #primary > div, .night #content #sidebar > div,
 .night #content .item-pagination li {
@@ -2071,6 +2107,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .night td, .night th {
     border-color: #333333;
+  }
+  .night .required-label {
+    background-color: #252525;
   }
 }
 @media screen and (min-width: 768px) {
