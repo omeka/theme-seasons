@@ -609,7 +609,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   #content > div,
 #content section,
-#content #primary > div,
+#content .item #primary > div,
 #content #sidebar > div,
 #content #advanced-search-form > div,
 #content #exhibit-pages {
@@ -625,7 +625,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   #content > div:after,
 #content section:after,
-#content #primary > div:after,
+#content .item #primary > div:after,
 #content #sidebar > div:after,
 #content #advanced-search-form > div:after,
 #content #exhibit-pages:after {
@@ -636,7 +636,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   #content > div > *:only-child,
 #content section > *:only-child,
-#content #primary > div > *:only-child,
+#content .item #primary > div > *:only-child,
 #content #sidebar > div > *:only-child,
 #content #advanced-search-form > div > *:only-child,
 #content #exhibit-pages > *:only-child {
@@ -1364,6 +1364,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .winter body {
     background-color: #2f3e4a;
+    color: #fff;
+  }
+  .winter #content div {
     color: #5a5a5a;
   }
   .winter h1, .winter #site-title a {
@@ -1371,6 +1374,9 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   .winter input[type=submit], .winter button, .winter .button, .winter .show-advanced.button {
     background-color: #4b6569;
+  }
+  .winter a.button {
+    color: #fff !important;
   }
   .winter input[type=text], .winter input[type=password], .winter textarea {
     background-color: #dfe2e2;

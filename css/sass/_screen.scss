@@ -647,7 +647,7 @@ footer {
 
     & > div, 
     section,
-    #primary > div,
+    .item #primary > div,
     #sidebar > div,
     #advanced-search-form > div,
     #exhibit-pages {
@@ -1443,12 +1443,22 @@ footer {
 
     body {
         background-color: $winter-footer-blue;
+        color: #fff;
+    }
+
+    #content div {
         color: $winter-dark-gray;
     }
 
     h1, #site-title a { color: $winter-title-blue; }
 
-    input[type=submit], button, .button, .show-advanced.button { background-color: $winter-slate; }
+    input[type=submit], button, .button, .show-advanced.button { 
+        background-color: $winter-slate; 
+    }
+
+    a.button {
+        color: #fff !important;
+    }
 
     input[type=text], input[type=password], textarea { background-color: $winter-light-gray; }
 
