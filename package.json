@@ -8,7 +8,7 @@
     "glob": "^7.1.1",
     "gulp": "^5.0.0",
     "gulp-cli": "^3.0.0",
-    "gulp-postcss": "^9.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.0.0",
     "postcss": "^8.4.31",
     "sass": "~1.32.13",
