@@ -1292,10 +1292,6 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     display: none;
   }
 
-  #content .layout-text p:only-child {
-    margin-top: 24px;
-  }
-
   .exhibit-block {
     overflow: hidden;
   }
@@ -1366,7 +1362,8 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     background-color: #2f3e4a;
     color: #fff;
   }
-  .winter #content div {
+  .winter header,
+.winter #content div {
     color: #5a5a5a;
   }
   .winter h1, .winter #site-title a {

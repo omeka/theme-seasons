@@ -1381,10 +1381,6 @@ footer {
     div:empty { display: none; }
 }
 
-#content .layout-text p:only-child {
-    margin-top: $spacing-unit;
-}
-
 .exhibit-block {
     overflow: hidden;
 }
@@ -1446,6 +1442,7 @@ footer {
         color: #fff;
     }
 
+    header,
     #content div {
         color: $winter-dark-gray;
     }
