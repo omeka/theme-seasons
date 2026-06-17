@@ -12,7 +12,7 @@
     "gulp-sass": "^5.0.0",
     "postcss": "^8.5.15",
     "sass": "~1.32.13",
-    "susy": "^2.2.12"
+    "susy": "^2.2.14"
   },
   "scripts": {
     "test": "test"
