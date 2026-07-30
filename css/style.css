@@ -412,16 +412,16 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     margin-top: -2em;
   }
   nav.pagination .pagination_list .pagination_first a:after {
-    content: "<<";
+    content: "<<"/"";
   }
   nav.pagination .pagination_list .pagination_last a:after {
-    content: ">>";
+    content: ">>"/"";
   }
   nav.pagination .pagination_list .pagination_previous a:after {
-    content: "<";
+    content: "<"/"";
   }
   nav.pagination .pagination_list .pagination_next a:after {
-    content: ">";
+    content: ">"/"";
   }
 
   .pagination_previous a, .pagination_next a {
@@ -445,11 +445,11 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
 
   .pagination_previous a:after {
-    content: "";
+    content: ""/"";
   }
 
   .pagination_next a:after {
-    content: "";
+    content: ""/"";
   }
 
   .item-pagination {
@@ -528,7 +528,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   #search-form button:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "";
+    content: ""/"";
     position: absolute;
     left: 0;
     top: 0;
@@ -560,7 +560,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   #search-form .show-advanced.button:after {
     width: 36px;
-    content: "…";
+    content: "…"/"";
     display: block;
     text-indent: 0;
     text-align: center;
@@ -834,11 +834,11 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
 
   .asc a:after {
-    content: "";
+    content: ""/"";
   }
 
   .desc a:after {
-    content: "";
+    content: ""/"";
   }
 
   #primary {
@@ -2264,7 +2264,7 @@ nav.top .nav-item > a.open {
   nav.top .sub-nav ul a:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "";
+    content: ""/"";
     margin-right: 0.5em;
   }
   nav.top .sub-nav ul ul {
@@ -2283,13 +2283,13 @@ nav.top .nav-item > a.open {
   nav.top [aria-haspopup=true]:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "";
+    content: ""/"";
     margin-left: 0.5em;
     display: inline-block;
     width: 6px;
   }
   nav.top [aria-haspopup=true].open:after {
-    content: "";
+    content: ""/"";
   }
   nav.top .mobile {
     display: none;

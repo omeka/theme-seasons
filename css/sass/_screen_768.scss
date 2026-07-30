@@ -114,7 +114,7 @@ nav.top {
               &:before {
                 font-family: "Font Awesome 5 Free";
                 font-weight: 900;
-                content: "\f101";
+                content: "\f101" / "";
                 margin-right: .5em;
               }
             }
@@ -140,14 +140,14 @@ nav.top {
     [aria-haspopup="true"]:after {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        content: "\f0da";
+        content: "\f0da" / "";
         margin-left: .5em;
         display: inline-block;
         width: .25 * $spacing-unit;
     }
 
     [aria-haspopup="true"].open:after {
-        content: "\f0d7";
+        content: "\f0d7" / "";
     }
 
     .mobile { display: none; }

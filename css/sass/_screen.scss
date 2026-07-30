@@ -392,10 +392,10 @@ nav {
                 }
             }
 
-            .pagination_first a:after { content: "<<"; }
-            .pagination_last a:after { content: ">>"; }
-            .pagination_previous a:after { content: "<"; }
-            .pagination_next a:after { content: ">"; }
+            .pagination_first a:after { content: "<<" / ""; }
+            .pagination_last a:after { content: ">>" / ""; }
+            .pagination_previous a:after { content: "<" / ""; }
+            .pagination_next a:after { content: ">" / ""; }
 
         }
     }
@@ -423,11 +423,11 @@ nav {
     }
 
     .pagination_previous a:after {
-        content: "\f0d9";
+        content: "\f0d9" / "";
     }
 
     .pagination_next a:after {
-        content: "\f0da";
+        content: "\f0da" / "";
     }
 
     .item-pagination {
@@ -508,7 +508,7 @@ nav {
         &:after {
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
-            content: "\f002";
+            content: "\f002" / "";
             position: absolute;
             left: 0;
             top: 0;
@@ -543,7 +543,7 @@ nav {
 
     &:after {
         width: (1.5 * $spacing-unit);
-        content: "\2026";
+        content: "\2026" / "";
         display: block;
         text-indent: 0;
         text-align: center;
@@ -837,11 +837,11 @@ footer {
 }
 
 .asc a:after {
-    content: "\f0d8";
+    content: "\f0d8" / "";
 }
 
 .desc a:after {
-    content: "\f0d7";
+    content: "\f0d7" / "";
 }
 
 #primary {
