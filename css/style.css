@@ -1,4 +1,46 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-LightItalic.woff2") format("woff2"), url("../fonts/Ubuntu-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-MediumItalic.woff2") format("woff2"), url("../fonts/Ubuntu-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-BoldItalic.woff2") format("woff2"), url("../fonts/Ubuntu-BoldItalic.woff") format("woff");
+}
 @media screen {
   /*
   Table of Contents

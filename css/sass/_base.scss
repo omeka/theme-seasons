@@ -90,3 +90,27 @@ $spacing-unit   : $base-line-height;
     $night-highlight: #666;
     $night-content: #333333;
 
+// ---------------------------------------------------------------------------
+// Mixins
+
+@mixin font-face(
+    $filename,
+    $family,
+    $style: normal,
+    $weight: 400
+) {
+    @font-face {
+        font-family: $family;
+        font-style: $style;
+        font-weight: $weight;
+        font-display: swap;
+        src: url("../fonts/#{$filename}.woff2") format("woff2"), url("../fonts/#{$filename}.woff") format("woff");
+    }
+}
+
+@include font-face("Ubuntu-Light", "Ubuntu", $weight: 300);
+@include font-face("Ubuntu-LightItalic", "Ubuntu", $weight: 300, $style: italic);
+@include font-face("Ubuntu-Medium", "Ubuntu", $weight: 500);
+@include font-face("Ubuntu-MediumItalic", "Ubuntu", $weight: 500, $style: italic);
+@include font-face("Ubuntu-Bold", "Ubuntu", $weight: 700);
+@include font-face("Ubuntu-BoldItalic", "Ubuntu", $weight: 700, $style: italic);
