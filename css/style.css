@@ -1571,11 +1571,11 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     --seasons-border-color: #BA5656;
   }
   .spring body {
-    background-color: #4A6F14;
+    background-color: #4e7612;
     color: #5A4E36;
   }
   .spring h1, .spring #site-title a {
-    color: #4A6F14;
+    color: #4e7612;
   }
   .spring input[type=submit], .spring button, .spring .button, .spring .show-advanced.button {
     background-color: #BA5656;
@@ -1594,7 +1594,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     background-color: #F1FFBA;
   }
   .spring nav.top {
-    background-color: #4A6F14;
+    background-color: #4e7612;
   }
   .spring nav.top a:link, .spring nav.top a:visited {
     color: #F1FFBA;
@@ -1603,7 +1603,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     color: #F9FFEC;
   }
   .spring nav.top .sub-nav {
-    background-color: #4A6F14;
+    background-color: #4e7612;
   }
   .spring nav.top .sub-nav li > a:link, .spring nav.top .sub-nav li > a:visited {
     color: #F1FFBA;
@@ -1627,7 +1627,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     border-color: #BA5656;
   }
   .spring #content > h1 {
-    color: #DB7B00;
+    color: #BA5656;
   }
   .spring #content h2 {
     border-color: #e8e8e8;
@@ -1651,10 +1651,10 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     background-color: #92BA56;
   }
   .spring #content .items-nav a:link, .spring #content .items-nav a:visited {
-    color: #92BA56;
+    color: #4e7612;
   }
   .spring #content .items-nav a:active, .spring #content .items-nav a:hover {
-    color: #ACBB00;
+    color: #BA5656;
   }
   .spring #content .item-img {
     border-color: #e8e8e8;
@@ -1674,7 +1674,7 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     border-color: #BA5656;
   }
   .spring footer {
-    background-color: #4A6F14;
+    background-color: #4e7612;
     color: #fff;
   }
   .spring footer a:link,

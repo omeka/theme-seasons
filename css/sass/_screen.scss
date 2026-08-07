@@ -1648,7 +1648,7 @@ footer {
     }
 
     #content {
-        & > h1 { color: $spring-link; }
+        & > h1 { color: $spring-red; }
 
         h2 { border-color: #e8e8e8; }
 
@@ -1670,8 +1670,8 @@ footer {
         }
 
         .items-nav {
-            a:link, a:visited { color: $spring-green; }
-            a:active, a:hover { color: $spring-hover-green; }
+            a:link, a:visited { color: $spring-dark-green; }
+            a:active, a:hover { color: $spring-red; }
         }
 
         .item-img { border-color: #e8e8e8; }
