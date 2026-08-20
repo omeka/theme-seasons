@@ -69,7 +69,7 @@
     <?php echo public_nav_main(); ?>
         </nav>
 
-        <div id="content" role="main" tabindex="-1">
+        <main id="content" tabindex="-1">
             <?php
                 if(! is_current_url(WEB_ROOT)) {
                   fire_plugin_hook('public_content_top', array('view'=>$this));
