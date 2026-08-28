@@ -1654,7 +1654,7 @@ footer {
         #primary > div, #sidebar > div { background-color: #fff; }
 
         .pagination_previous a, .pagination_next a {
-            background-color: $spring-green;
+            background-color: $spring-dark-green;
         }
 
         .pagination {
@@ -1810,7 +1810,7 @@ footer {
         #primary > div, #sidebar > div { background-color: #fff; }
 
         .pagination_previous a, .pagination_next a {
-            background-color: $summer-blue;
+            background-color: $summer-dark-blue;
         }
 
         .pagination {
@@ -1962,6 +1962,11 @@ footer {
 
         .pagination_previous a, .pagination_next a {
             background-color: $autumn-dark-red;
+            color: $autumn-beige;
+
+            &:hover {
+                color: #fff;
+            }
         }
 
         .pagination input[type=text] {
