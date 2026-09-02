@@ -374,6 +374,10 @@ th {
     margin-bottom: 24px;
   }
 
+  .pagination form label {
+    padding: 0;
+  }
+
   nav.pagination {
     padding: 0;
   }
@@ -2301,10 +2305,6 @@ nav.top .nav-item > a.open {
   /* !---------- Pagination ---------- */
   .pagination {
     float: left;
-  }
-
-  .pagination form label {
-    padding: 0;
   }
 
   .pagination input[type=text] {
