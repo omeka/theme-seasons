@@ -1399,7 +1399,8 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     width: auto;
   }
 
-  #map-links li.current {
+  .geolocation-item-links li.current,
+#map-links li.current {
     background: transparent;
     border: 1px solid;
     box-shadow: inset 3px 0 0;
