@@ -590,9 +590,6 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
   }
-  #advanced-form.open {
-    display: block;
-  }
   #advanced-form #query-types *:first-child {
     margin-top: 0;
   }
@@ -605,6 +602,10 @@ nav.pagination .pagination_list .pagination_previous a:after, nav.pagination .pa
   }
   #advanced-form p:last-of-type {
     margin-bottom: 0;
+  }
+
+  [aria-expanded=true] + #advanced-form {
+    display: block;
   }
 
   /* !---------- Footer ---------- */

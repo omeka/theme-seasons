@@ -574,10 +574,6 @@ nav {
     box-sizing: border-box;
     box-shadow: rgba(0,0,0,.25) 0 5px 10px;
 
-    &.open {
-        display: block;
-    }
-
     #query-types *:first-child {
         margin-top: 0;
     }
@@ -594,6 +590,9 @@ nav {
     }
 }
 
+[aria-expanded="true"] + #advanced-form {
+    display: block;
+}
 
 /* !---------- Footer ---------- */
 
